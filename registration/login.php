@@ -86,8 +86,8 @@
             $_SESSION['user'] = $row; 
              
             // Redirect the user to the private members-only page. 
-            header("Location: ../index.php"); 
-            die("Redirecting to: ../index.php"); 
+            header("Location: ../me.php"); 
+            die("Redirecting to: ../me.php"); 
         } 
         else 
         { 
@@ -137,6 +137,6 @@
     </div>
         
     </body>
-    <br/>>
+    <br/>
          
        <footer class = "footer text-center ">&copy; Group C NCI 2016</footer
