@@ -23,7 +23,7 @@ b.	Connect Web Site to database
  
  * Create a database for your project named( calendar).
  
- * create a table in that database.
+ * create a table in that database named (user ).
  
  * populate the table with this query:
  
