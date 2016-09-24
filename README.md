@@ -26,6 +26,7 @@ b.	Connect Web Site to database
  * create a table in that database named (user ).
  
  * populate the table with this query:
+ * (Dont forget to create database, then create user on database, then grant all access rights to new database to that user)
  
                                                     CREATE TABLE IF NOT EXISTS `user` (
                                                   `id` int(11) NOT NULL AUTO_INCREMENT,
