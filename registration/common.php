@@ -4,10 +4,10 @@
 <?php 
 
     // These variables define the connection information fo MySQL database 
-    $username = "arezki"; 
-    $password = ""; 
-    $host = "127.0.0.1"; 
-    $dbname ="calendar"; 
+    $username = "sql8137867"; 
+    $password = "FiKvmvxicK"; 
+    $host = "sql8.freesqldatabase.com"; 
+    $dbname ="sql8137867"; 
     
 
 
