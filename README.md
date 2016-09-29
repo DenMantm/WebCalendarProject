@@ -15,6 +15,7 @@ b.	Connect Web Site to database
 10.	Create e-mail sending system module
 11.	Add functionality of creating group calendars
 12.	Fill Technical Report Template
+13. lalalalal
 
 
  Hi guys, I added the login and register pages. You can connect to the cloud9 database by initiating the database ( mysql-ctl cli ) coomand in the terminal.
