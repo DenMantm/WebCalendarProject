@@ -1,6 +1,3 @@
-<!--http://forums.devshed.com/php-faqs-stickies-167/program-basic-secure-login-system-using-php-mysql-891201.html -->
-<!--http://www.formget.com/login-form-in-php-->
-
 <?php 
 
     // These variables define the connection information fo MySQL database 

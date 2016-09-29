@@ -51,13 +51,15 @@
                 unset($row['salt']); 
                 unset($row['password']); 
                 //saving user info in session variable
-                 $_SESSION['user'] = $row; 
+                 $_SESSION['user'] = $row;
+                 $_SESSION['logged'] = true; 
+                 
                 //returning to ajax script result
-                echo "logged";
+                echo 1;
             } 
             else { 
             //returning to ajax script result
-            echo "failed";
+                echo 0;
             } 
         }
     } 

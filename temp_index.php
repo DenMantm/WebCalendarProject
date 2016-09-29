@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Bootstrap Examplme</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -55,15 +55,21 @@
 </div>
 <script>
     $("#ajax_login").click(function(){
-      
     $.post("modules/login_ajax.php",
     {
         username: $('#user_name_ajax').val(),
         password: $('#password_ajax').val()
         //alert($('#user_name_ajax').val())
     },
-    function(data, status){
-        alert("Data: " + data + "\nStatus: " + status);
+    function(response, status,result){
+       
+        if(response==1){
+            window.location = 'authorised_zone.php';
+        }
+        else{
+             alert(response);
+        }
+        
     });
 });
     
