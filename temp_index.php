@@ -76,11 +76,11 @@
                     <br />
                     <br /> E-Mail:
                     <br />
-                    <input type="text" id="r_password_ajax"name="email" value="" />
+                    <input type="text" id="r_email_ajax"name="email" value="" />
                     <br />
                     <br /> Password:
                     <br />
-                    <input type="password" id="r_email_ajax" name="password" value="" />
+                    <input type="password" id="r_password_ajax" name="password" value="" />
                     <br />
                     <br />
                 </form><br/>

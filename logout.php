@@ -4,7 +4,8 @@
     require("registration/common.php"); 
      
     // We remove the user's data from the session 
-    unset($_SESSION['user']); 
+    unset($_SESSION['user']);
+    unset($_SESSION['logged']);
      
     // We redirect them to the login page 
     header("Location: registration/login.php"); 

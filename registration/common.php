@@ -61,7 +61,7 @@
      
     // This tells the web browser that the content is encoded using UTF-8 
 
-    header('Content-Type: text/html; charset=utf-8'); 
+    header('Content-Type: text/html; charset=utf-8');
      
 
     session_start(); 

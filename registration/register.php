@@ -20,14 +20,11 @@
         { 
             die("Please enter a password."); 
         } 
-         
         // Make sure the user entered a valid E-Mail address 
-        
         if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) 
         { 
             die("Invalid E-Mail Address"); 
         } 
-         
         // We will use this SQL query to see whether the username entered by the 
         // user is already in use.  A SELECT query is used to retrieve data from the database. 
         // :username is a special token, we will substitute a real value in its place when 
