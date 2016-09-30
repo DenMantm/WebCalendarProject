@@ -139,4 +139,4 @@
     </body>
     <br/>
          
-       <footer class = "footer text-center ">&copy; Group C NCI 2016</footer
+       <footer class = "footer text-center ">&copy; Group C NCI 2016</footer>
