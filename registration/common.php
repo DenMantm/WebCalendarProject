@@ -3,7 +3,7 @@
     // These variables define the connection information fo MySQL database 
     $username = "sql8138108"; 
     $password = "YCLUJyxs9P"; 
-    $host = "sql8.freemysqlhosting.net"; 
+    $host = "sql8.freemysqlhosting.net"; git push
     $dbname ="sql8138108"; 
     
 
