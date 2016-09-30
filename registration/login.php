@@ -17,12 +17,12 @@
         // their username. 
         $query = " 
             SELECT 
-                id, 
+                userID, 
                 username, 
                 password, 
                 salt, 
                 email 
-            FROM user
+            FROM users
             WHERE 
                 username = :username 
         "; 
