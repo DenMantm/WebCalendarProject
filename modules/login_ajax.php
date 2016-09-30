@@ -1,7 +1,7 @@
 <?php 
 
     // First we execute our common code to connection to the database and start the session 
-    require("../registration/common.php"); 
+    require("db.php"); 
      
     // This variable will be used to re-display the user's username to them in the 
     // login form if they fail to enter the correct password.  
@@ -55,11 +55,14 @@
                  $_SESSION['logged'] = true; 
                  
                 //returning to ajax script result
-                echo 1;
+                $response = array("key"=>"pass");
+                echo json_encode($response);
+                
             } 
             else { 
             //returning to ajax script result
-                echo 0;
+                $response = array("key"=>"fail");
+                echo json_encode($response);
             } 
         }
     } 

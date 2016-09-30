@@ -12,12 +12,15 @@
 <body>
 
 <div class="container">
-  <h2>Modal Example</h2>
+  <h2>WELCOME</h2>
   <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal_LOGIN">LOGIN</button>
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal_register">REGISTER</button>
+  
+  
+  
+  <!-- Modal LOGIN -->
+  <div class="modal fade" id="myModal_LOGIN" role="dialog">
     <div class="modal-dialog">
     
       <!-- Modal content-->
@@ -33,10 +36,10 @@
           <p>Login</p>
             <form action="modules/login_ajax.php" method="post">
                     Username:<br /> 
-                    <input type="text" id="user_name_ajax" name="username"/> 
+                    <input type="text" id="l_user_name_ajax" name="username"/> 
                     <br /><br /> 
                     Password:<br /> 
-                    <input type="password" id="password_ajax"  name="password" value="" />
+                    <input type="password" id="l_password_ajax"  name="password" value="" />
                     <br /><br /> 
             </form> <br/>
           
@@ -51,26 +54,113 @@
     </div>
   </div>
   
+  <!-- Modal REGISTER -->
+  <div class="modal fade" id="myModal_register" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Register</h4>
+        </div>
+        <div class="modal-body">
+            
+            
+            
+                <h1>Register</h1>
+                <form action="register.php" method="post">
+                    Username:
+                    <br />
+                    <input type="text" id="r_user_name_ajax" name="username" value="" />
+                    <br />
+                    <br /> E-Mail:
+                    <br />
+                    <input type="text" id="r_password_ajax"name="email" value="" />
+                    <br />
+                    <br /> Password:
+                    <br />
+                    <input type="password" id="r_email_ajax" name="password" value="" />
+                    <br />
+                    <br />
+                </form><br/>
+          
+          
+          <button type="button" class="btn btn-info btn-lg" id="ajax_register">Register</button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
 </div>
 <script>
-    $("#ajax_login").click(function(){
+
+    //REQUEST FOR LOGIN
+$("#ajax_login").click(function(){
     $.post("modules/login_ajax.php",
     {
-        username: $('#user_name_ajax').val(),
-        password: $('#password_ajax').val()
+        username: $('#l_user_name_ajax').val(),
+        password: $('#l_password_ajax').val()
         //alert($('#user_name_ajax').val())
     },
     function(response, status,result){
+      response = JSON.parse(response);
        
-        if(response==1){
+        if(response.key=="pass"){
+          //CODE LOGIN SUCCESFULL
             window.location = 'authorised_zone.php';
         }
         else{
+          //CODE IF LOGIN UNSUCCESFULL
+          console.log(response)
+          console.log(response.key)
              alert("failed to login");
         }
         
     });
 });
+
+    //REQUEST FOR REGISTER
+$("#ajax_register").click(function(){
+    $.post("modules/register_ajax.php",
+    {
+        username: $('#r_user_name_ajax').val(),
+        password: $('#r_password_ajax').val(),
+        email: $('#r_email_ajax').val()
+        //alert($('#user_name_ajax').val())
+    },
+    function(response, status,result){
+      console.log(response);
+      response = JSON.parse(response);
+       console.log(response.key);
+        if(response.key=="pass"){
+          //CODE REGISTER SUCCESFULL
+            window.location = 'authorised_zone.php';
+        }
+        else if(response.key=="username_exists"){
+          alert("username already exists");
+        }
+        else if(response.key=="email_exists"){
+          alert("E-mail already taken");
+        }
+        else if(response.key=="email_fail"){
+          alert("invalid e-mail");
+        }
+        else{
+          //CODE DATABASE ERROR
+
+             alert(response.key);
+        }
+        
+    });
+});
+
+
+
     
 </script>
 </body>

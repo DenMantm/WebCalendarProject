@@ -4,7 +4,7 @@ if($_SESSION['logged'] != true){
                 header("Location: ../temp_index.php"); 
             die("Redirecting to: ../temp_index.php"); 
 }
-include("templates/header.php");
+
 ?>
 
 <p>
