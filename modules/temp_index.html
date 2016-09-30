@@ -101,7 +101,7 @@
 
     //REQUEST FOR LOGIN
 $("#ajax_login").click(function(){
-    $.post("modules/login_ajax.php",
+    $.post("/login_ajax",
     {
         username: $('#l_user_name_ajax').val(),
         password: $('#l_password_ajax').val()
@@ -126,7 +126,7 @@ $("#ajax_login").click(function(){
 
     //REQUEST FOR REGISTER
 $("#ajax_register").click(function(){
-    $.post("modules/register_ajax.php",
+    $.post("/register_ajax",
     {
         username: $('#r_user_name_ajax').val(),
         password: $('#r_password_ajax').val(),

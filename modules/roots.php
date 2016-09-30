@@ -16,14 +16,14 @@ $f3->route('GET /about',
     }
 );
 
-$f3->route('POST login_ajax',
+$f3->route('POST /login_ajax',
     function() {
         require("login_ajax.php"); 
     }
 );
 
 
-$f3->route('POST register_ajax',
+$f3->route('POST /register_ajax',
     function() {
         require("register_ajax.php"); 
     }
