@@ -139,7 +139,7 @@
         //REGISTRATION SUCCESFULL
         $response = array("key"=>"pass");
         echo json_encode($response);
-        
+        $f3->set('var',1);
         
         //header("Location: login.php"); 
         //die("Redirecting to login.php"); 

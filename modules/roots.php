@@ -2,6 +2,7 @@
 <?php
 // Kickstart the framework
 $f3=require('lib/base.php');
+//$f3->set('CACHE','memcache=localhost');
 
 
 //setting up basic rooting
@@ -10,6 +11,13 @@ $f3->route('GET /',
         echo View::instance()->render('views/temp_index.html');
     }
 );
+//$f3->get('var')
+$f3->route('GET /var',
+    function() {
+
+    }
+);
+
 $f3->route('GET /authorised_zone',
     function() {
         isUserLogged();
@@ -47,17 +55,16 @@ $f3->route('POST /register_ajax',
 
 //Creating function to check if user is logged in to session
 function isUserLogged(){
+    
                 session_start();
                 if($_SESSION['logged'] != true ) {
                 // If they are not, we redirect them to the login page. 
                 header("Location: /"); 
                 // Remember that this die statement is absolutely critical.  Without it, 
                 // people can view your members-only content without logging in. 
-                die("Redirecting to /"); 
+                die("Redirecting to /");
             } 
 }
-
-
 
 
 //kicking off server
