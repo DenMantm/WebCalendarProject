@@ -7,7 +7,7 @@ $f3=require('lib/base.php');
 //setting up basic rooting
 $f3->route('GET /',
     function() {
-        echo View::instance()->render('modules/temp_index.html');
+        echo View::instance()->render('views/temp_index.html');
     }
 );
 $f3->route('GET /about',
