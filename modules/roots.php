@@ -10,22 +10,34 @@ $f3->route('GET /',
         echo View::instance()->render('views/temp_index.html');
     }
 );
-$f3->route('GET /about',
+$f3->route('GET /authorised_zone',
     function() {
-        echo "about";
+        echo View::instance()->render('views/authorised_zone.php');
+    }
+);
+
+$f3->route('GET /logout',
+    function() {
+        
+    // We remove the user's data from the session 
+    unset($_SESSION['user']);
+    unset($_SESSION['logged']);
+     
+    // We redirect them to the login page 
+    header("Location: /"); 
+    die("Redirecting to: /");
     }
 );
 
 $f3->route('POST /login_ajax',
     function() {
-        require("login_ajax.php"); 
+        require("registration/login_ajax.php"); 
     }
 );
 
-
 $f3->route('POST /register_ajax',
     function() {
-        require("register_ajax.php"); 
+        require("registration/register_ajax.php"); 
     }
 );
 
