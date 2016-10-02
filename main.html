@@ -19,9 +19,12 @@
 
 <body>
   <div class="row">
-    <input data-bind="value: firstName" />
-    <span data-bind="text: firstName"></span>
+    <div class="col-md-1">
+      <input data-bind="value: firstName" />
+      <span data-bind="text: firstName"></span>
+    </div>
   </div>
+
   <div class="row">
     <div class="col-md-1">
       <div class="cell">
@@ -235,17 +238,22 @@
               08:00
             </td>
             <td>
-              Meeting
+              <button class="button" onclick="$('#dialog').data('dialog').toggle()">Meeting</button>
+                   <div id="dialog" data-role="dialog,draggable" class="dialog container" data-close-button="true" style="width: auto; height: auto; visibility: visible; left: 427px; top: 320.5px; cursor: auto; z-index: 1050;">
+        <h1>Meeting with famous hitman</h1>
+            <p>Discuss the details of the kidnapping and killing various people as and day to day exercise.</p>
+            <span class="dialog-close-button"></span>
+    </div>
             </td>
           </tr>
         </table>
       </div>
-      
-      
+
+
       <div class="col-md-4">
         <div class="panel" style="width: 200px; z-index: auto; top: -2px; left: 50px;" data-role="draggable">
           <div class="heading">
-            <span class="icon mif-home"></span>
+            <span class="icon mif-file-text"></span>
             <span class="title">Note1</span>
           </div>
           <div class="content">
@@ -254,35 +262,32 @@
             </p>
             Kill Mr. president
             </br>
-            
+
           </div>
         </div>
         <!--Draggable panel on heading-->
-        <div class="panel"  style="width: 200px; z-index: auto; top: -2px; left: 50px;" data-role="draggable">
+        <div class="panel" style="width: 200px; z-index: auto; top: -2px; left: 50px;" data-role="draggable">
           <div class="heading">
-            <span class="icon mif-home"></span>
+            <span class="icon mif-file-text"></span>
             <span class="title">Note2</span>
           </div>
           <div class="content">
-            Try not to go to the jail
-            
-            
-            
+            <p>Try not to go to the jail</p>
+            <p></p>
+            <p>Find out how to!</p>
+
           </div>
         </div>
-
       </div>
-
     </div>
+    
 
-    <script>
-      $(function() {
-        setInterval(function() {
-          $("#sidebar-2").toggleClass('compact');
-        }, 3000);
-
-      });
-    </script>
   </div>
+
+
+
+   
+
+
 
 </body>
