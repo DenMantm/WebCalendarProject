@@ -1,9 +1,7 @@
-<!--http://forums.devshed.com/php-faqs-stickies-167/program-basic-secure-login-system-using-php-mysql-891201.html -->
-<!--http://www.formget.com/login-form-in-php-->    
 <?php 
 
     // First we execute our common code to connection to the database and start the session 
-    require("common.php"); 
+    require("modules/db.php"); 
      
     // This if statement checks to determine whether the registration form has been submitted 
     // If it has, then the registration code is run, otherwise the form is displayed 
@@ -20,22 +18,21 @@
         { 
             die("Please enter a password."); 
         } 
+         
         // Make sure the user entered a valid E-Mail address 
+        
         if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) 
         { 
-            die("Invalid E-Mail Address"); 
+                $response = array("key"=>"email_fail");
+                echo json_encode($response);
+                die();
         } 
+         
         // We will use this SQL query to see whether the username entered by the 
         // user is already in use.  A SELECT query is used to retrieve data from the database. 
         // :username is a special token, we will substitute a real value in its place when 
         // we execute the query. 
-        $query = " 
-            SELECT 
-                1 
-            FROM users 
-            WHERE 
-                username = :username 
-        "; 
+        $query = "SELECT 1 FROM user WHERE username = :username ;"; 
        
         $query_params = array( 
             ':username' => $_POST['username'] 
@@ -50,7 +47,9 @@
         catch(PDOException $ex) 
         { 
            
-            die("Failed to run query: " . $ex->getMessage()); 
+                $response = array("key"=>"Failed to run query: " . $ex->getMessage());
+                echo json_encode($response);
+                die();
         } 
          
         // The fetch() method returns an array representing the "next" row from 
@@ -59,58 +58,45 @@
          
         // If a row was returned, then we know a matching username was found in 
         // the database already and we should not allow the user to continue. 
-        if($row) 
-        { 
-            die("This username is already in use"); 
+        
+        //USER EXISTS
+        if($row) { 
+                $response = array("key"=>"username_exists");
+                echo json_encode($response);
+                die();
         } 
          
         // Now we perform the same type of check for the email address, in order 
         // to ensure that it is unique. 
-        $query = " 
-            SELECT 
-                1 
-            FROM users
-            WHERE 
-                email = :email 
-        "; 
+        $query = "SELECT 1 FROM user WHERE email = :email ;"; 
          
         $query_params = array( 
             ':email' => $_POST['email'] 
         ); 
          
-        try 
-        { 
+        try { 
             $stmt = $db->prepare($query); 
             $result = $stmt->execute($query_params); 
         } 
-        catch(PDOException $ex) 
-        { 
-            die("Failed to run query: " . $ex->getMessage()); 
+        catch(PDOException $ex) { 
+                $response = array("key"=>"Failed to run query: " . $ex->getMessage());
+                echo json_encode($response);
+                die();
         } 
          
         $row = $stmt->fetch(); 
          
-        if($row) 
-        { 
-            die("This email address is already registered"); 
+         //EMAIL EXISTS
+        if($row) { 
+                $response = array("key"=>"email_exists");
+                echo json_encode($response);
+                die();
         } 
          
         // An INSERT query is used to add new rows to a database table.
         // Again, we are using special tokens (technically called parameters) to 
         // protect against SQL injection attacks. 
-        $query = " 
-            INSERT INTO users ( 
-                username, 
-                password, 
-                salt, 
-                email 
-            ) VALUES ( 
-                :username, 
-                :password, 
-                :salt, 
-                :email 
-            ) 
-        "; 
+        $query = "INSERT INTO user ( username, password, salt, email ) VALUES ( :username, :password, :salt, :email ) ;"; 
          
         // A salt is randomly generated here to protect again brute force attacks 
         // and rainbow table attacks.  The following statement generates a hex 
@@ -123,8 +109,7 @@
         $password = hash('sha256', $_POST['password'] . $salt); 
          
        
-        for($round = 0; $round < 65536; $round++) 
-        { 
+        for($round = 0; $round < 65536; $round++) { 
             $password = hash('sha256', $password . $salt); 
         } 
          
@@ -137,71 +122,28 @@
             ':email' => $_POST['email'] 
         ); 
          
-        try 
-        { 
+        try { 
             // Execute the query to create the user 
             $stmt = $db->prepare($query); 
             $result = $stmt->execute($query_params); 
         } 
-        catch(PDOException $ex) 
-        {   
-            die("Failed to run query: " . $ex->getMessage()); 
+        catch(PDOException $ex) {   
+                $response = array("key"=>"Failed to run query: " . $ex->getMessage());
+                echo json_encode($response);
+                die();
         } 
          
-        // This redirects the user back to the login page after they register 
-        header("Location: login.php"); 
-         
-     
-        die("Redirecting to login.php"); 
+        // This redirects the user back to the login page after they register
+        
+        
+        //REGISTRATION SUCCESFULL
+        $response = array("key"=>"pass");
+        echo json_encode($response);
+        $f3->set('var',1);
+        
+        //header("Location: login.php"); 
+        //die("Redirecting to login.php"); 
     } 
      
 ?> 
-
-    <!--styling-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
-    <link rel="stylesheet" href="../css/style.css" type="text/css" />
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-
-    <!--styling-->
-   
-    
-     <div class  = "container bgImg">
-            <div class="row">
-                <h1 class = "text-center">Social Hotel</h1>
-            <div class = "col-md-4">
-            </div>
-            <div class = "col-md-4">
-                <h1>Register</h1>
-                <form action="register.php" method="post">
-                    Username:
-                    <br />
-                    <input type="text" name="username" value="" />
-                    <br />
-                    <br /> E-Mail:
-                    <br />
-                    <input type="text" name="email" value="" />
-                    <br />
-                    <br /> Password:
-                    <br />
-                    <input type="password" name="password" value="" />
-                    <br />
-                    <br />
-                    <input class="regLogButton" type="submit" value="Register" />
-                </form>
-                <button class="regLogButton"><a href="login.php">Login</a></button>
-                <br/>
-                <br/>
-                <br/>
-            </div>
-            
-            <div class = "col-md-4">
-            </div>
-            </div>
-            
-            </div>  
-        </body>
-            <footer class = "footer text-center">&copy; Group C NCI 2016</footer>
-
     

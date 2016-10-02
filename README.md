@@ -18,6 +18,10 @@ b.	Connect Web Site to database
 13. lalalalal
 
 
+The good idea is to use PHP Framework:
+https://fatfreeframework.com/user-guide
+
+
  Hi guys, I added the login and register pages. You can connect to the cloud9 database by initiating the database ( mysql-ctl cli ) coomand in the terminal.
  
  this will get you accessed to clod9 sql and see all the databases. 
