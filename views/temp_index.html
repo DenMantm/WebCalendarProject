@@ -139,14 +139,7 @@ $("#ajax_register").click(function(){
        console.log(response.key);
         if(response.key=="pass"){
           //CODE REGISTER SUCCESFULL
-<<<<<<< HEAD
-          alert("Registration succesfull, now please login with your username and password")
-=======
-          $('#myModal_register').modal('toggle');
-          $('#myModal_LOGIN').modal('toggle');
-          alert("Registration succesfull, please log in with your new credentials");
->>>>>>> 19122c7850141b6b6975973a81d1249a28acdde7
-            //window.location = '/authorised_zone';
+            window.location = '/authorised_zone';
         }
         else if(response.key=="username_exists"){
           alert("username already exists");

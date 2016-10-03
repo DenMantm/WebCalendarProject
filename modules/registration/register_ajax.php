@@ -139,15 +139,7 @@
         //REGISTRATION SUCCESFULL
         $response = array("key"=>"pass");
         echo json_encode($response);
-
-        
-        
-        //We could create functionality to login after registration, but d we need it?
-        
-        //session_start();
-        //$_SESSION['user'] = $row;
-        //$_SESSION['logged'] = true; 
-
+       
         
         //header("Location: login.php"); 
         //die("Redirecting to login.php"); 
