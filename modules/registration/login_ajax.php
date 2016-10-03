@@ -12,8 +12,17 @@
     { 
         // This query retreives the user's information from the database using 
         // their username. 
-        $query = "SELECT id, username, password, salt, email FROM user 
-                  WHERE username = :username;"; 
+        $query = " 
+            SELECT 
+                userID, 
+                username, 
+                password, 
+                salt, 
+                email 
+            FROM users
+            WHERE 
+                username = :username 
+        "; 
          
         // The parameter values 
         $query_params = array( 
@@ -50,6 +59,7 @@
                 unset($row['salt']); 
                 unset($row['password']); 
                 //saving user info in session variable
+                session_start();
                  $_SESSION['user'] = $row;
                  $_SESSION['logged'] = true; 
                  

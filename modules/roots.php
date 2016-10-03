@@ -4,7 +4,8 @@
 $f3=require('lib/base.php');
 //$f3->set('CACHE','memcache=localhost');
 
-
+session_start(); 
+  $_SESSION['myvar'] = 'hello';
 //setting up basic rooting
 $f3->route('GET /',
     function() {
@@ -12,9 +13,10 @@ $f3->route('GET /',
     }
 );
 //$f3->get('var')
-$f3->route('GET /var',
-    function() {
 
+$f3->route('GET /main',
+    function() {
+        echo View::instance()->render('main.html');
     }
 );
 
