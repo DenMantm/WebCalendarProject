@@ -1,4 +1,3 @@
-<!-- views/index.ejs -->
 <!doctype html>
 <html>
 <head>
@@ -39,7 +38,7 @@
     <script data-require="jquery@*" data-semver="2.1.4" src="https://code.jquery.com/jquery-2.1.4.js"></script>
     <script data-require="bootstrap@3.3.6" data-semver="3.3.6" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
-    <script src="js/login_signup_validation.js"></script>
+    <!--<script src="js/login_signup_validation.js"></script>-->
     <link rel="stylesheet" href="css/login_signup_form.css"/>
     
     <style>
@@ -50,13 +49,12 @@
 
 </head>
 <body>
-	<!--<% include ./index_partials/navbar %>-->
-<h1 class="animated rotateIn" />Some</h1>
 
-<div style='background-image: url("img/textures/texture1.jpg");' class="cta-mail">
+
+
+<div class="cta-mail">
     <div class="container text-center">
-        <h2>Want more Bootstrap themes &amp; templates?</h2>
-        <h4>Subscribe to our mailing list to receive an update when new items arrive!</h4>
+        <h2>Whant to login or Register?</h2>
         <!--<a href="/logout" class="btn btn-default"><span class="fa fa-user"></span>SingUp</a>-->
 		<!--<a href="/profile" class="btn btn-default"><span class="fa fa-user"></span>Login</a>-->
 		 <a class="btn btn-info" href="#signup_modal" data-toggle="modal"><h4><i class="glyphicon glyphicon-eye-open"></i>Signup</h4></a>
@@ -243,6 +241,9 @@ $("#ajax_register").click(function(){
        console.log(response.key);
         if(response.key=="pass"){
           //CODE REGISTER SUCCESFULL
+          alert("You have succesfully registered, please log in with your new credentials!");
+          $('#signup_modal').modal('toggle');
+          $('#login_modal').modal('toggle');
             //window.location = '/authorised_zone';
         }
         else if(response.key=="username_exists"){

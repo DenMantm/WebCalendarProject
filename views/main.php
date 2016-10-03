@@ -26,6 +26,9 @@
 </head>
 
 <body>
+<?php
+require('views/partials/navbar.php');
+?>
   
   <!--Top menu holder temporary used for testing knockout-->
   <div class="row">

@@ -64,5 +64,10 @@
                 echo json_encode($response);
             } 
         }
+        else { 
+            //returning to ajax script result
+                $response = array("key"=>"fail");
+                echo json_encode($response);
+            } 
     } 
 ?> 

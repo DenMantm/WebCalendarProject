@@ -8,7 +8,7 @@ $f3=require('lib/base.php');
 
 $f3->route('GET /',
     function() {
-        echo View::instance()->render('views/index.html');
+        echo View::instance()->render('views/index_page.php');
     }
 );
 //$f3->get('var')
@@ -16,7 +16,7 @@ $f3->route('GET /',
 $f3->route('GET /main',
     function() {
         isUserLogged();
-        echo View::instance()->render('views/main.html');
+        echo View::instance()->render('views/main.php');
     }
 );
 
