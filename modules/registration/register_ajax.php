@@ -139,6 +139,7 @@
         //REGISTRATION SUCCESFULL
         $response = array("key"=>"pass");
         echo json_encode($response);
+       
         
         //header("Location: login.php"); 
         //die("Redirecting to login.php"); 

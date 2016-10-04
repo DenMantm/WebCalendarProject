@@ -15,10 +15,10 @@
   <!--Metro icons used in lefthandside menu-->
   <link rel="stylesheet" href="/css/metro-icons.min.css">
   <!--Metro js-->
-  <script type='text/javascript' src="js/metro.min.js"></script>
+  <script type='text/javascript' src="/js/metro.min.js"></script>
   <!--Knockout used to ling input and output in realtime-->
-  <script type='text/javascript' src='js/knockout-3.4.0.debug.js'></script>
-  <script type='text/javascript' src="js/bindings.js"></script>
+  <script type='text/javascript' src='/js/knockout-3.4.0.debug.js'></script>
+  <script type='text/javascript' src="/js/bindings.js"></script>
   <!--Dragscroll used in calendar allowing scroll items by dragging them-->
   <script type="text/javascript" src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
   <!--adding jquerry-->
@@ -26,6 +26,9 @@
 </head>
 
 <body>
+<?php
+require('partials/navbar.php');
+?>
   
   <!--Top menu holder temporary used for testing knockout-->
   <div class="row">

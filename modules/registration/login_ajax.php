@@ -12,7 +12,7 @@
     { 
         // This query retreives the user's information from the database using 
         // their username. 
-        $query = "SELECT id, username, password, salt, email FROM user
+        $query = "SELECT id, username, password, salt, email FROM user 
                   WHERE username = :username;"; 
          
         // The parameter values 
@@ -64,5 +64,10 @@
                 echo json_encode($response);
             } 
         }
+        else { 
+            //returning to ajax script result
+                $response = array("key"=>"fail");
+                echo json_encode($response);
+            } 
     } 
 ?> 

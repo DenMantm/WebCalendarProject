@@ -4,17 +4,19 @@
 $f3=require('lib/base.php');
 //$f3->set('CACHE','memcache=localhost');
 
-
 //setting up basic rooting
+
 $f3->route('GET /',
     function() {
-        echo View::instance()->render('views/temp_index.html');
+        echo View::instance()->render('views/index_page.php');
     }
 );
 //$f3->get('var')
-$f3->route('GET /var',
-    function() {
 
+$f3->route('GET /main',
+    function() {
+        isUserLogged();
+        echo View::instance()->render('views/main.php');
     }
 );
 
@@ -63,7 +65,9 @@ function isUserLogged(){
                 // Remember that this die statement is absolutely critical.  Without it, 
                 // people can view your members-only content without logging in. 
                 die("Redirecting to /");
+                return false;
             } 
+            else{return true;}
 }
 
 
