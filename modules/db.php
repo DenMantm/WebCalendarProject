@@ -53,10 +53,14 @@
                 } 
             } 
         } 
-     
-        undo_magic_quotes_gpc($_POST); 
-        undo_magic_quotes_gpc($_GET); 
+        
+        
+        
+        undo_magic_quotes_gpc($_POST);
+        undo_magic_quotes_gpc($_GET);
         undo_magic_quotes_gpc($_COOKIE); 
+        
+        
     } 
      
     // This tells the web browser that the content is encoded using UTF-8 
