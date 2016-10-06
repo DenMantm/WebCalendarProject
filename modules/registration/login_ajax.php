@@ -53,6 +53,7 @@
                  $_SESSION['user'] = $row;
                  $_SESSION['logged'] = true; 
                  
+                 
                 //returning to ajax script result
                 $response = array("key"=>"pass");
                 echo json_encode($response);
