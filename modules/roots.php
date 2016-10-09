@@ -62,13 +62,12 @@ $f3->route('POST /register_ajax',
         require("registration/register_ajax.php"); 
     }
 );
-<<<<<<< HEAD
+
 $f3->route('GET /arezki1',
     function() {
         echo View::instance()->render('views/arezki1.php');
     }
 );
-=======
 
 $f3->route('GET /verify_email@name@link',
     function() {
@@ -86,7 +85,7 @@ $f3->route('GET /verify_email@name@link',
     }
 );
 
->>>>>>> 4c5b8187e80d693b00ab8c90f21d082b0aa1f993
+
 //SECTION FOR REUSABLE FUNCTIONS
 
 //Creating function to check if user is logged in to session
