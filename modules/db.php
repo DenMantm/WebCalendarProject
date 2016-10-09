@@ -1,6 +1,15 @@
 <?php 
 
     // These variables define the connection information fo MySQL database 
+
+   // $username = "arezki"; 
+    //$password = ""; 
+    //$host = "127.0.0.1"; 
+    //$dbname ="calendar"; 
+    // $username = "nciadmin"; 
+    // $password = "K7zSZ6uK524SnT6s"; 
+    // $host = "kamil-lasecki.ddns.net"; 
+    // $dbname ="calenda
     // $username = "sql8138108"; 
     // $password = "YCLUJyxs9P"; 
     // $host = "sql8.freemysqlhosting.net"; 
@@ -9,6 +18,7 @@
     $password = "K7zSZ6uK524SnT6s"; 
     $host = "kamil-lasecki.ddns.net"; 
     $dbname ="calendar"; 
+
     
 
 

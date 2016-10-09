@@ -15,6 +15,12 @@ $f3->route('GET /',
         echo View::instance()->render('views/index_page.php');
     }
 );
+
+$f3->route('GET /arezki',
+    function() {
+        echo View::instance()->render('views/arezki.php');
+    }
+);
 //$f3->get('var')
 
 $f3->route('GET /main',
@@ -58,8 +64,18 @@ $f3->route('POST /register_ajax',
     }
 );
 
+
 $f3->route('GET /verify_email/@link',
     function($f3,$params) {
+
+$f3->route('GET /arezki1',
+    function() {
+        echo View::instance()->render('views/arezki1.php');
+    }
+);
+
+$f3->route('GET /verify_email@name@link',
+    function() {
         //getting parametres from get query:
         $link = $params['link'];
         echo $link;
@@ -77,6 +93,7 @@ $f3->route('GET /verify_email/@link',
         
     }
 );
+
 
 //SECTION FOR REUSABLE FUNCTIONS
 
