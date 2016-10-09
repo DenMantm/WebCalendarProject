@@ -22,8 +22,8 @@ $params = array(
     'to'        => $email_adress,
     'subject'   => $email_subject,
     'html'      => $email_body,
-    'text'      => '',
-    'from'      => 'CalendarApplication@sendgrid.com',
+    'text'      => $email_body,
+    'from'      => 'CalendarApplication@Mywebsite.com',
   );
 
 
@@ -46,7 +46,7 @@ $response = curl_exec($session);
 curl_close($session);
 
 // print everything out
-print_r($response);
+//print_r($response);
     
 }
 
