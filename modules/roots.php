@@ -5,6 +5,7 @@ $f3=require('lib/base.php');
 //$f3->set('CACHE','memcache=localhost');
 
 //connection to database
+
 require("db.php"); 
 
 //setting up basic rooting
@@ -57,13 +58,17 @@ $f3->route('POST /register_ajax',
     }
 );
 
-$f3->route('GET /verify_email@name@link',
-    function() {
+$f3->route('GET /verify_email/@link',
+    function($f3,$params) {
         //getting parametres from get query:
-        $name = $f3->get('PARAMS.name');
-        $link = $f3->get('PARAMS.link');
-        
-        echo $name+" "+$link;
+        $link = $params['link'];
+        echo $link;
+        //$link = $params['link'];
+       // $formatted = explode('!', $link);
+        $result = array();
+        preg_match('!', $link, $result);
+
+        echo $result[0]+" "+$result[1];
         
        // emailVerification($link, $name);
         
@@ -93,6 +98,56 @@ function isUserLogged(){
 // This function queries database and gets row for user with encripted password link,
 // if it doesnt get row in the querry it is asumed that query parametres ar wrong
 
+function sendEmail(){
+    
+    $url = 'https://api.sendgrid.com/';
+$user = 'CalendarApplication';
+$pass = 'calendarapplication123';
+
+$json_string = array(
+
+  'to' => array(
+    'denmantm@inbox.lv', 'example2@sendgrid.com'
+  ),
+  'category' => 'test_category'
+);
+
+
+$params = array(
+    'api_user'  => $user,
+    'api_key'   => $pass,
+    'x-smtpapi' => json_encode($json_string),
+    'to'        => 'denmantm@inbox.lv',
+    'subject'   => 'testing from curl',
+    'html'      => 'testing body',
+    'text'      => 'testing body',
+    'from'      => 'CalendarApplication@sendgrid.com',
+  );
+
+
+$request =  $url.'api/mail.send.json';
+
+// Generate curl request
+$session = curl_init($request);
+// Tell curl to use HTTP POST
+curl_setopt ($session, CURLOPT_POST, true);
+// Tell curl that this is the body of the POST
+curl_setopt ($session, CURLOPT_POSTFIELDS, $params);
+// Tell curl not to return headers, but do return the response
+curl_setopt($session, CURLOPT_HEADER, false);
+// Tell PHP not to use SSLv3 (instead opting for TLS)
+curl_setopt($session, CURLOPT_SSLVERSION, CURL_SSLVERSION_TLSv1_2);
+curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
+
+// obtain response
+$response = curl_exec($session);
+curl_close($session);
+
+// print everything out
+print_r($response);
+    
+}
+
 function emailVerification($link,$user){
     
     
@@ -120,7 +175,7 @@ function emailVerification($link,$user){
          
         // This variable tells us whether the user has successfully logged in or not. 
         // We initialize it to false, assuming they have not.
-        $login_ok = false; 
+        $login_ok = false;
          
         // Retrieve the user data from the database.  If $row is false, then the username 
         // they entered is not registered. 
