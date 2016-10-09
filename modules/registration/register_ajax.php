@@ -136,6 +136,14 @@
         // This redirects the user back to the login page after they register
         
         
+        
+        //this here is sending e-mail module
+        require('modules/send_email.php');
+        
+        
+        
+        
+        
         //REGISTRATION SUCCESFULL
         $response = array("key"=>"pass");
         echo json_encode($response);
