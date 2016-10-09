@@ -11,6 +11,12 @@ $f3->route('GET /',
         echo View::instance()->render('views/index_page.php');
     }
 );
+
+$f3->route('GET /arezki',
+    function() {
+        echo View::instance()->render('views/arezki.php');
+    }
+);
 //$f3->get('var')
 
 $f3->route('GET /main',
@@ -52,7 +58,11 @@ $f3->route('POST /register_ajax',
         require("registration/register_ajax.php"); 
     }
 );
-
+$f3->route('GET /arezki1',
+    function() {
+        echo View::instance()->render('views/arezki1.php');
+    }
+);
 //SECTION FOR REUSABLE FUNCTIONS
 
 //Creating function to check if user is logged in to session
