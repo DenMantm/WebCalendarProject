@@ -54,7 +54,7 @@
 
 <div class="cta-mail">
     <div class="container text-center">
-        <h2>Whant to login or Register?</h2>
+        <h2>Whant to login or Register Idiot !?</h2>
         <!--<a href="/logout" class="btn btn-default"><span class="fa fa-user"></span>SingUp</a>-->
 		<!--<a href="/profile" class="btn btn-default"><span class="fa fa-user"></span>Login</a>-->
 		 <a class="btn btn-info" href="#signup_modal" data-toggle="modal"><h4><i class="glyphicon glyphicon-eye-open"></i>Signup</h4></a>

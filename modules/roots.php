@@ -4,14 +4,23 @@
 $f3=require('lib/base.php');
 //$f3->set('CACHE','memcache=localhost');
 
-//connection to database
-require("db.php"); 
+
+
+//this here is sending e-mail module
+require('send_email.php');
+
 
 //setting up basic rooting
 
 $f3->route('GET /',
     function() {
         echo View::instance()->render('views/index_page.php');
+    }
+);
+
+$f3->route('GET /arezki',
+    function() {
+        echo View::instance()->render('views/arezki.php');
     }
 );
 //$f3->get('var')
@@ -57,21 +66,38 @@ $f3->route('POST /register_ajax',
     }
 );
 
-$f3->route('GET /verify_email@name@link',
+
+
+$f3->route('GET /foo/@arg1/@arg2',
     function() {
-        //getting parametres from get query:
-        $name = $f3->get('PARAMS.name');
-        $link = $f3->get('PARAMS.link');
+
+    }
+);
+
+
+
+
+$f3->route('GET /arezki1',
+    function() {
+        echo View::instance()->render('views/arezki1.php');
+    }
+);
+
+$f3->route('GET /verify_email/@arg1/@arg2',
+
+    function($f3,$params) {
         
-        echo $name+" "+$link;
+    $link =  $params['arg1'];
+    $name =  $params['arg2'];
         
-       // emailVerification($link, $name);
+        emailVerification($link, $name);
         
         //echo View::instance()->render('views/authorised_zone.php');
         
         
     }
 );
+
 
 //SECTION FOR REUSABLE FUNCTIONS
 
@@ -93,19 +119,24 @@ function isUserLogged(){
 // This function queries database and gets row for user with encripted password link,
 // if it doesnt get row in the querry it is asumed that query parametres ar wrong
 
+
+
+
+
 function emailVerification($link,$user){
-    
-    
+
+    //connection to database
+require("db.php"); 
      if($link!="") 
     { 
         // This query retreives the user's information from the database using 
         // their username. 
         $query = "SELECT id, username, password, salt, email FROM user 
-                  WHERE username = :username and password = :link;"; 
+                  WHERE email = :email and password = :link;"; 
          
         // The parameter values 
         $query_params = array( 
-            ':username' => $user,
+            ':email' => $user,
             ':link' => $link
         ); 
          
@@ -120,7 +151,7 @@ function emailVerification($link,$user){
          
         // This variable tells us whether the user has successfully logged in or not. 
         // We initialize it to false, assuming they have not.
-        $login_ok = false; 
+        $login_ok = false;
          
         // Retrieve the user data from the database.  If $row is false, then the username 
         // they entered is not registered. 
