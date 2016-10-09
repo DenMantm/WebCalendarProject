@@ -4,6 +4,9 @@
 $f3=require('lib/base.php');
 //$f3->set('CACHE','memcache=localhost');
 
+//connection to database
+require("db.php"); 
+
 //setting up basic rooting
 
 $f3->route('GET /',
@@ -33,6 +36,7 @@ $f3->route('GET /authorised_zone',
     }
 );
 
+
 $f3->route('GET /logout',
     function() {
     // We remove the user's data from the session
@@ -58,11 +62,31 @@ $f3->route('POST /register_ajax',
         require("registration/register_ajax.php"); 
     }
 );
+<<<<<<< HEAD
 $f3->route('GET /arezki1',
     function() {
         echo View::instance()->render('views/arezki1.php');
     }
 );
+=======
+
+$f3->route('GET /verify_email@name@link',
+    function() {
+        //getting parametres from get query:
+        $name = $f3->get('PARAMS.name');
+        $link = $f3->get('PARAMS.link');
+        
+        echo $name+" "+$link;
+        
+       // emailVerification($link, $name);
+        
+        //echo View::instance()->render('views/authorised_zone.php');
+        
+        
+    }
+);
+
+>>>>>>> 4c5b8187e80d693b00ab8c90f21d082b0aa1f993
 //SECTION FOR REUSABLE FUNCTIONS
 
 //Creating function to check if user is logged in to session
@@ -80,6 +104,52 @@ function isUserLogged(){
             else{return true;}
 }
 
+// This function queries database and gets row for user with encripted password link,
+// if it doesnt get row in the querry it is asumed that query parametres ar wrong
+
+function emailVerification($link,$user){
+    
+    
+     if($link!="") 
+    { 
+        // This query retreives the user's information from the database using 
+        // their username. 
+        $query = "SELECT id, username, password, salt, email FROM user 
+                  WHERE username = :username and password = :link;"; 
+         
+        // The parameter values 
+        $query_params = array( 
+            ':username' => $user,
+            ':link' => $link
+        ); 
+         
+        try { 
+            // Execute the query against the database 
+            $stmt = $db->prepare($query); 
+            $result = $stmt->execute($query_params); 
+        } 
+        catch(PDOException $ex) { 
+            die("Failed to run query: " . $ex->getMessage()); 
+        } 
+         
+        // This variable tells us whether the user has successfully logged in or not. 
+        // We initialize it to false, assuming they have not.
+        $login_ok = false; 
+         
+        // Retrieve the user data from the database.  If $row is false, then the username 
+        // they entered is not registered. 
+        $row = $stmt->fetch(); 
+        if($row) 
+        { 
+            echo "verified";
+        }
+        else { 
+            echo "failed";
+            } 
+    } 
+    
+    
+}
 
 //kicking off server
 $f3->run();
