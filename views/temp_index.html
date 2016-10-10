@@ -160,6 +160,32 @@ $("#ajax_register").click(function(){
 });
 
 
+//request for e-mail recovery
+
+$("#ajax_retrieve_password").click(function(){
+    $.post("/retrieve_password",
+    {
+        password: $('#r_email_ajax').val()
+        //alert($('#user_name_ajax').val())
+    },
+    function(response, status,result){
+      response = JSON.parse(response);
+       
+        if(response.key=="pass"){
+          //CODE recovery succesful
+            alert("E-mail sent, please check your e-mail");
+        }
+        else{
+          //CODE IF wrong e-mail
+          console.log(response)
+          console.log(response.key)
+             alert("This e-mail have not been registered");
+        }
+        
+    });
+});
+
+
 
     
 </script>

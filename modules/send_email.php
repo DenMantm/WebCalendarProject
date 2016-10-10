@@ -11,7 +11,7 @@ $json_string = array(
   'to' => array(
     $email_adress
   ),
-  'category' => 'test_category'
+  'category' => 'CalendarApplication'
 );
 
 
@@ -23,7 +23,7 @@ $params = array(
     'subject'   => $email_subject,
     'html'      => $email_body,
     'text'      => $email_body,
-    'from'      => 'CalendarApplication@Mywebsite.com',
+    'from'      => 'CalendarApplication@nciStudentProject.ie',
   );
 
 

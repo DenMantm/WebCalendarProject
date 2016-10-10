@@ -12,7 +12,7 @@
     { 
         // This query retreives the user's information from the database using 
         // their username. 
-        $query = "SELECT id, username, password, salt, email FROM user 
+        $query = "SELECT id, username, password, salt, email,email_verified FROM user 
                   WHERE username = :username;"; 
          
         // The parameter values 
@@ -51,7 +51,7 @@
                 unset($row['password']); 
                 //saving user info in session variable
                  $_SESSION['user'] = $row;
-                 $_SESSION['logged'] = true; 
+                 $_SESSION['logged'] = true;
                  
                  
                 //returning to ajax script result

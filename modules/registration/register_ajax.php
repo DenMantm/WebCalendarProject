@@ -4,13 +4,13 @@
     require("modules/db.php"); 
     $temp_password = "";
     // This if statement checks to determine whether the registration form has been submitted 
-    // If it has, then the registration code is run, otherwise the form is displayed 
+    // If it has, then the registration code is run, otherwise the form is displayed
     if(!empty($_POST)) 
     { 
         // Ensure that the user has entered a non-empty username 
         if(empty($_POST['username'])) 
         { 
-            die("Please enter a username."); 
+            die("Please enter a username.");
         } 
          
         // Ensure that the user has entered a non-empty password 

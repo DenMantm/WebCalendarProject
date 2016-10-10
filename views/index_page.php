@@ -184,11 +184,11 @@
 	<form action="/retrievePassword" method="post">
 		<div class="form-group">
 			<label>Email</label>
-			<input id='email_retrieve' type="text" class="form-control input-lg" name="email">
+			<input id='retrieve_email_ajax' type="text" class="form-control input-lg" name="email">
 		</div>
 	</form>
 	<div style='display:none;' id='message_retrieve' class="alert alert-danger"></div>
-	<button id='retrieve_index' type="submit" class="btn btn-success">Send renewal link</button>
+	<button id='ajax_retrieve_password' type="submit" class="btn btn-success">Send renewal link</button>
 	<hr>
                     
 	<p>Need to login? <a href="#login_modal" data-dismiss="modal"  data-toggle="modal">Login</a></p>
@@ -259,6 +259,38 @@ $("#ajax_register").click(function(){
           //CODE DATABASE ERROR
 
              alert(response.key);
+        }
+        
+    });
+});
+
+
+//request for e-mail recovery
+
+$("#ajax_retrieve_password").click(function(){
+  console.log("Res: "+ $('#r_email_ajax').val());
+    $.post("/retrieve_password",
+    {
+        email: $('#retrieve_email_ajax').val()
+        //alert($('#user_name_ajax').val())
+    },
+    function(response, status,result){
+      console.log(response);
+      response = JSON.parse(response);
+      
+       
+        if(response.key=="p_recovery_success"){
+          //CODE recovery succesful
+            alert("E-mail sent, please check your e-mail");
+        }
+        else if (response.key=="p_recovery_fail"){
+                    //CODE IF wrong e-mail
+          console.log(response)
+          console.log(response.key)
+             alert("This e-mail have not been registered");
+        }
+        else{
+            alert(response);
         }
         
     });
