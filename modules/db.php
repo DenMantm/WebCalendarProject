@@ -125,4 +125,4 @@ class Database
 
     session_start(); 
 
-   
+   ?>

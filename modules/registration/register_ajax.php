@@ -2,7 +2,7 @@
 
     // First we execute our common code to connection to the database and start the session 
     require("modules/db.php"); 
-     
+    $temp_password = "";
     // This if statement checks to determine whether the registration form has been submitted 
     // If it has, then the registration code is run, otherwise the form is displayed 
     if(!empty($_POST)) 
@@ -112,7 +112,8 @@
         for($round = 0; $round < 65536; $round++) { 
             $password = hash('sha256', $password . $salt); 
         } 
-         
+         global $temp_password;
+         $temp_password = $password;
         // Here we prepare our tokens for insertion into the SQL query.  We do not 
         // store the original password; only the hashed version of it.   
         $query_params = array( 
@@ -133,8 +134,100 @@
                 die();
         } 
          
-        // This redirects the user back to the login page after they register
         
+        
+        
+        
+        //this here is sending e-mail module
+        
+        
+        $email_adress = $_POST['email'];
+        $email_subject = 'e-mail verification e-mail';
+        $link_server_address = 'http://www.'.$_SERVER['HTTP_HOST'];
+        $email_link = $link_server_address.'/verify_email/'.$temp_password.'/'.$email_adress;
+        $email_body = '<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Title</title>
+  </head>
+  <body class="">
+    <table border="0" cellpadding="0" cellspacing="0" class="body">
+      <tr>
+        <td>&nbsp;</td>
+        <td class="container">
+          <div class="content">
+
+            <!-- START CENTERED WHITE CONTAINER -->
+            <table class="main">
+
+              <!-- START MAIN CONTENT AREA -->
+              <tr>
+                <td class="wrapper">
+                  <table border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td>
+                        <p>Hi there,</p>
+                        <p>Verification e-mail for '.$email_adress.'</p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+                          <tbody>
+                            <tr>
+                              <td align="left">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tbody>
+                                    <tr>
+                                      <td> <a href="'.$email_link.'">Verify e-mail</a> </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <p>If you dont verify your e-mail address your accouunt will expire...</p>
+                        <p>Good luck! Hope it works.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- END MAIN CONTENT AREA -->
+              </table>
+
+            <!-- START FOOTER -->
+            <div class="footer">
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="content-block">
+                    <span class="apple-link">CalendarApplication</span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <!-- END FOOTER -->
+            
+<!-- END CENTERED WHITE CONTAINER --></div>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </body>
+</html>';
+        sendEmail($email_adress,$email_subject,$email_body);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        // This redirects the user back to the login page after they register
         
         //REGISTRATION SUCCESFULL
         $response = array("key"=>"pass");
