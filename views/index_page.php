@@ -180,7 +180,7 @@
                 </div>
                 <div class="modal-body">
                     
-                    	<!-- LOGIN FORM -->
+                    	<!-- RESTORE FORM -->
 	<form action="/retrievePassword" method="post">
 		<div class="form-group">
 			<label>Email</label>
@@ -269,7 +269,7 @@ $("#ajax_register").click(function(){
 
 $("#ajax_retrieve_password").click(function(){
   console.log("Res: "+ $('#r_email_ajax').val());
-    $.post("/retrieve_password",
+    $.post("/email_retrieve_password",
     {
         email: $('#retrieve_email_ajax').val()
         //alert($('#user_name_ajax').val())
