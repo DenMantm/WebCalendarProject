@@ -321,7 +321,6 @@ require('partials/navbar.php');
 
 
 
-   
 
 
 
