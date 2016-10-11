@@ -23,6 +23,22 @@
   <script type="text/javascript" src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
   <!--adding jquerry-->
   <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>-->
+  <script>
+  /*global $*/
+    function scrollIntoView(element, container) {
+      var containerTop = $(container).scrollTop(); 
+      var containerBottom = containerTop + $(container).height(); 
+      var elemTop = element.offsetTop;
+      var elemBottom = elemTop + $(element).height(); 
+      if (elemTop < containerTop) {
+        $(container).scrollTop(elemTop);
+      } else if (elemBottom > containerBottom) {
+        $(container).scrollTop(elemBottom - $(container).height());
+      }
+    }
+    
+    scrollIntoView('#today','#calendar')
+  </script>
 </head>
 
 <body>
@@ -91,51 +107,28 @@ require('partials/navbar.php');
     <!--##################-->
     
       <div class="col-md-3">
+        <div id="calendar" class="dragscroll" style="height: 500px; overflow: scroll; cursor: grab; cursor : -o-grab; cursor : -moz-grab; cursor : -webkit-grab;">
         <table class="border bordered striped hovered cell-hovered table">
-          <tr>
-            <td>
-              01 Mon
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              02 Tue
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              03 Wed
-            </td>
-            <td>
-              Meeting: 8:00
-            </td>
-          </tr>
-          <tr>
-            <td>
-              04 Thur
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              05 Fri
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              06 Sat
-            </td>
-            <td>
-            </td>
-          </tr>
+          
+
+
+          <?php
+    
+          for($i=-20 ; $i<20 ; $i++){
+             $date = date("d", time() + 60 * 60 * 24 * $i) ;
+             $weekday = date("D", time() + 60 * 60 * 24 * $i);
+             $month = date("F", time() + 60 * 60 * 24 * $i);
+             if ($date == "01"){
+               echo("<tr><td>".$month."</td></tr><tr><td>".$date." ".$weekday."</td><td></td></tr>");
+             } elseif ($date == date("d")) {
+              echo("<tr id='today'><td><b>".$date." ".$weekday."</b></td><td></td></tr>");
+             } else {
+              echo("<tr><td>".$date." ".$weekday."</td><td></td></tr>");
+             }
+          }
+          ?>
         </table>
+        </div>
       </div>
 
     <!--#########################-->
@@ -144,123 +137,22 @@ require('partials/navbar.php');
 
       <div class="col-md-3">
         <!--Wrap div to allow draggable scroll TODO: size of the window will have to scale to the size of the browser-->
-         <div class="dragscroll" style="width: 420px; height: 500px; overflow: scroll; cursor: grab; cursor : -o-grab; cursor : -moz-grab; cursor : -webkit-grab;">
+         <div class="dragscroll" style="height: 500px; overflow: scroll; cursor: grab; cursor : -o-grab; cursor : -moz-grab; cursor : -webkit-grab;">
            
           <!--Table itself.-->
         <table class="border bordered striped hovered cell-hovered table">
-          <tr>
-            <td>
-              00:00
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              00:30
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              01:00
-            </td>
-            <td>
+                    <?php
+    
+          for($i=-12 ; $i<12 ; $i++){
+             $hour = date("H", time() + 60 * 60 * $i) ;
+             $weekday = date("D", time() + 60 * 60 * 24 * $i);
+             $month = date("M", time() + 60 * 60 * 24 * $i);
 
-            </td>
-          </tr>
-          <tr>
-            <td>
-              01:30
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              02:00
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              02:30
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              03:00
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              03:30
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              04:00
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              04:30
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              05:00
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              05:30
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              06:00
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              06:30
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              07:00
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              07:30
-            </td>
-            <td>
-            </td>
-          </tr>
+              echo("<tr><td>".$hour.":00</td><td></td></tr>");
+             
+          }
+          ?>
+        
           <tr>
             <td>
               08:00
