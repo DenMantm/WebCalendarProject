@@ -28,20 +28,29 @@
   <script type="text/javascript" src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
   <script>
     /*global $*/
-    function scrollIntoView(element, container) {
-      var containerTop = $(container).scrollTop();
-      var containerBottom = containerTop + $(container).height();
-      var elemTop = element.get(0).offsetTop;
-      var elemBottom = elemTop + $(element).height();
-      if (elemTop < containerTop) {
-        $(container).scrollTop(elemTop);
-      }
-      else if (elemBottom > containerBottom) {
-        $(container).scrollTop(elemBottom - $(container).height());
-      }
-    }
 
-    scrollIntoView('#today', '#calendar')
+    $.fn.followTo = function (pos) {
+    var $this = this,
+        $window = $(window);
+
+    $window.scroll(function (e) {
+        if ($window.scrollTop() > pos) {
+            $this.css({
+                position: 'absolute',
+                top: pos
+            });
+        } else {
+            $this.css({
+                position: 'fixed',
+                top: 0
+            });
+        }
+    });
+};
+
+$('#calendar').followTo(250);
+    
+
   </script>
 </head>
 
