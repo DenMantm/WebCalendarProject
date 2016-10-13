@@ -1,7 +1,13 @@
 
 <?php
 session_start();
+
+
 require('../modules/db.php');
+
+
+echo htmlentities($_SESSION['user'][':username'], ENT_QUOTES, 'UTF-8'); 
+
 If(isset($_POST['submit'])){
     try {
 //     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);

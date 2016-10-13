@@ -67,7 +67,7 @@ $f3->route('POST /login_ajax',
     }
 );
 
-$f3->route('POST /register_ajax',
+$f3->route('GET /register_ajax',
     function() {
         
         require("registration/register_ajax.php"); 
@@ -117,6 +117,13 @@ $f3->route('GET /arezki1',
         echo View::instance()->render('views/arezki1.php');
     }
 );
+
+$f3->route('GET /backend',
+    function() {
+        echo View::instance()->render('views/backend/index.php');
+    }
+);
+
 
 $f3->route('GET /verify_email/@arg1/@arg2',
 

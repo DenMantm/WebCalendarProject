@@ -2,7 +2,7 @@
 
 function sendEmail($email_adress,$email_subject,$email_body){
     
-    $url = 'https://api.sendgrid.com/';
+$url = 'https://api.sendgrid.com/';
 $user = 'CalendarApplication';
 $pass = 'calendarapplication123';
 
