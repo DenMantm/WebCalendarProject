@@ -25,8 +25,14 @@ https://fatfreeframework.com/user-guide
  
  * populate the table with this query:
  * (Dont forget to create database, then create user on database, then grant all access rights to new database to that user)
+ * 
  
-                                                    CREATE TABLE IF NOT EXISTS `user` (
+
+
+ // This is the DDL for the user table
+ 
+                         
+                           CREATE TABLE IF NOT EXISTS `user` (
                                                   `id` int(11) NOT NULL AUTO_INCREMENT,
                                                   `email_verified` int(1) DEFAULT 0,
                                                   `username` varchar(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
@@ -42,4 +48,15 @@ https://fatfreeframework.com/user-guide
 * go to common.php and change my username with yours and you are good to go
  
  
+
+// This is the DDL for the task table
+
+CREATE TABLE IF NOT EXISTS `task` (
+              `id` int(11) NOT NULL AUTO_INCREMENT,
+              `task_date` timestamp default current_timestamp ON UPDATE CURRENT_TIMESTAMP,
+              `task_note` varchar (255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+                
+     PRIMARY KEY (`id`),
+                 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=32 ;
+
  

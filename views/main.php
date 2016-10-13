@@ -275,7 +275,7 @@ require('partials/navbar.php');
 
           </div>
         </div>
-
+      </div>     
 
 
 
