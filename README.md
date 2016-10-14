@@ -1,16 +1,17 @@
 # WebCalendarProject
 This is 3rd year project
 
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 How To make e-mail sending system work::
  In the copnsole type: sudo apt-get update
                        sudo apt-get install php5-curl
-
-
+                       sudo service apache2 restart
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 The good idea is to use PHP Framework:
 https://fatfreeframework.com/user-guide
 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
  Hi guys, I added the login and register pages. You can connect
  to the cloud9 database by initiating the database ( mysql-ctl cli )
@@ -24,9 +25,16 @@ https://fatfreeframework.com/user-guide
  
  * populate the table with this query:
  * (Dont forget to create database, then create user on database, then grant all access rights to new database to that user)
+ * 
  
-                                                    CREATE TABLE IF NOT EXISTS `user` (
+
+
+ // This is the DDL for the user table
+ 
+                         
+                           CREATE TABLE IF NOT EXISTS `user` (
                                                   `id` int(11) NOT NULL AUTO_INCREMENT,
+                                                  `email_verified` int(1) DEFAULT 0,
                                                   `username` varchar(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
                                                   `password` char(64) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
                                                   `email` varchar(64) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
@@ -40,4 +48,15 @@ https://fatfreeframework.com/user-guide
 * go to common.php and change my username with yours and you are good to go
  
  
+
+// This is the DDL for the task table
+
+CREATE TABLE IF NOT EXISTS `task` (
+              `id` int(11) NOT NULL AUTO_INCREMENT,
+              `task_date` timestamp default current_timestamp ON UPDATE CURRENT_TIMESTAMP,
+              `task_note` varchar (255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+                
+     PRIMARY KEY (`id`),
+                 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=32 ;
+
  

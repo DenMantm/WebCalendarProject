@@ -1,0 +1,23 @@
+.borderless_cal {
+  overflow: hidden;
+  cursor: grab; 
+  cursor : -o-grab; 
+  cursor : -moz-grab; 
+  cursor : -webkit-grab;
+}
+
+.remove_padding {
+    padding: 0px;
+}
+
+.remove_right_padding {
+    padding-right:  0px;
+}
+
+.remove_margin {
+    margin: 0px;
+}
+
+.dark {
+    background-color: #4d4d4d;
+}

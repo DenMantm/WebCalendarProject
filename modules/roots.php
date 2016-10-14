@@ -13,8 +13,15 @@ require('send_email.php');
 //setting up basic rooting
 
 $f3->route('GET /',
-    function() {
-        echo View::instance()->render('views/index_page.php');
+    function($f3) {
+                        session_start();
+                if($_SESSION['logged'] == true ) {
+                    $f3->reroute('/main');
+                }
+                else{
+                    echo View::instance()->render('views/index_page.php');
+                }
+
     }
 );
 
@@ -34,11 +41,12 @@ $f3->route('GET /main',
 
 $f3->route('GET /authorised_zone',
     function() {
+        
         isUserLogged();
+        
         echo View::instance()->render('views/authorised_zone.php');
     }
 );
-
 
 $f3->route('GET /logout',
     function() {
@@ -59,21 +67,48 @@ $f3->route('POST /login_ajax',
     }
 );
 
-$f3->route('POST /register_ajax',
+$f3->route('GET /register_ajax',
     function() {
         
         require("registration/register_ajax.php"); 
     }
 );
 
-
-
-$f3->route('GET /foo/@arg1/@arg2',
+$f3->route('POST /email_retrieve_password',
     function() {
-
+        
+        require("registration/retrieve_password.php"); 
     }
 );
 
+$f3->route('GET /retrieve_password/@arg1/@arg2',
+
+    function($f3,$params) {
+        
+    $link =  $params['arg1'];
+    $name =  $params['arg2'];
+        
+        retrieve_password($name,$link);
+        
+    }
+);
+
+$f3->route('POST /create_new_password',
+    function() {
+        
+               session_start();
+               $user =  $_SESSION['recover_user'];
+               $link =  $_SESSION['recover_link'];
+        
+       $newPassword =  $_POST['new_password'];
+       
+       
+        
+        change_password($user,$link,$newPassword);
+        
+        
+    }
+);
 
 
 
@@ -83,18 +118,22 @@ $f3->route('GET /arezki1',
     }
 );
 
+$f3->route('GET /backend',
+    function() {
+        echo View::instance()->render('views/backend/index.php');
+    }
+);
+
+
 $f3->route('GET /verify_email/@arg1/@arg2',
 
     function($f3,$params) {
         
     $link =  $params['arg1'];
     $name =  $params['arg2'];
-        
+
         emailVerification($link, $name);
-        
-        //echo View::instance()->render('views/authorised_zone.php');
-        
-        
+  
     }
 );
 
@@ -119,19 +158,15 @@ function isUserLogged(){
 // This function queries database and gets row for user with encripted password link,
 // if it doesnt get row in the querry it is asumed that query parametres ar wrong
 
-
-
-
-
-function emailVerification($link,$user){
-
-    //connection to database
+function retrieve_password($user,$link){
+    
+       //connection to database
 require("db.php"); 
      if($link!="") 
     { 
         // This query retreives the user's information from the database using 
         // their username. 
-        $query = "SELECT id, username, password, salt, email FROM user 
+        $query = "SELECT id, username, email_verified, password, salt, email FROM user 
                   WHERE email = :email and password = :link;"; 
          
         // The parameter values 
@@ -148,20 +183,150 @@ require("db.php");
         catch(PDOException $ex) { 
             die("Failed to run query: " . $ex->getMessage()); 
         } 
+         $row = $stmt->fetch(); 
          
-        // This variable tells us whether the user has successfully logged in or not. 
-        // We initialize it to false, assuming they have not.
-        $login_ok = false;
-         
-        // Retrieve the user data from the database.  If $row is false, then the username 
-        // they entered is not registered. 
-        $row = $stmt->fetch(); 
-        if($row) 
-        { 
-            echo "verified";
+        
+        if($row) { 
+                session_start();
+                $_SESSION['recover_user'] = $user;
+                $_SESSION['recover_link'] = $link;
+            
+            echo View::instance()->render('views/verification/recover_password.html');
         }
         else { 
-            echo "failed";
+            echo View::instance()->render('views/verification/information_verification_failed.html');
+            } 
+    } 
+    
+    
+    
+}
+
+function change_password($user,$link,$newPassword){
+    
+       
+       //connection to database
+require("db.php"); 
+     if($link!="") 
+    { 
+        // This query retreives the user's information from the database using 
+        // their username. 
+        $query = "SELECT id, username, email_verified, password, salt, email FROM user 
+                  WHERE email = :email and password = :link;"; 
+         
+        // The parameter values 
+        $query_params = array( 
+            ':email' => $user,
+            ':link' => $link
+        ); 
+         
+        try { 
+            // Execute the query against the database 
+            $stmt = $db->prepare($query); 
+            $result = $stmt->execute($query_params); 
+        } 
+        catch(PDOException $ex) { 
+            die("Failed to run query: " . $ex->getMessage()); 
+        } 
+         $row = $stmt->fetch(); 
+         
+        
+        if($row) { 
+            
+             $salt = dechex(mt_rand(0, 2147483647)) . dechex(mt_rand(0, 2147483647)); 
+         
+            $password = hash('sha256', $newPassword . $salt); 
+            
+            for($round = 0; $round < 65536; $round++) { 
+            $password = hash('sha256', $password . $salt); 
+        } 
+            
+              $query = "UPDATE user SET password = :password, salt = :salt where email = :email;";
+                     $query_params = array( 
+                         ':email' => $user,
+                         ':password' => $password,
+                         ':salt' => $salt
+                 ); 
+                    try { 
+            // Execute the query against the database 
+            $stmt = $db->prepare($query); 
+            $result = $stmt->execute($query_params); 
+        } 
+        catch(PDOException $ex) { 
+            die("Failed to run query: " . $ex->getMessage()); 
+        } 
+            
+            
+            echo View::instance()->render('views/verification/password_changed.html');
+        }
+        else { 
+            echo View::instance()->render('views/verification/information_verification_failed.html');
+            } 
+    } 
+    else{
+        
+        echo View::instance()->render('views/verification/information_verification_failed.html');
+    }
+    
+    
+    
+    
+}
+
+
+
+function emailVerification($link,$user){
+
+    //connection to database
+require("db.php"); 
+     if($link!="") 
+    { 
+        // This query retreives the user's information from the database using 
+        // their username. 
+        $query = "SELECT id, username, email_verified, password, salt, email FROM user 
+                  WHERE email = :email and password = :link;"; 
+         
+        // The parameter values 
+        $query_params = array( 
+            ':email' => $user,
+            ':link' => $link
+        ); 
+         
+        try { 
+            // Execute the query against the database 
+            $stmt = $db->prepare($query); 
+            $result = $stmt->execute($query_params); 
+        } 
+        catch(PDOException $ex) { 
+            die("Failed to run query: " . $ex->getMessage()); 
+        } 
+         $row = $stmt->fetch(); 
+         
+         if($row['email_verified'] == 1){
+             
+             echo View::instance()->render('views/verification/information_already_verified_email.html');
+             return;
+             
+         }
+        
+        if($row) { 
+                 $query = "UPDATE user SET email_verified = 1 where email = :email;";
+                     $query_params = array( 
+                         ':email' => $user
+                 ); 
+            
+                    try { 
+            // Execute the query against the database 
+            $stmt = $db->prepare($query); 
+            $result = $stmt->execute($query_params); 
+        } 
+        catch(PDOException $ex) { 
+            die("Failed to run query: " . $ex->getMessage()); 
+        } 
+            echo View::instance()->render('views/verification/information_verified_email.html');
+        }
+        else { 
+            echo View::instance()->render('views/verification/information_verification_failed.html');
             } 
     } 
     
