@@ -341,6 +341,7 @@ include('partials/navbar.php');
 
           </div>
         </div>
+<<<<<<< HEAD
         </div>
 <div class="content_wrapper">
 	
@@ -353,6 +354,11 @@ include('partials/navbar.php');
     <img src="images/loading.gif" id="LoadingImage" style="display:none" />
     </div>
 </div>
+=======
+      </div>     
+
+
+>>>>>>> 568bb388e3ba74ef7950f41e7c650ac3b180973e
 
 
 

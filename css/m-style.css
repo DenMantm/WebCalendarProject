@@ -1,0 +1,139 @@
+html,
+body{
+	height: 100%;
+}
+/*nice font smoothing*/
+body{
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	color:#6c6f73;
+}
+
+h1,h2,h4,h5{
+	color:#333;
+	text-shadow: 4px 4px 6px rgba(150, 150, 150, 1);
+}
+
+
+h6{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size:1rem;
+	letter-spacing: 0.1rem;
+}
+
+.img{
+	max-width: 100%;
+}
+/*remove default blockquote styling*/
+.blockquote{
+	font-size: 1.6rem;
+	color: #333;
+	border: none;
+	padding:0;
+}
+
+.blockquote-footer{
+	margin: 1rem 0 0 ;
+}
+
+#stage{
+	/* image obtained from https://newevolutiondesigns.com/images/freebies/texture-wallpaper-18.jpg*/
+	background: url('../img/wooden-wall.jpg') center center no-repeat;
+	background-size: cover;
+	color: white;
+	height:80%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+#stage-caption{
+	font-size: 1.4rem;
+	font-weight: 200;
+	max-width: 60rem;
+	margin:0 auto;
+	text-align: center;
+}
+
+#stage-caption{
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+
+}
+
+#feature-one{
+	position: relative;
+
+}
+
+#feature-one::after{
+	background-color: #333;
+	opacity:0.8;
+	position: absolute;
+	z-index: -1;
+	
+}
+
+.feature-content{
+	padding: 4rem 0;
+	overflow: hidden;
+}
+
+#vidMain{
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+/*thick hr mid page*/
+.thickOne{
+	height: 0.5rem;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#f1Text{
+	background-color: #333;
+}
+.footer{
+	text-align: center;
+
+}
+
+.main-header{
+	color: white;
+}
+
+.feature-dark{
+	background: #262f36;
+	color: white;
+	border-radius: 25px;
+}
+
+/***********************
+************************
+***back to top button***
+************************
+************************/
+
+/* http://bootsnipp.com/snippets/featured/link-to-top-page */
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    display:none;
+}
+
+/***********************
+*********end of*********
+***back to top button***
+************************
+************************/
+
+#off-one{
+	background: #000
+}

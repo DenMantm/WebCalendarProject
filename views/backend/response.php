@@ -22,7 +22,7 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
      $insert_row->bindParam(':var2',$var2, PDO::PARAM_STR );
     $insert_row->execute();
     $my_id = $db->lastInsertId();
-    echo $var2; 
+   
     }
        catch(PDOException $e)
 {
