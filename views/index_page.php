@@ -14,34 +14,6 @@
       <!-- scroll to top script -->
   <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
 
-    
-  
-  
-  
-  <script>
-  // back to top of page with smooth scroll
-    $(document).ready(function(){
-     $(window).scroll(function () {
-            if ($(this).scrollTop() > 50) {
-                $('#back-to-top').fadeIn();
-            } else {
-                $('#back-to-top').fadeOut();
-            }
-        });
-        // scroll body to 0px on click
-        $('#back-to-top').click(function () {
-            $('#back-to-top').tooltip('hide');
-            $('body,html').animate({
-                scrollTop: 0
-            }, 800);
-            return false;
-        });
-        
-        $('#back-to-top').tooltip('show');
-
-});
-  </script>
-
   <script type="text/javascript">
    // add script for div scroll here
   </script>
@@ -263,6 +235,33 @@
 	<script src="js/bootstrap.min.js"></script>
 	      <!--AJAX LOGIN SCRIPT-->
        <script src="js/registration_ajax.js"></script>
+       
+       
+       
+       
+        <script>
+  // back to top of page with smooth scroll
+    $(document).ready(function(){
+     $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('#back-to-top').tooltip('hide');
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+        
+        $('#back-to-top').tooltip('show');
+
+});
+  </script>
 
 
 </body>
