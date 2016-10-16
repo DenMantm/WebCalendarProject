@@ -67,7 +67,7 @@ $f3->route('POST /login_ajax',
     }
 );
 
-$f3->route('GET /register_ajax',
+$f3->route('POST /register_ajax',
     function() {
         
         require("registration/register_ajax.php"); 
@@ -80,6 +80,17 @@ $f3->route('POST /email_retrieve_password',
         require("registration/retrieve_password.php"); 
     }
 );
+
+$f3->route('POST /addNewTask',
+    function() {
+        require("response.php");
+       
+       
+    }
+);
+
+
+
 
 $f3->route('GET /retrieve_password/@arg1/@arg2',
 
@@ -118,11 +129,8 @@ $f3->route('GET /arezki1',
     }
 );
 
-$f3->route('GET /backend',
-    function() {
-        echo View::instance()->render('views/backend/index.php');
-    }
-);
+
+
 
 
 $f3->route('GET /verify_email/@arg1/@arg2',
