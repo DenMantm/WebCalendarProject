@@ -86,6 +86,17 @@ $f3->route('POST /email_retrieve_password',
     }
 );
 
+$f3->route('POST /addNewTask',
+    function() {
+        require("response.php");
+       
+       
+    }
+);
+
+
+
+
 $f3->route('GET /retrieve_password/@arg1/@arg2',
 
     function($f3,$params) {
@@ -123,11 +134,8 @@ $f3->route('GET /arezki1',
     }
 );
 
-$f3->route('GET /backend',
-    function() {
-        echo View::instance()->render('views/backend/index.php');
-    }
-);
+
+
 
 
 $f3->route('GET /verify_email/@arg1/@arg2',
