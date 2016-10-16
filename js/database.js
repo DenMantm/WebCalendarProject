@@ -1,11 +1,3 @@
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Ajax Add/Delete a Record with jQuery Fade In/Fade Out</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-
-<script type="text/javascript">
-
 
 $(document).ready(function() {
 
@@ -24,7 +16,7 @@ $(document).ready(function() {
 		 	var myData = 'content_txt='+ $("#contentText").val(); //build a post data structure
 			jQuery.ajax({
 			type: "POST", // HTTP method POST or GET
-			url: "response.php", //Where to make Ajax calls
+			url: "addtask", //Where to make Ajax calls
 			dataType:"text", // Data type, HTML, json etc.
 			data:myData, //Form variables
 			success:function(response){
@@ -54,7 +46,7 @@ $(document).ready(function() {
 		 
 			jQuery.ajax({
 			type: "POST", // HTTP method POST or GET
-			url: "response.php", //Where to make Ajax calls
+			url: "addtask", //Where to make Ajax calls
 			dataType:"text", // Data type, HTML, json etc.
 			data:myData, //Form variables
 			success:function(response){
@@ -69,31 +61,5 @@ $(document).ready(function() {
 	});
 
 });
-</script>
-<link href="css/style.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-	
-	
-	
-	
-	
-	<div class="content_wrapper">
-		
-		<ul id="responds">
-		
-		</ul>
-	
-	
-	    <div class="form_style">
-	    	
-		    <textarea name="content_txt" id="contentText" cols="45" rows="5" placeholder="Enter some text"></textarea>
-		    <button id="FormSubmit">Add record</button>
-		    <img src="images/loading.gif" id="LoadingImage" style="display:none" />
-		    
-	    </div>
-	    
-	</div>
-
-</body>
-</html>
+  
+  

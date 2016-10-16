@@ -26,6 +26,9 @@
   <script type='text/javascript' src="/js/bindings.js"></script>
   <!--Dragscroll used in calendar allowing scroll items by dragging them-->
   <script type="text/javascript" src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
+  
+  <!--this script is for the database exchange ajax/jquery-->
+  <script type='text/javascript' src="/js/database.js"></script>
   <script>
     /*global $*/
 
@@ -52,6 +55,10 @@ $('#calendar').followTo(250);
     
 
   </script>
+  
+<!--script for database-->
+  
+  
 </head>
 
 <body>
@@ -279,7 +286,17 @@ require('partials/navbar.php');
 
 
 
+<div class="content_wrapper">
+	
+<ul id="responds">
 
+</ul>
+    <div class="form_style">
+    <textarea name="content_txt" id="contentText" cols="45" rows="5" placeholder="Enter some text"></textarea>
+    <button id="FormSubmit">Add record</button>
+    <img src="images/loading.gif" id="LoadingImage" style="display:none" />
+    </div>
+</div>
 
 
 </body>
