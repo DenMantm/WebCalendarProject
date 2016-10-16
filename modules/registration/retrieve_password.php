@@ -11,7 +11,7 @@
     if(!empty($_POST)){
         // This query retreives the user's information from the database using 
         // their username. 
-        $query = "SELECT id, username, password, email FROM user 
+        $query = "SELECT userID, username, password, email FROM Users 
                   WHERE email = :email;";
          
         // The parameter values 

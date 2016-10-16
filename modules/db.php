@@ -9,7 +9,7 @@ class Database
         $username = "nciadmin"; 
         $password = "K7zSZ6uK524SnT6s"; 
         $host = "kamil-lasecki.ddns.net"; 
-        $dbname ="calendar";
+        $dbname ="calendar2";
     
         $options = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8');
     
@@ -62,7 +62,7 @@ class Database
     $username = "nciadmin"; 
     $password = "K7zSZ6uK524SnT6s"; 
     $host = "kamil-lasecki.ddns.net"; 
-    $dbname ="calendar"; 
+    $dbname ="calendar2"; 
 
     
 
