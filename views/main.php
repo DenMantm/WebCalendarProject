@@ -26,6 +26,9 @@
   <script type='text/javascript' src="/js/bindings.js"></script>
   <!--Dragscroll used in calendar allowing scroll items by dragging them-->
   <script type="text/javascript" src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
+  
+  <!--this script is for the database exchange ajax/jquery-->
+  <script type='text/javascript' src="/js/database.js"></script>
   <script>
     /*global $*/
 
@@ -342,6 +345,8 @@ include('partials/navbar.php');
           </div>
         </div>
         </div>
+
+
 <div class="content_wrapper">
 	
 <ul id="responds">
@@ -353,8 +358,6 @@ include('partials/navbar.php');
     <img src="images/loading.gif" id="LoadingImage" style="display:none" />
     </div>
 </div>
-
-
 
 
 </body>

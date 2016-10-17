@@ -66,6 +66,11 @@ $f3->route('POST /login_ajax',
         require("registration/login_ajax.php"); 
     }
 );
+$f3->route('POST /addtask',
+    function() {
+        require("response.php"); 
+    }
+);
 
 $f3->route('POST /register_ajax',
     function() {
