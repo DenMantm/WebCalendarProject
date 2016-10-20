@@ -9,3 +9,4 @@
 [10-Oct-2016 21:52:46 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/views/main.php on line 103
 [10-Oct-2016 22:06:50 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/views/main.php on line 132
 [10-Oct-2016 22:54:34 UTC] PHP Parse error:  syntax error, unexpected 'today' (T_STRING) in /home/ubuntu/workspace/views/main.php on line 124
+[19-Oct-2016 20:10:27 UTC] HTTP 404 (GET /roots.php)
