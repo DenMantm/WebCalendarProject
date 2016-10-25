@@ -12,14 +12,14 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
 	
 	// Insert sanitize string in record
 	
-	$insert_row = $db->prepare("INSERT INTO task (task_note,task_owner) 
-    VALUES (:var1,:var2)");
+	$insert_row = $db->prepare("INSERT INTO ajax (name) 
+    VALUES (:var1)");
     
     try{
   	
     $var2= $_SESSION['user']['username'];
     $insert_row->bindParam(':var1', $contentToSave, PDO::PARAM_STR );
-     $insert_row->bindParam(':var2',$var2, PDO::PARAM_STR );
+     //$insert_row->bindParam(':var2',$var2, PDO::PARAM_STR );
     $insert_row->execute();
     $my_id = $db->lastInsertId();
    
@@ -67,7 +67,7 @@ elseif(isset($_POST["recordToDelete"]) && strlen($_POST["recordToDelete"])>0 && 
 	//try deleting record using the record ID we received from POST
 	
 	
-	$delete_row = $db->prepare("DELETE FROM task WHERE id=(:var1)");
+	$delete_row = $db->prepare("DELETE FROM ajax WHERE id=(:var1)");
     
     try{
     $var1="$idToDelete";

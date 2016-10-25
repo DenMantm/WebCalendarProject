@@ -16,7 +16,7 @@ If(isset($_POST['submit'])){
 //   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
    // prepare sql and bind parameters
-   $stmt = $db->prepare("INSERT INTO task (task_note,task_owner,date)
+   $stmt = $db->prepare("INSERT INTO Tasks (description,subject,date)
     VALUES (:stu_name,:owner_name,:date)");
     $stmt->bindParam(':stu_name', $stu_name);
     $stmt->bindParam(':owner_name', $owner_name);
@@ -48,7 +48,7 @@ $conn = null;
 
 <?php
 
-$result = $db->prepare("SELECT task_note, Task_owner FROM task");
+$result = $db->prepare("SELECT description, subject FROM Meetings");
 $result->execute();
 
 while ($row = $result->fetch(PDO::FETCH_ASSOC))
