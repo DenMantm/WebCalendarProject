@@ -10,7 +10,7 @@
                 </li>
                 <li><a href="#">User Settings</a>
                 </li>
-                <li><a href="#">Calendar Settings</a>
+                <li><a href="check">Check Meetings</a>
                 </li>
                 <li><a href="/logout">Logout</a>
                 </li>

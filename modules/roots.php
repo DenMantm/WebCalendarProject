@@ -25,6 +25,21 @@ $f3->route('GET /',
     }
 );
 
+// root to check.php
+$f3->route('GET /check',
+    function($f3) {
+                        session_start();
+                if($_SESSION['logged'] == true ) {
+                    $f3->reroute('/views/check.php');
+                }
+                else{
+                    echo View::instance()->render('views/index_page.php');
+                }
+
+    }
+);
+
+
 $f3->route('GET /arezki',
     function() {
         echo View::instance()->render('views/arezki.php');

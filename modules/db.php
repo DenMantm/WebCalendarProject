@@ -6,10 +6,14 @@ class Database
     
     public function __construct()
     {
-        $username = "nciadmin"; 
-        $password = "K7zSZ6uK524SnT6s"; 
-        $host = "kamil-lasecki.ddns.net"; 
-        $dbname ="calendar2";
+        // $username = "nciadmin"; 
+        // $password = "K7zSZ6uK524SnT6s"; 
+        // $host = "kamil-lasecki.ddns.net"; 
+        // $dbname ="calendar2";
+    $username = "arezki"; 
+    $password = ""; 
+    $host = "127.0.0.1"; 
+    $dbname ="calendar"; 
     
         $options = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8');
     
@@ -47,22 +51,22 @@ class Database
 
     // These variables define the connection information fo MySQL database 
 
-   // $username = "arezki"; 
-    //$password = ""; 
-    //$host = "127.0.0.1"; 
-    //$dbname ="calendar"; 
-    // $username = "nciadmin"; 
-    // $password = "K7zSZ6uK524SnT6s"; 
-    // $host = "kamil-lasecki.ddns.net"; 
+    // $username = "arezki"; 
+    // $password = ""; 
+   
+        $username = "nciadmin"; 
+        $password = "K7zSZ6uK524SnT6s"; 
+        $host = "kamil-lasecki.ddns.net"; 
+        $dbname ="calendar2";
     // $dbname ="calenda
     // $username = "sql8138108"; 
     // $password = "YCLUJyxs9P"; 
     // $host = "sql8.freemysqlhosting.net"; 
     // $dbname ="sql8138108"; 
-    $username = "nciadmin"; 
-    $password = "K7zSZ6uK524SnT6s"; 
-    $host = "kamil-lasecki.ddns.net"; 
-    $dbname ="calendar2"; 
+    // $username = "nciadmin"; 
+    // $password = "K7zSZ6uK524SnT6s"; 
+    // $host = "kamil-lasecki.ddns.net"; 
+    // $dbname ="calendar2"; 
 
     
 

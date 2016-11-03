@@ -32,6 +32,8 @@ $(document).ready(function() {
 				$("#m_location").val('');
 				$("#btnSaveNewMeeting").show(); //show submit button
 				$("#LoadingImage").hide(); //hide loading image
+			//	$( "#newmeeting" ).hide();
+			$('#newmeeting').modal('hide');
 			
 
 			},
