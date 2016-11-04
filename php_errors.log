@@ -768,3 +768,5 @@ Stack trace:
 [03-Nov-2016 17:14:17 UTC] PHP Stack trace:
 [03-Nov-2016 17:14:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/views/filter.php:0
 [03-Nov-2016 17:15:11 UTC] PHP Fatal error:  Can't use method return value in write context in /home/ubuntu/workspace/views/filter.php on line 64
+[04-Nov-2016 14:32:09 UTC] HTTP 404 (GET /roots.php)
+[04-Nov-2016 14:33:44 UTC] HTTP 404 (GET /roots.php)

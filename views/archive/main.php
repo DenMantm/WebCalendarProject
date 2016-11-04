@@ -6,16 +6,6 @@
 <head>
   <title>Main</title>
 <?php include('partials/head.php') ?>
-
-
-<link href='calendarLib/fullcalendar.css' rel='stylesheet' />
-<link href='calendarLib/fullcalendar.print.css' rel='stylesheet' media='print' />
-<script src='calendarLib/lib/moment.min.js'></script>
-<script src='calendarLib/lib/jquery.min.js'></script>
-<script src='calendarLib/lib/jquery-ui.min.js'></script>
-<script src='calendarLib/fullcalendar.min.js'></script>
-
-
   <script>
     /*global $*/
 
@@ -44,110 +34,6 @@ $('#calendar').followTo(250);
   </script>
   <script type="text/javascript" src="../js/target.js"></script>
 
-  
-  
-  <script>
-
-	$(document).ready(function() {
-
-
-		/* initialize the external events
-		-----------------------------------------------------------------*/
-
-		$('#external-events .fc-event').each(function() {
-
-			// store data so the calendar knows to render an event upon drop
-			$(this).data('event', {
-				title: $.trim($(this).text()), // use the element's text as the event title
-				stick: true // maintain when user navigates (see docs on the renderEvent method)
-			});
-
-			// make the event draggable using jQuery UI
-			$(this).draggable({
-				zIndex: 999,
-				revert: true,      // will cause the event to go back to its
-				revertDuration: 0  //  original position after the drag
-			});
-
-		});
-
-
-		/* initialize the calendar
-		-----------------------------------------------------------------*/
-
-		$('#calendar').fullCalendar({
-			header: {
-				left: 'prev,next today',
-				center: 'title',
-				right: 'month,agendaWeek,agendaDay'
-			},
-			editable: true,
-			droppable: true, // this allows things to be dropped onto the calendar
-			drop: function() {
-				// is the "remove after drop" checkbox checked?
-				if ($('#drop-remove').is(':checked')) {
-					// if so, remove the element from the "Draggable Events" list
-					$(this).remove();
-				}
-			}
-		});
-
-
-	});
-
-</script>
-<style>
-
-	body {
-		margin-top: 40px;
-		text-align: center;
-		font-size: 14px;
-		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-	}
-		
-	#wrap {
-		width: 100%;
-		margin: 0 auto;
-	}
-		
-	#external-events {
-		float: left;
-		width: 150px;
-		padding: 0 10px;
-		border: 1px solid #ccc;
-		background: #eee;
-		text-align: left;
-	}
-		
-	#external-events h4 {
-		font-size: 16px;
-		margin-top: 0;
-		padding-top: 1em;
-	}
-		
-	#external-events .fc-event {
-		margin: 10px 0;
-		cursor: pointer;
-	}
-		
-	#external-events p {
-		margin: 1.5em 0;
-		font-size: 11px;
-		color: #666;
-	}
-		
-	#external-events p input {
-		margin: 0;
-		vertical-align: middle;
-	}
-
-	#calendar {
-		float: right;
-	
-	}
-
-</style>
-  
   
   
 </head>
@@ -213,46 +99,85 @@ include('partials/navbar.php');
       <!--###  Calendar ####-->
       <!--##################-->
 
-      <div class="col-md-6 remove_padding">
-	<div id='wrap'>
+      <div class="col-md-3 remove_padding">
+        <div id="calendar" class="dragscroll borderless_cal" style="height: 500px;">
+          <table class="border bordered striped hovered cell-hovered table remove_margin">
 
-		<div id='calendar'></div>
 
-		<div style='clear:both'></div>
 
-	</div>
+            <?php
+    
+          for($i=-20 ; $i<20 ; $i++){
+             $date = date("d", time() + 60 * 60 * 24 * $i) ;
+             $weekday = date("D", time() + 60 * 60 * 24 * $i);
+             $month = date("F", time() + 60 * 60 * 24 * $i);
+             if ($date == "01"){
+               echo("<tr><td>".$month."</td></tr><tr><td>".$date." ".$weekday."</td><td></td></tr>");
+             } elseif ($date == date("d")) {
+              echo("<tr id='today'><td><b>".$date." ".$weekday."</b></td><td></td></tr>");
+             } else {
+              echo("<tr><td>".$date." ".$weekday."</td><td></td></tr>");
+             }
+          }
+          ?>
+          </table>
+        </div>
+      </div>
+
+      <!--#########################-->
+      <!--###  Daily drilldown ####-->
+      <!--#########################-->
+
+      <div class="col-md-3 remove_padding">
+        <!--Wrap div to allow draggable scroll TODO: size of the window will have to scale to the size of the browser-->
+        <div class="dragscroll borderless_cal" style="height: 500px;">
+
+          <!--Table itself.-->
+          <table class="border bordered striped hovered cell-hovered table remove_margin">
+            <?php
+    
+          for($i=-12 ; $i<12 ; $i++){
+             $hour = date("H", time() + 60 * 60 * $i) ;
+              if ($hour == date("H")){
+                echo("<tr><td><b>".$hour.":00</b></td><td></td></tr>");
+              } else {
+                echo("<tr><td>".$hour.":00</td><td></td></tr>");
+              }
+              
+              
+             
+          }
+          ?>
+
+              <tr>
+                <td>
+                  08:00
+                </td>
+                <td onclick="$('#dialog').data('dialog').toggle()">Meeting
+                </td>
+              </tr>
+          </table>
+        </div>
       </div>
 
       <!--#################################-->
       <!--### Div with meeting details ####-->
       <!--#################################-->
 
+      <div id="dialog" data-role="dialog,draggable" class="dialog container" data-close-button="true" style="width: auto; height: auto; visibility: visible; left: 427px; top: 320.5px; cursor: auto; z-index: 1050;">
+        <h1>Meeting with famous hitman</h1>
+        <p>Discuss the details of the kidnapping and killing various people as and day to day exercise.</p>
+
+      </div>
 
       <!--####################-->
       <!--###  Notes area ####-->
       <!--####################-->
 
       <div class="col-md-4">
-        
-        
         <button type="button" id="newmeetingBtn" class="btn btn-default btn-lg btn-block" data-toggle="modal" data-target="#newmeeting">
             New meeting</button>
-            
-            
-                       <div id='external-events'>
-			<h4>Draggable Events</h4>
-			<div class='fc-event'>My Event 1</div>
-			<div class='fc-event'>My Event 2</div>
-			<div class='fc-event'>My Event 3</div>
-			<div class='fc-event'>My Event 4</div>
-			<div class='fc-event'>My Event 5</div>
-			<p>
-				<input type='checkbox' id='drop-remove' />
-				<label for='drop-remove'>remove after drop</label>
-			</p>
-		</div>  
-            
-        <div class="panel" style="width: 200px; z-index: auto; top: 100px; left: 250px;" data-role="draggable">
+        <div class="panel" style="width: 200px; z-index: auto; top: -2px; left: 50px;" data-role="draggable">
           <div class="heading">
             <span class="icon mif-file-text"></span>
             <span class="title">Note1</span>
@@ -267,7 +192,7 @@ include('partials/navbar.php');
           </div>
         </div>
 
-        <div class="panel" style="width: 200px; z-index: auto; top: 100px; left: 50px;" data-role="draggable">
+        <div class="panel" style="width: 200px; z-index: auto; top: -2px; left: 50px;" data-role="draggable">
           <div class="heading">
             <span class="icon mif-file-text"></span>
             <span class="title">Note2</span>
@@ -279,10 +204,6 @@ include('partials/navbar.php');
 
           </div>
         </div>
-        
-        
-        
-        
       </div>
     </div>
     <div class="row dark">

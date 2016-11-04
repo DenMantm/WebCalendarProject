@@ -6,14 +6,14 @@ class Database
     
     public function __construct()
     {
-        // $username = "nciadmin"; 
-        // $password = "K7zSZ6uK524SnT6s"; 
-        // $host = "kamil-lasecki.ddns.net"; 
-        // $dbname ="calendar2";
-    $username = "arezki"; 
-    $password = ""; 
-    $host = "127.0.0.1"; 
-    $dbname ="calendar"; 
+        $username = "nciadmin"; 
+        $password = "K7zSZ6uK524SnT6s"; 
+        $host = "kamil-lasecki.ddns.net"; 
+        $dbname ="calendar2";
+    // $username = "arezki"; 
+    // $password = ""; 
+    // $host = "127.0.0.1"; 
+    // $dbname ="calendar"; 
     
         $options = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8');
     

@@ -110,8 +110,6 @@ $f3->route('POST /addNewTask',
 );
 
 
-
-
 $f3->route('GET /retrieve_password/@arg1/@arg2',
 
     function($f3,$params) {
@@ -149,6 +147,18 @@ $f3->route('GET /arezki1',
     }
 );
 
+
+$f3->route('GET /calendar_example',
+    function() {
+        echo View::instance()->render('views/examples/calendar_example.php');
+    }
+);
+
+$f3->route('GET /calendar_example2',
+    function() {
+        echo View::instance()->render('views/examples/calendar_example2.php');
+    }
+);
 
 
 

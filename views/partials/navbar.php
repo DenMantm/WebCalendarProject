@@ -6,7 +6,7 @@
         </div>
         <div class="collapse navbar-collapse navbar-menubuilder">
             <ul class="nav navbar-nav navbar-left">
-                <li><a href="/">Calendar</a>
+                <li><a href="">Calendar</a>
                 </li>
                 <li><a href="#">User Settings</a>
                 </li>
