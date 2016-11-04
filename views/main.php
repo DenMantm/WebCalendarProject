@@ -14,6 +14,7 @@
 <script src='calendarLib/lib/jquery.min.js'></script>
 <script src='calendarLib/lib/jquery-ui.min.js'></script>
 <script src='calendarLib/fullcalendar.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
 
 
   <script>
@@ -59,7 +60,8 @@ $('#calendar').followTo(250);
 			// store data so the calendar knows to render an event upon drop
 			$(this).data('event', {
 				title: $.trim($(this).text()), // use the element's text as the event title
-				stick: true // maintain when user navigates (see docs on the renderEvent method)
+				stick: true, // maintain when user navigates (see docs on the renderEvent method)
+				color:$(this).css("background-color")
 			});
 
 			// make the event draggable using jQuery UI
@@ -241,10 +243,10 @@ include('partials/navbar.php');
             
                        <div id='external-events'>
 			<h4>Draggable Events</h4>
-			<div class='fc-event'>My Event 1</div>
-			<div class='fc-event'>My Event 2</div>
-			<div class='fc-event'>My Event 3</div>
-			<div class='fc-event'>My Event 4</div>
+			<div class='fc-event'>Event</div>
+			<div class='fc-event' style="background-color:red">Important Meeting</div>
+			<div class='fc-event' style="background-color:green">Scheduled Work</div>
+			<div class='fc-event' style="background-color:orange">Important</div>
 			<div class='fc-event'>My Event 5</div>
 			<p>
 				<input type='checkbox' id='drop-remove' />
