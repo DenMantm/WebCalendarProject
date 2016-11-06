@@ -1,3 +1,10 @@
+CHANGING MAIN APACHE CONFIG FILE::::
+
+sudo vi /etc/apache2/sites-enabled/001-cloud9.conf
+and adding after workspace www folder
+
+
+
 # WebCalendarProject
 This is 3rd year project
 

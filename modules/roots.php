@@ -19,7 +19,7 @@ $f3->route('GET /',
                     $f3->reroute('/main');
                 }
                 else{
-                    echo View::instance()->render('views/index_page.php');
+                    echo View::instance()->render('../views/index_page.php');
                 }
 
     }
@@ -30,10 +30,14 @@ $f3->route('GET /check',
     function($f3) {
                         session_start();
                 if($_SESSION['logged'] == true ) {
-                    $f3->reroute('/views/check.php');
+                    
+                    //$f3->reroute('../views/check.php');
+                    
+                    echo View::instance()->render('../views/check.php');
+                    
                 }
                 else{
-                    echo View::instance()->render('views/index_page.php');
+                    echo View::instance()->render('../views/index_page.php');
                 }
 
     }
@@ -42,7 +46,7 @@ $f3->route('GET /check',
 
 $f3->route('GET /arezki',
     function() {
-        echo View::instance()->render('views/arezki.php');
+        echo View::instance()->render('../views/arezki.php');
     }
 );
 //$f3->get('var')
@@ -50,7 +54,7 @@ $f3->route('GET /arezki',
 $f3->route('GET /main',
     function() {
         isUserLogged();
-        echo View::instance()->render('views/main.php');
+        echo View::instance()->render('../views/main.php');
     }
 );
 
@@ -59,7 +63,7 @@ $f3->route('GET /authorised_zone',
         
         isUserLogged();
         
-        echo View::instance()->render('views/authorised_zone.php');
+        echo View::instance()->render('../views/authorised_zone.php');
     }
 );
 
@@ -80,9 +84,18 @@ $f3->route('POST /login_ajax',
     function() {
         require("registration/login_ajax.php"); 
     }
+
 );
+
+$f3->route('POST /filter',
+    function() {
+        require("filter.php");
+    }
+);
+
 $f3->route('POST /addtask',
     function() {
+        
         require("response2.php"); 
     }
 );

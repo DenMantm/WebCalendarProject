@@ -12,7 +12,7 @@
 }
 .modal-header-signup_modal{
     color:#fff;
-    padding:3px 15px;
+    padding:3px 10px;
     border-bottom:1px solid #eee;
     background-color: #5bc0de;
     -webkit-border-top-left-radius: 5px;
@@ -23,8 +23,8 @@
      border-top-right-radius: 5px;
 }
 .modal-header-recover_modal{
-	color:#fff;
-    padding:3px 15px;
+	   color:#fff;
+    padding:3px 10px;
     border-bottom:1px solid #eee;
     background-color: #d9534f;
     -webkit-border-top-left-radius: 5px;

@@ -43,12 +43,12 @@ $('#calendar').followTo(250);
     
 
   </script>
-  <script type="text/javascript" src="../js/target.js"></script>
+  <script type="text/javascript" src="js/target.js"></script>
 
   
   
   <script>
-
+var jTemp = [];
 	$(document).ready(function() {
 
 
@@ -57,11 +57,15 @@ $('#calendar').followTo(250);
 
 		$('#external-events .fc-event').each(function() {
 
+			
 			// store data so the calendar knows to render an event upon drop
+			
+			
+			
 			$(this).data('event', {
 				title: $.trim($(this).text()), // use the element's text as the event title
 				stick: true, // maintain when user navigates (see docs on the renderEvent method)
-				color:$(this).css("background-color")
+				color: $(this).css("background-color")
 			});
 
 			// make the event draggable using jQuery UI
@@ -84,7 +88,13 @@ $('#calendar').followTo(250);
 				right: 'month,agendaWeek,agendaDay'
 			},
 			editable: true,
-			droppable: true, // this allows things to be dropped onto the calendar
+			droppable: true,
+			    eventReceive: function(event, delta, revertFunc) {
+        jTemp.push(event);
+
+    },
+			
+			// this allows things to be dropped onto the calendar
 			drop: function() {
 				// is the "remove after drop" checkbox checked?
 				if ($('#drop-remove').is(':checked')) {
@@ -93,7 +103,6 @@ $('#calendar').followTo(250);
 				}
 			}
 		});
-
 
 	});
 

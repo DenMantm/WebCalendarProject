@@ -3,7 +3,7 @@
 
 <?php
 //include db configuration file
-include_once("modules/db.php");
+include_once("../modules/db.php");
 
 if(isset($_POST['subject_text']) || ($_POST['location_text'])) 
 {	//check $_POST["content_txt"] is not empty

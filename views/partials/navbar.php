@@ -6,11 +6,11 @@
         </div>
         <div class="collapse navbar-collapse navbar-menubuilder">
             <ul class="nav navbar-nav navbar-left">
-                <li><a href="">Calendar</a>
+                <li><a href="/main">Calendar</a>
                 </li>
                 <li><a href="#">User Settings</a>
                 </li>
-                <li><a href="check">Check Meetings</a>
+                <li><a href="/check">Check Meetings</a>
                 </li>
                 <li><a href="/logout">Logout</a>
                 </li>

@@ -22,7 +22,7 @@ include_once("../modules/db.php");
            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
            <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>  
            <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">  
-            <link rel="stylesheet" href="../css/check.css"> 
+            <link rel="stylesheet" href="css/check.css"> 
   
 </head>
 
@@ -67,6 +67,7 @@ include('partials/navbar.php');
                            
                                <th width="12%">Location</th>    
                           </tr>  
+                          
                      <?php  
                      while ($row = $result)
                       $sth->execute();
@@ -91,4 +92,4 @@ include('partials/navbar.php');
            </div>  
       </body>  
  </html>  
-<script src="../js/check.js"></script>
+<script src="js/check.js"></script>

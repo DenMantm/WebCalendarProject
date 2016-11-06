@@ -33,12 +33,12 @@ $(document).ready(function() {
 				$("#btnSaveNewMeeting").show(); //show submit button
 				$("#LoadingImage").hide(); //hide loading image
 			//	$( "#newmeeting" ).hide();
-			$('#newmeeting').modal('hide');
+			
 			
 
 			},
 			error:function (xhr, ajaxOptions, thrownError){
-				$("##btnSaveNewMeeting").show(); //show submit button
+				$("#btnSaveNewMeeting").show(); //show submit button
 				$("#LoadingImage").hide(); //hide loading image
 				alert(thrownError);
 			}
