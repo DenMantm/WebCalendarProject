@@ -1,7 +1,10 @@
 CHANGING MAIN APACHE CONFIG FILE::::
 
+type in the console:
 sudo vi /etc/apache2/sites-enabled/001-cloud9.conf
-and adding after workspace www folder
+
+Find DocumentRoot and replace it with /home/ubuntu/workspace/www
+
 
 
 
