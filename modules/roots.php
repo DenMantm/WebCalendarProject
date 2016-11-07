@@ -14,6 +14,7 @@ require('send_email.php');
 
 $f3->route('GET /',
     function($f3) {
+        
                         session_start();
                 if($_SESSION['logged'] == true ) {
                     $f3->reroute('/main');
@@ -21,6 +22,7 @@ $f3->route('GET /',
                 else{
                     echo View::instance()->render('../views/index_page.php');
                 }
+                
 
     }
 );
@@ -28,17 +30,9 @@ $f3->route('GET /',
 // root to check.php
 $f3->route('GET /check',
     function($f3) {
-                        session_start();
-                if($_SESSION['logged'] == true ) {
-                    
-                    //$f3->reroute('../views/check.php');
-                    
+                    isUserLogged();
+
                     echo View::instance()->render('../views/check.php');
-                    
-                }
-                else{
-                    echo View::instance()->render('../views/index_page.php');
-                }
 
     }
 );
@@ -95,7 +89,6 @@ $f3->route('POST /filter',
 
 $f3->route('POST /addtask',
     function() {
-        
         require("response2.php"); 
     }
 );

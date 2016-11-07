@@ -6,11 +6,13 @@
         </div>
         <div class="collapse navbar-collapse navbar-menubuilder">
             <ul class="nav navbar-nav navbar-left">
-                <li><a href="/main">Calendar</a>
+                <li><a href="/main">My Calendars</a>
                 </li>
                 <li><a href="#">User Settings</a>
                 </li>
                 <li><a href="/check">Check Meetings</a>
+                </li>
+                <li><a href="/manageTeams">Manage Teams</a>
                 </li>
                 <li><a href="/logout">Logout</a>
                 </li>

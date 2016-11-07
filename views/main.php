@@ -110,7 +110,7 @@ var jTemp = [];
 <style>
 
 	body {
-		margin-top: 40px;
+
 		text-align: center;
 		font-size: 14px;
 		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
@@ -169,22 +169,22 @@ include('partials/navbar.php');
 
 ?>
 
-
+<h1>Team Calendar - International Flinstones</h1>
+<hr/>
     <div class="row">
 
       <!--##################-->
       <!--Left handside menu-->
       <!--##################-->
 
-      <div class="col-md-1 remove_right_padding dark" style="height:500px;">
+      <div class="col-md-1 remove_right_padding dark" style="min-width:140px;">
 
-        </style>
         <div class="cell">
           <ul class="sidebar no-responsive-future" id="sidebar">
             <li>
               <a href="#">
                 <span class="mif-calendar icon"></span>
-                <span class="title">Calendar</span>
+                <span class="title">Events</span>
                 <span class="counter">0</span>
               </a>
             </li>
@@ -229,7 +229,7 @@ include('partials/navbar.php');
 
 		<div id='calendar'></div>
 
-		<div style='clear:both'></div>
+		
 
 	</div>
       </div>
@@ -251,12 +251,12 @@ include('partials/navbar.php');
             
             
                        <div id='external-events'>
-			<h4>Draggable Events</h4>
-			<div class='fc-event'>Event</div>
-			<div class='fc-event' style="background-color:red">Important Meeting</div>
-			<div class='fc-event' style="background-color:green">Scheduled Work</div>
-			<div class='fc-event' style="background-color:orange">Important</div>
-			<div class='fc-event'>My Event 5</div>
+			<h4>Team Members</h4>
+			<div class='fc-event'>Maurice</div>
+			<div class='fc-event' style="background-color:red">Kamil</div>
+			<div class='fc-event' style="background-color:green">Arezki</div>
+			<div class='fc-event' style="background-color:orange">Deniss</div>
+			<div class='fc-event' style="background-color:purple">Michael</div>
 			<p>
 				<input type='checkbox' id='drop-remove' />
 				<label for='drop-remove'>remove after drop</label>
