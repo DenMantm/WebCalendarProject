@@ -8,20 +8,6 @@
 <?php include('partials/head.php') ?>
 
 
-<link href='calendarLib/fullcalendar.css' rel='stylesheet' />
-<link href='calendarLib/fullcalendar.print.css' rel='stylesheet' media='print' />
-<link href='css/main.css' rel='stylesheet' media='print' />
-<script src='calendarLib/lib/moment.min.js'></script>
-<script src='calendarLib/lib/jquery.min.js'></script>
-<script src='calendarLib/lib/jquery-ui.min.js'></script>
-<script src='calendarLib/fullcalendar.min.js'></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
-
-
-  <!--CUSTOM SCRIPTS FOR MAIN-->
-  <script type="text/javascript" src="js/target.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
-
 </head>
 
 <body>
@@ -36,7 +22,7 @@
       <!--Left handside menu-->
       <!--##################-->
 
-      <div class="col-md-1 remove_right_padding" style="min-width:300px; margin-left:20px">
+      <div class="col-md-2 remove_right_padding" style="min-width:250px; margin-left:10px">
 
         <!--<div class="cell">-->
         <!--  <ul class="sidebar" id="sidebar">-->
@@ -84,14 +70,14 @@
                         <h5>TreeView</h5>
                         <div class="treeview" data-role="treeview">
                             <ul>
-                                <li class="node">
+                                <li class="node" >
                                     <span class="leaf">MiniCalendar</span>
                                     <span class="node-toggle"></span>
                                     <ul>
-                                        <li><span class="leaf">
+                                        <li style="padding: 0;"><span class="leaf">
                                           
    <div data-role="calendar" class="calendar">
-   <div class="calendar-grid">
+   <div class="calendar-grid" >
       <div class="calendar-row no-margin calendar-header">
          <div class="calendar-cell align-center"><a class="btn-previous-year" href="#">-</a></div>
          <div class="calendar-cell align-center"><a class="btn-previous-month" href="#">〈</a></div>
@@ -250,22 +236,83 @@
                                         
                                     </ul>
                                 </li>
-                                <li class="node">
-                                  <span class="node-toggle"></span>
-                                    <span class="leaf">My Calendars</span>
+                                <!--<li class="node">-->
+                                <!--  <span class="node-toggle"></span>-->
+                                <!--    <span class="leaf">My Calendars</span>-->
                                     
-                                    <ul>
-                                        <li><span class="leaf">My Calendar</span></li>
-                                        <li><span class="leaf">Team Calendar 1</span></li>
-                                        <li><span class="leaf">Team Calendar 2</span></li>
-                                        <li><span class="leaf">Team Calendar 3</span></li>
-                                    </ul>
-                                </li>
+                                <!--    <ul>-->
+                                <!--        <li class="node collapsed">-->
+                                <!--            <span class="leaf">International Flinstones</span>-->
+                                <!--            <span class="node-toggle"></span>-->
+                                <!--            <ul style="display: none;">-->
+                                <!--                <li><span class="leaf">Deniss</span></li>-->
+                                <!--                <li><span class="leaf">Kamil</span></li>-->
+                                <!--                <li><span class="leaf">Arezki</span></li>-->
+                                <!--                <li><span class="leaf">Maurice</span></li>-->
+                                <!--                <li><span class="leaf">Michael</span></li>-->
+                                <!--            </ul>-->
+                                <!--        </li>-->
+                                <!--        <li><span class="leaf">My Calendar</span></li>-->
+                                <!--        <li><span class="leaf">Team Calendar 1</span></li>-->
+                                <!--        <li><span class="leaf">Team Calendar 2</span></li>-->
+                                <!--        <li><span class="leaf">Team Calendar 3</span></li>-->
+                                <!--    </ul>-->
+                                <!--</li>-->
                                 
                                 
                             </ul>
                         </div>
                     </div>
+                    
+                    
+                    <div class="cell">
+                        <h5>Filter Calendars</h5>
+                        <div class="treeview" data-role="treeview">
+                            <ul>
+                                <li class="node" data-mode="checkbox" data-name="c0">
+                                    <label class="input-control checkbox small-check"><input type="checkbox" name="c0" class=""><span class="check"></span></label><span class="leaf">Calendars:</span>
+                                    <span class="node-toggle"></span>
+                                    <ul>
+                                        <li data-mode="checkbox" data-name="c3_1_1">
+                                            <label class="input-control checkbox small-check"><input type="checkbox" name="c3_1_1"><span class="check"></span></label><span class="leaf">Team Calendar 1</span>
+                                        </li>
+                                                                                <li data-mode="checkbox" data-name="c3_1_1">
+                                            <label class="input-control checkbox small-check"><input type="checkbox" name="c3_1_1"><span class="check"></span></label><span class="leaf">Team Calendar 2</span>
+                                        </li>
+                                        <li data-mode="checkbox" data-name="c3_1_1">
+                                            <label class="input-control checkbox small-check"><input type="checkbox" name="c3_1_1"><span class="check"></span></label><span class="leaf">My Calendar</span>
+                                        </li>
+                                        <li data-mode="checkbox" data-name="c1" class="node">
+                                            <label class="input-control checkbox small-check"><input type="checkbox" name="c1"><span class="check"></span></label><span class="leaf">International Flinstones</span>
+                                            <span class="node-toggle"></span>
+                                            <ul>
+                                                <li data-mode="checkbox" data-name="c1_1">
+                                                    <label class="input-control checkbox small-check"><input type="checkbox" name="c1_1"><span class="check"></span></label><span class="leaf">Deniss</span>
+                                                </li>
+                                                <li data-mode="checkbox" data-name="c1_2">
+                                                    <label class="input-control checkbox small-check"><input type="checkbox" name="c1_2"><span class="check"></span></label><span class="leaf">Kamil</span>
+                                                </li>
+                                                <li data-mode="checkbox" data-name="c1_3">
+                                                    <label class="input-control checkbox small-check"><input type="checkbox" name="c1_3"><span class="check"></span></label><span class="leaf">Arezki</span>
+                                                </li>
+                                                <li data-mode="checkbox" data-name="c1_4">
+                                                    <label class="input-control checkbox small-check"><input type="checkbox" name="c1_4"><span class="check"></span></label><span class="leaf">Maurice</span>
+                                                </li>
+                                                  <li data-mode="checkbox" data-name="c1_5">
+                                                    <label class="input-control checkbox small-check"><input type="checkbox" name="c1_5"><span class="check"></span></label><span class="leaf">Michael</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
       </div>
 
       <!--##################-->
@@ -291,7 +338,7 @@
       <!--###  Notes area ####-->
       <!--####################-->
 
-      <div class="col-md-2">
+      <div class="col-md-3">
         
         <br/>
         <br/>
@@ -313,7 +360,7 @@
 
             <div id='external-events' style="max-width:200px padding:0">
             <div class="accordion" data-role="accordion" data-close-any="true">
-                            <div class="frame">
+                            <div class="frame" style="padding:7px">
                                 <div class="heading">International Flinstones</div>
                                 <div class="content" style="display: none;">
                                     <span data-role="hint"
@@ -332,13 +379,13 @@
                                     
                                 </div>
                             </div>
-                            <div class="frame">
+                            <div class="frame" style="padding:7px">
                                 <div class="heading">Team Calendar 1</div>
                                 <div class="content" style="display: none;">
                                     
                                 </div>
                             </div>
-                            <div class="frame">
+                            <div class="frame" style="padding:7px">
                                 <div class="heading">Team calendar 2</div>
                                 <div class="content">
                                    
@@ -415,6 +462,9 @@
                 <label class="col-sm-2" control-label>Participants</label>
                 <div class="col-sm-10">
                   <input type="text" name="participants_text"id="m_to" class="form-control" placeholder="Enter participants here" required/>
+                  
+                  
+                  
                 </div>
               </div>
               
@@ -437,7 +487,7 @@
                 <div class="col-sm-10">
                   
                   <!--<input type="text" id="m_date" name="date_text"class="form-control" placeholder="Enter date" required/>-->
-                 <div class="input-control text" data-role="datepicker" data-preset="2015-05-01">
+                 <div class="input-control text" data-role="datepicker" id="m_date" data-preset="2015-05-01">
    <input type="text" readonly="readonly">
    <button class="button" type="button"><span class="mif-calendar"></span></button>
    <div class="calendar calendar-dropdown" style="position: absolute; display: none; max-width: 220px; z-index: 1000; top: 100%; left: 0px;">
@@ -613,11 +663,7 @@
       </div>
    </div>
 </div>
-                                    <script>
-                                        $(function(){
-                                            $("#m_date").datepicker();
-                                        });
-                                    </script>
+        
                   
                 </div>
               </div>
