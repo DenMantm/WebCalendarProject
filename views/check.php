@@ -61,7 +61,7 @@ include('partials/navbar.php');
                      <table class="table table-bordered">  
                           <tr>  
                                  
-                               <th width="5%">MeetingID</th>  
+                               <th width="5%">Title</th>  
                                <th width="30%">Subject</th>  
                                <th width="43%">Date</th>  
                            
@@ -74,7 +74,7 @@ include('partials/navbar.php');
                      {  
                      ?>  
                           <tr>  
-                               <td><?php echo $row["meetingID"]; ?></td>  
+                               <td><?php echo $row["title"]; ?></td>  
                                <td><?php echo $row["subject"]; ?></td>  
                                <td><?php echo $row["date"]; ?></td>  
                                

@@ -1,6 +1,3 @@
-
-
-
 $(document).ready(function() {
 
 	//##### send add record Ajax request to response.php #########
@@ -23,22 +20,25 @@ $(document).ready(function() {
 			type: "POST", // HTTP method POST or GET
 			url: "addtask", //Where to make Ajax calls
 			dataType:"text", // Data type, HTML, json etc.
-			data:'location_text='+ $("#m_location").val()+'&subject_text='+ $("#m_subject").val()+'&date_text='+ $("#m_date").val(),//Form variables
+			data:'location_text='+ $("#m_location").val()+'&subject_text='+ $("#m_subject").val()+'&title_text='+ $("#m_title").val()+'&date_text='+ $("#m_date").val(),//Form variables
 			
 			success:function(response){
 				$("#responds").append(response);
 				$("#m_subject").val(''); //empty text field on successful
 				$("#m_date").val('');
 				$("#m_location").val('');
+				$("#m_title").val('');
 				$("#btnSaveNewMeeting").show(); //show submit button
 				$("#LoadingImage").hide(); //hide loading image
 			//	$( "#newmeeting" ).hide();
-			
+		
+			$('#newmeeting').modal('hide');
 			
 
 			},
+	
 			error:function (xhr, ajaxOptions, thrownError){
-				$("#btnSaveNewMeeting").show(); //show submit button
+				$("##btnSaveNewMeeting").show(); //show submit button
 				$("#LoadingImage").hide(); //hide loading image
 				alert(thrownError);
 			}

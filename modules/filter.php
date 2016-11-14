@@ -39,7 +39,7 @@
             $output .= '  
                  <table class="table table-bordered">  
                       <tr>  
-                           <th width="5%">MeetingID</th>  
+                           <th width="5%">Title</th>  
                            <th width="30%">Subject</th>  
                            <th width="43%">Date</th>  
                           
@@ -65,7 +65,7 @@
                  {  
                       $output .= '  
                            <tr>  
-                                <td>'. $row["meetingID"] .'</td>  
+                                <td>'. $row["title"] .'</td>  
                                 <td>'. $row["subject"] .'</td>  
                                 <td> '. $row["date"] .'</td>  
                                

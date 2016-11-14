@@ -914,6 +914,7 @@ Stack trace:
 [11-Nov-2016 23:48:51 UTC] HTTP 404 (GET /js/docs.js)
 [11-Nov-2016 23:48:51 UTC] HTTP 404 (GET /js/prettify/run_prettify.js)
 [11-Nov-2016 23:48:51 UTC] HTTP 404 (GET /js/ga.js)
+<<<<<<< HEAD
 [12-Nov-2016 10:50:43 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
 [12-Nov-2016 10:50:43 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
 [12-Nov-2016 10:50:43 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
@@ -993,3 +994,12 @@ Stack trace:
 [13-Nov-2016 22:55:36 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
 [13-Nov-2016 22:55:36 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
 [13-Nov-2016 22:55:36 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+=======
+[13-Nov-2016 18:53:02 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[13-Nov-2016 18:53:02 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[13-Nov-2016 18:53:02 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[13-Nov-2016 20:06:51 UTC] HTTP 404 (GET /manageTeams)
+[13-Nov-2016 20:54:39 UTC] include_once(modules/db.php): failed to open stream: No such file or directory
+[13-Nov-2016 20:54:55 UTC] include_once(modules/db.php): failed to open stream: No such file or directory
+[13-Nov-2016 22:16:43 UTC] HTTP 404 (GET /manageTeams)
+>>>>>>> 537b105d2ef2e163ba73566df748fde97e65bd4b

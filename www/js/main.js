@@ -94,12 +94,10 @@ var clone;
 		
 
 function updateDatabase(){
-    $.post("/register_ajax",
+    $.post("/database/",
     {
-        username: $('#r_user_name_ajax').val(),
-        password: $('#r_password_ajax').val(),
-        email: $('#r_email_ajax').val()
-        //alert($('#user_name_ajax').val())
+        data: events
+
     },
     function(response, status,result){
       console.log(response);
