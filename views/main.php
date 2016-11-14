@@ -108,6 +108,54 @@
         <!--      </a>-->
         <!--    </li>-->
 
+         </style>
+        <div class="cell">
+          <ul class="sidebar no-responsive-future" id="sidebar">
+            <li>
+              <a href="#">
+                <span class="mif-calendar icon"></span>
+                <span class="title">Calendar</span>
+                <span class="counter">0</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="mif-event-available icon"></span>
+                <span class="title">Meetings</span>
+                <span class="counter">0</span>
+              </a>
+            </li>
+            <li class="active">
+              <a href="#">
+                <span class="mif-list icon"></span>
+                <span class="title">Tasks</span>
+                <span class="counter">0</span>
+              </a>
+            </li>
+            <li class="active">
+              <a href="/team">
+                <span class="mif-list icon"></span>
+                <span class="title">Teams</span>
+                <span class="counter">0</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="mif-file-text icon"></span>
+                <span class="title">Notes</span>
+                <span class="counter">0</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="mif-cogs icon"></span>
+                <span class="title">Settings</span>
+                <span class="counter">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
             
         <!--  </ul>-->
         <!--</div>-->
@@ -358,7 +406,7 @@
                     
                     
                     
-                    
+
       </div>
 
       <!--##################-->
