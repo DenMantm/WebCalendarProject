@@ -869,3 +869,79 @@ Stack trace:
 [06-Nov-2016 19:04:56 UTC] HTTP 404 (POST /modules/filter.php)
 [06-Nov-2016 19:10:38 UTC] include_once(modules/db.php): failed to open stream: No such file or directory
 [06-Nov-2016 19:14:37 UTC] include_once(modules/db.php): failed to open stream: No such file or directory
+[07-Nov-2016 00:34:27 UTC] HTTP 404 (GET /views/index_page.php)
+[07-Nov-2016 00:34:27 UTC] HTTP 404 (GET /favicon.ico)
+[07-Nov-2016 00:34:27 UTC] HTTP 404 (GET /favicon.ico)
+[07-Nov-2016 00:34:35 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[07-Nov-2016 00:34:35 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[07-Nov-2016 00:34:35 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[14-Nov-2016 10:58:23 UTC] HTTP 404 (GET /views/index_page.php)
+[14-Nov-2016 10:58:24 UTC] HTTP 404 (GET /favicon.ico)
+[14-Nov-2016 10:58:24 UTC] HTTP 404 (GET /favicon.ico)
+[14-Nov-2016 10:58:33 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[14-Nov-2016 10:58:33 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[14-Nov-2016 10:58:34 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[14-Nov-2016 10:59:37 UTC] Unable to open ../views/arezki.php
+[14-Nov-2016 10:59:43 UTC] Unable to open views/arezki1.php
+[14-Nov-2016 11:00:10 UTC] HTTP 405 (GET /filter)
+[14-Nov-2016 11:00:16 UTC] HTTP 405 (GET /addtask)
+[14-Nov-2016 11:00:38 UTC] Unable to open views/arezki1.php
+[14-Nov-2016 11:00:49 UTC] HTTP 404 (GET /arezki12)
+[14-Nov-2016 11:00:51 UTC] Unable to open views/arezki1.php
+[14-Nov-2016 11:01:00 UTC] HTTP 404 (GET /arezki4)
+[14-Nov-2016 11:10:34 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/ubuntu/workspace/modules/roots.php on line 54
+[14-Nov-2016 11:10:34 UTC] PHP Stack trace:
+[14-Nov-2016 11:10:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[14-Nov-2016 11:10:44 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/ubuntu/workspace/modules/roots.php on line 54
+[14-Nov-2016 11:10:44 UTC] PHP Stack trace:
+[14-Nov-2016 11:10:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[14-Nov-2016 11:10:47 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/ubuntu/workspace/modules/roots.php on line 54
+[14-Nov-2016 11:10:47 UTC] PHP Stack trace:
+[14-Nov-2016 11:10:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[14-Nov-2016 13:29:34 UTC] PHP Parse error:  syntax error, unexpected '>' in /home/ubuntu/workspace/modules/addteam.php on line 9
+[14-Nov-2016 13:29:34 UTC] PHP Stack trace:
+[14-Nov-2016 13:29:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[14-Nov-2016 13:29:34 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[14-Nov-2016 13:29:34 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:402
+[14-Nov-2016 13:29:34 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[14-Nov-2016 13:29:34 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 13:29:34 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:111-114}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 13:29:34 UTC] Fatal error: syntax error, unexpected '>'
+[14-Nov-2016 13:29:37 UTC] PHP Parse error:  syntax error, unexpected '>' in /home/ubuntu/workspace/modules/addteam.php on line 9
+[14-Nov-2016 13:29:37 UTC] PHP Stack trace:
+[14-Nov-2016 13:29:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[14-Nov-2016 13:29:37 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[14-Nov-2016 13:29:37 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:402
+[14-Nov-2016 13:29:37 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[14-Nov-2016 13:29:37 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 13:29:37 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:111-114}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 13:29:37 UTC] Fatal error: syntax error, unexpected '>'
+[14-Nov-2016 13:33:28 UTC] PHP Parse error:  syntax error, unexpected '$insert_row' (T_VARIABLE) in /home/ubuntu/workspace/modules/addteam.php on line 17
+[14-Nov-2016 13:33:28 UTC] PHP Stack trace:
+[14-Nov-2016 13:33:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[14-Nov-2016 13:33:28 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[14-Nov-2016 13:33:28 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:402
+[14-Nov-2016 13:33:28 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[14-Nov-2016 13:33:28 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 13:33:28 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:111-114}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 13:33:28 UTC] Fatal error: syntax error, unexpected '$insert_row' (T_VARIABLE)
+[14-Nov-2016 13:42:02 UTC] PHP Fatal error:  Cannot pass parameter 2 by reference in /home/ubuntu/workspace/modules/addteam.php on line 23
+[14-Nov-2016 13:42:02 UTC] PHP Stack trace:
+[14-Nov-2016 13:42:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[14-Nov-2016 13:42:02 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[14-Nov-2016 13:42:02 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:402
+[14-Nov-2016 13:42:02 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[14-Nov-2016 13:42:02 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 13:42:02 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:111-114}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 13:42:02 UTC] PHP   7. require() /home/ubuntu/workspace/modules/roots.php:113
+[14-Nov-2016 13:42:02 UTC] Fatal error: Cannot pass parameter 2 by reference
+[14-Nov-2016 13:42:15 UTC] PHP Fatal error:  Cannot pass parameter 2 by reference in /home/ubuntu/workspace/modules/addteam.php on line 23
+[14-Nov-2016 13:42:15 UTC] PHP Stack trace:
+[14-Nov-2016 13:42:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[14-Nov-2016 13:42:15 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[14-Nov-2016 13:42:15 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:402
+[14-Nov-2016 13:42:15 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[14-Nov-2016 13:42:15 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 13:42:15 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:111-114}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 13:42:15 UTC] PHP   7. require() /home/ubuntu/workspace/modules/roots.php:113
+[14-Nov-2016 13:42:15 UTC] Fatal error: Cannot pass parameter 2 by reference

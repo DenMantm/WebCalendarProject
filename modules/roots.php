@@ -49,6 +49,13 @@ $f3->route('GET /arezki',
         echo View::instance()->render('../views/arezki.php');
     }
 );
+
+
+$f3->route('GET /team',
+    function() {
+        echo View::instance()->render('../views/team.php');
+    }
+);
 //$f3->get('var')
 
 $f3->route('GET /main',
@@ -97,6 +104,13 @@ $f3->route('POST /addtask',
     function() {
         
         require("response2.php"); 
+    }
+);
+
+$f3->route('POST /addteam',
+    function() {
+        
+        require("addteam.php"); 
     }
 );
 

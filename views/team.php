@@ -8,14 +8,6 @@
 <?php include('partials/head.php') ?>
 
 
-<link href='calendarLib/fullcalendar.css' rel='stylesheet' />
-<link href='calendarLib/fullcalendar.print.css' rel='stylesheet' media='print' />
-<script src='calendarLib/lib/moment.min.js'></script>
-<script src='calendarLib/lib/jquery.min.js'></script>
-<script src='calendarLib/lib/jquery-ui.min.js'></script>
-<script src='calendarLib/fullcalendar.min.js'></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
-
 
   <script>
     /*global $*/
@@ -43,7 +35,7 @@ $('#calendar').followTo(250);
     
 
   </script>
-  <script type="text/javascript" src="js/target.js"></script>
+  <script type="text/javascript" src="js/team.js"></script>
 
   
   
@@ -178,7 +170,7 @@ include('partials/navbar.php');
 
       <div class="col-md-1 remove_right_padding dark" style="height:500px;">
 
-         </style>
+        </style>
         <div class="cell">
           <ul class="sidebar no-responsive-future" id="sidebar">
             <li>
@@ -228,17 +220,11 @@ include('partials/navbar.php');
       </div>
 
       <!--##################-->
-      <!--###  Calendar ####-->
+      <!--###   Teams   ####-->
       <!--##################-->
 
       <div class="col-md-6 remove_padding">
-	<div id='wrap'>
-
-		<div id='calendar'></div>
-
-		<div style='clear:both'></div>
-
-	</div>
+        Your teams:
       </div>
 
       <!--#################################-->
@@ -253,22 +239,11 @@ include('partials/navbar.php');
       <div class="col-md-4">
         
         
-        <button type="button" id="newmeetingBtn" class="btn btn-default btn-lg btn-block" data-toggle="modal" data-target="#newmeeting">
-            New meeting</button>
+        <button type="button" id="newmeetingBtn" class="btn btn-default btn-lg btn-block" data-toggle="modal" data-target="#newteam">
+            Start new team</button>
             
             
-                       <div id='external-events'>
-			<h4>Draggable Events</h4>
-			<div class='fc-event'>Event</div>
-			<div class='fc-event' style="background-color:red">Important Meeting</div>
-			<div class='fc-event' style="background-color:green">Scheduled Work</div>
-			<div class='fc-event' style="background-color:orange">Important</div>
-			<div class='fc-event'>My Event 5</div>
-			<p>
-				<input type='checkbox' id='drop-remove' />
-				<label for='drop-remove'>remove after drop</label>
-			</p>
-		</div>  
+                    
             
         <div class="panel" style="width: 200px; z-index: auto; top: 100px; left: 250px;" data-role="draggable">
           <div class="heading">
@@ -311,54 +286,28 @@ include('partials/navbar.php');
 
       <!--Dialog box for new meeting-->
 
-      <div class="modal fade" id="newmeeting" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal fade" id="newteam" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
 
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">New meeting</h4>
+              <h4 class="modal-title" id="myModalLabel">New team</h4>
             </div>
             <div class="modal-body">
               
               <div class="row">
-                <label class="col-sm-2" control-label>Participants</label>
-                <div class="col-sm-10">
-                  <input type="text" name="participants_text"id="m_to" class="form-control" placeholder="Enter participants here" required/>
+                <label class="col-sm-3" control-label>Team name:</label>
+                <div class="col-sm-9">
+                  <input type="text" name="team_name" id="t_name" class="form-control" placeholder="Enter name of the team here" required/>
                 </div>
               </div>
               
-              <div class="row">
-                <label htmlFor="inputName" class="col-sm-2" control-label>Subject</label>
-                <div class="col-sm-10">
-                  <input type="text" name="subject_text" id="m_subject" class="form-control" placeholder="Enter meeting subject here" required/>
-                </div>
-              </div>
-              
-              <div class="row">
-                <label htmlFor="inputCode" class="col-sm-2" control-label>Location</label>
-                <div class="col-sm-10">
-                  <input type="text"name="location_text" id="m_location" class="form-control" placeholder="Enter meeting location here" required/>
-                </div>
-              </div>
-              
-              <div class="row">
-                <label htmlFor="inputDate" class="col-sm-2" control-label>Date</label>
-                <div class="col-sm-10">
-                  <input type="text" id="m_date" name="date_text"class="form-control" placeholder="Enter date" required/>
-                  <script type="text/javascript">
-                    $(function() {
-                      $('#m_date').datetimepicker();
-                      dateFormat: 'yy-mm-dd'
-                    });
-                    
-                  </script>
-                </div>
-              </div>
+ 
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button id="btnSaveNewMeeting" class="btn btn-primary">Save fund</button>
+              <button id="btnSaveNewTeam" class="btn btn-primary">Create</button>
             </div>
 <ul id="responds">
 		
