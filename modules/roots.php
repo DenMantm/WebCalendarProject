@@ -38,6 +38,119 @@ $f3->route('GET /check',
 );
 
 
+$f3->route('GET /database/Calendar/@action',
+    function($f3,$params) {
+                
+                 //INITIALIZING INSTANCE OF THE OBJECT
+                 
+                 $test =  require('databaseio/calendarEntity.php');
+                 
+                //Creating serie of statements for CRUD
+                switch ($params['action']) {
+                
+                    //CREATING ENTRIES IN DATABASE
+                case "create":
+                    
+                    $calendar_name = 'Calendar1';
+                    $owner = 'Deniss';
+                    $is_team_calendar = false;
+                    $tasks = 'tasks';
+                    
+                    $test -> createCalendar($calendar_name,$owner,$is_team_calendar,$tasks);
+                    
+                    
+                    break;
+                    
+                    
+                     //Retrieving ENTRIES FROM DATABASE
+                case "retrieve":
+                    
+                    $test -> getCalendars();
+                    
+                    break;
+                    
+                    //UPDATING ENTRIES IN THE DATABASE
+                case "update":
+                    
+                    
+                    echo "update";
+                    break;
+                    
+                    //DELETING ENTRIES IN DATABASE
+                case "delete":
+                    
+                    
+                    echo "delete";
+                    break;
+}
+                
+               
+               
+               
+
+    }
+);
+
+
+$f3->route('GET /database/Task/@action',
+    function($f3,$params) {
+                
+                 //INITIALIZING INSTANCE OF THE OBJECT
+                 
+                 $test =  require('databaseio/calendarTask.php');
+                 
+                //Creating serie of statements for CRUD
+                switch ($params['action']) {
+                
+                    //CREATING ENTRIES IN DATABASE
+                case "create":
+                    
+                    $calendar_name = 'Calendar1';
+                    $owner = 'Deniss';
+                    $is_team_calendar = false;
+                    $tasks = 'tasks';
+                    
+                    $test -> createCalendar($calendar_name,$owner,$is_team_calendar,$tasks);
+                    
+                    
+                    break;
+                    
+                    
+                     //Retrieving ENTRIES FROM DATABASE
+                case "retrieve":
+                    
+                    $test -> getCalendars();
+                    
+                    break;
+                    
+                    //UPDATING ENTRIES IN THE DATABASE
+                case "update":
+                    
+                    
+                    echo "update";
+                    break;
+                    
+                    //DELETING ENTRIES IN DATABASE
+                case "delete":
+                    
+                    
+                    echo "delete";
+                    break;
+}
+                
+               
+               
+               
+
+    }
+);
+
+
+
+
+
+
+
 $f3->route('GET /arezki',
     function() {
         echo View::instance()->render('../views/arezki.php');

@@ -914,3 +914,82 @@ Stack trace:
 [11-Nov-2016 23:48:51 UTC] HTTP 404 (GET /js/docs.js)
 [11-Nov-2016 23:48:51 UTC] HTTP 404 (GET /js/prettify/run_prettify.js)
 [11-Nov-2016 23:48:51 UTC] HTTP 404 (GET /js/ga.js)
+[12-Nov-2016 10:50:43 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[12-Nov-2016 10:50:43 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[12-Nov-2016 10:50:43 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[12-Nov-2016 10:50:45 UTC] HTTP 404 (GET /favicon.ico)
+[13-Nov-2016 13:35:34 UTC] HTTP 404 (GET /favicon.ico)
+[13-Nov-2016 13:35:37 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[13-Nov-2016 13:35:37 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[13-Nov-2016 13:35:37 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[13-Nov-2016 17:43:29 UTC] HTTP 404 (GET /favicon.ico)
+[13-Nov-2016 17:43:30 UTC] HTTP 404 (GET /favicon.ico)
+[13-Nov-2016 18:32:21 UTC] HTTP 404 (GET /www/index.php)
+[13-Nov-2016 18:32:21 UTC] HTTP 404 (GET /favicon.ico)
+[13-Nov-2016 18:32:27 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[13-Nov-2016 18:32:27 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[13-Nov-2016 18:32:28 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[13-Nov-2016 19:09:53 UTC] HTTP 404 (GET /manageTeams)
+[13-Nov-2016 20:27:02 UTC] require(./databaseio/calendarEntity.php): failed to open stream: No such file or directory
+[13-Nov-2016 20:27:54 UTC] PHP Fatal error:  Call to undefined method calendarEntity::instance() in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 12
+[13-Nov-2016 20:27:54 UTC] Fatal error: Call to undefined method calendarEntity::instance()
+[13-Nov-2016 20:34:33 UTC] PHP Fatal error:  Call to undefined method calendarEntity::instance() in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 12
+[13-Nov-2016 20:34:33 UTC] Fatal error: Call to undefined method calendarEntity::instance()
+[13-Nov-2016 20:49:14 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 7
+[13-Nov-2016 20:49:14 UTC] Fatal error: syntax error, unexpected 'class' (T_CLASS)
+[13-Nov-2016 20:49:44 UTC] require(databaseio/connection.php): failed to open stream: No such file or directory
+[13-Nov-2016 21:23:08 UTC] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 13
+[13-Nov-2016 21:23:08 UTC] Fatal error: syntax error, unexpected '$result' (T_VARIABLE)
+[13-Nov-2016 21:23:43 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 13
+[13-Nov-2016 21:23:43 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[13-Nov-2016 21:25:46 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 18
+[13-Nov-2016 21:25:46 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[13-Nov-2016 21:25:48 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 18
+[13-Nov-2016 21:25:48 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[13-Nov-2016 21:25:49 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 18
+[13-Nov-2016 21:25:49 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[13-Nov-2016 21:25:51 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 18
+[13-Nov-2016 21:25:51 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[13-Nov-2016 21:26:07 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 22
+[13-Nov-2016 21:26:07 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[13-Nov-2016 21:26:10 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 22
+[13-Nov-2016 21:26:10 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[13-Nov-2016 21:29:35 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 22
+[13-Nov-2016 21:29:35 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[13-Nov-2016 21:29:46 UTC] PHP Fatal error:  Call to a member function exec() on a non-object in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 22
+[13-Nov-2016 21:29:46 UTC] Fatal error: Call to a member function exec() on a non-object
+[13-Nov-2016 21:30:15 UTC] PHP Fatal error:  Call to a member function exec() on a non-object in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 21
+[13-Nov-2016 21:30:15 UTC] Fatal error: Call to a member function exec() on a non-object
+[13-Nov-2016 21:30:35 UTC] PDOStatement: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= deniss' at line 1
+[13-Nov-2016 21:31:38 UTC] PDOStatement: Unknown column 'Deniss' in 'where clause'
+[13-Nov-2016 21:34:23 UTC] PHP Fatal error:  Call to undefined method calendarEntity::test() in /home/ubuntu/workspace/modules/roots.php on line 75
+[13-Nov-2016 21:34:23 UTC] Fatal error: Call to undefined method calendarEntity::test()
+[13-Nov-2016 21:36:00 UTC] PHP Fatal error:  Call to a member function exec() on a non-object in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 20
+[13-Nov-2016 21:36:00 UTC] Fatal error: Call to a member function exec() on a non-object
+[13-Nov-2016 21:37:11 UTC] PHP Fatal error:  Call to a member function exec() on a non-object in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 22
+[13-Nov-2016 21:37:11 UTC] Fatal error: Call to a member function exec() on a non-object
+[13-Nov-2016 21:43:36 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 24
+[13-Nov-2016 21:43:36 UTC] Fatal error: Call to a member function fetch() on a non-object
+[13-Nov-2016 21:52:07 UTC] PHP Parse error:  syntax error, unexpected 'MyFirstCalendar' (T_STRING) in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 27
+[13-Nov-2016 21:52:07 UTC] Fatal error: syntax error, unexpected 'MyFirstCalendar' (T_STRING)
+[13-Nov-2016 21:52:47 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 45
+[13-Nov-2016 21:52:47 UTC] Fatal error: syntax error, unexpected end of file
+[13-Nov-2016 21:53:08 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 45
+[13-Nov-2016 21:53:08 UTC] Fatal error: syntax error, unexpected end of file
+[13-Nov-2016 22:14:00 UTC] PHP Fatal error:  Call to undefined method calendarEntity::getCalendar() in /home/ubuntu/workspace/modules/roots.php on line 88
+[13-Nov-2016 22:14:00 UTC] Fatal error: Call to undefined method calendarEntity::getCalendar()
+[13-Nov-2016 22:15:25 UTC] PDOStatement: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[13-Nov-2016 22:16:40 UTC] Object of class DB\SQL\Mapper could not be converted to string
+[13-Nov-2016 22:17:13 UTC] Object of class DB\SQL\Mapper could not be converted to string
+[13-Nov-2016 22:17:50 UTC] Undefined field owner
+[13-Nov-2016 22:18:44 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 23
+[13-Nov-2016 22:18:44 UTC] Fatal error: Function name must be a string
+[13-Nov-2016 22:20:29 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 23
+[13-Nov-2016 22:20:29 UTC] Fatal error: Function name must be a string
+[13-Nov-2016 22:20:48 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 23
+[13-Nov-2016 22:20:48 UTC] Fatal error: Function name must be a string
+[13-Nov-2016 22:20:49 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 23
+[13-Nov-2016 22:20:49 UTC] Fatal error: Function name must be a string
+[13-Nov-2016 22:55:36 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[13-Nov-2016 22:55:36 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[13-Nov-2016 22:55:36 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)

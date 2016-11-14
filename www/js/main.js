@@ -23,7 +23,9 @@ $('#calendar').followTo(250);
     
 
 
-var jTemp = [];
+var events = [];
+var clone;
+
 	$(document).ready(function() {
 
 
@@ -65,8 +67,17 @@ var jTemp = [];
 			editable: true,
 			droppable: true,
 			    eventReceive: function(event, delta, revertFunc) {
-        jTemp.push(event);
+			    	
+        events = $('#calendar').fullCalendar( 'clientEvents');
 
+        
+    },
+    eventMouseout : function( event, jsEvent, view ) { 
+    	
+    //	console.log(jsEvent);
+    
+    	
+    	
     },
 			
 			// this allows things to be dropped onto the calendar
@@ -76,16 +87,57 @@ var jTemp = [];
 					// if so, remove the element from the "Draggable Events" list
 					$(this).remove();
 				}
+				
+				
 			}
 		});
+		
+
+function updateDatabase(){
+    $.post("/register_ajax",
+    {
+        username: $('#r_user_name_ajax').val(),
+        password: $('#r_password_ajax').val(),
+        email: $('#r_email_ajax').val()
+        //alert($('#user_name_ajax').val())
+    },
+    function(response, status,result){
+      console.log(response);
+      response = JSON.parse(response);
+       console.log(response.key);
+        if(response.key=="pass"){
+          //CODE REGISTER SUCCESFULL
+          alert("You have succesfully registered, please log in with your new credentials!");
+          $('#signup_modal').modal('toggle');
+          $('#login_modal').modal('toggle');
+            //window.location = '/authorised_zone';
+        }
+        else if(response.key=="username_exists"){
+          alert("username already exists");
+        }
+        else if(response.key=="email_exists"){
+          alert("E-mail already taken");
+        }
+        else if(response.key=="email_fail"){
+          alert("invalid e-mail");
+        }
+        else{
+          //CODE DATABASE ERROR
+
+             alert(response.key);
+        }
+    });
+}
+		
+
+
+
 
 	});
+	
+	
+	
+	
 
 
 
-//DATE PICKER
-
-                    $(function() {
-                      $('#m_date').datetimepicker();
-                      dateFormat: 'yy-mm-dd'
-                    });
