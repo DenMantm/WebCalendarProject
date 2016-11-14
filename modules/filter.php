@@ -39,6 +39,7 @@
             $output .= '  
                  <table class="table table-bordered table-condensed table-hover table-striped">  
                       <tr>  
+                           <th width="15%">Meeting No̲</th> 
                            <th width="5%">Title</th>  
                            <th width="30%">Subject</th>  
                            <th width="43%">Date</th>  
@@ -67,13 +68,13 @@
                   extract($row);
                       $output .= '  
                            <tr>  
+                                <td>'. $row["meetingID"] .'</td>  
                                 <td>'. $row["title"] .'</td>  
                                 <td>'. $row["subject"] .'</td>  
-                                <td> '. $row["date"] .'</td>  
-                               
+                                <td>'. $row["date"] .'</td>  
                                 <td>'. $row["location"] .'</td>  
                                  <td>
-                <a class="delete_product" data-id="<?php echo $meetingID; ?>" href="javascript:void(0)">
+                <a class="delete_product" data-id="$row["meetingID"]" href="javascript:void(0)">
                 <i class="glyphicon glyphicon-trash"></i>
                 </a></td>
                            </tr>  

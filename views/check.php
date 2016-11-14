@@ -23,8 +23,7 @@ include_once("../modules/db.php");
            <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>  
            <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">  
             <link rel="stylesheet" href="css/check.css"> 
-            
-  
+           
 </head>
 
 <body>
@@ -61,7 +60,7 @@ include('partials/navbar.php');
                 <div id="order_table">  
                      <table class="table table-bordered">  
                           <tr>  
-                                 
+                               <th width="15%">Meeting No̲</th>  
                                <th width="5%">Title</th>  
                                <th width="30%">Subject</th>  
                                <th width="43%">Date</th>  
@@ -76,7 +75,9 @@ include('partials/navbar.php');
               
                      {  
                      ?>  
-                          <tr>  
+                          <tr> 
+                          
+                               <td><?php echo $row["meetingID"]; ?></td> 
                                <td><?php echo $row["title"]; ?></td>  
                                <td><?php echo $row["subject"]; ?></td>  
                                <td><?php echo $row["date"]; ?></td>  
@@ -84,7 +85,7 @@ include('partials/navbar.php');
                                <td><?php echo $row["location"]; ?></td>  
                                <td>
                                   
-               <a class="delete_product" data-id="<?php echo $row["title"]; ?>" href="javascript:void(0)">
+                <a class="delete_product" data-id="<?php echo $row["meetingID"]; ?>" href="javascript:void(0)">
                 <i class="glyphicon glyphicon-trash"></i>
                 </a></td>
                                
@@ -101,6 +102,8 @@ include('partials/navbar.php');
            </div>  
       </body>  
  </html>  
+ 
+  
 <script src="js/check.js"></script>
 <script>
 	$(document).ready(function(){
