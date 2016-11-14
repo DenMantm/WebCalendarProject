@@ -42,5 +42,8 @@
   <!--CUSTOM SCRIPTS FOR MAIN-->
   <script type="text/javascript" src="js/target.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
-
+<!--<script type="text/javascript" src="js/npm.js"></script>-->
+<!--<script type="text/javascript" src="js/bootstrap.js"></script>-->
+<!--<script type="text/javascript" src="js/ bootbox.min.js"></script>-->
   
+ 

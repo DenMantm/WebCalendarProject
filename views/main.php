@@ -5,7 +5,7 @@
 
 <head>
   <title>Main</title>
-<<<<<<< HEAD
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--Jquery-->
@@ -49,10 +49,10 @@
   <!--CUSTOM SCRIPTS FOR MAIN-->
   <script type="text/javascript" src="js/target.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
-=======
+
   
 <?php include('partials/head.php') ?>
->>>>>>> 537b105d2ef2e163ba73566df748fde97e65bd4b
+
 
 
 </head>
