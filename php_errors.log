@@ -869,6 +869,7 @@ Stack trace:
 [06-Nov-2016 19:04:56 UTC] HTTP 404 (POST /modules/filter.php)
 [06-Nov-2016 19:10:38 UTC] include_once(modules/db.php): failed to open stream: No such file or directory
 [06-Nov-2016 19:14:37 UTC] include_once(modules/db.php): failed to open stream: No such file or directory
+<<<<<<< HEAD
 [07-Nov-2016 00:34:27 UTC] HTTP 404 (GET /views/index_page.php)
 [07-Nov-2016 00:34:27 UTC] HTTP 404 (GET /favicon.ico)
 [07-Nov-2016 00:34:27 UTC] HTTP 404 (GET /favicon.ico)
@@ -945,3 +946,202 @@ Stack trace:
 [14-Nov-2016 13:42:15 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:111-114}() /home/ubuntu/workspace/modules/lib/base.php:1672
 [14-Nov-2016 13:42:15 UTC] PHP   7. require() /home/ubuntu/workspace/modules/roots.php:113
 [14-Nov-2016 13:42:15 UTC] Fatal error: Cannot pass parameter 2 by reference
+=======
+[07-Nov-2016 21:31:04 UTC] HTTP 404 (GET /modules/roots.php)
+[07-Nov-2016 21:34:38 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[07-Nov-2016 21:34:38 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[07-Nov-2016 21:34:39 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[07-Nov-2016 21:44:26 UTC] HTTP 404 (GET /manageTeams)
+[07-Nov-2016 21:45:14 UTC] HTTP 404 (GET /manageTeams)
+[07-Nov-2016 22:05:49 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[07-Nov-2016 22:05:49 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[07-Nov-2016 22:05:49 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[07-Nov-2016 22:06:00 UTC] HTTP 404 (GET /index.html)
+[07-Nov-2016 22:06:06 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[07-Nov-2016 22:06:06 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[07-Nov-2016 22:06:07 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[08-Nov-2016 17:52:01 UTC] HTTP 404 (GET /views/partials/navbar.php)
+[08-Nov-2016 17:52:01 UTC] HTTP 404 (GET /favicon.ico)
+[08-Nov-2016 17:56:01 UTC] HTTP 404 (GET /favicon.ico)
+[08-Nov-2016 17:57:42 UTC] HTTP 404 (GET /favicon.ico)
+[08-Nov-2016 17:59:20 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[08-Nov-2016 17:59:21 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[08-Nov-2016 17:59:21 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[08-Nov-2016 20:14:29 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[08-Nov-2016 20:14:29 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[08-Nov-2016 20:14:29 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[08-Nov-2016 20:15:29 UTC] HTTP 404 (GET /response.php)
+[08-Nov-2016 20:15:39 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[08-Nov-2016 20:15:40 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[08-Nov-2016 20:15:40 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[08-Nov-2016 21:51:57 UTC] HTTP 404 (GET /favicon.ico)
+[11-Nov-2016 20:26:53 UTC] HTTP 404 (GET /views/partials/navbar.php)
+[11-Nov-2016 20:26:54 UTC] HTTP 404 (GET /favicon.ico)
+[11-Nov-2016 20:27:01 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[11-Nov-2016 20:27:03 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[11-Nov-2016 20:27:04 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[11-Nov-2016 21:31:06 UTC] HTTP 404 (GET /...)
+[11-Nov-2016 21:34:17 UTC] HTTP 404 (GET /manageTeams)
+[11-Nov-2016 23:31:42 UTC] HTTP 404 (GET /manageTeams)
+[11-Nov-2016 23:34:36 UTC] HTTP 404 (GET /manageTeams)
+[11-Nov-2016 23:48:50 UTC] HTTP 404 (GET /js/metro.js)
+[11-Nov-2016 23:48:50 UTC] HTTP 404 (GET /js/prettify/run_prettify.js)
+[11-Nov-2016 23:48:50 UTC] HTTP 404 (GET /js/ga.js)
+[11-Nov-2016 23:48:50 UTC] HTTP 404 (GET /js/docs.js)
+[11-Nov-2016 23:48:51 UTC] HTTP 404 (GET /js/metro.js)
+[11-Nov-2016 23:48:51 UTC] HTTP 404 (GET /js/docs.js)
+[11-Nov-2016 23:48:51 UTC] HTTP 404 (GET /js/prettify/run_prettify.js)
+[11-Nov-2016 23:48:51 UTC] HTTP 404 (GET /js/ga.js)
+<<<<<<< HEAD
+[12-Nov-2016 10:50:43 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[12-Nov-2016 10:50:43 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[12-Nov-2016 10:50:43 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[12-Nov-2016 10:50:45 UTC] HTTP 404 (GET /favicon.ico)
+[13-Nov-2016 13:35:34 UTC] HTTP 404 (GET /favicon.ico)
+[13-Nov-2016 13:35:37 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[13-Nov-2016 13:35:37 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[13-Nov-2016 13:35:37 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[13-Nov-2016 17:43:29 UTC] HTTP 404 (GET /favicon.ico)
+[13-Nov-2016 17:43:30 UTC] HTTP 404 (GET /favicon.ico)
+[13-Nov-2016 18:32:21 UTC] HTTP 404 (GET /www/index.php)
+[13-Nov-2016 18:32:21 UTC] HTTP 404 (GET /favicon.ico)
+[13-Nov-2016 18:32:27 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[13-Nov-2016 18:32:27 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[13-Nov-2016 18:32:28 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[13-Nov-2016 19:09:53 UTC] HTTP 404 (GET /manageTeams)
+[13-Nov-2016 20:27:02 UTC] require(./databaseio/calendarEntity.php): failed to open stream: No such file or directory
+[13-Nov-2016 20:27:54 UTC] PHP Fatal error:  Call to undefined method calendarEntity::instance() in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 12
+[13-Nov-2016 20:27:54 UTC] Fatal error: Call to undefined method calendarEntity::instance()
+[13-Nov-2016 20:34:33 UTC] PHP Fatal error:  Call to undefined method calendarEntity::instance() in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 12
+[13-Nov-2016 20:34:33 UTC] Fatal error: Call to undefined method calendarEntity::instance()
+[13-Nov-2016 20:49:14 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 7
+[13-Nov-2016 20:49:14 UTC] Fatal error: syntax error, unexpected 'class' (T_CLASS)
+[13-Nov-2016 20:49:44 UTC] require(databaseio/connection.php): failed to open stream: No such file or directory
+[13-Nov-2016 21:23:08 UTC] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 13
+[13-Nov-2016 21:23:08 UTC] Fatal error: syntax error, unexpected '$result' (T_VARIABLE)
+[13-Nov-2016 21:23:43 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 13
+[13-Nov-2016 21:23:43 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[13-Nov-2016 21:25:46 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 18
+[13-Nov-2016 21:25:46 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[13-Nov-2016 21:25:48 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 18
+[13-Nov-2016 21:25:48 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[13-Nov-2016 21:25:49 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 18
+[13-Nov-2016 21:25:49 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[13-Nov-2016 21:25:51 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 18
+[13-Nov-2016 21:25:51 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[13-Nov-2016 21:26:07 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 22
+[13-Nov-2016 21:26:07 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[13-Nov-2016 21:26:10 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 22
+[13-Nov-2016 21:26:10 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[13-Nov-2016 21:29:35 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 22
+[13-Nov-2016 21:29:35 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[13-Nov-2016 21:29:46 UTC] PHP Fatal error:  Call to a member function exec() on a non-object in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 22
+[13-Nov-2016 21:29:46 UTC] Fatal error: Call to a member function exec() on a non-object
+[13-Nov-2016 21:30:15 UTC] PHP Fatal error:  Call to a member function exec() on a non-object in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 21
+[13-Nov-2016 21:30:15 UTC] Fatal error: Call to a member function exec() on a non-object
+[13-Nov-2016 21:30:35 UTC] PDOStatement: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= deniss' at line 1
+[13-Nov-2016 21:31:38 UTC] PDOStatement: Unknown column 'Deniss' in 'where clause'
+[13-Nov-2016 21:34:23 UTC] PHP Fatal error:  Call to undefined method calendarEntity::test() in /home/ubuntu/workspace/modules/roots.php on line 75
+[13-Nov-2016 21:34:23 UTC] Fatal error: Call to undefined method calendarEntity::test()
+[13-Nov-2016 21:36:00 UTC] PHP Fatal error:  Call to a member function exec() on a non-object in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 20
+[13-Nov-2016 21:36:00 UTC] Fatal error: Call to a member function exec() on a non-object
+[13-Nov-2016 21:37:11 UTC] PHP Fatal error:  Call to a member function exec() on a non-object in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 22
+[13-Nov-2016 21:37:11 UTC] Fatal error: Call to a member function exec() on a non-object
+[13-Nov-2016 21:43:36 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 24
+[13-Nov-2016 21:43:36 UTC] Fatal error: Call to a member function fetch() on a non-object
+[13-Nov-2016 21:52:07 UTC] PHP Parse error:  syntax error, unexpected 'MyFirstCalendar' (T_STRING) in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 27
+[13-Nov-2016 21:52:07 UTC] Fatal error: syntax error, unexpected 'MyFirstCalendar' (T_STRING)
+[13-Nov-2016 21:52:47 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 45
+[13-Nov-2016 21:52:47 UTC] Fatal error: syntax error, unexpected end of file
+[13-Nov-2016 21:53:08 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 45
+[13-Nov-2016 21:53:08 UTC] Fatal error: syntax error, unexpected end of file
+[13-Nov-2016 22:14:00 UTC] PHP Fatal error:  Call to undefined method calendarEntity::getCalendar() in /home/ubuntu/workspace/modules/roots.php on line 88
+[13-Nov-2016 22:14:00 UTC] Fatal error: Call to undefined method calendarEntity::getCalendar()
+[13-Nov-2016 22:15:25 UTC] PDOStatement: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[13-Nov-2016 22:16:40 UTC] Object of class DB\SQL\Mapper could not be converted to string
+[13-Nov-2016 22:17:13 UTC] Object of class DB\SQL\Mapper could not be converted to string
+[13-Nov-2016 22:17:50 UTC] Undefined field owner
+[13-Nov-2016 22:18:44 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 23
+[13-Nov-2016 22:18:44 UTC] Fatal error: Function name must be a string
+[13-Nov-2016 22:20:29 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 23
+[13-Nov-2016 22:20:29 UTC] Fatal error: Function name must be a string
+[13-Nov-2016 22:20:48 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 23
+[13-Nov-2016 22:20:48 UTC] Fatal error: Function name must be a string
+[13-Nov-2016 22:20:49 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 23
+[13-Nov-2016 22:20:49 UTC] Fatal error: Function name must be a string
+[13-Nov-2016 22:55:36 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[13-Nov-2016 22:55:36 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[13-Nov-2016 22:55:36 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+=======
+[13-Nov-2016 18:53:02 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[13-Nov-2016 18:53:02 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[13-Nov-2016 18:53:02 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[13-Nov-2016 20:06:51 UTC] HTTP 404 (GET /manageTeams)
+[13-Nov-2016 20:54:39 UTC] include_once(modules/db.php): failed to open stream: No such file or directory
+[13-Nov-2016 20:54:55 UTC] include_once(modules/db.php): failed to open stream: No such file or directory
+[13-Nov-2016 22:16:43 UTC] HTTP 404 (GET /manageTeams)
+>>>>>>> 537b105d2ef2e163ba73566df748fde97e65bd4b
+[14-Nov-2016 11:03:47 UTC] HTTP 404 (GET /favicon.ico)
+[14-Nov-2016 11:03:47 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[14-Nov-2016 11:03:48 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[14-Nov-2016 11:03:48 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[14-Nov-2016 12:19:27 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:19:28 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:20:21 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:20:22 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:26:33 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:26:34 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:26:57 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:26:58 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:27:52 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:27:53 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:29:47 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:29:48 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:30:30 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:30:31 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:33:25 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:33:25 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:34:12 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:34:13 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:35:35 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:35:35 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:43:10 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:43:11 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:44:32 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:44:33 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:47:13 UTC] extract() expects parameter 1 to be array, boolean given
+[14-Nov-2016 12:48:47 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:48:53 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:48:53 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:49:34 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:50:01 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:50:23 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:51:28 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:51:49 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:52:02 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:52:03 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:53:06 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:53:06 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:54:46 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:55:27 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:56:14 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 12:57:04 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 13:19:39 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 13:20:09 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 13:20:09 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 13:20:31 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 13:20:33 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 13:27:55 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 13:27:56 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 13:28:28 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 13:28:29 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 13:30:49 UTC] extract() expects parameter 1 to be array, boolean given
+[14-Nov-2016 13:30:50 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 13:30:51 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 13:31:23 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 13:31:52 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 13:31:53 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 13:32:42 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 13:43:31 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+[14-Nov-2016 13:43:31 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+>>>>>>> de03573bc3b4ef6e1c1e7e60bff3806db63702f5

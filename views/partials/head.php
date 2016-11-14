@@ -1,3 +1,4 @@
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--Jquery-->
@@ -26,3 +27,23 @@
   
   <!--this script is for the database exchange ajax/jquery-->
   <script type='text/javascript' src="/js/database.js"></script>
+  
+  
+  <link href='calendarLib/fullcalendar.css' rel='stylesheet' />
+<link href='calendarLib/fullcalendar.print.css' rel='stylesheet' media='print' />
+<link href='css/main.css' rel='stylesheet' media='print' />
+<script src='calendarLib/lib/moment.min.js'></script>
+<script src='calendarLib/lib/jquery.min.js'></script>
+<script src='calendarLib/lib/jquery-ui.min.js'></script>
+<script src='calendarLib/fullcalendar.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+
+
+  <!--CUSTOM SCRIPTS FOR MAIN-->
+  <script type="text/javascript" src="js/target.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+<!--<script type="text/javascript" src="js/npm.js"></script>-->
+<!--<script type="text/javascript" src="js/bootstrap.js"></script>-->
+<!--<script type="text/javascript" src="js/ bootbox.min.js"></script>-->
+  
+ 

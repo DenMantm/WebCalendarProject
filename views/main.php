@@ -5,11 +5,40 @@
 
 <head>
   <title>Main</title>
-<?php include('partials/head.php') ?>
 
-
-<link href='calendarLib/fullcalendar.css' rel='stylesheet' />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--Date picker-->
+  <script type="text/javascript" src="/bower_components/moment/min/moment.min.js"></script>
+  <script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+  
+  <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+  <!--Styling for Metro: responsible for floading notes menus etc-->
+  <link rel="stylesheet" href="/css/metro.min.css">
+  <link rel="stylesheet" href="/css/animate.css">
+  <!--Metro icons used in lefthandside menu-->
+  <link rel="stylesheet" href="/css/metro-icons.min.css">
+  <link rel="stylesheet" href="/css/calendar.css">
+  <!--Metro js-->
+  <script type='text/javascript' src="/js/metro.min.js"></script>
+  <!--Knockout used to ling input and output in realtime-->
+  <script type='text/javascript' src='/js/knockout-3.4.0.debug.js'></script>
+  <script type='text/javascript' src="/js/bindings.js"></script>
+  <!--Dragscroll used in calendar allowing scroll items by dragging them-->
+  <script type="text/javascript" src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
+  
+  <!--this script is for the database exchange ajax/jquery-->
+  <script type='text/javascript' src="/js/database.js"></script>
+  
+  
+  <link href='calendarLib/fullcalendar.css' rel='stylesheet' />
 <link href='calendarLib/fullcalendar.print.css' rel='stylesheet' media='print' />
+<link href='css/main.css' rel='stylesheet' media='print' />
 <script src='calendarLib/lib/moment.min.js'></script>
 <script src='calendarLib/lib/jquery.min.js'></script>
 <script src='calendarLib/lib/jquery-ui.min.js'></script>
@@ -17,167 +46,69 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
 
 
-  <script>
-    /*global $*/
-
-    $.fn.followTo = function (pos) {
-    var $this = this,
-        $window = $(window);
-
-    $window.scroll(function (e) {
-        if ($window.scrollTop() > pos) {
-            $this.css({
-                position: 'absolute',
-                top: pos
-            });
-        } else {
-            $this.css({
-                position: 'fixed',
-                top: 0
-            });
-        }
-    });
-};
-
-$('#calendar').followTo(250);
-    
-
-  </script>
+  <!--CUSTOM SCRIPTS FOR MAIN-->
   <script type="text/javascript" src="js/target.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 
   
-  
-  <script>
-var jTemp = [];
-	$(document).ready(function() {
+<?php include('partials/head.php') ?>
 
 
-		/* initialize the external events
-		-----------------------------------------------------------------*/
 
-		$('#external-events .fc-event').each(function() {
-
-			
-			// store data so the calendar knows to render an event upon drop
-			
-			
-			
-			$(this).data('event', {
-				title: $.trim($(this).text()), // use the element's text as the event title
-				stick: true, // maintain when user navigates (see docs on the renderEvent method)
-				color: $(this).css("background-color")
-			});
-
-			// make the event draggable using jQuery UI
-			$(this).draggable({
-				zIndex: 999,
-				revert: true,      // will cause the event to go back to its
-				revertDuration: 0  //  original position after the drag
-			});
-
-		});
-
-
-		/* initialize the calendar
-		-----------------------------------------------------------------*/
-
-		$('#calendar').fullCalendar({
-			header: {
-				left: 'prev,next today',
-				center: 'title',
-				right: 'month,agendaWeek,agendaDay'
-			},
-			editable: true,
-			droppable: true,
-			    eventReceive: function(event, delta, revertFunc) {
-        jTemp.push(event);
-
-    },
-			
-			// this allows things to be dropped onto the calendar
-			drop: function() {
-				// is the "remove after drop" checkbox checked?
-				if ($('#drop-remove').is(':checked')) {
-					// if so, remove the element from the "Draggable Events" list
-					$(this).remove();
-				}
-			}
-		});
-
-	});
-
-</script>
-<style>
-
-	body {
-		margin-top: 40px;
-		text-align: center;
-		font-size: 14px;
-		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-	}
-		
-	#wrap {
-		width: 100%;
-		margin: 0 auto;
-	}
-		
-	#external-events {
-		float: left;
-		width: 150px;
-		padding: 0 10px;
-		border: 1px solid #ccc;
-		background: #eee;
-		text-align: left;
-	}
-		
-	#external-events h4 {
-		font-size: 16px;
-		margin-top: 0;
-		padding-top: 1em;
-	}
-		
-	#external-events .fc-event {
-		margin: 10px 0;
-		cursor: pointer;
-	}
-		
-	#external-events p {
-		margin: 1.5em 0;
-		font-size: 11px;
-		color: #666;
-	}
-		
-	#external-events p input {
-		margin: 0;
-		vertical-align: middle;
-	}
-
-	#calendar {
-		float: right;
-	
-	}
-
-</style>
-  
-  
-  
 </head>
 
 <body>
-  <?php
-include('partials/navbar.php');
+  <?php include('partials/navbar.php') ?>
 
-?>
-
-
+<h1 id = "m_calendar_name">Team Calendar - International Flinstones</h1>
+<hr/>
     <div class="row">
 
       <!--##################-->
       <!--Left handside menu-->
       <!--##################-->
 
-      <div class="col-md-1 remove_right_padding dark" style="height:500px;">
+      <div class="col-md-2 remove_right_padding" style="min-width:250px; margin-left:10px">
 
+        <!--<div class="cell">-->
+        <!--  <ul class="sidebar" id="sidebar">-->
+        <!--    <li>-->
+        <!--      <a href="#">-->
+        <!--        <span class="mif-calendar icon"></span>-->
+        <!--        <span class="title">Events</span>-->
+        <!--        <span class="counter">0</span>-->
+        <!--      </a>-->
+        <!--    </li>-->
+        <!--    <li>-->
+        <!--      <a href="#">-->
+        <!--        <span class="mif-event-available icon"></span>-->
+        <!--        <span class="title">Meetings</span>-->
+        <!--        <span class="counter">0</span>-->
+        <!--      </a>-->
+        <!--    </li>-->
+        <!--    <li class="active">-->
+        <!--      <a href="#">-->
+        <!--        <span class="mif-list icon"></span>-->
+        <!--        <span class="title">Tasks</span>-->
+        <!--        <span class="counter">0</span>-->
+        <!--      </a>-->
+        <!--    </li>-->
+        <!--    <li>-->
+        <!--      <a href="#">-->
+        <!--        <span class="mif-file-text icon"></span>-->
+        <!--        <span class="title">Notes</span>-->
+        <!--        <span class="counter">0</span>-->
+        <!--      </a>-->
+        <!--    </li>-->
+        <!--    <li>-->
+        <!--      <a href="#">-->
+        <!--        <span class="mif-cogs icon"></span>-->
+        <!--        <span class="title">Settings</span>-->
+        <!--        <span class="counter">0</span>-->
+        <!--      </a>-->
+        <!--    </li>-->
+
+<<<<<<< HEAD
          </style>
         <div class="cell">
           <ul class="sidebar no-responsive-future" id="sidebar">
@@ -225,6 +156,259 @@ include('partials/navbar.php');
             </li>
           </ul>
         </div>
+=======
+            
+        <!--  </ul>-->
+        <!--</div>-->
+        
+        <div class="cell">
+                        <h5>TreeView</h5>
+                        <div class="treeview" data-role="treeview">
+                            <ul>
+                                <li class="node" >
+                                    <span class="leaf">MiniCalendar</span>
+                                    <span class="node-toggle"></span>
+                                    <ul>
+                                        <li style="padding: 0;"><span class="leaf">
+                                          
+   <div data-role="calendar" class="calendar">
+   <div class="calendar-grid" >
+      <div class="calendar-row no-margin calendar-header">
+         <div class="calendar-cell align-center"><a class="btn-previous-year" href="#">-</a></div>
+         <div class="calendar-cell align-center"><a class="btn-previous-month" href="#">〈</a></div>
+         <div class="calendar-cell sel-month align-center"><a class="btn-select-month" href="#">November 2016</a></div>
+         <div class="calendar-cell align-center"><a class="btn-next-month" href="#">〉</a></div>
+         <div class="calendar-cell align-center"><a class="btn-next-year" href="#">+</a></div>
+      </div>
+      <div class="calendar-row week-days calendar-subheader">
+         <div class="calendar-cell align-center day-of-week">
+            <div>Su</div>
+         </div>
+         <div class="calendar-cell align-center day-of-week">
+            <div>Mo</div>
+         </div>
+         <div class="calendar-cell align-center day-of-week">
+            <div>Tu</div>
+         </div>
+         <div class="calendar-cell align-center day-of-week">
+            <div>We</div>
+         </div>
+         <div class="calendar-cell align-center day-of-week">
+            <div>Th</div>
+         </div>
+         <div class="calendar-cell align-center day-of-week">
+            <div>Fr</div>
+         </div>
+         <div class="calendar-cell align-center day-of-week">
+            <div>Sa</div>
+         </div>
+      </div>
+      <div class="calendar-row">
+         <div class="calendar-cell empty">
+            <div class="other-day">30</div>
+         </div>
+         <div class="calendar-cell empty">
+            <div class="other-day">31</div>
+         </div>
+         <div class="calendar-cell align-center day">
+            <div><a href="#">1</a></div>
+         </div>
+         <div class="calendar-cell align-center day">
+            <div><a href="#">2</a></div>
+         </div>
+         <div class="calendar-cell align-center day">
+            <div><a href="#">3</a></div>
+         </div>
+         <div class="calendar-cell align-center day">
+            <div><a href="#">4</a></div>
+         </div>
+         <div class="calendar-cell align-center day">
+            <div><a href="#">5</a></div>
+         </div>
+      </div>
+      <div class="calendar-row">
+         <div class="calendar-cell align-center day">
+            <div><a href="#">6</a></div>
+         </div>
+         <div class="calendar-cell align-center day">
+            <div><a href="#">7</a></div>
+         </div>
+         <div class="calendar-cell align-center day">
+            <div><a href="#">8</a></div>
+         </div>
+         <div class="calendar-cell align-center day">
+            <div><a href="#">9</a></div>
+         </div>
+         <div class="calendar-cell align-center day">
+            <div><a href="#">10</a></div>
+         </div>
+         <div class="calendar-cell align-center day today">
+            <div><a href="#">11</a></div>
+         </div>
+         <div class="calendar-cell align-center day">
+            <div><a href="#">12</a></div>
+         </div>
+      </div>
+      <div class="calendar-row">
+         <div class="calendar-cell align-center day">
+            <div><a href="#">13</a></div>
+         </div>
+         <div class="calendar-cell align-center day">
+            <div><a href="#">14</a></div>
+         </div>
+         <div class="calendar-cell align-center day">
+            <div><a href="#">15</a></div>
+         </div>
+         <div class="calendar-cell align-center day">
+            <div><a href="#">16</a></div>
+         </div>
+         <div class="calendar-cell align-center day">
+            <div><a href="#">17</a></div>
+         </div>
+         <div class="calendar-cell align-center day">
+            <div><a href="#">18</a></div>
+         </div>
+         <div class="calendar-cell align-center day">
+            <div><a href="#">19</a></div>
+         </div>
+      </div>
+      <div class="calendar-row">
+         <div class="calendar-cell align-center day">
+            <div><a href="#">20</a></div>
+         </div>
+         <div class="calendar-cell align-center day">
+            <div><a href="#">21</a></div>
+         </div>
+         <div class="calendar-cell align-center day">
+            <div><a href="#">22</a></div>
+         </div>
+         <div class="calendar-cell align-center day">
+            <div><a href="#">23</a></div>
+         </div>
+         <div class="calendar-cell align-center day">
+            <div><a href="#">24</a></div>
+         </div>
+         <div class="calendar-cell align-center day">
+            <div><a href="#">25</a></div>
+         </div>
+         <div class="calendar-cell align-center day">
+            <div><a href="#">26</a></div>
+         </div>
+      </div>
+      <div class="calendar-row">
+         <div class="calendar-cell align-center day">
+            <div><a href="#">27</a></div>
+         </div>
+         <div class="calendar-cell align-center day">
+            <div><a href="#">28</a></div>
+         </div>
+         <div class="calendar-cell align-center day">
+            <div><a href="#">29</a></div>
+         </div>
+         <div class="calendar-cell align-center day">
+            <div><a href="#">30</a></div>
+         </div>
+         <div class="calendar-cell empty">
+            <div class="other-day">1</div>
+         </div>
+         <div class="calendar-cell empty">
+            <div class="other-day">2</div>
+         </div>
+         <div class="calendar-cell empty">
+            <div class="other-day">3</div>
+         </div>
+      </div>
+      <div class="calendar-row calendar-actions">
+         <div class="align-center"><button class="button calendar-btn-today small-button success">Today</button></div>
+      </div>
+   </div>
+</div>
+                                    
+                                          
+                                          
+                                        </span></li>
+                                        
+                                        
+                                    </ul>
+                                </li>
+                                <!--<li class="node">-->
+                                <!--  <span class="node-toggle"></span>-->
+                                <!--    <span class="leaf">My Calendars</span>-->
+                                    
+                                <!--    <ul>-->
+                                <!--        <li class="node collapsed">-->
+                                <!--            <span class="leaf">International Flinstones</span>-->
+                                <!--            <span class="node-toggle"></span>-->
+                                <!--            <ul style="display: none;">-->
+                                <!--                <li><span class="leaf">Deniss</span></li>-->
+                                <!--                <li><span class="leaf">Kamil</span></li>-->
+                                <!--                <li><span class="leaf">Arezki</span></li>-->
+                                <!--                <li><span class="leaf">Maurice</span></li>-->
+                                <!--                <li><span class="leaf">Michael</span></li>-->
+                                <!--            </ul>-->
+                                <!--        </li>-->
+                                <!--        <li><span class="leaf">My Calendar</span></li>-->
+                                <!--        <li><span class="leaf">Team Calendar 1</span></li>-->
+                                <!--        <li><span class="leaf">Team Calendar 2</span></li>-->
+                                <!--        <li><span class="leaf">Team Calendar 3</span></li>-->
+                                <!--    </ul>-->
+                                <!--</li>-->
+                                
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="cell">
+                        <h5>Filter Calendars</h5>
+                        <div class="treeview" data-role="treeview">
+                            <ul>
+                                <li class="node" data-mode="checkbox" data-name="c0">
+                                    <label class="input-control checkbox small-check"><input type="checkbox" name="c0" class=""><span class="check"></span></label><span class="leaf">Calendars:</span>
+                                    <span class="node-toggle"></span>
+                                    <ul>
+                                        <li data-mode="checkbox" data-name="c3_1_1">
+                                            <label class="input-control checkbox small-check"><input type="checkbox" name="c3_1_1"><span class="check"></span></label><span class="leaf">Team Calendar 1</span>
+                                        </li>
+                                                                                <li data-mode="checkbox" data-name="c3_1_1">
+                                            <label class="input-control checkbox small-check"><input type="checkbox" name="c3_1_1"><span class="check"></span></label><span class="leaf">Team Calendar 2</span>
+                                        </li>
+                                        <li data-mode="checkbox" data-name="c3_1_1">
+                                            <label class="input-control checkbox small-check"><input type="checkbox" name="c3_1_1"><span class="check"></span></label><span class="leaf">My Calendar</span>
+                                        </li>
+                                        <li data-mode="checkbox" data-name="c1" class="node">
+                                            <label class="input-control checkbox small-check"><input type="checkbox" name="c1"><span class="check"></span></label><span class="leaf">International Flinstones</span>
+                                            <span class="node-toggle"></span>
+                                            <ul>
+                                                <li data-mode="checkbox" data-name="c1_1">
+                                                    <label class="input-control checkbox small-check"><input type="checkbox" name="c1_1"><span class="check"></span></label><span class="leaf">Deniss</span>
+                                                </li>
+                                                <li data-mode="checkbox" data-name="c1_2">
+                                                    <label class="input-control checkbox small-check"><input type="checkbox" name="c1_2"><span class="check"></span></label><span class="leaf">Kamil</span>
+                                                </li>
+                                                <li data-mode="checkbox" data-name="c1_3">
+                                                    <label class="input-control checkbox small-check"><input type="checkbox" name="c1_3"><span class="check"></span></label><span class="leaf">Arezki</span>
+                                                </li>
+                                                <li data-mode="checkbox" data-name="c1_4">
+                                                    <label class="input-control checkbox small-check"><input type="checkbox" name="c1_4"><span class="check"></span></label><span class="leaf">Maurice</span>
+                                                </li>
+                                                  <li data-mode="checkbox" data-name="c1_5">
+                                                    <label class="input-control checkbox small-check"><input type="checkbox" name="c1_5"><span class="check"></span></label><span class="leaf">Michael</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+>>>>>>> de03573bc3b4ef6e1c1e7e60bff3806db63702f5
       </div>
 
       <!--##################-->
@@ -236,7 +420,7 @@ include('partials/navbar.php');
 
 		<div id='calendar'></div>
 
-		<div style='clear:both'></div>
+		
 
 	</div>
       </div>
@@ -250,64 +434,113 @@ include('partials/navbar.php');
       <!--###  Notes area ####-->
       <!--####################-->
 
-      <div class="col-md-4">
+      <div class="col-md-3">
+        
+        <br/>
+        <br/>
+        <br/>
+        
+<div class="tabcontrol2" data-role="tabcontrol">
+   <ul class="tabs">
+      <li class="active"><a href="#frame_1_1">Insert New Tasks</a></li>
+      <li class=""><a href="#frame_1_2">Delete Tasks</a></li>
+   </ul>
+   <div class="frames">
+     
+     
+                               <!--CONTROL TAB 1-->
+                               
+                               
+      <div class="frame" id="frame_1_1" style="display: none;">
+      <button type="button" id="newmeetingBtn" class="btn btn-default btn-lg btn-block" data-toggle="modal" data-target="#newmeeting">New meeting</button>
+
+            <div id='external-events' style="max-width:200px padding:0">
+            <div class="accordion" data-role="accordion" data-close-any="true">
+                            <div class="frame" style="padding:7px">
+                                <div class="heading">International Flinstones</div>
+                                <div class="content" style="display: none;">
+                                    <span data-role="hint"
+                                                        data-hint-background="bg-orange"
+                                                        data-hint-color="fg-white"
+                                                        data-hint-mode="2"
+                                                        data-hint-position="top"
+                                                        data-hint="Presenting|Wo is this guy?"
+                                                    ><div class='fc-event' style="background-color:orange">Deniss</div></span>
+                                    <div class='fc-event' style="background-color:red">Kamil</div>
+                                    <div class='fc-event' style="background-color:green">Arezki</div>
+                                    <div class='fc-event'>Maurice</div>
+                                    <div class='fc-event' style="background-color:purple">Michael</div>
+                                  
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="frame" style="padding:7px">
+                                <div class="heading">Team Calendar 1</div>
+                                <div class="content" style="display: none;">
+                                    
+                                </div>
+                            </div>
+                            <div class="frame" style="padding:7px">
+                                <div class="heading">Team calendar 2</div>
+                                <div class="content">
+                                   
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        
+        </div>
         
         
-        <button type="button" id="newmeetingBtn" class="btn btn-default btn-lg btn-block" data-toggle="modal" data-target="#newmeeting">
-            New meeting</button>
+                                      <!--CONTROL TAB 2-->
+        
+      <div class="frame" id="frame_1_2" style="display: block;">
+        
+        <h2>Drag Task here to delete</h2>
+      </div>
+   </div>
+</div>
+        
             
             
-                       <div id='external-events'>
-			<h4>Draggable Events</h4>
-			<div class='fc-event'>Event</div>
-			<div class='fc-event' style="background-color:red">Important Meeting</div>
-			<div class='fc-event' style="background-color:green">Scheduled Work</div>
-			<div class='fc-event' style="background-color:orange">Important</div>
-			<div class='fc-event'>My Event 5</div>
-			<p>
-				<input type='checkbox' id='drop-remove' />
-				<label for='drop-remove'>remove after drop</label>
-			</p>
-		</div>  
             
-        <div class="panel" style="width: 200px; z-index: auto; top: 100px; left: 250px;" data-role="draggable">
-          <div class="heading">
-            <span class="icon mif-file-text"></span>
-            <span class="title">Note1</span>
-          </div>
-          <div class="content">
-            <p>
-              remember
-            </p>
-            Kill Mr. president
-            </br>
+            <!--Commenting out for now-->
+            
+        <!--<div class="panel" style="width: 200px; z-index: auto; top: 100px; left: 250px;" data-role="draggable">-->
+        <!--  <div class="heading">-->
+        <!--    <span class="icon mif-file-text"></span>-->
+        <!--    <span class="title">Note1</span>-->
+        <!--  </div>-->
+        <!--  <div class="content">-->
+        <!--    <p>-->
+        <!--      remember-->
+        <!--    </p>-->
+        <!--    Kill Mr. president-->
+        <!--    </br>-->
 
-          </div>
-        </div>
+        <!--  </div>-->
+        <!--</div>-->
 
-        <div class="panel" style="width: 200px; z-index: auto; top: 100px; left: 50px;" data-role="draggable">
-          <div class="heading">
-            <span class="icon mif-file-text"></span>
-            <span class="title">Note2</span>
-          </div>
-          <div class="content">
-            <p>Try not to go to the jail</p>
-            <p></p>
-            <p>Find out how to!</p>
+        <!--<div class="panel" style="width: 200px; z-index: auto; top: 100px; left: 50px;" data-role="draggable">-->
+        <!--  <div class="heading">-->
+        <!--    <span class="icon mif-file-text"></span>-->
+        <!--    <span class="title">Note2</span>-->
+        <!--  </div>-->
+        <!--  <div class="content">-->
+        <!--    <p>Try not to go to the jail</p>-->
+        <!--    <p></p>-->
+        <!--    <p>Find out how to!</p>-->
 
-          </div>
-        </div>
+        <!--  </div>-->
+        <!--</div>-->
         
         
         
         
       </div>
     </div>
-    <div class="row dark">
-      <div class="col-md-12 remove_right_padding dark" style="height:70px;"></div>
-      <div>
 
-      </div>
 
       <!--Dialog box for new meeting-->
 
@@ -319,12 +552,26 @@ include('partials/navbar.php');
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               <h4 class="modal-title" id="myModalLabel">New meeting</h4>
             </div>
+            
+            
             <div class="modal-body">
+                <div class="row">
+                <label class="col-sm-2" control-label>Task Title</label>
+                <div class="col-sm-10">
+                  <input type="text" name="title_text"id="m_title" class="form-control" placeholder="Enter The Task Title here" required/>
+                  
+                  
+                  
+                </div>
+              </div>
               
               <div class="row">
                 <label class="col-sm-2" control-label>Participants</label>
                 <div class="col-sm-10">
                   <input type="text" name="participants_text"id="m_to" class="form-control" placeholder="Enter participants here" required/>
+                  
+                  
+                  
                 </div>
               </div>
               
@@ -342,7 +589,7 @@ include('partials/navbar.php');
                 </div>
               </div>
               
-              <div class="row">
+            <div class="row">
                 <label htmlFor="inputDate" class="col-sm-2" control-label>Date</label>
                 <div class="col-sm-10">
                   <input type="text" id="m_date" name="date_text"class="form-control" placeholder="Enter date" required/>
@@ -353,32 +600,23 @@ include('partials/navbar.php');
                     });
                     
                   </script>
+                  
                 </div>
               </div>
+              <!-- end of toggle -->
             </div>
+            
+            
+            
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
               <button id="btnSaveNewMeeting" class="btn btn-primary">Save fund</button>
             </div>
-<ul id="responds">
-		
-		</ul>
+
           </div>
         </div>
         </div>
-
-
-<!--<div class="content_wrapper">-->
-	
-<!--<ul id="responds">-->
-
-<!--</ul>-->
-<!--    <div class="form_style">-->
-<!--    <textarea name="subject_text1" id="m_subject1" cols="45" rows="5" placeholder="Enter some text"></textarea>-->
-<!--    <button id="btnSaveNewMeeting1">Add record</button>-->
-<!--    <img src="images/loading.gif" id="LoadingImage" style="display:none" />-->
-<!--    </div>-->
-<!--</div>-->
-
-
+                              
+                         
 </body>
+</html>

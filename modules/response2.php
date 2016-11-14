@@ -13,15 +13,17 @@ if(isset($_POST['subject_text']) || ($_POST['location_text']))
 	$contentToSave = filter_var($_POST["location_text"],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH); 
 	$contentToSave1 = filter_var(date('Y-m-d',strtotime($_POST['date_text'])),FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH); 
 	$contentToSave2 = filter_var($_POST["subject_text"],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH); 
+	$contentToSave3 = filter_var($_POST["title_text"],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH); 
 	// Insert sanitize string in record
 	
-	$insert_row = $db->prepare("INSERT INTO Meetings (location,subject,date) 
-    VALUES (:var1,:var2,:var3)");
+	$insert_row = $db->prepare("INSERT INTO Meetings (location,subject,date,title) 
+    VALUES (:var1,:var2,:var3,:var4)");
     
     try{
     $insert_row->bindParam(':var1', $contentToSave, PDO::PARAM_STR );
     $insert_row->bindParam(':var2', $contentToSave2, PDO::PARAM_STR );
     $insert_row->bindParam(':var3', $contentToSave1, PDO::PARAM_STR );
+     $insert_row->bindParam(':var4', $contentToSave3, PDO::PARAM_STR );
    // $insert_row->bindParam(':var4', $contentToSave3, PDO::PARAM_STR );
     $insert_row->execute();
     //$my_id = $db->lastInsertId();

@@ -23,6 +23,7 @@ include_once("../modules/db.php");
            <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>  
            <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">  
             <link rel="stylesheet" href="css/check.css"> 
+            
   
 </head>
 
@@ -61,7 +62,7 @@ include('partials/navbar.php');
                      <table class="table table-bordered">  
                           <tr>  
                                  
-                               <th width="5%">MeetingID</th>  
+                               <th width="5%">Title</th>  
                                <th width="30%">Subject</th>  
                                <th width="43%">Date</th>  
                            
@@ -70,15 +71,23 @@ include('partials/navbar.php');
                           
                      <?php  
                      while ($row = $result)
+                     
                       $sth->execute();
+              
                      {  
                      ?>  
                           <tr>  
-                               <td><?php echo $row["meetingID"]; ?></td>  
+                               <td><?php echo $row["title"]; ?></td>  
                                <td><?php echo $row["subject"]; ?></td>  
                                <td><?php echo $row["date"]; ?></td>  
                                
                                <td><?php echo $row["location"]; ?></td>  
+                               <td>
+                                  
+               <a class="delete_product" data-id="<?php echo $row["title"]; ?>" href="javascript:void(0)">
+                <i class="glyphicon glyphicon-trash"></i>
+                </a></td>
+                               
                           </tr>  
                           
                         
@@ -93,3 +102,49 @@ include('partials/navbar.php');
       </body>  
  </html>  
 <script src="js/check.js"></script>
+<script>
+	$(document).ready(function(){
+		
+		$('.delete_product').click(function(e){
+			alert("hello there");
+			e.preventDefault();
+		
+			var pid = $(this).attr('data-id');
+			var parent = $(this).parent("td").parent("tr");
+			
+			bootbox.dialog({
+			  message: "Are you sure you want to Delete ?",
+			  title: "<i class='glyphicon glyphicon-trash'></i> Delete !",
+			  buttons: {
+				success: {
+				  label: "No",
+				  className: "btn-success",
+				  callback: function() {
+					 $('.bootbox').modal('hide');
+				  }
+				},
+				danger: {
+				  label: "Delete!",
+				  className: "btn-danger",
+				  callback: function() {
+				
+					  
+					  $.post('filter.php', { 'delete':pid })
+					  .done(function(response){
+						  bootbox.alert(response);
+						  parent.fadeOut('slow');
+					  })
+					  .fail(function(){
+						  bootbox.alert('Something Went Wrog ....');
+					  })
+					  					  
+				  }
+				}
+			  }
+			});
+			
+			
+		});
+		
+	});
+</script>

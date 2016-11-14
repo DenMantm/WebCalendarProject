@@ -14,6 +14,7 @@ require('send_email.php');
 
 $f3->route('GET /',
     function($f3) {
+        
                         session_start();
                 if($_SESSION['logged'] == true ) {
                     $f3->reroute('/main');
@@ -21,6 +22,7 @@ $f3->route('GET /',
                 else{
                     echo View::instance()->render('../views/index_page.php');
                 }
+                
 
     }
 );
@@ -28,20 +30,125 @@ $f3->route('GET /',
 // root to check.php
 $f3->route('GET /check',
     function($f3) {
-                        session_start();
-                if($_SESSION['logged'] == true ) {
-                    
-                    //$f3->reroute('../views/check.php');
-                    
+                    isUserLogged();
+
                     echo View::instance()->render('../views/check.php');
-                    
-                }
-                else{
-                    echo View::instance()->render('../views/index_page.php');
-                }
 
     }
 );
+
+
+$f3->route('GET /database/Calendar/@action',
+    function($f3,$params) {
+                
+                 //INITIALIZING INSTANCE OF THE OBJECT
+                 
+                 $test =  require('databaseio/calendarEntity.php');
+                 
+                //Creating serie of statements for CRUD
+                switch ($params['action']) {
+                
+                    //CREATING ENTRIES IN DATABASE
+                case "create":
+                    
+                    $calendar_name = 'Calendar1';
+                    $owner = 'Deniss';
+                    $is_team_calendar = false;
+                    $tasks = 'tasks';
+                    
+                    $test -> createCalendar($calendar_name,$owner,$is_team_calendar,$tasks);
+                    
+                    
+                    break;
+                    
+                    
+                     //Retrieving ENTRIES FROM DATABASE
+                case "retrieve":
+                    
+                    $test -> getCalendars();
+                    
+                    break;
+                    
+                    //UPDATING ENTRIES IN THE DATABASE
+                case "update":
+                    
+                    
+                    echo "update";
+                    break;
+                    
+                    //DELETING ENTRIES IN DATABASE
+                case "delete":
+                    
+                    
+                    echo "delete";
+                    break;
+}
+                
+               
+               
+               
+
+    }
+);
+
+
+$f3->route('GET /database/Task/@action',
+    function($f3,$params) {
+                
+                 //INITIALIZING INSTANCE OF THE OBJECT
+                 
+                 $test =  require('databaseio/calendarTask.php');
+                 
+                //Creating serie of statements for CRUD
+                switch ($params['action']) {
+                
+                    //CREATING ENTRIES IN DATABASE
+                case "create":
+                    
+                    $calendar_name = 'Calendar1';
+                    $owner = 'Deniss';
+                    $is_team_calendar = false;
+                    $tasks = 'tasks';
+                    
+                    $test -> createCalendar($calendar_name,$owner,$is_team_calendar,$tasks);
+                    
+                    
+                    break;
+                    
+                    
+                     //Retrieving ENTRIES FROM DATABASE
+                case "retrieve":
+                    
+                    $test -> getCalendars();
+                    
+                    break;
+                    
+                    //UPDATING ENTRIES IN THE DATABASE
+                case "update":
+                    
+                    
+                    echo "update";
+                    break;
+                    
+                    //DELETING ENTRIES IN DATABASE
+                case "delete":
+                    
+                    
+                    echo "delete";
+                    break;
+}
+                
+               
+               
+               
+
+    }
+);
+
+
+
+
+
 
 
 $f3->route('GET /arezki',
@@ -102,7 +209,6 @@ $f3->route('POST /filter',
 
 $f3->route('POST /addtask',
     function() {
-        
         require("response2.php"); 
     }
 );
