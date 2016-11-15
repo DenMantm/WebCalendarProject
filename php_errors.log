@@ -1145,3 +1145,181 @@ Stack trace:
 [14-Nov-2016 13:43:31 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
 [14-Nov-2016 13:43:31 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
 >>>>>>> de03573bc3b4ef6e1c1e7e60bff3806db63702f5
+[14-Nov-2016 16:18:13 UTC] HTTP 405 (GET /showteam)
+[14-Nov-2016 16:18:20 UTC] HTTP 405 (GET /showteam)
+[14-Nov-2016 16:19:48 UTC] HTTP 405 (GET /showteam)
+[14-Nov-2016 16:19:50 UTC] HTTP 405 (GET /showteam)
+[14-Nov-2016 16:20:11 UTC] HTTP 405 (GET /showteam)
+[14-Nov-2016 16:20:29 UTC] Unable to open showteam.php
+[14-Nov-2016 16:20:33 UTC] Unable to open showteam.php
+[14-Nov-2016 16:21:07 UTC] Unable to open showteam.php
+[14-Nov-2016 16:21:18 UTC] Unable to open showteam.php
+[14-Nov-2016 16:21:19 UTC] Unable to open showteam.php
+[14-Nov-2016 16:21:27 UTC] Unable to open showteam.php
+[14-Nov-2016 16:28:24 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/views/showteam.php on line 25
+[14-Nov-2016 16:28:24 UTC] PHP Stack trace:
+[14-Nov-2016 16:28:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[14-Nov-2016 16:28:24 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[14-Nov-2016 16:28:24 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:458
+[14-Nov-2016 16:28:24 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[14-Nov-2016 16:28:24 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 16:28:24 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:34-37}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 16:28:24 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:36
+[14-Nov-2016 16:28:24 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[14-Nov-2016 16:28:24 UTC] Fatal error: syntax error, unexpected ')'
+[14-Nov-2016 16:28:37 UTC] Function mysql_numrows() is deprecated
+[14-Nov-2016 16:33:31 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/ubuntu/workspace/views/showteam.php on line 24
+[14-Nov-2016 16:33:31 UTC] PHP Stack trace:
+[14-Nov-2016 16:33:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[14-Nov-2016 16:33:31 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[14-Nov-2016 16:33:31 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:458
+[14-Nov-2016 16:33:31 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[14-Nov-2016 16:33:31 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 16:33:31 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:34-37}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 16:33:31 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:36
+[14-Nov-2016 16:33:31 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[14-Nov-2016 16:33:31 UTC] Fatal error: syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+[14-Nov-2016 16:33:51 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/ubuntu/workspace/views/showteam.php on line 24
+[14-Nov-2016 16:33:51 UTC] PHP Stack trace:
+[14-Nov-2016 16:33:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[14-Nov-2016 16:33:51 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[14-Nov-2016 16:33:51 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:458
+[14-Nov-2016 16:33:51 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[14-Nov-2016 16:33:51 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 16:33:51 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:34-37}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 16:33:51 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:36
+[14-Nov-2016 16:33:51 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[14-Nov-2016 16:33:51 UTC] Fatal error: syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+[14-Nov-2016 16:33:52 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/ubuntu/workspace/views/showteam.php on line 24
+[14-Nov-2016 16:33:52 UTC] PHP Stack trace:
+[14-Nov-2016 16:33:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[14-Nov-2016 16:33:52 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[14-Nov-2016 16:33:52 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:458
+[14-Nov-2016 16:33:52 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[14-Nov-2016 16:33:52 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 16:33:52 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:34-37}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 16:33:52 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:36
+[14-Nov-2016 16:33:52 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[14-Nov-2016 16:33:52 UTC] Fatal error: syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+[14-Nov-2016 16:37:54 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/ubuntu/workspace/views/showteam.php on line 36
+[14-Nov-2016 16:37:54 UTC] PHP Stack trace:
+[14-Nov-2016 16:37:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[14-Nov-2016 16:37:54 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[14-Nov-2016 16:37:54 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:458
+[14-Nov-2016 16:37:54 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[14-Nov-2016 16:37:54 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 16:37:54 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:34-37}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 16:37:54 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:36
+[14-Nov-2016 16:37:54 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[14-Nov-2016 16:37:54 UTC] Fatal error: syntax error, unexpected '{'
+[14-Nov-2016 16:38:13 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/ubuntu/workspace/views/showteam.php on line 36
+[14-Nov-2016 16:38:13 UTC] PHP Stack trace:
+[14-Nov-2016 16:38:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[14-Nov-2016 16:38:13 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[14-Nov-2016 16:38:13 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:458
+[14-Nov-2016 16:38:13 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[14-Nov-2016 16:38:13 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 16:38:13 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:34-37}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 16:38:13 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:36
+[14-Nov-2016 16:38:13 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[14-Nov-2016 16:38:13 UTC] Fatal error: syntax error, unexpected '{'
+[14-Nov-2016 16:38:40 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/ubuntu/workspace/views/showteam.php on line 36
+[14-Nov-2016 16:38:40 UTC] PHP Stack trace:
+[14-Nov-2016 16:38:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[14-Nov-2016 16:38:40 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[14-Nov-2016 16:38:40 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:458
+[14-Nov-2016 16:38:40 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[14-Nov-2016 16:38:40 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 16:38:40 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:34-37}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 16:38:40 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:36
+[14-Nov-2016 16:38:40 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[14-Nov-2016 16:38:40 UTC] Fatal error: syntax error, unexpected '{'
+[14-Nov-2016 16:38:42 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/ubuntu/workspace/views/showteam.php on line 36
+[14-Nov-2016 16:38:42 UTC] PHP Stack trace:
+[14-Nov-2016 16:38:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[14-Nov-2016 16:38:42 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[14-Nov-2016 16:38:42 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:458
+[14-Nov-2016 16:38:42 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[14-Nov-2016 16:38:42 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 16:38:42 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:34-37}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 16:38:42 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:36
+[14-Nov-2016 16:38:42 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[14-Nov-2016 16:38:42 UTC] Fatal error: syntax error, unexpected '{'
+[14-Nov-2016 16:42:07 UTC] mysql_fetch_array() expects parameter 1 to be resource, array given
+[14-Nov-2016 16:42:38 UTC] mysql_fetch_array() expects parameter 1 to be resource, object given
+[14-Nov-2016 16:42:47 UTC] mysql_fetch_array() expects parameter 1 to be resource, array given
+[14-Nov-2016 16:45:18 UTC] mysql_fetch_assoc() expects parameter 1 to be resource, array given
+[14-Nov-2016 16:50:13 UTC] PHP Fatal error:  Call to undefined method PDOStatement::get_result() in /home/ubuntu/workspace/views/showteam.php on line 23
+[14-Nov-2016 16:50:13 UTC] PHP Stack trace:
+[14-Nov-2016 16:50:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[14-Nov-2016 16:50:13 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[14-Nov-2016 16:50:13 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:458
+[14-Nov-2016 16:50:13 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[14-Nov-2016 16:50:13 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 16:50:13 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:34-37}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 16:50:13 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:36
+[14-Nov-2016 16:50:13 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[14-Nov-2016 16:50:13 UTC] PHP   9. require() /home/ubuntu/workspace/modules/lib/base.php:2504
+[14-Nov-2016 16:50:13 UTC] Fatal error: Call to undefined method PDOStatement::get_result()
+[14-Nov-2016 16:50:25 UTC] PHP Fatal error:  Call to undefined method PDOStatement::get_result() in /home/ubuntu/workspace/views/showteam.php on line 23
+[14-Nov-2016 16:50:25 UTC] PHP Stack trace:
+[14-Nov-2016 16:50:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[14-Nov-2016 16:50:25 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[14-Nov-2016 16:50:25 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:458
+[14-Nov-2016 16:50:25 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[14-Nov-2016 16:50:25 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 16:50:25 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:34-37}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 16:50:25 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:36
+[14-Nov-2016 16:50:25 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[14-Nov-2016 16:50:25 UTC] PHP   9. require() /home/ubuntu/workspace/modules/lib/base.php:2504
+[14-Nov-2016 16:50:25 UTC] Fatal error: Call to undefined method PDOStatement::get_result()
+[14-Nov-2016 16:50:28 UTC] PHP Fatal error:  Call to undefined method PDOStatement::get_result() in /home/ubuntu/workspace/views/showteam.php on line 23
+[14-Nov-2016 16:50:28 UTC] PHP Stack trace:
+[14-Nov-2016 16:50:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[14-Nov-2016 16:50:28 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[14-Nov-2016 16:50:28 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:458
+[14-Nov-2016 16:50:28 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[14-Nov-2016 16:50:28 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 16:50:28 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:34-37}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 16:50:28 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:36
+[14-Nov-2016 16:50:28 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[14-Nov-2016 16:50:28 UTC] PHP   9. require() /home/ubuntu/workspace/modules/lib/base.php:2504
+[14-Nov-2016 16:50:28 UTC] Fatal error: Call to undefined method PDOStatement::get_result()
+[14-Nov-2016 16:51:58 UTC] Invalid argument supplied for foreach()
+[14-Nov-2016 16:52:08 UTC] Invalid argument supplied for foreach()
+[14-Nov-2016 16:58:52 UTC] PHP Fatal error:  Call to undefined method PDOStatement::fetch_row() in /home/ubuntu/workspace/views/showteam.php on line 11
+[14-Nov-2016 16:58:52 UTC] PHP Stack trace:
+[14-Nov-2016 16:58:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[14-Nov-2016 16:58:52 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[14-Nov-2016 16:58:52 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:458
+[14-Nov-2016 16:58:52 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[14-Nov-2016 16:58:52 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 16:58:52 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:34-37}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 16:58:52 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:36
+[14-Nov-2016 16:58:52 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[14-Nov-2016 16:58:52 UTC] PHP   9. require() /home/ubuntu/workspace/modules/lib/base.php:2504
+[14-Nov-2016 16:58:52 UTC] Fatal error: Call to undefined method PDOStatement::fetch_row()
+[14-Nov-2016 16:59:07 UTC] PHP Fatal error:  Call to undefined method PDOStatement::fetch_row() in /home/ubuntu/workspace/views/showteam.php on line 11
+[14-Nov-2016 16:59:07 UTC] PHP Stack trace:
+[14-Nov-2016 16:59:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[14-Nov-2016 16:59:07 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[14-Nov-2016 16:59:07 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:458
+[14-Nov-2016 16:59:07 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[14-Nov-2016 16:59:07 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 16:59:07 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:34-37}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 16:59:07 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:36
+[14-Nov-2016 16:59:07 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[14-Nov-2016 16:59:07 UTC] PHP   9. require() /home/ubuntu/workspace/modules/lib/base.php:2504
+[14-Nov-2016 16:59:07 UTC] Fatal error: Call to undefined method PDOStatement::fetch_row()
+[14-Nov-2016 17:00:22 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/views/showteam.php on line 53
+[14-Nov-2016 17:00:22 UTC] PHP Stack trace:
+[14-Nov-2016 17:00:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[14-Nov-2016 17:00:22 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[14-Nov-2016 17:00:22 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:458
+[14-Nov-2016 17:00:22 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[14-Nov-2016 17:00:22 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 17:00:22 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:34-37}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[14-Nov-2016 17:00:22 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:36
+[14-Nov-2016 17:00:22 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[14-Nov-2016 17:00:22 UTC] Fatal error: syntax error, unexpected end of file
+[14-Nov-2016 17:00:39 UTC] mysql_fetch_array() expects parameter 1 to be resource, array given
