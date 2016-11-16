@@ -38,12 +38,12 @@ $f3->route('GET /check',
 );
 
 
-$f3->route('GET /database/Calendar/@action',
+$f3->route('POST /database/Calendar/@action',
     function($f3,$params) {
                 
                  //INITIALIZING INSTANCE OF THE OBJECT
-                 
                  $test =  require('databaseio/calendarEntity.php');
+                 
                  
                 //Creating serie of statements for CRUD
                 switch ($params['action']) {
@@ -92,25 +92,23 @@ $f3->route('GET /database/Calendar/@action',
 );
 
 
-$f3->route('GET /database/Task/@action',
+$f3->route('POST|GET /database/Tasks/@action',
     function($f3,$params) {
                 
                  //INITIALIZING INSTANCE OF THE OBJECT
                  
-                 $test =  require('databaseio/calendarTask.php');
+                $test =  require('databaseio/calendarTask.php');
                  
                 //Creating serie of statements for CRUD
                 switch ($params['action']) {
                 
                     //CREATING ENTRIES IN DATABASE
                 case "create":
-                    
-                    $calendar_name = 'Calendar1';
-                    $owner = 'Deniss';
-                    $is_team_calendar = false;
-                    $tasks = 'tasks';
-                    
-                    $test -> createCalendar($calendar_name,$owner,$is_team_calendar,$tasks);
+                   // echo $_POST['json'];
+                  //  $taskPostObject = json_decode($_POST['json'],true);
+                   // echo $taskPostObject;
+
+                    $test -> createEvent($_POST['json']);
                     
                     
                     break;
@@ -119,7 +117,8 @@ $f3->route('GET /database/Task/@action',
                      //Retrieving ENTRIES FROM DATABASE
                 case "retrieve":
                     
-                    $test -> getCalendars();
+                   // $test -> getEvents($_POST['owner_calendar_id']);
+                   $test -> getEvents(0);
                     
                     break;
                     

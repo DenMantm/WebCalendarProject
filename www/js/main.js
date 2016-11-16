@@ -67,7 +67,6 @@ var clone;
 			editable: true,
 			droppable: true,
 			    eventReceive: function(event, delta, revertFunc) {
-			    	
         events = $('#calendar').fullCalendar( 'clientEvents');
 
         
@@ -77,15 +76,23 @@ var clone;
     //	console.log(jsEvent);
     
     	
-    	
     },
-			
+			 eventClick: function(calEvent, jsEvent, view) {
+
+        // change the border color just for fun
+        //$(this).css('border-color', 'red');
+       //alert('clicked');
+       updateDatabase();
+
+    },
+
 			// this allows things to be dropped onto the calendar
 			drop: function() {
 				// is the "remove after drop" checkbox checked?
 				if ($('#drop-remove').is(':checked')) {
 					// if so, remove the element from the "Draggable Events" list
 					$(this).remove();
+					
 				}
 				
 				
@@ -94,38 +101,41 @@ var clone;
 		
 
 function updateDatabase(){
-    $.post("/database/",
-    {
-        data: events
+    
+    var convertedEvents=[];
+    for (var i = 0; i< events.length;i++){
+        var _convertedEvent={};
+        
+        _convertedEvent['title'] = events[i].title;
+        _convertedEvent['start'] = events[i]._start._d;
+        _convertedEvent['allDay'] = events[i]._allDay;
+        _convertedEvent['owner_calendar_id'] = 0;
+        _convertedEvent['color'] = events[i].color;
+        try{
+            _convertedEvent['end'] = events[i].end._d;
+        }
+        catch(Exception){
+            _convertedEvent['end'] = null;
+        }
+        
+        convertedEvents.push(_convertedEvent); 
+    }
 
-    },
-    function(response, status,result){
-      console.log(response);
-      response = JSON.parse(response);
-       console.log(response.key);
-        if(response.key=="pass"){
-          //CODE REGISTER SUCCESFULL
-          alert("You have succesfully registered, please log in with your new credentials!");
-          $('#signup_modal').modal('toggle');
-          $('#login_modal').modal('toggle');
-            //window.location = '/authorised_zone';
+    $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: "/database/Tasks/create",
+        data: {json : JSON.stringify(convertedEvents)},
+        success: function(data){
+            console.log(data);
+        },
+        error: function(e){
+            console.log(e.message);
         }
-        else if(response.key=="username_exists"){
-          alert("username already exists");
-        }
-        else if(response.key=="email_exists"){
-          alert("E-mail already taken");
-        }
-        else if(response.key=="email_fail"){
-          alert("invalid e-mail");
-        }
-        else{
-          //CODE DATABASE ERROR
-
-             alert(response.key);
-        }
-    });
+});
+  
 }
+
 		
 
 
@@ -133,7 +143,28 @@ function updateDatabase(){
 
 	});
 	
-	
+	function retrieveFromDatabase(){
+    
+    
+        $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: "/database/Tasks/retrieve",
+        data: {owner_calendar_id : 0},
+        success: function(data){
+            $('#calendar').fullCalendar('addEventSource', data);
+            $('#calendar').fullCalendar( 'refresh' );
+            events = $('#calendar').fullCalendar( 'clientEvents');
+            console.log(data);
+        },
+        error: function(e){
+            console.log(e.message);
+        }
+});
+    
+    
+}
+retrieveFromDatabase();
 	
 	
 

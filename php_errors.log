@@ -1003,3 +1003,83 @@ Stack trace:
 [13-Nov-2016 20:54:55 UTC] include_once(modules/db.php): failed to open stream: No such file or directory
 [13-Nov-2016 22:16:43 UTC] HTTP 404 (GET /manageTeams)
 >>>>>>> 537b105d2ef2e163ba73566df748fde97e65bd4b
+[14-Nov-2016 00:19:18 UTC] HTTP 404 (GET /views/main.php)
+[14-Nov-2016 00:19:48 UTC] HTTP 404 (GET /manageTeams)
+[15-Nov-2016 17:40:25 UTC] HTTP 404 (GET /modules/databaseio/calendarEntity.php)
+[15-Nov-2016 17:40:25 UTC] HTTP 404 (GET /favicon.ico)
+[15-Nov-2016 17:40:37 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[15-Nov-2016 17:40:37 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[15-Nov-2016 17:54:04 UTC] HTTP 404 (GET /modules/databaseio/calendarEntity.php)
+[15-Nov-2016 17:54:46 UTC] HTTP 404 (GET /Task/)
+[15-Nov-2016 17:54:57 UTC] HTTP 404 (GET /Task/retrieve)
+[15-Nov-2016 17:55:04 UTC] require(databaseio/calendarTask.php): failed to open stream: No such file or directory
+[15-Nov-2016 17:55:14 UTC] require(databaseio/calendarTask.php): failed to open stream: No such file or directory
+[15-Nov-2016 17:55:36 UTC] require(./databaseio/calendarTask.php): failed to open stream: No such file or directory
+[15-Nov-2016 17:56:28 UTC] PHP Fatal error:  Call to a member function skip() on a non-object in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 24
+[15-Nov-2016 17:56:28 UTC] Fatal error: Call to a member function skip() on a non-object
+[15-Nov-2016 17:57:45 UTC] PHP Fatal error:  Call to a member function skip() on a non-object in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 24
+[15-Nov-2016 17:57:45 UTC] Fatal error: Call to a member function skip() on a non-object
+[15-Nov-2016 17:58:16 UTC] HTTP 404 (GET /browserconfig.xml)
+[15-Nov-2016 18:00:05 UTC] PHP Fatal error:  Call to a member function skip() on a non-object in /home/ubuntu/workspace/modules/databaseio/calendarEntity.php on line 24
+[15-Nov-2016 18:00:05 UTC] Fatal error: Call to a member function skip() on a non-object
+[15-Nov-2016 18:05:40 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[15-Nov-2016 18:05:40 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[15-Nov-2016 18:06:42 UTC] HTTP 404 (GET /modules/databaseio/calendarEntity.php)
+[15-Nov-2016 18:12:06 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[15-Nov-2016 18:12:06 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[15-Nov-2016 19:53:24 UTC] HTTP 404 (GET /favicon.ico)
+[15-Nov-2016 19:53:24 UTC] HTTP 404 (GET /favicon.ico)
+[16-Nov-2016 19:12:55 UTC] HTTP 404 (GET /favicon.ico)
+[16-Nov-2016 19:12:57 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[16-Nov-2016 19:12:57 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[16-Nov-2016 19:12:57 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[16-Nov-2016 20:17:54 UTC] HTTP 404 (POST /database/Tasks/create)
+[16-Nov-2016 20:18:15 UTC] HTTP 404 (POST /database/Tasks/create)
+[16-Nov-2016 20:18:49 UTC] HTTP 404 (GET /www/index.php)
+[16-Nov-2016 20:18:56 UTC] HTTP 404 (POST /database/Tasks/create)
+[16-Nov-2016 20:19:08 UTC] HTTP 404 (POST /database/Tasks/create)
+[16-Nov-2016 20:19:09 UTC] HTTP 404 (POST /database/Tasks/create)
+[16-Nov-2016 20:20:48 UTC] HTTP 404 (POST /database/Tasks/create)
+[16-Nov-2016 20:20:52 UTC] HTTP 404 (POST /database/Tasks/create)
+[16-Nov-2016 20:20:52 UTC] HTTP 404 (POST /database/Tasks/create)
+[16-Nov-2016 20:21:59 UTC] PHP Fatal error:  Call to undefined method calendarEntity::createEvent() in /home/ubuntu/workspace/modules/roots.php on line 108
+[16-Nov-2016 20:21:59 UTC] Fatal error: Call to undefined method calendarEntity::createEvent()
+[16-Nov-2016 20:27:53 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/databaseio/calendarTask.php on line 60
+[16-Nov-2016 20:27:53 UTC] Fatal error: syntax error, unexpected '}'
+[16-Nov-2016 20:28:13 UTC] array_values() expects parameter 1 to be array, null given
+[16-Nov-2016 20:28:14 UTC] array_values() expects parameter 1 to be array, null given
+[16-Nov-2016 20:28:19 UTC] array_values() expects parameter 1 to be array, null given
+[16-Nov-2016 20:28:21 UTC] array_values() expects parameter 1 to be array, null given
+[16-Nov-2016 20:31:21 UTC] array_values() expects parameter 1 to be array, null given
+[16-Nov-2016 20:33:11 UTC] array_values() expects parameter 1 to be array, null given
+[16-Nov-2016 20:35:10 UTC] array_values() expects parameter 1 to be array, null given
+[16-Nov-2016 20:35:40 UTC] array_values() expects parameter 1 to be array, null given
+[16-Nov-2016 20:35:51 UTC] array_values() expects parameter 1 to be array, null given
+[16-Nov-2016 20:35:57 UTC] array_values() expects parameter 1 to be array, null given
+[16-Nov-2016 20:36:40 UTC] array_values() expects parameter 1 to be array, null given
+[16-Nov-2016 20:36:40 UTC] array_values() expects parameter 1 to be array, null given
+[16-Nov-2016 20:36:40 UTC] array_values() expects parameter 1 to be array, null given
+[16-Nov-2016 20:36:41 UTC] array_values() expects parameter 1 to be array, null given
+[16-Nov-2016 20:37:32 UTC] Illegal string offset 'owner_calendar_id'
+[16-Nov-2016 20:37:34 UTC] Illegal string offset 'owner_calendar_id'
+[16-Nov-2016 20:41:31 UTC] array_values() expects parameter 1 to be array, null given
+[16-Nov-2016 20:42:03 UTC] array_values() expects parameter 1 to be array, null given
+[16-Nov-2016 20:55:54 UTC] Illegal string offset 'title'
+[16-Nov-2016 20:57:22 UTC] Invalid argument supplied for foreach()
+[16-Nov-2016 21:09:10 UTC] PDOStatement: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[16-Nov-2016 21:09:17 UTC] PDOStatement: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[16-Nov-2016 21:09:44 UTC] PDOStatement: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[16-Nov-2016 21:09:45 UTC] PDOStatement: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[16-Nov-2016 21:11:27 UTC] PDOStatement: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[16-Nov-2016 21:32:43 UTC] PHP Fatal error:  Call to undefined method DB\SQL\Mapper::exec() in /home/ubuntu/workspace/modules/databaseio/calendarTask.php on line 42
+[16-Nov-2016 21:32:43 UTC] Fatal error: Call to undefined method DB\SQL\Mapper::exec()
+[16-Nov-2016 21:33:08 UTC] PDOStatement: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CALENDAR_TASK' at line 1
+[16-Nov-2016 21:33:44 UTC] PDOStatement: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CALENDAR_TASK where owner_calendar_id = 0' at line 1
+[16-Nov-2016 21:45:12 UTC] HTTP 404 (GET /database/Tasks/retrieve)
+[16-Nov-2016 21:45:21 UTC] HTTP 404 (GET /database/Tasks/retrieve)
+[16-Nov-2016 21:45:44 UTC] PDOStatement: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[16-Nov-2016 21:46:38 UTC] PDOStatement: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[16-Nov-2016 21:47:04 UTC] PDOStatement: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[16-Nov-2016 21:47:13 UTC] PDOStatement: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[16-Nov-2016 21:51:24 UTC] HTTP 404 (GET /Tasks/retrieve)
+[16-Nov-2016 22:04:09 UTC] Object of class DB\SQL\Mapper could not be converted to string

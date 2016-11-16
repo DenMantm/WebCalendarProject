@@ -6,9 +6,6 @@
 class calendarEntity{
 
       
-        
-
-
     
     
     public static function getCalendars(){
@@ -19,6 +16,9 @@ class calendarEntity{
         
        $calendar= new DB\SQL\Mapper($db,'CALENDAR_ENTITY');
        $calendar->load(array('OWNER=?','Deniss'));
+       
+       echo $calendar->count();
+       
        
         echo $calendar->id;
         $user->skip();
@@ -47,12 +47,12 @@ class calendarEntity{
     
             public static function deleteCalendar($id,$owner){
         
-        //getting connected to db
-       require("connection.php");
-
-       $calendar= new DB\SQL\Mapper($db,'CALENDAR_ENTITY');
-       $calendar->load(array('OWNER=? AND id=?',$owner,$id));
-       $calendar->erase();
+                                //getting connected to db
+                               require("connection.php");
+                        
+                               $calendar= new DB\SQL\Mapper($db,'CALENDAR_ENTITY');
+                               $calendar->load(array('OWNER=? AND id=?',$owner,$id));
+                               $calendar->erase();
 
     }
     
