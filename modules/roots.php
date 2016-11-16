@@ -86,24 +86,13 @@ $f3->route('POST|GET /database/Tasks/@action',
                 
                     //CREATING ENTRIES IN DATABASE
                 case "create":
-<<<<<<< HEAD
-                   // echo $_POST['json'];
+              // echo $_POST['json'];
                   //  $taskPostObject = json_decode($_POST['json'],true);
                    // echo $taskPostObject;
 
                     $test -> createEvent($_POST['json']);
                     
                     
-=======
-                    
-                    $calendar_name = 'Calendar1';
-                    $owner = 'Deniss';
-                    $is_team_calendar = false;
-                    $tasks = 'tasks';
-                    
-                    $test -> createCalendar($calendar_name,$owner,$is_team_calendar,$tasks);
-  
->>>>>>> 05bc27988b6cd8302cb394a8eb3ce238fda44730
                     break;
                     
                      //Retrieving ENTRIES FROM DATABASE
