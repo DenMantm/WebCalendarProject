@@ -1,7 +1,3 @@
-
-
-
-
 <?php  
  //filter.php  
  include_once("../modules/db.php");  
@@ -37,13 +33,14 @@
 		}
            
             $output .= '  
-                 <table class="table table-bordered">  
+                 <table class="table table-bordered table-condensed table-hover table-striped">  
                       <tr>  
                            <th width="5%">Title</th>  
                            <th width="30%">Subject</th>  
                            <th width="43%">Date</th>  
                           
                            <th width="12%">Location</th>  
+                           
                       </tr>  
             ';  
            
@@ -55,7 +52,7 @@
         
             
             
-          echo ( " <b>The number of meeting is : " .$sth->rowCount())." But this App has a probelm and shows one less, Fuck it anyway!</b>";
+         
             if( $sth->rowCount() > 0) 
             {  
                
@@ -63,6 +60,7 @@
                 // while($row = $result->fetch(PDO::FETCH_ASSOC))  
                 while ($row = $sth->fetch())
                  {  
+                  extract($row);
                       $output .= '  
                            <tr>  
                                 <td>'. $row["title"] .'</td>  
@@ -70,6 +68,10 @@
                                 <td> '. $row["date"] .'</td>  
                                
                                 <td>'. $row["location"] .'</td>  
+                                 <td>
+                <a class="delete_product" data-id="<?php echo $meetingID; ?>" href="javascript:void(0)">
+                <i class="glyphicon glyphicon-trash"></i>
+                </a></td>
                            </tr>  
                       ';  
                    
@@ -81,7 +83,7 @@
             {  
                  $output .= '  
                       <tr>  
-                           <td colspan="5">You have no Meetings yet !! Make one idiot !!!!!!!!!!!</td>  
+                           <td colspan="5">You have no Meetings yet !!</td>  
                       </tr>  
                  ';  
                 
