@@ -37,6 +37,8 @@
                 </li>
                 <li><a href="/check">Check Meetings</a>
                 </li>
+                 <li><a href="/search">New Search</a>
+                </li>
                 <li><a href="/manageTeams">Manage Teams</a>
                 </li>
                 <li><a href="/logout">Logout</a></li>

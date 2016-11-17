@@ -21,6 +21,7 @@ $f3->route('GET /',
     }
 );
 
+// Arezki part here 
 // root to check.php
 $f3->route('GET /check',
     function($f3) {
@@ -29,6 +30,45 @@ $f3->route('GET /check',
         echo View::instance()->render('../views/check.php');
     }
 );
+$f3->route('POST /addtask',
+    function() {
+        require("response2.php"); 
+    }
+);
+
+$f3->route('GET /readea',
+    function() {
+        require("read.php"); 
+    }
+);
+
+$f3->route('POST /detailsa',
+    function() {
+        require("../views/details.php"); 
+    }
+);
+
+$f3->route('POST /createa',
+    function() {
+        require("../views/create.php"); 
+    }
+);
+$f3->route('POST /deletea',
+    function() {
+        require("../views/delete.php"); 
+    }
+);
+
+
+// root to search.php
+$f3->route('GET /search',
+    function($f3) {
+        isUserLogged();
+
+        echo View::instance()->render('../views/search/search.php');
+    }
+);
+
 
 $f3->route('GET /showteam',
     function($f3) {
@@ -202,11 +242,7 @@ $f3->route('POST /filter',
 );
 
 
-$f3->route('POST /addtask',
-    function() {
-        require("response2.php"); 
-    }
-);
+
 
 $f3->route('POST /addteam',
     function() {
