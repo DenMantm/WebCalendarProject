@@ -6,8 +6,8 @@ if(isset($_POST['team_name']))
 {	
 	$contentToSave = filter_var($_POST["team_name"],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH); 
 
-	$insert_row = $db->prepare("INSERT INTO Teams (userID,teamName,teamID,role) 
-    VALUES (:var1,:var2,:var3,'editor')");
+	$insert_row = $db->prepare("INSERT INTO Teams (userID,teamName,teamID,role,confirm) 
+    VALUES (:var1,:var2,:var3,'editor',1)");
     
     try{
         $uid = uniqid();
@@ -24,13 +24,12 @@ if(isset($_POST['team_name']))
 	
 	if($insert_row)
 	{
-	    echo $contentToSave1.'</li>';
-		echo '<script language="javascript">';
-        echo 'alert("Your team has been created successfuly.")';
-        echo '</script>';
+	    echo('<script type="text/javascript">location.href = "/team";</script>');
+        
 	} else {
 		header('HTTP/1.1 500 Looks like mysql error, could not insert record!');
 		exit();
 	}
+	
 }
 ?>

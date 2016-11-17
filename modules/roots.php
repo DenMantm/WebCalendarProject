@@ -37,6 +37,30 @@ $f3->route('GET /showteam',
     }
 );
 
+$f3->route('GET /editteam/@id',
+    function($f3,$params) {
+        isUserLogged();
+        $f3->set('SESSION.currentTeam',$params['id']); 
+        echo View::instance()->render('../modules/editteam.php');
+    }
+);
+
+$f3->route('GET /leaveteam/@id',
+    function($f3,$params) {
+        isUserLogged();
+        $f3->set('SESSION.currentTeam',$params['id']); 
+        echo View::instance()->render('../modules/leaveteam.php');
+    }
+);
+
+$f3->route('GET /acceptteam/@id',
+    function($f3,$params) {
+        isUserLogged();
+        $f3->set('SESSION.currentTeam',$params['id']); 
+        echo View::instance()->render('../modules/acceptteam.php');
+    }
+);
+
 
 $f3->route('POST /database/Calendar/@action',
     function($f3,$params) {
