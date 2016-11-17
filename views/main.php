@@ -111,53 +111,6 @@
 
 
          </style>
-        <div class="cell">
-          <ul class="sidebar no-responsive-future" id="sidebar">
-            <li>
-              <a href="#">
-                <span class="mif-calendar icon"></span>
-                <span class="title">Calendar</span>
-                <span class="counter">0</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="mif-event-available icon"></span>
-                <span class="title">Meetings</span>
-                <span class="counter">0</span>
-              </a>
-            </li>
-            <li class="active">
-              <a href="#">
-                <span class="mif-list icon"></span>
-                <span class="title">Tasks</span>
-                <span class="counter">0</span>
-              </a>
-            </li>
-            <li class="active">
-              <a href="/team">
-                <span class="mif-list icon"></span>
-                <span class="title">Teams</span>
-                <span class="counter">0</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="mif-file-text icon"></span>
-                <span class="title">Notes</span>
-                <span class="counter">0</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="mif-cogs icon"></span>
-                <span class="title">Settings</span>
-                <span class="counter">0</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-
             
         <!--  </ul>-->
         <!--</div>-->
@@ -172,7 +125,7 @@
                                     <ul>
                                         <li style="padding: 0;"><span class="leaf">
                                           
-   <div data-role="calendar" class="calendar">
+   <div data-role="calendar" class="calendar" data-day-click="day_click">
    <div class="calendar-grid" >
       <div class="calendar-row no-margin calendar-header">
          <div class="calendar-cell align-center"><a class="btn-previous-year" href="#">-</a></div>
@@ -360,6 +313,52 @@
                         </div>
                     </div>
                     
+                            <div class="cell">
+          <ul class="sidebar no-responsive-future" id="sidebar">
+            <li>
+              <a href="#">
+                <span class="mif-calendar icon"></span>
+                <span class="title">Calendar</span>
+                <span class="counter">0</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="mif-event-available icon"></span>
+                <span class="title">Meetings</span>
+                <span class="counter">0</span>
+              </a>
+            </li>
+            <li class="active">
+              <a href="#">
+                <span class="mif-list icon"></span>
+                <span class="title">Tasks</span>
+                <span class="counter">0</span>
+              </a>
+            </li>
+            <li class="active">
+              <a href="/team">
+                <span class="mif-list icon"></span>
+                <span class="title">Teams</span>
+                <span class="counter">0</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="mif-file-text icon"></span>
+                <span class="title">Notes</span>
+                <span class="counter">0</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="mif-cogs icon"></span>
+                <span class="title">Settings</span>
+                <span class="counter">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
                     
                     <div class="cell">
                         <h5>Filter Calendars</h5>
