@@ -164,6 +164,16 @@ function updateDatabase(){
     
     
 }
+function day_click(short, full) {
+                                
+                                $('#calendar').fullCalendar( 'gotoDate', short );
+                                $('#calendar').fullCalendar( 'changeView', 'agendaDay'  );
+    
+                                //alert("You click on day!\nShort: "+short+"\nFull: " + full);
+                            }
+
+
+
 retrieveFromDatabase();
 	
 	

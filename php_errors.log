@@ -1440,9 +1440,20 @@ Stack trace:
 [14-Nov-2016 17:00:39 UTC] mysql_fetch_array() expects parameter 1 to be resource, array given
 >>>>>>> 05bc27988b6cd8302cb394a8eb3ce238fda44730
 [16-Nov-2016 22:33:49 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL) in /home/ubuntu/workspace/modules/roots.php on line 89
+<<<<<<< HEAD
+[17-Nov-2016 18:33:27 UTC] HTTP 404 (GET /modules/databaseio/calendarTask.php)
+[17-Nov-2016 18:33:28 UTC] HTTP 404 (GET /favicon.ico)
+[17-Nov-2016 18:33:34 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[17-Nov-2016 18:33:34 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[17-Nov-2016 18:33:34 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[17-Nov-2016 18:45:51 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[17-Nov-2016 18:45:51 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[17-Nov-2016 18:45:51 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+=======
 [16-Nov-2016 23:53:55 UTC] HTTP 404 (GET /leaveteam/582cb9bf4326b)
 [17-Nov-2016 00:01:16 UTC] HTTP 404 (GET /...)
 >>>>>>> afcd68540d223d29dffb7a1c03d654b001ef4327
+<<<<<<< HEAD
 [17-Nov-2016 12:11:03 UTC] HTTP 404 (GET /favicon.ico)
 [17-Nov-2016 12:11:04 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
 [17-Nov-2016 12:11:04 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
@@ -1893,3 +1904,8 @@ Stack trace:
 [17-Nov-2016 20:30:09 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
 [17-Nov-2016 20:30:10 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
 [17-Nov-2016 20:30:10 UTC] HTTP 404 (GET /reada)
+=======
+>>>>>>> 2fe6ed5350ce26548c288fe8e7b8c9843261e555
+[17-Nov-2016 19:14:13 UTC] HTTP 404 (GET /modules/databaseio/calendarTask.php)
+[17-Nov-2016 19:35:19 UTC] HTTP 404 (GET /manageTeams)
+>>>>>>> 1f0309aac21165ff9467ed04c8d23041b83694d6
