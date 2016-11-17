@@ -227,7 +227,7 @@ include('partials/navbar.php');
       <div class="col-md-6 remove_padding">
         Your teams:
         
-      <?php include('showteam.php') ?>
+      <?php include('../modules/showteam.php') ?>
   
       </div>
 

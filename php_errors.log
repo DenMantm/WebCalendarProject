@@ -1226,7 +1226,40 @@ Stack trace:
 [14-Nov-2016 13:32:42 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
 [14-Nov-2016 13:43:31 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
 [14-Nov-2016 13:43:31 UTC] HTTP 404 (GET /js/%20bootbox.min.js)
+<<<<<<< HEAD
+[14-Nov-2016 14:12:12 UTC] HTTP 404 (GET /jquery-1.12-0.min.js)
+[14-Nov-2016 14:12:12 UTC] HTTP 404 (GET /bootbox.min.js)
+[14-Nov-2016 14:12:13 UTC] HTTP 404 (GET /jquery-1.12-0.min.js)
+[14-Nov-2016 14:12:13 UTC] HTTP 404 (GET /bootbox.min.js)
+[14-Nov-2016 14:13:44 UTC] HTTP 404 (GET /jquery-1.12-0.min.js)
+[14-Nov-2016 14:13:44 UTC] HTTP 404 (GET /bootstrap.min.js)
+[14-Nov-2016 14:13:44 UTC] HTTP 404 (GET /bootbox.min.js)
+[14-Nov-2016 14:13:49 UTC] HTTP 404 (GET /jquery-1.12-0.min.js)
+[14-Nov-2016 14:13:49 UTC] HTTP 404 (GET /bootstrap.min.js)
+[14-Nov-2016 14:13:49 UTC] HTTP 404 (GET /bootbox.min.js)
+[14-Nov-2016 14:14:51 UTC] HTTP 404 (GET /jquery-1.12-0.min.js)
+[14-Nov-2016 14:14:51 UTC] HTTP 404 (GET /bootstrap.min.js)
+[14-Nov-2016 14:14:52 UTC] HTTP 404 (GET /views/bootbox.min.js)
+[14-Nov-2016 14:14:52 UTC] HTTP 404 (GET /jquery-1.12-0.min.js)
+[14-Nov-2016 14:14:52 UTC] HTTP 404 (GET /bootstrap.min.js)
+[14-Nov-2016 14:14:53 UTC] HTTP 404 (GET /views/bootbox.min.js)
+[14-Nov-2016 14:15:48 UTC] HTTP 404 (GET /jquery-1.12-0.min.js)
+[14-Nov-2016 14:15:48 UTC] HTTP 404 (GET /bootstrap.min.js)
+[14-Nov-2016 14:15:48 UTC] HTTP 404 (GET /bootbox.min.js)
+[14-Nov-2016 14:15:49 UTC] HTTP 404 (GET /jquery-1.12-0.min.js)
+[14-Nov-2016 14:15:49 UTC] HTTP 404 (GET /bootstrap.min.js)
+[14-Nov-2016 14:15:49 UTC] HTTP 404 (GET /bootbox.min.js)
+[14-Nov-2016 14:17:08 UTC] HTTP 404 (GET /bootstrap.min.js)
+[14-Nov-2016 14:17:08 UTC] HTTP 404 (GET /jquery-1.12-0.min.js)
+[14-Nov-2016 14:17:08 UTC] HTTP 404 (GET /bootbox.min.js)
+[14-Nov-2016 14:17:09 UTC] HTTP 404 (GET /jquery-1.12-0.min.js)
+[14-Nov-2016 14:17:10 UTC] HTTP 404 (GET /bootstrap.min.js)
+[14-Nov-2016 14:17:10 UTC] HTTP 404 (GET /bootbox.min.js)
+=======
 >>>>>>> de03573bc3b4ef6e1c1e7e60bff3806db63702f5
+<<<<<<< HEAD
+>>>>>>> 24a1af401d509d75458490861f62cd0aac093565
+=======
 [14-Nov-2016 16:18:13 UTC] HTTP 405 (GET /showteam)
 [14-Nov-2016 16:18:20 UTC] HTTP 405 (GET /showteam)
 [14-Nov-2016 16:19:48 UTC] HTTP 405 (GET /showteam)
@@ -1407,6 +1440,7 @@ Stack trace:
 [14-Nov-2016 17:00:39 UTC] mysql_fetch_array() expects parameter 1 to be resource, array given
 >>>>>>> 05bc27988b6cd8302cb394a8eb3ce238fda44730
 [16-Nov-2016 22:33:49 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL) in /home/ubuntu/workspace/modules/roots.php on line 89
+<<<<<<< HEAD
 [17-Nov-2016 18:33:27 UTC] HTTP 404 (GET /modules/databaseio/calendarTask.php)
 [17-Nov-2016 18:33:28 UTC] HTTP 404 (GET /favicon.ico)
 [17-Nov-2016 18:33:34 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
@@ -1415,3 +1449,8 @@ Stack trace:
 [17-Nov-2016 18:45:51 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
 [17-Nov-2016 18:45:51 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
 [17-Nov-2016 18:45:51 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+=======
+[16-Nov-2016 23:53:55 UTC] HTTP 404 (GET /leaveteam/582cb9bf4326b)
+[17-Nov-2016 00:01:16 UTC] HTTP 404 (GET /...)
+>>>>>>> afcd68540d223d29dffb7a1c03d654b001ef4327
+>>>>>>> 2fe6ed5350ce26548c288fe8e7b8c9843261e555
