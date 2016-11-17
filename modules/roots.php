@@ -61,6 +61,11 @@ $f3->route('GET /acceptteam/@id',
     }
 );
 
+$f3->route('GET /MyCalendars',
+    function() {
+        echo View::instance()->render('../views/MyCalendars.php');
+    }
+);
 
 $f3->route('POST /database/Calendar/@action',
     function($f3,$params) {
@@ -73,17 +78,18 @@ $f3->route('POST /database/Calendar/@action',
                 switch ($params['action']) {
                     //CREATING ENTRIES IN DATABASE
                 case "create":
+                    
                     $calendar_name = 'Calendar1';
                     $owner = 'Deniss';
                     $is_team_calendar = false;
                     $tasks = 'tasks';
                     $test -> createCalendar($calendar_name,$owner,$is_team_calendar,$tasks);
                     break;
+                    
                      //Retrieving ENTRIES FROM DATABASE
                 case "retrieve":
                     $test -> getCalendars();
                     break;
-                    
                     //UPDATING ENTRIES IN THE DATABASE
                 case "update":
                     echo "update";
@@ -96,7 +102,6 @@ $f3->route('POST /database/Calendar/@action',
         }
     }
 );
-
 
 $f3->route('POST|GET /database/Tasks/@action',
     function($f3,$params) {
