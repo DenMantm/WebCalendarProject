@@ -1,7 +1,3 @@
-
-
-
-
 <?php  
  //filter.php  
  include_once("../modules/db.php");  

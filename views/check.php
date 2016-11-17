@@ -151,3 +151,6 @@ include('partials/navbar.php');
 		
 	});
 </script>
+
+// http://webslesson.blogspot.ie/2016/10/ajax-with-php-mysql-date-range-search-using-jquery-datepicker.html
+	//sanitize post value, PHP filter FILTER_SANITIZE_NUMBER_INT removes all characters except digits, plus and minus sign.

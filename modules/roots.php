@@ -1,125 +1,129 @@
-
 <?php
 // Kickstart the framework
 $f3=require('lib/base.php');
 //$f3->set('CACHE','memcache=localhost');
 
 
-
 //this here is sending e-mail module
 require('send_email.php');
-
 
 //setting up basic rooting
 
 $f3->route('GET /',
     function($f3) {
-        
-                        session_start();
+            session_start();
                 if($_SESSION['logged'] == true ) {
                     $f3->reroute('/main');
                 }
                 else{
                     echo View::instance()->render('../views/index_page.php');
                 }
-                
-
     }
 );
 
 // root to check.php
 $f3->route('GET /check',
     function($f3) {
-                    isUserLogged();
+        isUserLogged();
 
-                    echo View::instance()->render('../views/check.php');
+        echo View::instance()->render('../views/check.php');
+    }
+);
 
+$f3->route('GET /showteam',
+    function($f3) {
+        isUserLogged();
+        echo View::instance()->render('../views/showteam.php');
+    }
+);
+
+$f3->route('GET /editteam/@id',
+    function($f3,$params) {
+        isUserLogged();
+        $f3->set('SESSION.currentTeam',$params['id']); 
+        echo View::instance()->render('../modules/editteam.php');
+    }
+);
+
+$f3->route('GET /leaveteam/@id',
+    function($f3,$params) {
+        isUserLogged();
+        $f3->set('SESSION.currentTeam',$params['id']); 
+        echo View::instance()->render('../modules/leaveteam.php');
+    }
+);
+
+$f3->route('GET /acceptteam/@id',
+    function($f3,$params) {
+        isUserLogged();
+        $f3->set('SESSION.currentTeam',$params['id']); 
+        echo View::instance()->render('../modules/acceptteam.php');
     }
 );
 
 
-$f3->route('GET /database/Calendar/@action',
+$f3->route('POST /database/Calendar/@action',
     function($f3,$params) {
                 
                  //INITIALIZING INSTANCE OF THE OBJECT
-                 
                  $test =  require('databaseio/calendarEntity.php');
                  
+                 
                 //Creating serie of statements for CRUD
                 switch ($params['action']) {
-                
                     //CREATING ENTRIES IN DATABASE
                 case "create":
-                    
                     $calendar_name = 'Calendar1';
                     $owner = 'Deniss';
                     $is_team_calendar = false;
                     $tasks = 'tasks';
-                    
                     $test -> createCalendar($calendar_name,$owner,$is_team_calendar,$tasks);
-                    
-                    
                     break;
-                    
-                    
                      //Retrieving ENTRIES FROM DATABASE
                 case "retrieve":
-                    
                     $test -> getCalendars();
-                    
                     break;
                     
                     //UPDATING ENTRIES IN THE DATABASE
                 case "update":
-                    
-                    
                     echo "update";
                     break;
                     
                     //DELETING ENTRIES IN DATABASE
                 case "delete":
-                    
-                    
                     echo "delete";
                     break;
-}
-                
-               
-               
-               
-
+        }
     }
 );
 
 
-$f3->route('GET /database/Task/@action',
+$f3->route('POST|GET /database/Tasks/@action',
     function($f3,$params) {
                 
                  //INITIALIZING INSTANCE OF THE OBJECT
                  
-                 $test =  require('databaseio/calendarTask.php');
+                $test =  require('databaseio/calendarTask.php');
                  
                 //Creating serie of statements for CRUD
                 switch ($params['action']) {
                 
                     //CREATING ENTRIES IN DATABASE
                 case "create":
-                    
-                    $calendar_name = 'Calendar1';
-                    $owner = 'Deniss';
-                    $is_team_calendar = false;
-                    $tasks = 'tasks';
-                    
-                    $test -> createCalendar($calendar_name,$owner,$is_team_calendar,$tasks);
+              // echo $_POST['json'];
+                  //  $taskPostObject = json_decode($_POST['json'],true);
+                   // echo $taskPostObject;
+
+                    $test -> createEvent($_POST['json']);
                     
                     
                     break;
                     
-                    
                      //Retrieving ENTRIES FROM DATABASE
                 case "retrieve":
                     
-                    $test -> getCalendars();
+                   // $test -> getEvents($_POST['owner_calendar_id']);
+                   $test -> getEvents(0);
                     
                     break;
                     
@@ -137,19 +141,9 @@ $f3->route('GET /database/Task/@action',
                     echo "delete";
                     break;
 }
-                
-               
-               
-               
 
     }
 );
-
-
-
-
-
-
 
 $f3->route('GET /arezki',
     function() {
@@ -207,6 +201,7 @@ $f3->route('POST /filter',
     }
 );
 
+
 $f3->route('POST /addtask',
     function() {
         require("response2.php"); 
@@ -237,8 +232,6 @@ $f3->route('POST /email_retrieve_password',
 $f3->route('POST /addNewTask',
     function() {
         require("response.php");
-       
-       
     }
 );
 
@@ -251,7 +244,6 @@ $f3->route('GET /retrieve_password/@arg1/@arg2',
     $name =  $params['arg2'];
         
         retrieve_password($name,$link);
-        
     }
 );
 
@@ -263,12 +255,8 @@ $f3->route('POST /create_new_password',
                $link =  $_SESSION['recover_link'];
         
        $newPassword =  $_POST['new_password'];
-       
-       
-        
+
         change_password($user,$link,$newPassword);
-        
-        
     }
 );
 
@@ -292,8 +280,6 @@ $f3->route('GET /calendar_example2',
         echo View::instance()->render('views/examples/calendar_example2.php');
     }
 );
-
-
 
 
 $f3->route('GET /verify_email/@arg1/@arg2',
@@ -368,9 +354,6 @@ require("db.php");
             echo View::instance()->render('views/verification/information_verification_failed.html');
             } 
     } 
-    
-    
-    
 }
 
 function change_password($user,$link,$newPassword){
@@ -411,7 +394,6 @@ require("db.php");
             for($round = 0; $round < 65536; $round++) { 
             $password = hash('sha256', $password . $salt); 
         } 
-            
               $query = "UPDATE user SET password = :password, salt = :salt where email = :email;";
                      $query_params = array( 
                          ':email' => $user,
@@ -426,8 +408,6 @@ require("db.php");
         catch(PDOException $ex) { 
             die("Failed to run query: " . $ex->getMessage()); 
         } 
-            
-            
             echo View::instance()->render('views/verification/password_changed.html');
         }
         else { 
@@ -435,13 +415,9 @@ require("db.php");
             } 
     } 
     else{
-        
         echo View::instance()->render('views/verification/information_verification_failed.html');
     }
-    
-    
-    
-    
+
 }
 
 
@@ -500,10 +476,8 @@ require("db.php");
             echo View::instance()->render('views/verification/information_verification_failed.html');
             } 
     } 
-    
-    
 }
 
 //kicking off server
 $f3->run();
-?> 
+?>

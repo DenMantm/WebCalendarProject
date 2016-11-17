@@ -36,6 +36,16 @@ $("#btnSaveNewTeam").click(function (e) {
 			});
 	});
 
-	
 
 });
+
+function leave(id) {
+	var conf = confirm("Are you sure?");
+	var link = "/leaveteam/" + id;
+
+	if (conf) {
+	window.open(link,"_self")
+	}
+	
+	
+};

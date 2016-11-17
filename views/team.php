@@ -6,6 +6,7 @@
 <head>
   <title>Main</title>
 <?php include('partials/head.php') ?>
+<?php include_once("../modules/db.php") ?>
 
 
 
@@ -225,6 +226,9 @@ include('partials/navbar.php');
 
       <div class="col-md-6 remove_padding">
         Your teams:
+        
+      <?php include('../modules/showteam.php') ?>
+  
       </div>
 
       <!--#################################-->

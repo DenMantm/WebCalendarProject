@@ -28,3 +28,5 @@
                 }  
            });  
       });  
+
+// http://webslesson.blogspot.ie/2016/10/ajax-with-php-mysql-date-range-search-using-jquery-datepicker.html
