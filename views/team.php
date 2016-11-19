@@ -72,7 +72,7 @@
 </head>
 
 <body>
-  <div data-role="dialog" id="dialog9" class="padding20 dialog" data-close-button="true" data-overlay="true" data-overlay-color="op-dark" data-overlay-click-close="true" style="width: auto; height: auto; visibility: visible; left: 701.5px; top: 209px;">
+  <div data-role="dialog" id="dialog9" class="padding20 dialog info" data-close-button="true" data-overlay="true" data-overlay-color="op-dark" data-overlay-click-close="true" style="width: auto; height: auto; visibility: visible; left: 701.5px; top: 209px;">
             <h1>Users within that team:</h1>
             <div id="landing"></div>
         <span class="dialog-close-button"></span></div>
@@ -144,8 +144,6 @@ include('partials/navbar.php');
       <!--##################-->
 
       <div class="col-md-6 remove_padding">
-        Your teams:
-        
       <?php include('../modules/showteam.php') ?>
   
       </div>
@@ -201,10 +199,33 @@ include('partials/navbar.php');
         
       </div>
     </div>
+    
     <div class="row dark">
       <div class="col-md-12 remove_right_padding dark" style="height:70px;"></div>
       <div>
 
       </div>
+<div class="modal fade" id="newteam" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
 
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">New team</h4>
+            </div>
+            <div class="modal-body">
+              
+              <div class="row">
+                <label class="col-sm-3" control-label>Team name:</label>
+                <div class="col-sm-9">
+                  <input type="text" name="team_name" id="t_name" class="form-control" placeholder="Enter name of the team here" required/>
+                </div>
+              </div>
+              
+ 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button id="btnSaveNewTeam" class="btn btn-primary">Create</button>
+</div>
 </body>

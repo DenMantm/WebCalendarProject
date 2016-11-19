@@ -10,7 +10,8 @@
                     FROM 
                         Teams
                     WHERE 
-                        teamID = '" . $teamID . "';";
+                        teamID = '" . $teamID . "'
+                        and confirm = 1;";
                       
           $sth = $db->prepare($query);  
             

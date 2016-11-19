@@ -26,7 +26,7 @@ $("#btnSaveNewTeam").click(function (e) {
 				$("#t_name").val(''); //empty text field on successful
 				$("#btnSaveNewTeam").show(); //show submit button
 				$("#LoadingImage").hide(); //hide loading image
-
+				window.open("/team","_self")
 			},
 			error:function (xhr, ajaxOptions, thrownError){
 				$("#btnSaveNewTeam").show(); //show submit button
@@ -66,7 +66,7 @@ function showusers(id) {
         	//alert(link);
         	$("#landing").html(response); 
             showDialog("#dialog9");
-
+		
         }
 	});
 }
