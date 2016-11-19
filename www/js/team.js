@@ -26,7 +26,7 @@ $("#btnSaveNewTeam").click(function (e) {
 				$("#t_name").val(''); //empty text field on successful
 				$("#btnSaveNewTeam").show(); //show submit button
 				$("#LoadingImage").hide(); //hide loading image
-
+				window.open("/team","_self")
 			},
 			error:function (xhr, ajaxOptions, thrownError){
 				$("#btnSaveNewTeam").show(); //show submit button
@@ -36,8 +36,8 @@ $("#btnSaveNewTeam").click(function (e) {
 			});
 	});
 
-
 });
+
 
 function leave(id) {
 	var conf = confirm("Are you sure?");
@@ -46,6 +46,27 @@ function leave(id) {
 	if (conf) {
 	window.open(link,"_self")
 	}
-	
-	
 };
+
+    function showDialog(id){
+        var dialog = $(id).data('dialog');
+        dialog.open();
+    }
+
+function showusers(id) {
+	
+	var link = "/showusers/" + id;
+	
+         
+	$.ajax({    //create an ajax request to load_page.php
+        type: "GET",
+        url: link,             
+        dataType: "html",   //expect html to be returned                
+        success: function(response){   
+        	//alert(link);
+        	$("#landing").html(response); 
+            showDialog("#dialog9");
+		
+        }
+	});
+}

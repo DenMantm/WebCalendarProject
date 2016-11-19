@@ -2,7 +2,7 @@
     //filter.php  
     include_once("../modules/db.php");  
 
-          $teams = ''; 
+          $teams = '<H2>Your Teams:</H2>'; 
           $invites = '<H2>Your invitations:</H2>';
           $user = $_SESSION['user']['username'];
           $query = "SELECT 
@@ -16,7 +16,9 @@
                             teamID, 
                             count(*) as Count 
                         FROM 
-                            Teams 
+                            Teams
+                        WHERE
+                            confirm = 1
                         GROUP BY 
                             teamID) c, 
                         Teams t 
@@ -54,7 +56,7 @@
                           $teams .= '  
                         <div class="row">
                         
-                          <div class="col-md-2">' . $teamName . '</div>
+                          <div class="col-md-4">' . $teamName . '</div>
                           <div class="col-md-1"><div>Users:</div><div>' . $users_cout . '</div></div>';
                           
                           if ($role == "editor") {
@@ -62,35 +64,35 @@
                                 <div class="col-md-6">
                                 <div class="btn-group" role="group" aria-label="...">
                                 <a href="/editteam/' . $teamId . '" class="btn btn-default" aria-label="Left Align">
-                                Edit <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                                Edit  <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
                                 </a>
                                 <a href="/teaminvite/' . $teamId . '" class="btn btn-default" aria-label="Left Align">
-                                Invite member <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                                Invite  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                                  </a>';  
                           } else {
                               $teams .= '
                               <div class="col-md-6">
                                 <div class="btn-group" role="group" aria-label="...">
                                 <a href="/editteam/' . $teamId . '" class="btn btn-default disabled" aria-label="Left Align">
-                                Edit <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                                Edit  <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
                                 </a>
                                 <a href="/teaminvite/' . $teamId . '" class="btn btn-default disabled" aria-label="Left Align">
-                                Invite member <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                                Invite  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                                  </a>'; 
                           }
                           
                           $teams .= ' <a href="#" onclick="leave(\'' . $teamId . '\');" class="btn btn-default" aria-label="Left Align">
-                            Leave the team <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                            Leave  <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                             </a></div></div></div>'; 
                          
                       }  else {
                           $invites .= '<div class="row">
                                         <div class="col-md-2">' . $teamName . '</div>
                                         <div class="col-md-1"><div>Users:</div><div>' . $users_cout . '</div></div>
-                                        <div class="col-md-1"><div>Invited as:</div><div>' . $role . '</div></div>
+                                        <div class="col-md-1"><div>Role:</div><div>' . $role . '</div></div>
                                         <div class="col-md-5">
                                             <div class="btn-group" role="group" aria-label="...">
-                                                <a href="/showusers/' . $teamId . '" class="btn btn-default" aria-label="Left Align">
+                                                <a href="#" onclick="showusers(\'' . $teamId . '\');" class="btn btn-default" aria-label="Left Align">
                                                     Show users <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
                                                 </a>
                                                 <a href="/acceptteam/' . $teamId . '" class="btn btn-default" aria-label="Left Align">
@@ -100,7 +102,12 @@
                                                     Decline <span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span>
                                                 </a>
                                             </div>
+                                        
                                         </div>
+                                        
+                                        </div>
+                                        <div class="row">
+                                        <div id="display' . $teamId . '"></div>
                                         </div>';
                       }  
                   } 

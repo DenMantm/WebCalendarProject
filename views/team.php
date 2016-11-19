@@ -5,101 +5,16 @@
 
 <head>
   <title>Main</title>
+  
 <?php include('partials/head.php') ?>
 <?php include_once("../modules/db.php") ?>
+<script type="text/javascript" src="js/team.js"></script>
 
-
-
-  <script>
-    /*global $*/
-
-    $.fn.followTo = function (pos) {
-    var $this = this,
-        $window = $(window);
-
-    $window.scroll(function (e) {
-        if ($window.scrollTop() > pos) {
-            $this.css({
-                position: 'absolute',
-                top: pos
-            });
-        } else {
-            $this.css({
-                position: 'fixed',
-                top: 0
-            });
-        }
-    });
-};
-
-$('#calendar').followTo(250);
-    
-
-  </script>
-  <script type="text/javascript" src="js/team.js"></script>
+  
 
   
   
-  <script>
-var jTemp = [];
-	$(document).ready(function() {
-
-
-		/* initialize the external events
-		-----------------------------------------------------------------*/
-
-		$('#external-events .fc-event').each(function() {
-
-			
-			// store data so the calendar knows to render an event upon drop
-			
-			
-			
-			$(this).data('event', {
-				title: $.trim($(this).text()), // use the element's text as the event title
-				stick: true, // maintain when user navigates (see docs on the renderEvent method)
-				color: $(this).css("background-color")
-			});
-
-			// make the event draggable using jQuery UI
-			$(this).draggable({
-				zIndex: 999,
-				revert: true,      // will cause the event to go back to its
-				revertDuration: 0  //  original position after the drag
-			});
-
-		});
-
-
-		/* initialize the calendar
-		-----------------------------------------------------------------*/
-
-		$('#calendar').fullCalendar({
-			header: {
-				left: 'prev,next today',
-				center: 'title',
-				right: 'month,agendaWeek,agendaDay'
-			},
-			editable: true,
-			droppable: true,
-			    eventReceive: function(event, delta, revertFunc) {
-        jTemp.push(event);
-
-    },
-			
-			// this allows things to be dropped onto the calendar
-			drop: function() {
-				// is the "remove after drop" checkbox checked?
-				if ($('#drop-remove').is(':checked')) {
-					// if so, remove the element from the "Draggable Events" list
-					$(this).remove();
-				}
-			}
-		});
-
-	});
-
-</script>
+  
 <style>
 
 	body {
@@ -157,6 +72,10 @@ var jTemp = [];
 </head>
 
 <body>
+  <div data-role="dialog" id="dialog9" class="padding20 dialog info" data-close-button="true" data-overlay="true" data-overlay-color="op-dark" data-overlay-click-close="true" style="width: auto; height: auto; visibility: visible; left: 701.5px; top: 209px;">
+            <h1>Users within that team:</h1>
+            <div id="landing"></div>
+        <span class="dialog-close-button"></span></div>
   <?php
 include('partials/navbar.php');
 
@@ -225,8 +144,6 @@ include('partials/navbar.php');
       <!--##################-->
 
       <div class="col-md-6 remove_padding">
-        Your teams:
-        
       <?php include('../modules/showteam.php') ?>
   
       </div>
@@ -282,15 +199,13 @@ include('partials/navbar.php');
         
       </div>
     </div>
+    
     <div class="row dark">
       <div class="col-md-12 remove_right_padding dark" style="height:70px;"></div>
       <div>
 
       </div>
-
-      <!--Dialog box for new meeting-->
-
-      <div class="modal fade" id="newteam" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="newteam" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
 
@@ -312,26 +227,5 @@ include('partials/navbar.php');
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
               <button id="btnSaveNewTeam" class="btn btn-primary">Create</button>
-            </div>
-<ul id="responds">
-		
-		</ul>
-          </div>
-        </div>
-        </div>
-
-
-<!--<div class="content_wrapper">-->
-	
-<!--<ul id="responds">-->
-
-<!--</ul>-->
-<!--    <div class="form_style">-->
-<!--    <textarea name="subject_text1" id="m_subject1" cols="45" rows="5" placeholder="Enter some text"></textarea>-->
-<!--    <button id="btnSaveNewMeeting1">Add record</button>-->
-<!--    <img src="images/loading.gif" id="LoadingImage" style="display:none" />-->
-<!--    </div>-->
-<!--</div>-->
-
-
+</div>
 </body>

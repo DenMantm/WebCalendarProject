@@ -77,6 +77,14 @@ $f3->route('GET /showteam',
     }
 );
 
+$f3->route('GET /showusers/@id',
+    function($f3,$params) {
+        isUserLogged();
+        $f3->set('SESSION.currentTeam',$params['id']); 
+        echo View::instance()->render('../modules/showusers.php');
+    }
+);
+
 $f3->route('GET /editteam/@id',
     function($f3,$params) {
         isUserLogged();
