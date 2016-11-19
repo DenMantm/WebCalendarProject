@@ -90,7 +90,7 @@
                                         <div class="col-md-1"><div>Invited as:</div><div>' . $role . '</div></div>
                                         <div class="col-md-5">
                                             <div class="btn-group" role="group" aria-label="...">
-                                                <a href="/showusers/' . $teamId . '" class="btn btn-default" aria-label="Left Align">
+                                                <a href="#" onclick="showusers(\'' . $teamId . '\');" class="btn btn-default" aria-label="Left Align">
                                                     Show users <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
                                                 </a>
                                                 <a href="/acceptteam/' . $teamId . '" class="btn btn-default" aria-label="Left Align">
@@ -100,7 +100,12 @@
                                                     Decline <span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span>
                                                 </a>
                                             </div>
+                                        
                                         </div>
+                                        
+                                        </div>
+                                        <div class="row">
+                                        <div id="display' . $teamId . '"></div>
                                         </div>';
                       }  
                   } 

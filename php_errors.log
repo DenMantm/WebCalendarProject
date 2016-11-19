@@ -1921,3 +1921,1162 @@ Stack trace:
 >>>>>>> 1f0309aac21165ff9467ed04c8d23041b83694d6
 >>>>>>> 277d52c99c189c8e3b7be7516651b323b76941bb
 >>>>>>> 83a99f86f5aacac324144fd15d1070011066f640
+[19-Nov-2016 00:04:27 UTC] HTTP 404 (GET /favicon.ico)
+[19-Nov-2016 00:04:27 UTC] HTTP 404 (GET /favicon.ico)
+[19-Nov-2016 00:04:33 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[19-Nov-2016 00:04:33 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[19-Nov-2016 00:04:33 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[19-Nov-2016 00:04:41 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:04:41 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:04:41 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:04:41 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:04:41 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:04:41 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:04:45 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:04:45 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:04:45 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:04:46 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:04:46 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:04:46 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:04:54 UTC] HTTP 404 (GET /showusers/582cf42a3a68d)
+[19-Nov-2016 00:19:48 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:19:48 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:19:48 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:19:48 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:19:48 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:19:48 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:19:50 UTC] HTTP 404 (GET /showusers.php)
+[19-Nov-2016 00:19:52 UTC] HTTP 404 (GET /showusers.php)
+[19-Nov-2016 00:19:53 UTC] HTTP 404 (GET /showusers.php)
+[19-Nov-2016 00:19:53 UTC] HTTP 404 (GET /showusers.php)
+[19-Nov-2016 00:19:53 UTC] HTTP 404 (GET /showusers.php)
+[19-Nov-2016 00:20:02 UTC] HTTP 404 (GET /showusers.php)
+[19-Nov-2016 00:20:06 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:20:06 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:20:06 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:20:07 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:20:07 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:20:07 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:20:34 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:20:34 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:20:34 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:20:34 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:20:34 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:20:34 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:20:36 UTC] HTTP 404 (GET /showusers.php)
+[19-Nov-2016 00:21:05 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:21:05 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:21:05 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:21:05 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:21:05 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:21:06 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:21:09 UTC] HTTP 404 (GET /showusers.php)
+[19-Nov-2016 00:21:24 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:21:24 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:21:24 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:21:24 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:21:24 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:21:24 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:21:25 UTC] HTTP 404 (GET /showusers.php)
+[19-Nov-2016 00:21:27 UTC] HTTP 404 (GET /showusers.php)
+[19-Nov-2016 00:21:28 UTC] HTTP 404 (GET /showusers.php)
+[19-Nov-2016 00:21:28 UTC] HTTP 404 (GET /showusers.php)
+[19-Nov-2016 00:21:30 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:21:30 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:21:30 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:21:30 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:21:30 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:21:30 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:21:31 UTC] HTTP 404 (GET /showusers.php)
+[19-Nov-2016 00:21:52 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:21:52 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:21:52 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:21:53 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:21:53 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:21:53 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:22:13 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:22:13 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:22:13 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:22:13 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:22:13 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:22:13 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:22:14 UTC] HTTP 404 (GET /showusers.php)
+[19-Nov-2016 00:22:16 UTC] HTTP 404 (GET /showusers.php)
+[19-Nov-2016 00:22:19 UTC] HTTP 404 (GET /showusers.php)
+[19-Nov-2016 00:24:41 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:24:41 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:24:42 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:24:42 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:24:42 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:24:43 UTC] HTTP 404 (GET /showusers/582cf42a3a68d)
+[19-Nov-2016 00:25:01 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:25:01 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:25:01 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:25:02 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:25:02 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:25:02 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:25:03 UTC] HTTP 404 (GET /showusers/582cf42a3a68d)
+[19-Nov-2016 00:25:05 UTC] HTTP 404 (GET /showusers/582cf42a3a68d)
+[19-Nov-2016 00:25:36 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:25:36 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:25:36 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:25:37 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:25:37 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:25:37 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:25:38 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 42
+[19-Nov-2016 00:25:38 UTC] PHP Stack trace:
+[19-Nov-2016 00:25:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:25:38 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:25:38 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:25:38 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:25:38 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:25:38 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:25:38 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:25:40 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 42
+[19-Nov-2016 00:25:40 UTC] PHP Stack trace:
+[19-Nov-2016 00:25:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:25:40 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:25:40 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:25:40 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:25:40 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:25:40 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:25:40 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:25:41 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 42
+[19-Nov-2016 00:25:41 UTC] PHP Stack trace:
+[19-Nov-2016 00:25:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:25:41 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:25:41 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:25:41 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:25:41 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:25:41 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:25:41 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:25:41 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 42
+[19-Nov-2016 00:25:41 UTC] PHP Stack trace:
+[19-Nov-2016 00:25:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:25:41 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:25:41 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:25:41 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:25:41 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:25:41 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:25:41 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:27:33 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:27:33 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:27:33 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:27:33 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:27:33 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:27:33 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:27:35 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 42
+[19-Nov-2016 00:27:35 UTC] PHP Stack trace:
+[19-Nov-2016 00:27:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:27:35 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:27:35 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:27:35 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:27:35 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:27:35 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:27:35 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:27:38 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 42
+[19-Nov-2016 00:27:38 UTC] PHP Stack trace:
+[19-Nov-2016 00:27:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:27:38 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:27:38 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:27:38 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:27:38 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:27:38 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:27:38 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:27:42 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 42
+[19-Nov-2016 00:27:42 UTC] PHP Stack trace:
+[19-Nov-2016 00:27:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:27:42 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:27:42 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:27:42 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:27:42 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:27:42 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:27:42 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:27:42 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 42
+[19-Nov-2016 00:27:42 UTC] PHP Stack trace:
+[19-Nov-2016 00:27:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:27:42 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:27:42 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:27:42 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:27:42 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:27:42 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:27:42 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:27:43 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 42
+[19-Nov-2016 00:27:43 UTC] PHP Stack trace:
+[19-Nov-2016 00:27:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:27:43 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:27:43 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:27:43 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:27:43 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:27:43 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:27:43 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:27:43 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 42
+[19-Nov-2016 00:27:43 UTC] PHP Stack trace:
+[19-Nov-2016 00:27:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:27:43 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:27:43 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:27:43 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:27:43 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:27:43 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:27:43 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:28:37 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:28:37 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:28:37 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:28:37 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:28:37 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:28:37 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:30:00 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:30:00 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:30:00 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:30:00 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:30:00 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:30:00 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:30:45 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:30:45 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:30:45 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:30:45 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:30:45 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:30:45 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:31:38 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:31:38 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:31:38 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:31:38 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:31:38 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:31:38 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:31:58 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:31:58 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:31:58 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:31:58 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:31:58 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:31:58 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:48:06 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:48:06 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:48:06 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:48:06 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:48:06 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:48:06 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:48:56 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:48:56 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:48:56 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:48:57 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:48:57 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:48:57 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:48:57 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:48:57 UTC] PHP Stack trace:
+[19-Nov-2016 00:48:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:48:57 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:48:57 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:48:57 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:48:57 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:48:57 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:48:57 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:48:57 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:48:57 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:48:59 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:48:59 UTC] PHP Stack trace:
+[19-Nov-2016 00:48:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:48:59 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:48:59 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:48:59 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:48:59 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:48:59 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:48:59 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:48:59 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:48:59 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:49:01 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:49:01 UTC] PHP Stack trace:
+[19-Nov-2016 00:49:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:49:01 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:49:01 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:49:01 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:49:01 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:49:01 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:49:01 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:49:01 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:49:01 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:49:01 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:49:01 UTC] PHP Stack trace:
+[19-Nov-2016 00:49:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:49:01 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:49:01 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:49:01 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:49:01 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:49:01 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:49:01 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:49:01 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:49:01 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:49:01 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:49:01 UTC] PHP Stack trace:
+[19-Nov-2016 00:49:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:49:01 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:49:01 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:49:01 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:49:01 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:49:01 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:49:01 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:49:01 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:49:01 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:49:03 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:49:03 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:49:03 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:49:04 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:49:04 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:49:04 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:49:05 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:49:05 UTC] PHP Stack trace:
+[19-Nov-2016 00:49:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:49:05 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:49:05 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:49:05 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:49:05 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:49:05 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:49:05 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:49:05 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:49:05 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:49:38 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:49:38 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:49:39 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:49:39 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:49:39 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:49:40 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:49:40 UTC] PHP Stack trace:
+[19-Nov-2016 00:49:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:49:40 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:49:40 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:49:40 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:49:40 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:49:40 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:49:40 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:49:40 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:49:40 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:50:30 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:50:30 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:50:30 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:50:30 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:50:31 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:50:31 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:50:34 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:50:34 UTC] PHP Stack trace:
+[19-Nov-2016 00:50:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:50:34 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:50:34 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:50:34 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:50:34 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:50:34 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:50:34 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:50:34 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:50:34 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:50:37 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:50:37 UTC] PHP Stack trace:
+[19-Nov-2016 00:50:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:50:37 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:50:37 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:50:37 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:50:37 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:50:37 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:50:37 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:50:37 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:50:37 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:50:39 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:50:39 UTC] PHP Stack trace:
+[19-Nov-2016 00:50:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:50:39 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:50:39 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:50:39 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:50:39 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:50:39 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:50:39 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:50:39 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:50:39 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:50:40 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:50:40 UTC] PHP Stack trace:
+[19-Nov-2016 00:50:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:50:40 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:50:40 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:50:40 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:50:40 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:50:40 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:50:40 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:50:40 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:50:40 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:50:40 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:50:40 UTC] PHP Stack trace:
+[19-Nov-2016 00:50:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:50:40 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:50:40 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:50:40 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:50:40 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:50:40 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:50:40 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:50:40 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:50:40 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:50:45 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:50:45 UTC] PHP Stack trace:
+[19-Nov-2016 00:50:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:50:45 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:50:45 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:50:45 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:50:45 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:50:45 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:50:45 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:50:45 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:50:45 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:50:51 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:50:51 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:50:51 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:50:51 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:50:51 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:50:51 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:50:54 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:50:54 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:50:54 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:50:54 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:50:54 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:50:54 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:50:58 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:50:58 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:50:58 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:50:59 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:50:59 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:50:59 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:51:01 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:51:01 UTC] PHP Stack trace:
+[19-Nov-2016 00:51:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:51:01 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:51:01 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:51:01 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:51:01 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:51:01 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:51:01 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:51:01 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:51:01 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:51:05 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:51:05 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:51:05 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:51:06 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:51:06 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:51:06 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:51:07 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:51:07 UTC] PHP Stack trace:
+[19-Nov-2016 00:51:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:51:07 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:51:07 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:51:07 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:51:07 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:51:07 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:51:07 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:51:07 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:51:07 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:51:08 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:51:08 UTC] PHP Stack trace:
+[19-Nov-2016 00:51:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:51:08 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:51:08 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:51:08 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:51:08 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:51:08 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:51:08 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:51:08 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:51:08 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:51:08 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:51:08 UTC] PHP Stack trace:
+[19-Nov-2016 00:51:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:51:08 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:51:08 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:51:08 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:51:08 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:51:08 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:51:08 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:51:08 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:51:08 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:51:08 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:51:08 UTC] PHP Stack trace:
+[19-Nov-2016 00:51:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:51:08 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:51:08 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:51:08 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:51:08 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:51:08 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:51:08 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:51:08 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:51:08 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:51:41 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:51:42 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:51:42 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:51:42 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:51:42 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:51:42 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:51:44 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:51:44 UTC] PHP Stack trace:
+[19-Nov-2016 00:51:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:51:44 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:51:44 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:51:44 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:51:44 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:51:44 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:51:44 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:51:44 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:51:44 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:53:00 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:53:00 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:53:00 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:53:00 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:53:01 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:53:01 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:53:02 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:53:02 UTC] PHP Stack trace:
+[19-Nov-2016 00:53:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:53:02 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:53:02 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:53:02 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:53:02 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:53:02 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:53:02 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:53:02 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:53:02 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:53:03 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:53:03 UTC] PHP Stack trace:
+[19-Nov-2016 00:53:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:53:03 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:53:03 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:53:03 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:53:03 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:53:03 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:53:03 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:53:03 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:53:03 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:53:04 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:53:04 UTC] PHP Stack trace:
+[19-Nov-2016 00:53:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:53:04 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:53:04 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:53:04 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:53:04 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:53:04 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:53:04 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:53:04 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:53:04 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:53:36 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:53:36 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:53:36 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:53:37 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:53:37 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:53:37 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:53:37 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:53:37 UTC] PHP Stack trace:
+[19-Nov-2016 00:53:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:53:37 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:53:37 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:53:37 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:53:37 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:53:37 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:53:37 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:53:37 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:53:37 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:53:38 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:53:38 UTC] PHP Stack trace:
+[19-Nov-2016 00:53:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:53:38 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:53:38 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:53:38 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:53:38 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:53:38 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:53:38 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:53:38 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:53:38 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:53:39 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:53:39 UTC] PHP Stack trace:
+[19-Nov-2016 00:53:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:53:39 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:53:39 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:53:39 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:53:39 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:53:39 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:53:39 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:53:39 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:53:39 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:53:39 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:53:39 UTC] PHP Stack trace:
+[19-Nov-2016 00:53:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:53:39 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:53:39 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:53:39 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:53:39 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:53:39 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:53:39 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:53:39 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:53:39 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:53:40 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:53:40 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:53:40 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:53:41 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 00:53:41 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 00:53:41 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 00:53:42 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:53:42 UTC] PHP Stack trace:
+[19-Nov-2016 00:53:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:53:42 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:53:42 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:53:42 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:53:42 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:53:42 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:53:42 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:53:42 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:53:42 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:53:54 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:53:54 UTC] PHP Stack trace:
+[19-Nov-2016 00:53:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:53:54 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:53:54 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:53:54 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:53:54 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:53:54 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:53:54 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:53:54 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:53:54 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:53:55 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:53:55 UTC] PHP Stack trace:
+[19-Nov-2016 00:53:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:53:55 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:53:55 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:53:55 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:53:55 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:53:55 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:53:55 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:53:55 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:53:55 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:53:55 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:53:55 UTC] PHP Stack trace:
+[19-Nov-2016 00:53:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:53:55 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:53:55 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:53:55 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:53:55 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:53:55 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:53:55 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:53:55 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:53:55 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:53:56 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:53:56 UTC] PHP Stack trace:
+[19-Nov-2016 00:53:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:53:56 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:53:56 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:53:56 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:53:56 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:53:56 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:53:56 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:53:56 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:53:56 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:53:56 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:53:56 UTC] PHP Stack trace:
+[19-Nov-2016 00:53:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:53:56 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:53:56 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:53:56 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:53:56 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:53:56 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:53:56 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:53:56 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:53:56 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:54:19 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:54:19 UTC] PHP Stack trace:
+[19-Nov-2016 00:54:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:54:19 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:54:19 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:54:19 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:54:19 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:54:19 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:54:19 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:54:19 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:54:19 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:54:58 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:54:58 UTC] PHP Stack trace:
+[19-Nov-2016 00:54:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:54:58 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:54:58 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:54:58 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:54:58 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:54:58 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:54:58 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:54:58 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:54:58 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:54:59 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:54:59 UTC] PHP Stack trace:
+[19-Nov-2016 00:54:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:54:59 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:54:59 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:54:59 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:54:59 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:54:59 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:54:59 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:54:59 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:54:59 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:55:00 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:55:00 UTC] PHP Stack trace:
+[19-Nov-2016 00:55:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:55:00 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:55:00 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:55:00 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:55:00 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:55:00 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:55:00 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:55:00 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:55:00 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 00:55:06 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 00:55:06 UTC] PHP Stack trace:
+[19-Nov-2016 00:55:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 00:55:06 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 00:55:06 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 00:55:06 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 00:55:06 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:55:06 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 00:55:06 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 00:55:06 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 00:55:06 UTC] Fatal error: syntax error, unexpected '}'
+[19-Nov-2016 01:05:07 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:05:07 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:05:07 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:05:08 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:05:08 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:05:08 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:08:31 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/ubuntu/workspace/modules/showteam.php on line 104
+[19-Nov-2016 01:08:31 UTC] PHP Stack trace:
+[19-Nov-2016 01:08:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 01:08:31 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 01:08:31 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 01:08:31 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 01:08:31 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:08:31 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:209-211}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:08:31 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:210
+[19-Nov-2016 01:08:31 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 01:08:31 UTC] PHP   9. require() /home/ubuntu/workspace/modules/lib/base.php:2504
+[19-Nov-2016 01:08:31 UTC] Fatal error: syntax error, unexpected '/'
+[19-Nov-2016 01:08:32 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:08:32 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:08:32 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:08:33 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:08:33 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:08:33 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:08:36 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/ubuntu/workspace/modules/showteam.php on line 104
+[19-Nov-2016 01:08:36 UTC] PHP Stack trace:
+[19-Nov-2016 01:08:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 01:08:36 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 01:08:36 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 01:08:36 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 01:08:36 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:08:36 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:209-211}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:08:36 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:210
+[19-Nov-2016 01:08:36 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 01:08:36 UTC] PHP   9. require() /home/ubuntu/workspace/modules/lib/base.php:2504
+[19-Nov-2016 01:08:36 UTC] Fatal error: syntax error, unexpected '/'
+[19-Nov-2016 01:08:42 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/ubuntu/workspace/modules/showteam.php on line 104
+[19-Nov-2016 01:08:42 UTC] PHP Stack trace:
+[19-Nov-2016 01:08:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 01:08:42 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 01:08:42 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 01:08:42 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 01:08:42 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:08:42 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:209-211}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:08:42 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:210
+[19-Nov-2016 01:08:42 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 01:08:42 UTC] PHP   9. require() /home/ubuntu/workspace/modules/lib/base.php:2504
+[19-Nov-2016 01:08:42 UTC] Fatal error: syntax error, unexpected '/'
+[19-Nov-2016 01:08:57 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/ubuntu/workspace/modules/showteam.php on line 104
+[19-Nov-2016 01:08:57 UTC] PHP Stack trace:
+[19-Nov-2016 01:08:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 01:08:57 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 01:08:57 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 01:08:57 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 01:08:57 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:08:57 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:209-211}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:08:57 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:210
+[19-Nov-2016 01:08:57 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 01:08:57 UTC] PHP   9. require() /home/ubuntu/workspace/modules/lib/base.php:2504
+[19-Nov-2016 01:08:57 UTC] Fatal error: syntax error, unexpected '/'
+[19-Nov-2016 01:08:58 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:08:58 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:08:58 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:08:58 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:08:58 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:08:58 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:09:22 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:09:22 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:09:22 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:09:23 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:09:23 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:09:23 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:10:25 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:10:25 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:10:25 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:10:25 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:10:25 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:10:25 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:10:52 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:10:52 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:10:52 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:10:53 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:10:53 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:10:53 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:11:16 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:11:16 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:11:16 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:11:16 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:11:16 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:11:16 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:12:52 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:12:52 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:12:52 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:12:53 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:12:53 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:12:53 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:14:04 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:14:04 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:14:04 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:14:04 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:14:04 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:14:04 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:14:05 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 01:14:05 UTC] PHP Stack trace:
+[19-Nov-2016 01:14:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 01:14:05 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 01:14:05 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 01:14:05 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 01:14:05 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:14:05 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:14:05 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 01:14:05 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 01:14:05 UTC] Fatal error: syntax error, unexpected 'echo' (T_ECHO)
+[19-Nov-2016 01:14:08 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 01:14:08 UTC] PHP Stack trace:
+[19-Nov-2016 01:14:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 01:14:08 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 01:14:08 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 01:14:08 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 01:14:08 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:14:08 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:14:08 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 01:14:08 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 01:14:08 UTC] Fatal error: syntax error, unexpected 'echo' (T_ECHO)
+[19-Nov-2016 01:14:10 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 01:14:10 UTC] PHP Stack trace:
+[19-Nov-2016 01:14:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 01:14:10 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 01:14:10 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 01:14:10 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 01:14:10 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:14:10 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:14:10 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 01:14:10 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 01:14:10 UTC] Fatal error: syntax error, unexpected 'echo' (T_ECHO)
+[19-Nov-2016 01:14:10 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 01:14:10 UTC] PHP Stack trace:
+[19-Nov-2016 01:14:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 01:14:10 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 01:14:10 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 01:14:10 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 01:14:10 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:14:10 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:14:10 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 01:14:10 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 01:14:10 UTC] Fatal error: syntax error, unexpected 'echo' (T_ECHO)
+[19-Nov-2016 01:14:13 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:14:13 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:14:13 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:14:14 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:14:14 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:14:14 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:14:16 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 01:14:16 UTC] PHP Stack trace:
+[19-Nov-2016 01:14:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 01:14:16 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 01:14:16 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 01:14:16 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 01:14:16 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:14:16 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:14:16 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 01:14:16 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 01:14:16 UTC] Fatal error: syntax error, unexpected 'echo' (T_ECHO)
+[19-Nov-2016 01:14:21 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:14:21 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:14:21 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:14:21 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:14:21 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:14:21 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:15:10 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:15:10 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:15:10 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:15:11 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:15:11 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:15:11 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:15:12 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 01:15:12 UTC] PHP Stack trace:
+[19-Nov-2016 01:15:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 01:15:12 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 01:15:12 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 01:15:12 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 01:15:12 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:15:12 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:15:12 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 01:15:12 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 01:15:12 UTC] Fatal error: syntax error, unexpected 'echo' (T_ECHO)
+[19-Nov-2016 01:15:13 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 01:15:13 UTC] PHP Stack trace:
+[19-Nov-2016 01:15:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 01:15:13 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 01:15:13 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 01:15:13 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 01:15:13 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:15:13 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:15:13 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 01:15:13 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 01:15:13 UTC] Fatal error: syntax error, unexpected 'echo' (T_ECHO)
+[19-Nov-2016 01:15:13 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 01:15:13 UTC] PHP Stack trace:
+[19-Nov-2016 01:15:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 01:15:13 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 01:15:13 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 01:15:13 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 01:15:13 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:15:13 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:15:13 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 01:15:13 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 01:15:13 UTC] Fatal error: syntax error, unexpected 'echo' (T_ECHO)
+[19-Nov-2016 01:15:13 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 01:15:13 UTC] PHP Stack trace:
+[19-Nov-2016 01:15:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 01:15:13 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 01:15:13 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 01:15:13 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 01:15:13 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:15:13 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:15:13 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 01:15:13 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 01:15:13 UTC] Fatal error: syntax error, unexpected 'echo' (T_ECHO)
+[19-Nov-2016 01:15:19 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:15:19 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:15:19 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:15:19 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:15:19 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:15:19 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:15:21 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 01:15:21 UTC] PHP Stack trace:
+[19-Nov-2016 01:15:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 01:15:21 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 01:15:21 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 01:15:21 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 01:15:21 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:15:21 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:15:21 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 01:15:21 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 01:15:21 UTC] Fatal error: syntax error, unexpected 'echo' (T_ECHO)
+[19-Nov-2016 01:15:32 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/modules/showusers.php on line 41
+[19-Nov-2016 01:15:32 UTC] PHP Stack trace:
+[19-Nov-2016 01:15:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[19-Nov-2016 01:15:32 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[19-Nov-2016 01:15:32 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:531
+[19-Nov-2016 01:15:32 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[19-Nov-2016 01:15:32 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:15:32 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:81-85}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[19-Nov-2016 01:15:32 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:84
+[19-Nov-2016 01:15:32 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[19-Nov-2016 01:15:32 UTC] Fatal error: syntax error, unexpected 'echo' (T_ECHO)
+[19-Nov-2016 01:22:41 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:22:41 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:22:41 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:22:41 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:22:41 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:22:41 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:25:26 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:25:26 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:25:26 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:25:26 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:25:26 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:27:10 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:27:10 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:27:10 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:27:11 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:27:11 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:27:11 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:27:23 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:27:23 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:27:23 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:27:24 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:27:24 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:27:24 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:30:09 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:30:09 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:30:09 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:30:10 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:30:10 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:30:10 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:31:24 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:31:25 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:31:25 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:31:26 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:31:26 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:31:26 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:32:33 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:32:33 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:32:33 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:32:34 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:32:34 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:32:34 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:32:39 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:32:39 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:32:39 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:32:40 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:32:40 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:32:40 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:39:40 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:39:40 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:39:40 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:39:41 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:39:41 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:39:42 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:41:44 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:41:44 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:41:44 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:41:45 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:41:45 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:41:45 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:52:07 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:52:07 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:52:07 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:52:08 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:52:08 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:52:08 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:54:17 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:54:17 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:54:17 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:54:17 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:54:17 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:54:17 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:56:10 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:56:10 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:56:10 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:56:11 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:56:11 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:56:11 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:58:03 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 01:58:03 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:58:03 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:58:03 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 01:58:04 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 01:58:04 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 02:01:13 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 02:01:13 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 02:01:13 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 02:01:13 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 02:01:13 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 02:01:13 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 02:02:19 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 02:02:19 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 02:02:19 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 02:02:19 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 02:02:19 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 02:02:19 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 02:02:29 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 02:02:29 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 02:02:29 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 02:02:30 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 02:02:30 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 02:02:30 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 02:04:12 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 02:04:12 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 02:04:12 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 02:04:13 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 02:04:13 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 02:04:13 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 02:07:05 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 02:07:05 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 02:07:05 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 02:07:06 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 02:07:06 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 02:07:06 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 02:10:16 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 02:10:16 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 02:10:16 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 02:10:16 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 02:10:16 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 02:10:17 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 02:12:35 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 02:12:35 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 02:12:35 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 02:12:36 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 02:12:36 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 02:12:37 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 02:12:45 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 02:12:45 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 02:12:45 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 02:12:46 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 02:12:46 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 02:12:46 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 02:13:14 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 02:13:14 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 02:13:14 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 02:13:15 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 02:13:15 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 02:13:15 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 10:51:43 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 10:51:43 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 10:51:43 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 10:51:44 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 10:51:44 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 10:51:44 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 10:52:51 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 10:52:51 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 10:52:51 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 10:52:52 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 10:52:52 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 10:52:52 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 10:53:09 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 10:53:09 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 10:53:09 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 10:53:12 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 10:53:12 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 10:53:12 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 10:53:31 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 10:53:31 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 10:53:31 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 10:53:32 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 10:53:32 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 10:53:33 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 11:01:48 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 11:01:48 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 11:01:48 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 11:01:48 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 11:01:48 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 11:01:49 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 11:03:23 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 11:03:23 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 11:03:24 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 11:03:24 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 11:03:40 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 11:03:40 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 11:03:42 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 11:03:42 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 11:03:50 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 11:03:50 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 11:03:51 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 11:03:51 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 11:04:01 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 11:04:01 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 11:04:01 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 11:04:02 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 11:04:02 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 11:04:03 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 11:04:10 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 11:04:10 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 11:04:10 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 11:04:12 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[19-Nov-2016 11:04:12 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[19-Nov-2016 11:04:12 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[19-Nov-2016 11:04:35 UTC] HTTP 404 (GET /...)
+[19-Nov-2016 11:08:34 UTC] HTTP 404 (GET /js/bindings.js)
+[19-Nov-2016 11:08:35 UTC] HTTP 404 (GET /js/bindings.js)
+[19-Nov-2016 11:08:44 UTC] HTTP 404 (GET /js/bindings.js)
+[19-Nov-2016 11:08:46 UTC] HTTP 404 (GET /js/bindings.js)
+[19-Nov-2016 11:08:51 UTC] HTTP 404 (GET /js/bindings.js)
+[19-Nov-2016 11:08:52 UTC] HTTP 404 (GET /js/bindings.js)
+[19-Nov-2016 11:09:50 UTC] HTTP 404 (GET /js/bindings.js)
+[19-Nov-2016 11:09:51 UTC] HTTP 404 (GET /js/bindings.js)
