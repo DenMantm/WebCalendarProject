@@ -46,4 +46,12 @@
 <!--<script type="text/javascript" src="js/bootstrap.js"></script>-->
 <!--<script type="text/javascript" src="js/ bootbox.min.js"></script>-->
   
+  <!-- Bootstrap CSS File  -->
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.css"/>
+     
+<!-- Jquery JS file -->
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+ 
+<!-- Bootstrap JS file -->
+<script type="text/javascript" src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
  

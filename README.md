@@ -70,3 +70,10 @@ CREATE TABLE IF NOT EXISTS `task` (
                  ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=32 ;
 
  
+Tutorials{
+    
+    
+    // http://webslesson.blogspot.ie/2016/10/ajax-with-php-mysql-date-range-search-using-jquery-datepicker.html
+	//sanitize post value, PHP filter FILTER_SANITIZE_NUMBER_INT removes all characters except digits, plus and minus sign.
+	http://www.itechempires.com/2016/07/pdo-crud-operations-using-php-bootstrap/
+}

@@ -21,6 +21,7 @@ $f3->route('GET /',
     }
 );
 
+// Arezki part here 
 // root to check.php
 $f3->route('GET /check',
     function($f3) {
@@ -29,6 +30,45 @@ $f3->route('GET /check',
         echo View::instance()->render('../views/check.php');
     }
 );
+$f3->route('POST /addtask',
+    function() {
+        require("response2.php"); 
+    }
+);
+
+$f3->route('GET /readea',
+    function() {
+        require("read.php"); 
+    }
+);
+
+$f3->route('POST /detailsa',
+    function() {
+        require("../views/details.php"); 
+    }
+);
+
+$f3->route('POST /createa',
+    function() {
+        require("../views/create.php"); 
+    }
+);
+$f3->route('POST /deletea',
+    function() {
+        require("../views/delete.php"); 
+    }
+);
+
+
+// root to search.php
+$f3->route('GET /search',
+    function($f3) {
+        isUserLogged();
+
+        echo View::instance()->render('../views/search/search.php');
+    }
+);
+
 
 $f3->route('GET /showteam',
     function($f3) {
@@ -61,6 +101,11 @@ $f3->route('GET /acceptteam/@id',
     }
 );
 
+$f3->route('GET /MyCalendars',
+    function() {
+        echo View::instance()->render('../views/MyCalendars.php');
+    }
+);
 
 $f3->route('POST /database/Calendar/@action',
     function($f3,$params) {
@@ -73,17 +118,18 @@ $f3->route('POST /database/Calendar/@action',
                 switch ($params['action']) {
                     //CREATING ENTRIES IN DATABASE
                 case "create":
+                    
                     $calendar_name = 'Calendar1';
                     $owner = 'Deniss';
                     $is_team_calendar = false;
                     $tasks = 'tasks';
                     $test -> createCalendar($calendar_name,$owner,$is_team_calendar,$tasks);
                     break;
+                    
                      //Retrieving ENTRIES FROM DATABASE
                 case "retrieve":
                     $test -> getCalendars();
                     break;
-                    
                     //UPDATING ENTRIES IN THE DATABASE
                 case "update":
                     echo "update";
@@ -96,7 +142,6 @@ $f3->route('POST /database/Calendar/@action',
         }
     }
 );
-
 
 $f3->route('POST|GET /database/Tasks/@action',
     function($f3,$params) {
@@ -202,11 +247,7 @@ $f3->route('POST /filter',
 );
 
 
-$f3->route('POST /addtask',
-    function() {
-        require("response2.php"); 
-    }
-);
+
 
 $f3->route('POST /addteam',
     function() {

@@ -31,11 +31,14 @@
     <a class="app-bar-element" href="...">Home</a>
     <span class="app-bar-divider"></span>
     <ul class="app-bar-menu">
-                        <li><a href="/main">My Calendars</a>
+                <li><a href="/main">Calendar Screen</a>
+                <li><a href="/MyCalendars">My Calendars</a>
                 </li>
                 <li><a href="#">User Settings</a>
                 </li>
                 <li><a href="/check">Check Meetings</a>
+                </li>
+                 <li><a href="/search">New Search</a>
                 </li>
                 <li><a href="/manageTeams">Manage Teams</a>
                 </li>
