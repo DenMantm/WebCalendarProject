@@ -109,6 +109,14 @@ $f3->route('GET /acceptteam/@id',
     }
 );
 
+$f3->route('GET /declineteam/@id',
+    function($f3,$params) {
+        isUserLogged();
+        $f3->set('SESSION.currentTeam',$params['id']); 
+        echo View::instance()->render('../modules/declineteam.php');
+    }
+);
+
 $f3->route('GET /MyCalendars',
     function() {
         echo View::instance()->render('../views/MyCalendars.php');

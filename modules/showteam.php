@@ -85,20 +85,20 @@
                             Leave  <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                             </a></div></div></div>'; 
                          
-                      }  else {
+                      }  else if ($confirmed == 0) {
                           $invites .= '<div class="row">
                                         <div class="col-md-2">' . $teamName . '</div>
                                         <div class="col-md-1"><div>Users:</div><div>' . $users_cout . '</div></div>
                                         <div class="col-md-1"><div>Role:</div><div>' . $role . '</div></div>
-                                        <div class="col-md-5">
+                                        <div class="col-md-6">
                                             <div class="btn-group" role="group" aria-label="...">
                                                 <a href="#" onclick="showusers(\'' . $teamId . '\');" class="btn btn-default" aria-label="Left Align">
-                                                    Show users <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                                                    Users <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
                                                 </a>
                                                 <a href="/acceptteam/' . $teamId . '" class="btn btn-default" aria-label="Left Align">
                                                     Accept <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
                                                 </a>
-                                                <a href="#" onclick="leave(\'' . $teamId . '\');" class="btn btn-default" aria-label="Left Align">
+                                                <a href="/declineteam/' . $teamId . '" class="btn btn-default" aria-label="Left Align">
                                                     Decline <span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span>
                                                 </a>
                                             </div>
