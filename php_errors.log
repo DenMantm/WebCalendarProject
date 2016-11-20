@@ -1,0 +1,376 @@
+[19-Nov-2016 23:07:10 UTC] HTTP 404 (GET /teaminvite/58306a638d3d4)
+[19-Nov-2016 23:09:20 UTC] HTTP 404 (GET /teaminvite/582cb9bf4326b)
+[19-Nov-2016 23:52:07 UTC] HTTP 404 (POST /inviteOK)
+[20-Nov-2016 00:10:02 UTC] PHP Fatal error:  Call to a member function bindColumn() on a non-object in /home/ubuntu/workspace/modules/inviteOK.php on line 14
+[20-Nov-2016 00:10:02 UTC] PHP Stack trace:
+[20-Nov-2016 00:10:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:10:02 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:10:02 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:10:02 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:10:02 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:10:02 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:10:02 UTC] PHP   7. require() /home/ubuntu/workspace/modules/roots.php:286
+[20-Nov-2016 00:10:02 UTC] Fatal error: Call to a member function bindColumn() on a non-object
+[20-Nov-2016 00:13:25 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:13:25 UTC] PHP Stack trace:
+[20-Nov-2016 00:13:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:13:25 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:13:25 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:13:25 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:13:25 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:13:25 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:13:25 UTC] PHP   7. require() /home/ubuntu/workspace/modules/roots.php:286
+[20-Nov-2016 00:13:25 UTC] Fatal error: Call to a member function fetch() on a non-object
+[20-Nov-2016 00:17:58 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/modules/inviteOK.php on line 25
+[20-Nov-2016 00:17:58 UTC] PHP Stack trace:
+[20-Nov-2016 00:17:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:17:58 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:17:58 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:17:58 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:17:58 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:17:58 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:17:58 UTC] Fatal error: syntax error, unexpected ';'
+[20-Nov-2016 00:33:42 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:33:42 UTC] PHP Stack trace:
+[20-Nov-2016 00:33:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:33:42 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:33:42 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:33:42 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:33:42 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:33:42 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:33:42 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:34:35 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:34:35 UTC] PHP Stack trace:
+[20-Nov-2016 00:34:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:34:35 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:34:35 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:34:35 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:34:35 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:34:35 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:34:35 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:34:58 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:34:58 UTC] PHP Stack trace:
+[20-Nov-2016 00:34:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:34:58 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:34:58 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:34:58 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:34:58 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:34:58 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:34:58 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:35:19 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:35:19 UTC] PHP Stack trace:
+[20-Nov-2016 00:35:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:35:19 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:35:19 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:35:19 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:35:19 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:35:19 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:35:19 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:36:17 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:36:17 UTC] PHP Stack trace:
+[20-Nov-2016 00:36:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:36:17 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:36:17 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:36:17 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:36:17 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:36:17 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:36:17 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:36:19 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:36:19 UTC] PHP Stack trace:
+[20-Nov-2016 00:36:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:36:19 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:36:19 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:36:19 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:36:19 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:36:19 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:36:19 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:36:40 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:36:40 UTC] PHP Stack trace:
+[20-Nov-2016 00:36:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:36:40 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:36:40 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:36:40 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:36:40 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:36:40 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:36:40 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:36:44 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:36:44 UTC] PHP Stack trace:
+[20-Nov-2016 00:36:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:36:44 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:36:44 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:36:44 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:36:44 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:36:44 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:36:44 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:37:07 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:37:07 UTC] PHP Stack trace:
+[20-Nov-2016 00:37:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:37:07 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:37:07 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:37:07 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:37:07 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:37:07 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:37:07 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:38:31 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:38:31 UTC] PHP Stack trace:
+[20-Nov-2016 00:38:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:38:31 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:38:31 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:38:31 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:38:31 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:38:31 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:38:31 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:38:33 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:38:33 UTC] PHP Stack trace:
+[20-Nov-2016 00:38:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:38:33 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:38:33 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:38:33 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:38:33 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:38:33 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:38:33 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:39:10 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:39:10 UTC] PHP Stack trace:
+[20-Nov-2016 00:39:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:39:10 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:39:10 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:39:10 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:39:10 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:39:10 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:39:10 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:39:16 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:39:16 UTC] PHP Stack trace:
+[20-Nov-2016 00:39:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:39:16 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:39:16 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:39:16 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:39:16 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:39:16 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:39:16 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:39:53 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:39:53 UTC] PHP Stack trace:
+[20-Nov-2016 00:39:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:39:53 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:39:53 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:39:53 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:39:53 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:39:53 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:39:53 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:40:03 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:40:03 UTC] PHP Stack trace:
+[20-Nov-2016 00:40:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:40:03 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:40:03 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:40:03 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:40:03 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:40:03 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:40:03 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:40:18 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:40:18 UTC] PHP Stack trace:
+[20-Nov-2016 00:40:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:40:18 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:40:18 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:40:18 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:40:18 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:40:18 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:40:18 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:41:14 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:41:14 UTC] PHP Stack trace:
+[20-Nov-2016 00:41:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:41:14 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:41:14 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:41:14 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:41:14 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:41:14 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:41:14 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:41:28 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:41:28 UTC] PHP Stack trace:
+[20-Nov-2016 00:41:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:41:28 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:41:28 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:41:28 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:41:28 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:41:28 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:41:28 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:41:42 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:41:42 UTC] PHP Stack trace:
+[20-Nov-2016 00:41:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:41:42 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:41:42 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:41:42 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:41:42 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:41:42 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:41:42 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:42:58 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:42:58 UTC] PHP Stack trace:
+[20-Nov-2016 00:42:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:42:58 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:42:58 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:42:58 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:42:58 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:42:58 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:42:58 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:43:24 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:43:24 UTC] PHP Stack trace:
+[20-Nov-2016 00:43:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:43:24 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:43:24 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:43:24 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:43:24 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:43:24 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:43:24 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:46:03 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:46:03 UTC] PHP Stack trace:
+[20-Nov-2016 00:46:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:46:03 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:46:03 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:46:03 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:46:03 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:46:03 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:46:03 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:46:31 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:46:31 UTC] PHP Stack trace:
+[20-Nov-2016 00:46:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:46:31 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:46:31 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:46:31 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:46:31 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:46:31 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:46:31 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:46:38 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:46:38 UTC] PHP Stack trace:
+[20-Nov-2016 00:46:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:46:38 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:46:38 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:46:38 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:46:38 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:46:38 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:46:38 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:47:28 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:47:28 UTC] PHP Stack trace:
+[20-Nov-2016 00:47:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:47:28 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:47:28 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:47:28 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:47:28 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:47:28 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:47:28 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:48:05 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:48:05 UTC] PHP Stack trace:
+[20-Nov-2016 00:48:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:48:05 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:48:05 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:48:05 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:48:05 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:48:05 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:48:05 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:48:58 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:48:58 UTC] PHP Stack trace:
+[20-Nov-2016 00:48:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:48:58 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:48:58 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:48:58 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:48:58 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:48:58 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:48:58 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:49:19 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:49:19 UTC] PHP Stack trace:
+[20-Nov-2016 00:49:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:49:19 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:49:19 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:49:19 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:49:19 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:49:19 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:49:19 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:49:39 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:49:39 UTC] PHP Stack trace:
+[20-Nov-2016 00:49:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:49:39 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:49:39 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:49:39 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:49:39 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:49:39 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:49:39 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:49:47 UTC] PHP Fatal error:  Call to a member function rowCount() on a non-object in /home/ubuntu/workspace/modules/inviteOK.php on line 34
+[20-Nov-2016 00:49:47 UTC] PHP Stack trace:
+[20-Nov-2016 00:49:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:49:47 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:49:47 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:49:47 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:49:47 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:49:47 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:49:47 UTC] PHP   7. require() /home/ubuntu/workspace/modules/roots.php:286
+[20-Nov-2016 00:49:47 UTC] Fatal error: Call to a member function rowCount() on a non-object
+[20-Nov-2016 00:50:11 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:50:11 UTC] PHP Stack trace:
+[20-Nov-2016 00:50:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:50:11 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:50:11 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:50:11 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:50:11 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:50:11 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:50:11 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 00:50:43 UTC] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 24
+[20-Nov-2016 00:50:43 UTC] PHP Stack trace:
+[20-Nov-2016 00:50:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 00:50:43 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 00:50:43 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 00:50:43 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 00:50:43 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:50:43 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 00:50:43 UTC] Fatal error: syntax error, unexpected '$db' (T_VARIABLE)
+[20-Nov-2016 01:06:47 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/ubuntu/workspace/modules/inviteOK.php on line 29
+[20-Nov-2016 01:06:47 UTC] PHP Stack trace:
+[20-Nov-2016 01:06:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 01:06:47 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 01:06:47 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 01:06:47 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 01:06:47 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 01:06:47 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 01:06:47 UTC] Fatal error: syntax error, unexpected '='
+[20-Nov-2016 01:08:02 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/modules/inviteOK.php on line 26
+[20-Nov-2016 01:08:02 UTC] PHP Stack trace:
+[20-Nov-2016 01:08:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 01:08:02 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 01:08:02 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 01:08:02 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 01:08:02 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 01:08:02 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 01:08:02 UTC] Fatal error: syntax error, unexpected ';'
+[20-Nov-2016 01:12:38 UTC] PHP Fatal error:  Cannot pass parameter 2 by reference in /home/ubuntu/workspace/modules/inviteOK.php on line 44
+[20-Nov-2016 01:12:38 UTC] PHP Stack trace:
+[20-Nov-2016 01:12:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 01:12:38 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 01:12:38 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 01:12:38 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 01:12:38 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 01:12:38 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 01:12:38 UTC] PHP   7. require() /home/ubuntu/workspace/modules/roots.php:286
+[20-Nov-2016 01:12:38 UTC] Fatal error: Cannot pass parameter 2 by reference
+[20-Nov-2016 01:18:41 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/ubuntu/workspace/modules/inviteOK.php on line 53
+[20-Nov-2016 01:18:41 UTC] PHP Stack trace:
+[20-Nov-2016 01:18:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 01:18:41 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 01:18:41 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 01:18:41 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 01:18:41 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 01:18:41 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 01:18:41 UTC] Fatal error: Cannot use try without catch or finally
+[20-Nov-2016 01:19:22 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/ubuntu/workspace/modules/inviteOK.php on line 53
+[20-Nov-2016 01:19:22 UTC] PHP Stack trace:
+[20-Nov-2016 01:19:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 01:19:22 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 01:19:22 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 01:19:22 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 01:19:22 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 01:19:22 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 01:19:22 UTC] Fatal error: Cannot use try without catch or finally
+[20-Nov-2016 01:21:03 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/ubuntu/workspace/modules/inviteOK.php on line 50
+[20-Nov-2016 01:21:03 UTC] PHP Stack trace:
+[20-Nov-2016 01:21:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 01:21:03 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 01:21:03 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 01:21:03 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 01:21:03 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 01:21:03 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 01:21:03 UTC] Fatal error: Cannot use try without catch or finally

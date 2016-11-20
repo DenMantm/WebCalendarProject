@@ -66,7 +66,7 @@
                                 <a href="/editteam/' . $teamId . '" class="btn btn-default" aria-label="Left Align">
                                 Edit  <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
                                 </a>
-                                <a href="/teaminvite/' . $teamId . '" class="btn btn-default" aria-label="Left Align">
+                                <a href="#" onclick="invite(\'' . $teamId . '\');"class="btn btn-default" aria-label="Left Align" data-toggle="modal" data-target="#invite">
                                 Invite  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                                  </a>';  
                           } else {
@@ -76,7 +76,7 @@
                                 <a href="/editteam/' . $teamId . '" class="btn btn-default disabled" aria-label="Left Align">
                                 Edit  <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
                                 </a>
-                                <a href="/teaminvite/' . $teamId . '" class="btn btn-default disabled" aria-label="Left Align">
+                                <a href="#" onclick="leave(\'' . $teamId . '\');"class="btn btn-default disabled" aria-label="Left Align" data-toggle="modal" data-target="#invite">
                                 Invite  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                                  </a>'; 
                           }

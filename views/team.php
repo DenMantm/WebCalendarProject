@@ -202,10 +202,9 @@ include('partials/navbar.php');
     
     <div class="row dark">
       <div class="col-md-12 remove_right_padding dark" style="height:70px;"></div>
-      <div>
 
-      </div>
-<div class="modal fade" id="newteam" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    </div>
+      <div class="modal fade" id="newteam" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
 
@@ -227,5 +226,36 @@ include('partials/navbar.php');
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
               <button id="btnSaveNewTeam" class="btn btn-primary">Create</button>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="invite" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Invite new user to the team</h4>
+            </div>
+            <div class="modal-body">
+              
+              <div class="row">
+                <label class="col-sm-3" control-label>Email address:</label>
+                <div class="col-sm-9">
+                  <input type="text" name="inv_email" id="i_email" class="form-control" placeholder="Email address of invitee" required/>
+                </div>
+              </div>
+              
+ 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button id="btnSendInvite" class="btn btn-primary">Create</button>
+</div>
+</div>
+</div>
 </div>
 </body>

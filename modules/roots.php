@@ -117,6 +117,14 @@ $f3->route('GET /declineteam/@id',
     }
 );
 
+$f3->route('POST /invite/@id',
+    function($f3,$params) {
+        isUserLogged();
+        $f3->set('SESSION.currentTeam',$params['id']); 
+        echo('');
+    }
+);
+
 $f3->route('GET /MyCalendars',
     function() {
         echo View::instance()->render('../views/MyCalendars.php');
@@ -269,6 +277,13 @@ $f3->route('POST /addteam',
     function() {
         
         require("addteam.php"); 
+    }
+);
+
+$f3->route('POST /inviteOK',
+    function() {
+        
+        require("inviteOK.php"); 
     }
 );
 

@@ -1,5 +1,42 @@
 /*global $*/
 $(document).ready(function() {
+$("#btnSendInvite").click(function (e) {
+			e.preventDefault();
+			if($("#i_email").val()==='')
+			{
+				alert("Please provide an valid email address!");
+				return false;
+			}
+			
+			$("#btnSaveNewMeeting").hide(); //hide submit button
+		//	$("#LoadingImage").show(); //show loading image
+			
+		   // var myData = 'subject_text='+ $("#m_subject").val();//build a post data structur
+		 //	var myData1 = 'location_text='+ $("#m_location").val();
+		 //	var myData2 = 'date_text='+ $("#m_date").val();
+		 
+			jQuery.ajax({
+			type: "POST", // HTTP method POST or GET
+			url: "inviteOK", //Where to make Ajax calls
+			dataType:"text", // Data type, HTML, json etc.
+			data:'email='+ $("#i_email").val(),//Form variable
+			
+			success:function(response){
+				$("#responds").append(response);
+				$("#i_email").val(''); //empty text field on successful
+				$("#btnSendInvite").show(); //show submit button
+				$("#LoadingImage").hide(); //hide loading image
+				//window.open("/team","_self");
+				alert(response);
+			},
+			error:function (xhr, ajaxOptions, thrownError){
+				$("#btnSendInvite").show(); //show submit button
+				$("#LoadingImage").hide(); //hide loading image
+				alert(thrownError);
+			}
+			});
+	});
+
 $("#btnSaveNewTeam").click(function (e) {
 			e.preventDefault();
 			if($("#t_name").val()==='')
@@ -35,7 +72,6 @@ $("#btnSaveNewTeam").click(function (e) {
 			}
 			});
 	});
-
 });
 
 
@@ -66,6 +102,19 @@ function showusers(id) {
         	//alert(link);
         	$("#landing").html(response); 
             showDialog("#dialog9");
+		
+        }
+	});
+}
+
+function invite(id) {
+	var link = "/invite/" + id;
+	
+		$.ajax({    //create an ajax request to load_page.php
+        type: "POST",
+        url: link,             
+        dataType: "HTML",   //expect html to be returned                
+        success: function(){   
 		
         }
 	});
