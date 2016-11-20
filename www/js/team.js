@@ -9,6 +9,11 @@ $("#btnSendInvite").click(function (e) {
 			}
 			
 			$("#btnSaveNewMeeting").hide(); //hide submit button
+			var selectedVal = "";
+			var selected = $("input[type='radio'][name='role']:checked");
+			if (selected.length > 0) {
+			    selectedVal = selected.val();
+			}
 		//	$("#LoadingImage").show(); //show loading image
 			
 		   // var myData = 'subject_text='+ $("#m_subject").val();//build a post data structur
@@ -19,7 +24,7 @@ $("#btnSendInvite").click(function (e) {
 			type: "POST", // HTTP method POST or GET
 			url: "inviteOK", //Where to make Ajax calls
 			dataType:"text", // Data type, HTML, json etc.
-			data:'email='+ $("#i_email").val(),//Form variable
+			data:{email:$("#i_email").val(), role:selectedVal},//Form variable
 			
 			success:function(response){
 				$("#responds").append(response);
@@ -27,7 +32,8 @@ $("#btnSendInvite").click(function (e) {
 				$("#btnSendInvite").show(); //show submit button
 				$("#LoadingImage").hide(); //hide loading image
 				//window.open("/team","_self");
-				alert(response);
+				$("#landing2").html(response); 
+            	showDialog("#dialog8");
 			},
 			error:function (xhr, ajaxOptions, thrownError){
 				$("#btnSendInvite").show(); //show submit button
@@ -118,4 +124,49 @@ function invite(id) {
 		
         }
 	});
+}
+
+function edit(id) {
+	
+	var link = "/editteam/" + id;
+	
+         
+	$.ajax({    //create an ajax request to load_page.php
+        type: "GET",
+        url: link,             
+        dataType: "html",   //expect html to be returned                
+        success: function(response){   
+        	//alert(link);
+        	$("#landing3").html(response); 
+            showDialog("#dialog7");
+        },
+        error:function (xhr, ajaxOptions, thrownError){
+				$("#btnSaveNewTeam").show(); //show submit button
+				$("#LoadingImage").hide(); //hide loading image
+				alert(thrownError);
+			}
+	});
+}
+
+function remove(user , team) {
+	var confirmation = confirm("Are you sure?");
+	if (confirmation) {
+		var link = "/removeuser/" + team + "/" + user;
+		
+		$.ajax({    //create an ajax request to load_page.php
+        type: "GET",
+        url: link,             
+        dataType: "html",   //expect html to be returned                
+        success: function(response){   
+        	$("#landing3").html(response); 
+            showDialog("#dialog7");
+        	edit(team);
+        },
+        error:function (xhr, ajaxOptions, thrownError){
+				$("#btnSaveNewTeam").show(); //show submit button
+				$("#LoadingImage").hide(); //hide loading image
+				alert("Error: " + thrownError);
+			}
+	});
+	}
 }

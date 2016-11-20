@@ -374,3 +374,249 @@
 [20-Nov-2016 01:21:03 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
 [20-Nov-2016 01:21:03 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
 [20-Nov-2016 01:21:03 UTC] Fatal error: Cannot use try without catch or finally
+[20-Nov-2016 10:00:27 UTC] HTTP 404 (GET /favicon.ico)
+[20-Nov-2016 10:00:27 UTC] HTTP 404 (GET /favicon.ico)
+[20-Nov-2016 11:40:33 UTC] HTTP 404 (GET /views/index_page.php)
+[20-Nov-2016 13:43:08 UTC] PHP Parse error:  syntax error, unexpected '$role' (T_VARIABLE) in /home/ubuntu/workspace/modules/inviteOK.php on line 54
+[20-Nov-2016 13:43:08 UTC] PHP Stack trace:
+[20-Nov-2016 13:43:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 13:43:08 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 13:43:08 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:554
+[20-Nov-2016 13:43:08 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 13:43:08 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 13:43:08 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:284-287}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 13:43:08 UTC] Fatal error: syntax error, unexpected '$role' (T_VARIABLE)
+[20-Nov-2016 14:47:24 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/modules/editteam.php on line 37
+[20-Nov-2016 14:47:24 UTC] PHP Stack trace:
+[20-Nov-2016 14:47:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 14:47:24 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 14:47:24 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:562
+[20-Nov-2016 14:47:24 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 14:47:24 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 14:47:24 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:97-101}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 14:47:24 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:100
+[20-Nov-2016 14:47:24 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[20-Nov-2016 14:47:24 UTC] PHP   9. require() /home/ubuntu/workspace/modules/lib/base.php:2504
+[20-Nov-2016 14:47:24 UTC] Fatal error: Call to a member function fetch() on a non-object
+[20-Nov-2016 14:47:27 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/modules/editteam.php on line 37
+[20-Nov-2016 14:47:27 UTC] PHP Stack trace:
+[20-Nov-2016 14:47:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 14:47:27 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 14:47:27 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:562
+[20-Nov-2016 14:47:27 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 14:47:27 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 14:47:27 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:97-101}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 14:47:27 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:100
+[20-Nov-2016 14:47:27 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[20-Nov-2016 14:47:27 UTC] PHP   9. require() /home/ubuntu/workspace/modules/lib/base.php:2504
+[20-Nov-2016 14:47:27 UTC] Fatal error: Call to a member function fetch() on a non-object
+[20-Nov-2016 14:47:31 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/modules/editteam.php on line 37
+[20-Nov-2016 14:47:31 UTC] PHP Stack trace:
+[20-Nov-2016 14:47:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 14:47:31 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 14:47:31 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:562
+[20-Nov-2016 14:47:31 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 14:47:31 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 14:47:31 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:97-101}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 14:47:31 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:100
+[20-Nov-2016 14:47:31 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[20-Nov-2016 14:47:31 UTC] PHP   9. require() /home/ubuntu/workspace/modules/lib/base.php:2504
+[20-Nov-2016 14:47:31 UTC] Fatal error: Call to a member function fetch() on a non-object
+[20-Nov-2016 14:49:43 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/modules/editteam.php on line 37
+[20-Nov-2016 14:49:43 UTC] PHP Stack trace:
+[20-Nov-2016 14:49:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 14:49:43 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 14:49:43 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:562
+[20-Nov-2016 14:49:43 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 14:49:43 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 14:49:43 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:97-101}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 14:49:43 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:100
+[20-Nov-2016 14:49:43 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[20-Nov-2016 14:49:43 UTC] PHP   9. require() /home/ubuntu/workspace/modules/lib/base.php:2504
+[20-Nov-2016 14:49:43 UTC] Fatal error: Call to a member function fetch() on a non-object
+[20-Nov-2016 14:49:48 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/modules/editteam.php on line 37
+[20-Nov-2016 14:49:48 UTC] PHP Stack trace:
+[20-Nov-2016 14:49:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 14:49:48 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 14:49:48 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:562
+[20-Nov-2016 14:49:48 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 14:49:48 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 14:49:48 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:97-101}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 14:49:48 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:100
+[20-Nov-2016 14:49:48 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[20-Nov-2016 14:49:48 UTC] PHP   9. require() /home/ubuntu/workspace/modules/lib/base.php:2504
+[20-Nov-2016 14:49:48 UTC] Fatal error: Call to a member function fetch() on a non-object
+[20-Nov-2016 14:50:54 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/modules/editteam.php on line 37
+[20-Nov-2016 14:50:54 UTC] PHP Stack trace:
+[20-Nov-2016 14:50:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 14:50:54 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 14:50:54 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:562
+[20-Nov-2016 14:50:54 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 14:50:54 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 14:50:54 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:97-101}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 14:50:54 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:100
+[20-Nov-2016 14:50:54 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[20-Nov-2016 14:50:54 UTC] PHP   9. require() /home/ubuntu/workspace/modules/lib/base.php:2504
+[20-Nov-2016 14:50:54 UTC] Fatal error: Call to a member function fetch() on a non-object
+[20-Nov-2016 14:51:06 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/modules/editteam.php on line 37
+[20-Nov-2016 14:51:06 UTC] PHP Stack trace:
+[20-Nov-2016 14:51:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 14:51:06 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 14:51:06 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:562
+[20-Nov-2016 14:51:06 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 14:51:06 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 14:51:06 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:97-101}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 14:51:06 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:100
+[20-Nov-2016 14:51:06 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[20-Nov-2016 14:51:06 UTC] PHP   9. require() /home/ubuntu/workspace/modules/lib/base.php:2504
+[20-Nov-2016 14:51:06 UTC] Fatal error: Call to a member function fetch() on a non-object
+[20-Nov-2016 14:51:31 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/modules/editteam.php on line 37
+[20-Nov-2016 14:51:31 UTC] PHP Stack trace:
+[20-Nov-2016 14:51:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 14:51:31 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 14:51:31 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:562
+[20-Nov-2016 14:51:31 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 14:51:31 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 14:51:31 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:97-101}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 14:51:31 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:100
+[20-Nov-2016 14:51:31 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[20-Nov-2016 14:51:31 UTC] PHP   9. require() /home/ubuntu/workspace/modules/lib/base.php:2504
+[20-Nov-2016 14:51:31 UTC] Fatal error: Call to a member function fetch() on a non-object
+[20-Nov-2016 14:52:25 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/modules/editteam.php on line 37
+[20-Nov-2016 14:52:25 UTC] PHP Stack trace:
+[20-Nov-2016 14:52:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 14:52:25 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 14:52:25 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:562
+[20-Nov-2016 14:52:25 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 14:52:25 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 14:52:25 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:97-101}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 14:52:25 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:100
+[20-Nov-2016 14:52:25 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[20-Nov-2016 14:52:25 UTC] PHP   9. require() /home/ubuntu/workspace/modules/lib/base.php:2504
+[20-Nov-2016 14:52:25 UTC] Fatal error: Call to a member function fetch() on a non-object
+[20-Nov-2016 14:53:11 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/modules/editteam.php on line 26
+[20-Nov-2016 14:53:11 UTC] PHP Stack trace:
+[20-Nov-2016 14:53:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 14:53:11 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 14:53:11 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:562
+[20-Nov-2016 14:53:11 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 14:53:11 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 14:53:11 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:97-101}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 14:53:11 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:100
+[20-Nov-2016 14:53:11 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[20-Nov-2016 14:53:11 UTC] Fatal error: syntax error, unexpected '}'
+[20-Nov-2016 14:53:25 UTC] PHP Fatal error:  Call to a member function rowCount() on a non-object in /home/ubuntu/workspace/modules/editteam.php on line 35
+[20-Nov-2016 14:53:25 UTC] PHP Stack trace:
+[20-Nov-2016 14:53:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 14:53:25 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 14:53:25 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:562
+[20-Nov-2016 14:53:25 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 14:53:25 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 14:53:25 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:97-101}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 14:53:25 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:100
+[20-Nov-2016 14:53:25 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[20-Nov-2016 14:53:25 UTC] PHP   9. require() /home/ubuntu/workspace/modules/lib/base.php:2504
+[20-Nov-2016 14:53:25 UTC] Fatal error: Call to a member function rowCount() on a non-object
+[20-Nov-2016 18:00:49 UTC] HTTP 405 (POST /removeuser/582cf42a3a68d/dsafds)
+[20-Nov-2016 18:01:04 UTC] HTTP 405 (POST /removeuser/582cf42a3a68d/dsafds)
+[20-Nov-2016 18:01:46 UTC] PHP Fatal error:  Call to a member function bindParam() on a non-object in /home/ubuntu/workspace/modules/removeuser.php on line 14
+[20-Nov-2016 18:01:46 UTC] PHP Stack trace:
+[20-Nov-2016 18:01:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 18:01:46 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 18:01:46 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:571
+[20-Nov-2016 18:01:46 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 18:01:46 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 18:01:46 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:89-94}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 18:01:46 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:93
+[20-Nov-2016 18:01:46 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[20-Nov-2016 18:01:46 UTC] PHP   9. require() /home/ubuntu/workspace/modules/lib/base.php:2504
+[20-Nov-2016 18:01:46 UTC] Fatal error: Call to a member function bindParam() on a non-object
+[20-Nov-2016 18:03:48 UTC] PHP Parse error:  syntax error, unexpected '$team' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/modules/removeuser.php on line 8
+[20-Nov-2016 18:03:48 UTC] PHP Stack trace:
+[20-Nov-2016 18:03:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 18:03:48 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 18:03:48 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:571
+[20-Nov-2016 18:03:48 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 18:03:48 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 18:03:48 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:89-94}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 18:03:48 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:93
+[20-Nov-2016 18:03:48 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[20-Nov-2016 18:03:48 UTC] Fatal error: syntax error, unexpected '$team' (T_VARIABLE), expecting ',' or ';'
+[20-Nov-2016 18:04:11 UTC] PHP Parse error:  syntax error, unexpected '$team' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/modules/removeuser.php on line 8
+[20-Nov-2016 18:04:11 UTC] PHP Stack trace:
+[20-Nov-2016 18:04:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 18:04:11 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 18:04:11 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:571
+[20-Nov-2016 18:04:11 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 18:04:11 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 18:04:11 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:89-94}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 18:04:11 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:93
+[20-Nov-2016 18:04:11 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[20-Nov-2016 18:04:11 UTC] Fatal error: syntax error, unexpected '$team' (T_VARIABLE), expecting ',' or ';'
+[20-Nov-2016 18:05:00 UTC] PHP Parse error:  syntax error, unexpected '$team' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/modules/removeuser.php on line 8
+[20-Nov-2016 18:05:00 UTC] PHP Stack trace:
+[20-Nov-2016 18:05:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 18:05:00 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 18:05:00 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:571
+[20-Nov-2016 18:05:00 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 18:05:00 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 18:05:00 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:89-94}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 18:05:00 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:93
+[20-Nov-2016 18:05:00 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[20-Nov-2016 18:05:00 UTC] Fatal error: syntax error, unexpected '$team' (T_VARIABLE), expecting ',' or ';'
+[20-Nov-2016 18:05:28 UTC] PHP Parse error:  syntax error, unexpected '$team' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/modules/removeuser.php on line 8
+[20-Nov-2016 18:05:28 UTC] PHP Stack trace:
+[20-Nov-2016 18:05:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 18:05:28 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 18:05:28 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:571
+[20-Nov-2016 18:05:28 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 18:05:28 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 18:05:28 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:89-94}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 18:05:28 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:93
+[20-Nov-2016 18:05:28 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[20-Nov-2016 18:05:28 UTC] Fatal error: syntax error, unexpected '$team' (T_VARIABLE), expecting ',' or ';'
+[20-Nov-2016 18:05:35 UTC] PHP Parse error:  syntax error, unexpected '$team' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/modules/removeuser.php on line 8
+[20-Nov-2016 18:05:35 UTC] PHP Stack trace:
+[20-Nov-2016 18:05:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 18:05:35 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 18:05:35 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:571
+[20-Nov-2016 18:05:35 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 18:05:35 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 18:05:35 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:89-94}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 18:05:35 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:93
+[20-Nov-2016 18:05:35 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[20-Nov-2016 18:05:35 UTC] Fatal error: syntax error, unexpected '$team' (T_VARIABLE), expecting ',' or ';'
+[20-Nov-2016 18:05:39 UTC] PHP Parse error:  syntax error, unexpected '$team' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/modules/removeuser.php on line 8
+[20-Nov-2016 18:05:39 UTC] PHP Stack trace:
+[20-Nov-2016 18:05:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 18:05:39 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 18:05:39 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:571
+[20-Nov-2016 18:05:39 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 18:05:39 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 18:05:39 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:89-94}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 18:05:39 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:93
+[20-Nov-2016 18:05:39 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[20-Nov-2016 18:05:39 UTC] Fatal error: syntax error, unexpected '$team' (T_VARIABLE), expecting ',' or ';'
+[20-Nov-2016 18:05:54 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/ubuntu/workspace/modules/removeuser.php on line 10
+[20-Nov-2016 18:05:54 UTC] PHP Stack trace:
+[20-Nov-2016 18:05:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 18:05:54 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 18:05:54 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:571
+[20-Nov-2016 18:05:54 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 18:05:54 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 18:05:54 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:89-94}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 18:05:54 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:93
+[20-Nov-2016 18:05:54 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[20-Nov-2016 18:05:54 UTC] Fatal error: syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';'
+[20-Nov-2016 18:06:07 UTC] HTTP 404 (GET /editteam/)
+[20-Nov-2016 18:06:09 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/ubuntu/workspace/modules/removeuser.php on line 10
+[20-Nov-2016 18:06:09 UTC] PHP Stack trace:
+[20-Nov-2016 18:06:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[20-Nov-2016 18:06:09 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[20-Nov-2016 18:06:09 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:571
+[20-Nov-2016 18:06:09 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[20-Nov-2016 18:06:09 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 18:06:09 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:89-94}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[20-Nov-2016 18:06:09 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:93
+[20-Nov-2016 18:06:09 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[20-Nov-2016 18:06:09 UTC] Fatal error: syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';'

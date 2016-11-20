@@ -5,6 +5,7 @@ include_once("../modules/db.php");
 if(isset($_POST['email'])) 
 {	
 	$email = filter_var($_POST["email"],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH); 
+	$role = filter_var($_POST["role"],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH); 
 	$teamID = filter_var($_SESSION["currentTeam"],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH); 
 
 	$check = $db->prepare("SELECT username FROM Users WHERE email = :var1");
@@ -37,24 +38,37 @@ if(isset($_POST['email']))
 	    
       while ($row2 = $pullTeamName -> fetch(PDO::FETCH_BOUND)){
           
-         	$insert_row = $db->prepare("INSERT INTO Teams (userID,teamName,teamID,role,confirm) VALUES (:var1,:var2,:var3,'user',0)");
+         	$insert_row = $db->prepare("INSERT INTO Teams (userID,teamName,teamID,role,confirm) VALUES (:var1,:var2,:var3,:var4,0)");
             
             try{
                 $insert_row->bindParam(':var1', $userName, PDO::PARAM_STR );
                 $insert_row->bindParam(':var2', $teamName, PDO::PARAM_STR );
                 $insert_row->bindParam(':var3', $teamID, PDO::PARAM_STR );
+                $insert_row->bindParam(':var4', $role, PDO::PARAM_STR );
                 $insert_row->execute();
-                echo('Invite to ' . $teamName . ' has been set to user: ' . $userName);
+                echo('<div>Invite to</div>
+                       <div><h4> ' . $teamName . '</h4></div>
+                       <div>has been set to user: </div>
+                       <div><h4> ' . $userName . '</h4></div>');
             } catch(PDOException $e) {
         		echo "Error: " . $e->getMessage();
          	}
-         
-         
-          
 	    }
        }
 	} else {
-		echo('User with email ' . $email . ' not found, an invitation has been sent to email.');
+	    while ($row2 = $pullTeamName -> fetch(PDO::FETCH_BOUND)){
+		echo('<p>
+		        <div>User with email </div>
+		        <div><h4> ' . $email . '</h4></div>
+		        <div> was not found in our system.</div>
+		      </p>
+		      <p>
+		        <div>We have send an email with invitation to join our application to the email above.</div>
+		        <div>Once the user sign up to our serveice your invitation to </div>
+		        <div><h4> ' . $teamName . '</h4></div>
+		        <div>will be awaiting for him.</div>
+		      </p>');
+	    }
 	}
 	
 }

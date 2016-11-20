@@ -85,6 +85,23 @@ $f3->route('GET /showusers/@id',
     }
 );
 
+$f3->route('GET /removeuser/@team/@user',
+    function($f3,$params) {
+        isUserLogged();
+        $f3->set('SESSION.currentTeam',$params['team']);
+        $f3->set('SESSION.currentUser',$params['user']);
+        echo View::instance()->render('../modules/removeuser.php');
+    }
+);
+
+$f3->route('GET /editteam/@id',
+    function($f3,$params) {
+        isUserLogged();
+        $f3->set('SESSION.currentTeam',$params['id']); 
+        echo View::instance()->render('../modules/showusers.php');
+    }
+);
+
 $f3->route('GET /editteam/@id',
     function($f3,$params) {
         isUserLogged();

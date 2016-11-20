@@ -76,6 +76,16 @@
             <h1>Users within that team:</h1>
             <div id="landing"></div>
         <span class="dialog-close-button"></span></div>
+        
+        <div data-role="dialog" id="dialog8" class="padding20 dialog success" data-close-button="true" data-overlay="true" data-overlay-color="op-dark" data-overlay-click-close="true" style="width: auto; height: auto; visibility: visible; left: 701.5px; top: 209px;">
+            <h1>Invitation sent</h1>
+            <div id="landing2"></div>
+            <span class="dialog-close-button"></span></div>
+            
+            <div data-role="dialog" id="dialog7" class="padding20 dialog info" data-close-button="true" data-overlay="true" data-overlay-color="op-dark" data-overlay-click-close="true" data-windows-style="true" style="left: 0px; right: 0px; width: auto; height: auto; visibility: visible; top: 429.5px;">
+            <h1>Edit</h1>
+            <div id="landing3"></div>
+        <span class="dialog-close-button"></span></div>
   <?php
 include('partials/navbar.php');
 
@@ -246,6 +256,20 @@ include('partials/navbar.php');
                 <label class="col-sm-3" control-label>Email address:</label>
                 <div class="col-sm-9">
                   <input type="text" name="inv_email" id="i_email" class="form-control" placeholder="Email address of invitee" required/>
+                </div>
+              </div>
+              
+              <div class="row">
+                <label class="col-sm-3" control-label>Role:</label>
+                <div class="col-sm-9" >
+                  <div class="btn-group pull-left" data-toggle="buttons">
+                <label class="btn btn-primary active">
+                  <input type="radio" name="role" value="user" autocomplete="off" checked> User
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" name="role" value="editor" autocomplete="off"> Editor
+                </label>
+              </div>
                 </div>
               </div>
               
