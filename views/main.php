@@ -367,13 +367,13 @@
       <!--##################-->
 
       <div class="col-md-6 remove_padding">
-	<div id='wrap'>
+
 
 		<div id='calendar'></div>
 
 		
 
-	</div>
+
       </div>
 
       <!--#################################-->

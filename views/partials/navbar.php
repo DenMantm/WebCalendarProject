@@ -32,7 +32,6 @@
     <span class="app-bar-divider"></span>
     <ul class="app-bar-menu">
                 <li><a href="/main">Calendar Screen</a>
-                <li><a href="/MyCalendars">My Calendars</a>
                 </li>
                 <li><a href="#">User Settings</a>
                 </li>

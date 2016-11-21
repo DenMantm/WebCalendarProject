@@ -36,9 +36,7 @@ var clone;
 
 			
 			// store data so the calendar knows to render an event upon drop
-			
-			
-			
+
 			$(this).data('event', {
 				title: $.trim($(this).text()), // use the element's text as the event title
 				stick: true, // maintain when user navigates (see docs on the renderEvent method)
@@ -67,17 +65,12 @@ var clone;
 			editable: true,
 			droppable: true,
 			    eventReceive: function(event, delta, revertFunc) {
+			        
         events = $('#calendar').fullCalendar( 'clientEvents');
 
         
     },
-    eventMouseout : function( event, jsEvent, view ) { 
-    	
-    //	console.log(jsEvent);
-    
-    	
-    },
-			 eventClick: function(calEvent, jsEvent, view) {
+	    eventClick: function(calEvent, jsEvent, view) {
 
         // change the border color just for fun
         //$(this).css('border-color', 'red');

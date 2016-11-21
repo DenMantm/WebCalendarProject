@@ -56,9 +56,7 @@
   <!--Metro js-->
   <script type='text/javascript' src="/js/metro.min.js"></script>
   <!--Knockout used to ling input and output in realtime-->
-  <script type='text/javascript' src='/js/knockout-3.4.0.debug.js'></script>
-  <script type='text/javascript' src="/js/bindings.js"></script>
-  <!--Dragscroll used in calendar allowing scroll items by dragging them-->
+
   <script type="text/javascript" src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
   
   <!--this script is for the database exchange ajax/jquery-->
@@ -82,11 +80,3 @@
 <!--<script type="text/javascript" src="js/bootstrap.js"></script>-->
 <!--<script type="text/javascript" src="js/ bootbox.min.js"></script>-->
   
-  <!-- Bootstrap CSS File  -->
-    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.css"/>
-     
-<!-- Jquery JS file -->
-<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
- 
-<!-- Bootstrap JS file -->
-<script type="text/javascript" src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
