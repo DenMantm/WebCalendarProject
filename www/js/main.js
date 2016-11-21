@@ -152,6 +152,7 @@ function updateDatabase(){
         url: "/database/Tasks/retrieve",
         data: {owner_calendar_id : 0},
         success: function(data){
+            $('#calendar').fullCalendar( 'removeEvents');
             $('#calendar').fullCalendar('addEventSource', data);
             $('#calendar').fullCalendar( 'refresh' );
             events = $('#calendar').fullCalendar( 'clientEvents');
@@ -174,7 +175,7 @@ function day_click(short, full) {
 
 
 
-retrieveFromDatabase();
+
 	
 	
 

@@ -8,7 +8,6 @@
 
 <?php include('partials/head.php') ?>
   <script type="text/javascript" src="js/target.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
 
 </head>
 <body>
@@ -568,7 +567,8 @@
           </div>
         </div>
         </div>
-                              
-                         
+        
+          <script type="text/javascript" src="js/main.js"></script>
+
 </body>
 </html>

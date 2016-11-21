@@ -620,3 +620,21 @@
 [20-Nov-2016 18:06:09 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:93
 [20-Nov-2016 18:06:09 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
 [20-Nov-2016 18:06:09 UTC] Fatal error: syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';'
+[21-Nov-2016 19:56:38 UTC] HTTP 404 (GET /favicon.ico)
+[21-Nov-2016 19:56:40 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[21-Nov-2016 19:56:40 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[21-Nov-2016 19:56:40 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[21-Nov-2016 19:58:52 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[21-Nov-2016 19:58:52 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[21-Nov-2016 19:58:52 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[21-Nov-2016 19:58:53 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[21-Nov-2016 19:58:53 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[21-Nov-2016 19:58:53 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[21-Nov-2016 19:59:05 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[21-Nov-2016 19:59:05 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[21-Nov-2016 19:59:05 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[21-Nov-2016 19:59:21 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[21-Nov-2016 19:59:21 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[21-Nov-2016 19:59:21 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[21-Nov-2016 19:59:21 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[21-Nov-2016 19:59:21 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)

@@ -5,6 +5,5 @@ $db=new DB\SQL(
     'nciadmin',
     'K7zSZ6uK524SnT6s'
 );
-
 return $db;
 ?>
