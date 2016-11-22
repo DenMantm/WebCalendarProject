@@ -170,3 +170,25 @@ function remove(user , team) {
 	});
 	}
 }
+
+function changerole(user , team, role) {
+
+		var link = "/changerole/" + team + "/" + user + "/" + role;
+		
+		$.ajax({    //create an ajax request to load_page.php
+        type: "GET",
+        url: link,             
+        dataType: "html",   //expect html to be returned                
+        success: function(response){   
+        	alert(response); 
+            
+        	edit(team);
+        },
+        error:function (xhr, ajaxOptions, thrownError){
+				$("#btnSaveNewTeam").show(); //show submit button
+				$("#LoadingImage").hide(); //hide loading image
+				alert("Error: " + thrownError);
+			}
+	});
+	
+}

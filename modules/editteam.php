@@ -57,9 +57,10 @@
                           $usersHTML .= '<div class="row" id="' . $user . '">
                                             <div class="col-md-2">' . $user . '</div>
                                             <div class="col-md-1">' . $status . '</div>
+                                            <div class="col-md-1">' . $role . '</div>
                                             <div class="btn-group pull-left" role="group" aria-label="...">
-                                                <a href="#" onclick="edit(\'' . $teamId . '\');"class="btn btn-default" aria-label="Left Align">
-                                                Edit  <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                                                <a href="#" onclick="changerole(\'' . $user . '\' , \'' . $teamID . '\' , \'' . $role . '\');"class="btn btn-default" aria-label="Left Align">
+                                                Change role  <span class="glyphicon glyphicon-random" aria-hidden="true"></span>
                                                 </a>
                                                 <a href="#" onclick="remove(\'' . $user . '\' , \'' . $teamID . '\');"class="btn btn-default" aria-label="Left Align">
                                                 Remove  <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
