@@ -8,7 +8,6 @@
 
 <?php include('partials/head.php') ?>
   <script type="text/javascript" src="js/target.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
 
 </head>
 <body>
@@ -368,13 +367,13 @@
       <!--##################-->
 
       <div class="col-md-6 remove_padding">
-	<div id='wrap'>
+
 
 		<div id='calendar'></div>
 
 		
 
-	</div>
+
       </div>
 
       <!--#################################-->
@@ -568,7 +567,8 @@
           </div>
         </div>
         </div>
-                              
-                         
+        
+          <script type="text/javascript" src="js/main.js"></script>
+
 </body>
 </html>
