@@ -620,3 +620,296 @@
 [20-Nov-2016 18:06:09 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:93
 [20-Nov-2016 18:06:09 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
 [20-Nov-2016 18:06:09 UTC] Fatal error: syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';'
+[21-Nov-2016 17:06:26 UTC] HTTP 404 (GET /favicon.ico)
+[21-Nov-2016 17:06:28 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[21-Nov-2016 17:06:29 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[21-Nov-2016 17:06:29 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[21-Nov-2016 18:02:19 UTC] HTTP 404 (GET /manageTeams)
+[21-Nov-2016 18:46:55 UTC] HTTP 404 (GET /search)
+[21-Nov-2016 20:23:51 UTC] HTTP 404 (GET /search)
+[21-Nov-2016 20:24:06 UTC] HTTP 404 (GET /views/Check/index.php)
+[21-Nov-2016 20:25:28 UTC] HTTP 404 (GET /views/Check/search.php)
+[21-Nov-2016 20:28:05 UTC] HTTP 404 (GET /views/Check/search.php)
+[21-Nov-2016 20:31:07 UTC] Unable to open ../views/search.php
+[21-Nov-2016 20:32:12 UTC] Unable to open ../views/Search/search.php
+[21-Nov-2016 20:32:15 UTC] Unable to open ../views/Search/search.php
+[21-Nov-2016 20:32:42 UTC] include(../partials/head.php): failed to open stream: No such file or directory
+[21-Nov-2016 20:34:18 UTC] include(../../partials/head.php): failed to open stream: No such file or directory
+[21-Nov-2016 20:35:27 UTC] include(partials/head.php): failed to open stream: No such file or directory
+[21-Nov-2016 20:36:23 UTC] include(../partials/head.php): failed to open stream: No such file or directory
+[21-Nov-2016 20:36:40 UTC] include(head.php): failed to open stream: No such file or directory
+[21-Nov-2016 20:37:31 UTC] include(views/partials/head.php): failed to open stream: No such file or directory
+[21-Nov-2016 20:37:43 UTC] HTTP 404 (GET /js/script.js)
+[21-Nov-2016 20:37:43 UTC] HTTP 404 (GET /js/script.js)
+[21-Nov-2016 20:41:04 UTC] HTTP 404 (GET /views/Check/search.php)
+[21-Nov-2016 20:41:26 UTC] HTTP 404 (GET /js/script.js)
+[21-Nov-2016 20:41:27 UTC] HTTP 404 (GET /js/script.js)
+[21-Nov-2016 20:45:07 UTC] HTTP 404 (GET /js/script.js)
+[21-Nov-2016 20:45:07 UTC] HTTP 404 (GET /js/script.js)
+[21-Nov-2016 20:45:59 UTC] HTTP 404 (GET /js/script.js)
+[21-Nov-2016 20:46:00 UTC] HTTP 404 (GET /js/script.js)
+[21-Nov-2016 20:49:50 UTC] HTTP 404 (GET /ajax/read.php)
+[21-Nov-2016 20:50:00 UTC] HTTP 404 (POST /ajax/create.php)
+[21-Nov-2016 20:50:03 UTC] HTTP 404 (POST /ajax/create.php)
+[21-Nov-2016 20:51:00 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[21-Nov-2016 20:51:00 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[21-Nov-2016 20:51:01 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[21-Nov-2016 20:51:01 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[21-Nov-2016 20:51:01 UTC] HTTP 404 (GET /ajax/read.php)
+[21-Nov-2016 20:51:07 UTC] HTTP 404 (POST /ajax/create.php)
+[21-Nov-2016 20:51:26 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[21-Nov-2016 20:51:27 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[21-Nov-2016 20:51:27 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[21-Nov-2016 20:51:28 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[21-Nov-2016 20:51:28 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[21-Nov-2016 20:51:29 UTC] HTTP 404 (GET /ajax/read.php)
+[21-Nov-2016 20:51:38 UTC] HTTP 404 (POST /ajax/create.php)
+[21-Nov-2016 20:51:40 UTC] HTTP 404 (POST /ajax/create.php)
+[21-Nov-2016 20:52:19 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[21-Nov-2016 20:52:20 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[21-Nov-2016 20:52:20 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[21-Nov-2016 20:52:21 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[21-Nov-2016 20:52:44 UTC] HTTP 404 (GET /views/search/search.php)
+[21-Nov-2016 20:53:51 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[21-Nov-2016 20:53:51 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[21-Nov-2016 20:53:51 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[21-Nov-2016 21:29:27 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[21-Nov-2016 21:29:28 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[21-Nov-2016 21:29:28 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[21-Nov-2016 21:31:16 UTC] HTTP 404 (GET /views/search/bootstrap-3.3.5-dist/css/bootstrap.css)
+[21-Nov-2016 21:31:16 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[21-Nov-2016 21:31:16 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[21-Nov-2016 21:31:30 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[21-Nov-2016 21:31:30 UTC] HTTP 404 (GET /views/search/bootstrap-3.3.5-dist/css/bootstrap.css)
+[21-Nov-2016 21:31:30 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[21-Nov-2016 21:33:09 UTC] HTTP 404 (GET /views/search/bootstrap-3.3.5-dist/css/bootstrap.css)
+[21-Nov-2016 21:33:27 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[21-Nov-2016 21:33:27 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[21-Nov-2016 21:33:27 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[21-Nov-2016 21:34:05 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[21-Nov-2016 21:34:05 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[21-Nov-2016 21:34:05 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[21-Nov-2016 21:34:58 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[21-Nov-2016 21:34:58 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[21-Nov-2016 21:34:59 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[21-Nov-2016 21:34:59 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/js/bootstrap.min.js)
+[21-Nov-2016 21:35:00 UTC] HTTP 404 (GET /ajax/read.php)
+[21-Nov-2016 21:36:34 UTC] HTTP 404 (GET /ajax/read.php)
+[21-Nov-2016 21:38:57 UTC] HTTP 404 (GET /ajax/read.php)
+[21-Nov-2016 21:44:37 UTC] HTTP 404 (GET /ajax/read.php)
+[21-Nov-2016 21:47:49 UTC] Unable to open ../views/read.php
+[21-Nov-2016 21:48:41 UTC] Unable to open views/read.php
+[21-Nov-2016 21:50:16 UTC] HTTP 405 (GET /readarezki)
+[21-Nov-2016 21:51:13 UTC] HTTP 405 (GET /readarezki)
+[21-Nov-2016 21:52:09 UTC] Unable to open views/read.php
+[21-Nov-2016 21:54:14 UTC] Unable to open views/read.php
+[21-Nov-2016 21:56:25 UTC] HTTP 404 (GET /views/search/ajax/read.php)
+[21-Nov-2016 21:59:18 UTC] HTTP 404 (GET /readarezki1)
+[21-Nov-2016 22:02:59 UTC] HTTP 404 (GET /readarezki1)
+[21-Nov-2016 22:03:50 UTC] HTTP 404 (GET /readarezki1)
+[22-Nov-2016 14:55:01 UTC] HTTP 404 (GET /favicon.ico)
+[22-Nov-2016 14:55:03 UTC] HTTP 404 (GET /css/bootstrap.min.css.map)
+[22-Nov-2016 14:55:50 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[22-Nov-2016 14:55:50 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[22-Nov-2016 14:55:50 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[22-Nov-2016 14:56:20 UTC] HTTP 404 (GET /readarezki1)
+[22-Nov-2016 14:57:31 UTC] HTTP 404 (GET /readarezki1)
+[22-Nov-2016 15:03:58 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[22-Nov-2016 15:03:59 UTC] HTTP 404 (GET /bootstrap-3.3.5-dist/css/bootstrap.css)
+[22-Nov-2016 15:03:59 UTC] HTTP 404 (GET /readarezki1)
+[22-Nov-2016 15:04:12 UTC] Unable to open create.php
+[22-Nov-2016 15:04:24 UTC] HTTP 404 (GET /readarezki1)
+[22-Nov-2016 15:04:37 UTC] Unable to open create.php
+[22-Nov-2016 15:05:48 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[22-Nov-2016 15:05:49 UTC] HTTP 404 (GET /js/jquery-1.11.3.min.js)
+[22-Nov-2016 15:05:50 UTC] HTTP 404 (GET /readarezki1)
+[22-Nov-2016 15:07:04 UTC] HTTP 404 (GET /views/serach/js/jquery-1.11.3.min.js)
+[22-Nov-2016 15:07:05 UTC] HTTP 404 (GET /views/serach/js/jquery-1.11.3.min.js)
+[22-Nov-2016 15:07:05 UTC] HTTP 404 (GET /readarezki1)
+[22-Nov-2016 15:07:20 UTC] HTTP 404 (GET /serach/js/jquery-1.11.3.min.js)
+[22-Nov-2016 15:07:22 UTC] HTTP 404 (GET /serach/js/jquery-1.11.3.min.js)
+[22-Nov-2016 15:07:22 UTC] HTTP 404 (GET /readarezki1)
+[22-Nov-2016 15:07:46 UTC] HTTP 404 (GET /serach/js/jquery-1.11.3.min.js)
+[22-Nov-2016 15:07:47 UTC] HTTP 404 (GET /serach/js/jquery-1.11.3.min.js)
+[22-Nov-2016 15:07:47 UTC] HTTP 404 (GET /readarezki1)
+[22-Nov-2016 15:07:56 UTC] HTTP 404 (GET /jquery-1.11.3.min.js)
+[22-Nov-2016 15:07:57 UTC] HTTP 404 (GET /jquery-1.11.3.min.js)
+[22-Nov-2016 15:07:57 UTC] HTTP 404 (GET /readarezki1)
+[22-Nov-2016 15:08:30 UTC] HTTP 404 (GET /jquery-1.11.3.min.js)
+[22-Nov-2016 15:08:31 UTC] HTTP 404 (GET /jquery-1.11.3.min.js)
+[22-Nov-2016 15:08:31 UTC] HTTP 404 (GET /readarezki1)
+[22-Nov-2016 15:08:46 UTC] HTTP 404 (GET /jquery-1.11.3.min.js)
+[22-Nov-2016 15:08:48 UTC] HTTP 404 (GET /jquery-1.11.3.min.js)
+[22-Nov-2016 15:08:48 UTC] HTTP 404 (GET /readarezki1)
+[22-Nov-2016 15:11:08 UTC] HTTP 404 (GET /readarezki1)
+[22-Nov-2016 15:11:29 UTC] Unable to open create.php
+[22-Nov-2016 15:12:20 UTC] HTTP 404 (GET /readarezki1)
+[22-Nov-2016 15:16:10 UTC] HTTP 404 (GET /readarezki1)
+[22-Nov-2016 15:16:32 UTC] HTTP 404 (GET /readarezki1)
+[22-Nov-2016 15:17:03 UTC] HTTP 404 (GET /readarezki1)
+[22-Nov-2016 15:19:17 UTC] HTTP 404 (GET /ajax/read.php)
+[22-Nov-2016 15:19:41 UTC] HTTP 404 (GET /ajax/read.php)
+[22-Nov-2016 15:20:14 UTC] HTTP 404 (GET /ajax/read.php)
+[22-Nov-2016 15:21:30 UTC] HTTP 404 (GET /read.php)
+[22-Nov-2016 15:21:58 UTC] HTTP 404 (GET /views/search/ajax/read.php)
+[22-Nov-2016 15:22:11 UTC] HTTP 404 (GET /views/search/ajax/read.php)
+[22-Nov-2016 15:23:17 UTC] HTTP 404 (GET /js/search.js)
+[22-Nov-2016 15:23:17 UTC] HTTP 404 (GET /js/search.js)
+[22-Nov-2016 15:23:48 UTC] HTTP 404 (GET /search.js)
+[22-Nov-2016 15:23:48 UTC] HTTP 404 (GET /search.js)
+[22-Nov-2016 15:24:09 UTC] HTTP 404 (GET /search.js)
+[22-Nov-2016 15:24:10 UTC] HTTP 404 (GET /search.js)
+[22-Nov-2016 15:24:21 UTC] HTTP 404 (GET /views/search.js)
+[22-Nov-2016 15:24:22 UTC] HTTP 404 (GET /views/search.js)
+[22-Nov-2016 15:24:56 UTC] HTTP 404 (GET /ajax/search.js)
+[22-Nov-2016 15:24:57 UTC] HTTP 404 (GET /ajax/search.js)
+[22-Nov-2016 15:25:10 UTC] HTTP 404 (GET /search.js)
+[22-Nov-2016 15:25:11 UTC] HTTP 404 (GET /search.js)
+[22-Nov-2016 15:25:47 UTC] HTTP 404 (GET /search.js)
+[22-Nov-2016 15:26:08 UTC] HTTP 404 (GET /ajax/search.js)
+[22-Nov-2016 15:26:09 UTC] HTTP 404 (GET /ajax/search.js)
+[22-Nov-2016 15:27:08 UTC] HTTP 404 (GET /views/search/ajax/read.php)
+[22-Nov-2016 15:28:00 UTC] HTTP 404 (GET /read.php)
+[22-Nov-2016 15:28:22 UTC] HTTP 404 (GET /ajax/read.php)
+[22-Nov-2016 15:28:46 UTC] HTTP 404 (GET /ajax/read.php)
+[22-Nov-2016 15:29:31 UTC] HTTP 404 (GET /read.php)
+[22-Nov-2016 15:30:17 UTC] HTTP 404 (GET /search/ajax/read.php)
+[22-Nov-2016 15:30:27 UTC] HTTP 404 (GET /search/ajax/read.php)
+[22-Nov-2016 15:31:45 UTC] HTTP 404 (GET /views/search/ajax/read.php)
+[22-Nov-2016 15:32:49 UTC] Unable to open read.php
+[22-Nov-2016 15:36:46 UTC] Unable to open read.php
+[22-Nov-2016 15:37:00 UTC] Unable to open create.php
+[22-Nov-2016 15:37:32 UTC] Unable to open read.php
+[22-Nov-2016 15:37:39 UTC] HTTP 404 (POST /createarezki)
+[22-Nov-2016 15:38:55 UTC] Unable to open read.php
+[22-Nov-2016 15:39:39 UTC] Unable to open read.php
+[22-Nov-2016 15:40:27 UTC] Unable to open read.php
+[22-Nov-2016 15:41:10 UTC] POSt /search
+[22-Nov-2016 15:41:25 UTC] POSt /search
+[22-Nov-2016 15:41:30 UTC] POSt /search
+[22-Nov-2016 15:41:40 UTC] POSt /search
+[22-Nov-2016 15:41:42 UTC] POSt /check
+[22-Nov-2016 15:41:44 UTC] POSt /main
+[22-Nov-2016 15:41:49 UTC] POSt /
+[22-Nov-2016 15:41:55 UTC] POSt /
+[22-Nov-2016 15:42:40 UTC] POSt /
+[22-Nov-2016 15:43:43 UTC] POSt /
+[22-Nov-2016 15:43:48 UTC] POSt /main
+[22-Nov-2016 15:44:19 UTC] Unable to open read.php
+[22-Nov-2016 15:46:57 UTC] Unable to open read.php
+[22-Nov-2016 15:48:49 UTC] Unable to open read.php
+[22-Nov-2016 15:49:03 UTC] Unable to open read.php
+[22-Nov-2016 15:49:14 UTC] Unable to open read.php
+[22-Nov-2016 15:49:30 UTC] Unable to open read.php
+[22-Nov-2016 15:49:50 UTC] Unable to open read.php
+[22-Nov-2016 15:50:09 UTC] Unable to open read.php
+[22-Nov-2016 15:52:50 UTC] HTTP 404 (GET /css/bootstrap.min.css.map)
+[22-Nov-2016 15:53:00 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[22-Nov-2016 15:53:00 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[22-Nov-2016 15:53:00 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[22-Nov-2016 15:53:10 UTC] Unable to open read.php
+[22-Nov-2016 15:53:43 UTC] Unable to open create.php
+[22-Nov-2016 15:53:45 UTC] Unable to open create.php
+[22-Nov-2016 15:59:04 UTC] Unable to open read.php
+[22-Nov-2016 17:20:13 UTC] Unable to open create.php
+[22-Nov-2016 17:20:14 UTC] Unable to open create.php
+[22-Nov-2016 17:23:45 UTC] Unable to open read.php
+[22-Nov-2016 17:26:19 UTC] Unable to open read.php
+[22-Nov-2016 17:57:31 UTC] Unable to open search/ajax/read.php
+[22-Nov-2016 17:58:15 UTC] Unable to open ajax/read.php
+[22-Nov-2016 17:58:27 UTC] Unable to open ajax/rephp
+[22-Nov-2016 17:59:40 UTC] require(ajax/lib.php): failed to open stream: No such file or directory
+[22-Nov-2016 18:00:58 UTC] HTTP 404 (GET /readarezki)
+[22-Nov-2016 18:01:56 UTC] Unable to open ../ajax/read.php
+[22-Nov-2016 18:02:27 UTC] Unable to open ../ajax/ajax/read.php
+[22-Nov-2016 18:29:36 UTC] Unable to open ..views/search/read.php
+[22-Nov-2016 18:30:03 UTC] Unable to open ..views/search/ajax/read.php
+[22-Nov-2016 18:34:19 UTC] Unable to open ..views/search/ajax/read.php
+[22-Nov-2016 18:34:33 UTC] Unable to open ..views/search/ajax/read.php
+[22-Nov-2016 19:00:45 UTC] Unable to open ..views/search/ajax/read.php
+[22-Nov-2016 19:03:41 UTC] Unable to open ..views/search/ajax/read.php
+[22-Nov-2016 19:14:29 UTC] Unable to open ..views/search/ajax/read.php
+[22-Nov-2016 19:15:19 UTC] Unable to open ..views/search/ajax/read.php
+[22-Nov-2016 19:16:28 UTC] Unable to open ..views/search/ajax/read.php
+[22-Nov-2016 19:17:20 UTC] Unable to open ..views/search/ajax/read.php
+[22-Nov-2016 19:18:31 UTC] Unable to open ..views/sdsdarch/ajax/read.php
+[22-Nov-2016 19:19:39 UTC] require(ajax/lib.php): failed to open stream: No such file or directory
+[22-Nov-2016 19:19:58 UTC] PHP Fatal error:  Call to undefined method View::rende() in /home/ubuntu/workspace/modules/roots.php on line 65
+[22-Nov-2016 19:19:58 UTC] PHP Stack trace:
+[22-Nov-2016 19:19:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[22-Nov-2016 19:19:58 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[22-Nov-2016 19:19:58 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:584
+[22-Nov-2016 19:19:58 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[22-Nov-2016 19:19:58 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[22-Nov-2016 19:19:58 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:62-66}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[22-Nov-2016 19:19:58 UTC] Fatal error: Call to undefined method View::rende()
+[22-Nov-2016 19:21:22 UTC] require(ajax/lib.php): failed to open stream: No such file or directory
+[22-Nov-2016 19:25:22 UTC] PHP Fatal error:  Class 'CRUD' not found in /home/ubuntu/workspace/views/search/ajax/read.php on line 5
+[22-Nov-2016 19:25:22 UTC] PHP Stack trace:
+[22-Nov-2016 19:25:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[22-Nov-2016 19:25:22 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[22-Nov-2016 19:25:22 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:585
+[22-Nov-2016 19:25:22 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[22-Nov-2016 19:25:22 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[22-Nov-2016 19:25:22 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:62-67}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[22-Nov-2016 19:25:22 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:66
+[22-Nov-2016 19:25:22 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[22-Nov-2016 19:25:22 UTC] PHP   9. require() /home/ubuntu/workspace/modules/lib/base.php:2504
+[22-Nov-2016 19:25:22 UTC] Fatal error: Class 'CRUD' not found
+[22-Nov-2016 19:25:40 UTC] PHP Fatal error:  Class 'CRUD' not found in /home/ubuntu/workspace/views/search/ajax/read.php on line 5
+[22-Nov-2016 19:25:40 UTC] PHP Stack trace:
+[22-Nov-2016 19:25:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[22-Nov-2016 19:25:40 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[22-Nov-2016 19:25:40 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:585
+[22-Nov-2016 19:25:40 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[22-Nov-2016 19:25:40 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[22-Nov-2016 19:25:40 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:62-67}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[22-Nov-2016 19:25:40 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:66
+[22-Nov-2016 19:25:40 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[22-Nov-2016 19:25:40 UTC] PHP   9. require() /home/ubuntu/workspace/modules/lib/base.php:2504
+[22-Nov-2016 19:25:40 UTC] Fatal error: Class 'CRUD' not found
+[22-Nov-2016 19:26:36 UTC] PHP Fatal error:  Call to a member function Read() on a non-object in /home/ubuntu/workspace/views/search/ajax/read.php on line 19
+[22-Nov-2016 19:26:36 UTC] PHP Stack trace:
+[22-Nov-2016 19:26:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[22-Nov-2016 19:26:36 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[22-Nov-2016 19:26:36 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:585
+[22-Nov-2016 19:26:36 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[22-Nov-2016 19:26:36 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[22-Nov-2016 19:26:36 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:62-67}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[22-Nov-2016 19:26:36 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:66
+[22-Nov-2016 19:26:36 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[22-Nov-2016 19:26:36 UTC] PHP   9. require() /home/ubuntu/workspace/modules/lib/base.php:2504
+[22-Nov-2016 19:26:36 UTC] Fatal error: Call to a member function Read() on a non-object
+[22-Nov-2016 19:26:58 UTC] require(ajax/lib.php): failed to open stream: No such file or directory
+[22-Nov-2016 19:27:12 UTC] PHP Fatal error:  Call to a member function Read() on a non-object in /home/ubuntu/workspace/views/search/ajax/read.php on line 19
+[22-Nov-2016 19:27:12 UTC] PHP Stack trace:
+[22-Nov-2016 19:27:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[22-Nov-2016 19:27:12 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[22-Nov-2016 19:27:12 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:585
+[22-Nov-2016 19:27:12 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[22-Nov-2016 19:27:12 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[22-Nov-2016 19:27:12 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:62-67}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[22-Nov-2016 19:27:12 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:66
+[22-Nov-2016 19:27:12 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[22-Nov-2016 19:27:12 UTC] PHP   9. require() /home/ubuntu/workspace/modules/lib/base.php:2504
+[22-Nov-2016 19:27:12 UTC] Fatal error: Call to a member function Read() on a non-object
+[22-Nov-2016 19:27:41 UTC] include(ajax/lib.php): failed to open stream: No such file or directory
+[22-Nov-2016 19:28:23 UTC] include_once(ajax/lib.php): failed to open stream: No such file or directory
+[22-Nov-2016 19:28:43 UTC] PHP Fatal error:  Call to a member function Read() on a non-object in /home/ubuntu/workspace/views/search/ajax/read.php on line 19
+[22-Nov-2016 19:28:43 UTC] PHP Stack trace:
+[22-Nov-2016 19:28:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[22-Nov-2016 19:28:43 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[22-Nov-2016 19:28:43 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:585
+[22-Nov-2016 19:28:43 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[22-Nov-2016 19:28:43 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[22-Nov-2016 19:28:43 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:62-67}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[22-Nov-2016 19:28:43 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:66
+[22-Nov-2016 19:28:43 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
+[22-Nov-2016 19:28:43 UTC] PHP   9. require() /home/ubuntu/workspace/modules/lib/base.php:2504
+[22-Nov-2016 19:28:43 UTC] Fatal error: Call to a member function Read() on a non-object
+[22-Nov-2016 19:32:01 UTC] Unable to open details.php
+[22-Nov-2016 19:32:09 UTC] Unable to open delete.php
+[22-Nov-2016 19:37:42 UTC] Unable to open details.php
+[22-Nov-2016 19:48:47 UTC] HTTP 404 (GET /editteam/)
+[22-Nov-2016 20:13:24 UTC] Unable to open details.php
+[22-Nov-2016 20:13:39 UTC] Unable to open create.php
