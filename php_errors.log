@@ -620,3 +620,5 @@
 [20-Nov-2016 18:06:09 UTC] PHP   7. View->render() /home/ubuntu/workspace/modules/roots.php:93
 [20-Nov-2016 18:06:09 UTC] PHP   8. View->sandbox() /home/ubuntu/workspace/modules/lib/base.php:2530
 [20-Nov-2016 18:06:09 UTC] Fatal error: syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';'
+[20-Nov-2016 18:44:35 UTC] HTTP 404 (GET /editteam/)
+[20-Nov-2016 18:44:38 UTC] HTTP 404 (GET /editteam/)

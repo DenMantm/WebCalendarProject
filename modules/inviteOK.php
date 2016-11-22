@@ -57,17 +57,30 @@ if(isset($_POST['email']))
        }
 	} else {
 	    while ($row2 = $pullTeamName -> fetch(PDO::FETCH_BOUND)){
-		echo('<p>
-		        <div>User with email </div>
-		        <div><h4> ' . $email . '</h4></div>
-		        <div> was not found in our system.</div>
-		      </p>
-		      <p>
-		        <div>We have send an email with invitation to join our application to the email above.</div>
-		        <div>Once the user sign up to our serveice your invitation to </div>
-		        <div><h4> ' . $teamName . '</h4></div>
-		        <div>will be awaiting for him.</div>
-		      </p>');
+		
+		      
+		      $insert_row2 = $db->prepare("INSERT INTO Teams (userID,teamName,teamID,role,confirm) VALUES (:var1,:var2,:var3,:var4,2)");
+		       try{
+                $insert_row2->bindParam(':var1', $email, PDO::PARAM_STR );
+                $insert_row2->bindParam(':var2', $teamName, PDO::PARAM_STR );
+                $insert_row2->bindParam(':var3', $teamID, PDO::PARAM_STR );
+                $insert_row2->bindParam(':var4', $role, PDO::PARAM_STR );
+                $insert_row2->execute();
+                echo('<p>
+        		        <div>User with email </div>
+        		        <div><h4> ' . $email . '</h4></div>
+        		        <div> was not found in our system.</div>
+        		      </p>
+        		      <p>
+        		        <div>We have send an email with invitation to join our application to the email above.</div>
+        		        <div>Once the user sign up to our serveice your invitation to </div>
+        		        <div><h4> ' . $teamName . '</h4></div>
+        		        <div>will be awaiting for him.</div>
+        		      </p>');
+            } catch(PDOException $e) {
+        		echo "Error: " . $e->getMessage();
+         	}
+		      
 	    }
 	}
 	

@@ -94,6 +94,16 @@ $f3->route('GET /removeuser/@team/@user',
     }
 );
 
+$f3->route('GET /changerole/@team/@user/@role',
+    function($f3,$params) {
+        isUserLogged();
+        $f3->set('SESSION.currentTeam',$params['team']);
+        $f3->set('SESSION.currentUser',$params['user']);
+        $f3->set('SESSION.currentrole',$params['role']);
+        echo View::instance()->render('../modules/changerole.php');
+    }
+);
+
 $f3->route('GET /editteam/@id',
     function($f3,$params) {
         isUserLogged();
