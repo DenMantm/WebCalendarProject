@@ -1,6 +1,8 @@
 <?php
  
-require __DIR__ . '/db_connection.php';
+//require __DIR__ . '/db_connection.php';
+
+include_once('../views/search/ajax/db_connection.php');
  
 class CRUD
 {
@@ -41,10 +43,10 @@ class CRUD
      *
      * @param $meetingID
      * */
-    public function Delete($meetingID)
+    public function Delete($user_id)
     {
         $query = $this->db->prepare("DELETE FROM Meetings WHERE meetingID = :id");
-        $query->bindParam("id", $meetingID, PDO::PARAM_STR);
+        $query->bindParam("id", $user_id, PDO::PARAM_STR);
         $query->execute();
     }
  
@@ -58,7 +60,7 @@ class CRUD
      * */
     public function Update($location, $subject, $title, $meetingID)
     {
-        $query = $this->db->prepare("UPDATE Meetings SET location = :location, subject = :subject, title = :title  WHERE id = :id");
+        $query = $this->db->prepare("UPDATE Meetings SET location = :location, subject = :subject, title = :title  WHERE meetingID = :id");
         $query->bindParam("location", $location, PDO::PARAM_STR);
         $query->bindParam("subject", $subject, PDO::PARAM_STR);
         $query->bindParam("title", $title, PDO::PARAM_STR);
@@ -73,7 +75,7 @@ class CRUD
      * */
     public function Details($meetingID)
     {
-        $query = $this->db->prepare("SELECT * FROM Meetings WHERE id = :id");
+        $query = $this->db->prepare("SELECT * FROM Meetings WHERE meetingID = :id");
         $query->bindParam("id", $meetingID, PDO::PARAM_STR);
         $query->execute();
         return json_encode($query->fetch(PDO::FETCH_ASSOC));

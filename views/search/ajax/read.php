@@ -1,6 +1,6 @@
 <?php
  
-require 'lib.php';
+include_once('../views/search/ajax/lib.php');
  
 $object = new CRUD();
  
