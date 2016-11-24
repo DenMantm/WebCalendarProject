@@ -21,6 +21,14 @@ $f3->route('GET /',
     }
 );
 
+
+$f3->route('GET /teamFilterList',
+    function($f3) {
+        isUserLogged();
+        require("databaseio/getTeamList.php");
+    }
+);
+
 // Arezki part here 
 // root to check.php
 $f3->route('GET /check',

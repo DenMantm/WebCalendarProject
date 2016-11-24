@@ -270,7 +270,7 @@
         </div>
                     
                     <div class="cell">
-                        <h5>Filter Calendars</h5>
+                        <h5>Chose Team</h5>
                         <div class="treeview" data-role="treeview">
                             <ul>
                                 <li class="node" data-mode="checkbox" data-name="c0">
