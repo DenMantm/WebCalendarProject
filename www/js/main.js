@@ -24,14 +24,50 @@ $('#calendar').followTo(250);
 
 
 var events = [];
-var clone;
+//var clone;
 
 	$(document).ready(function() {
 
 
 		/* initialize the external events
 		-----------------------------------------------------------------*/
+		$('#calendar').fullCalendar({
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,agendaWeek,agendaDay'
+			},
+			editable: true,
+			droppable: true,
+			    eventReceive: function(event, delta, revertFunc) {
+			        
+        events = $('#calendar').fullCalendar( 'clientEvents');
 
+        
+    },
+	    eventClick: function(calEvent, jsEvent, view) {
+
+        // change the border color just for fun
+        $(this).css('border-color', 'red');
+       $('#newmeeting').modal('show');
+       updateDatabase();
+
+    },
+
+			// this allows things to be dropped onto the calendar
+			drop: function() {
+				// is the "remove after drop" checkbox checked?
+				if ($('#drop-remove').is(':checked')) {
+					// if so, remove the element from the "Draggable Events" list
+					$(this).remove();
+					
+				}
+				
+				
+			}
+		});
+		
+		
 		$('#external-events .fc-event').each(function() {
 
 			
@@ -56,42 +92,7 @@ var clone;
 		/* initialize the calendar
 		-----------------------------------------------------------------*/
 
-		$('#calendar').fullCalendar({
-			header: {
-				left: 'prev,next today',
-				center: 'title',
-				right: 'month,agendaWeek,agendaDay'
-			},
-			editable: true,
-			droppable: true,
-			    eventReceive: function(event, delta, revertFunc) {
-			        
-        events = $('#calendar').fullCalendar( 'clientEvents');
 
-        
-    },
-	    eventClick: function(calEvent, jsEvent, view) {
-
-        // change the border color just for fun
-        //$(this).css('border-color', 'red');
-       //alert('clicked');
-       updateDatabase();
-
-    },
-
-			// this allows things to be dropped onto the calendar
-			drop: function() {
-				// is the "remove after drop" checkbox checked?
-				if ($('#drop-remove').is(':checked')) {
-					// if so, remove the element from the "Draggable Events" list
-					$(this).remove();
-					
-				}
-				
-				
-			}
-		});
-		
 
 function updateDatabase(){
     

@@ -38,37 +38,51 @@ $f3->route('GET /check',
         echo View::instance()->render('../views/check.php');
     }
 );
+$f3->route('POST /createarezki',
+    function($f3) {
+        isUserLogged();
+
+        echo View::instance()->render('create.php');
+    }
+);
+$f3->route('POST /detailsarezki',
+    function($f3) {
+        isUserLogged();
+
+        echo View::instance()->render('details.php');
+    }
+);
+$f3->route('POST /deletearezki',
+    function($f3) {
+        isUserLogged();
+
+        echo View::instance()->render('delete.php');
+    }
+);
+$f3->route('POST /updatearezki',
+    function($f3) {
+        isUserLogged();
+
+        echo View::instance()->render('update.php');
+    }
+);
+$f3->route('GET /readarezki',
+    function($f3) {
+        isUserLogged();
+        echo "test";
+        //echo View::instance()->render('../views/showteam.php');
+        echo View::instance()->render('../views/search/ajax/read.php');
+    }
+);
+
 $f3->route('POST /addtask',
     function() {
         require("response2.php"); 
     }
 );
 
-$f3->route('GET /readea',
-    function() {
-        require("read.php"); 
-    }
-);
+//root to new serach
 
-$f3->route('POST /detailsa',
-    function() {
-        require("../views/details.php"); 
-    }
-);
-
-$f3->route('POST /createa',
-    function() {
-        require("../views/create.php"); 
-    }
-);
-$f3->route('POST /deletea',
-    function() {
-        require("../views/delete.php"); 
-    }
-);
-
-
-// root to search.php
 $f3->route('GET /search',
     function($f3) {
         isUserLogged();

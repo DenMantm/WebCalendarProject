@@ -1,3 +1,4 @@
+
 // Add Record
 function addRecord() {
     // get values
@@ -41,7 +42,7 @@ function addRecord() {
 
 // READ records
 function readRecords() {
-    $.get("readsearch", {}, function (data, status) {
+    $.get("./views/search/ajax/read.php", {}, function (data, status) {
         $(".records_content").html(data);
     });
 }

@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    
-    
-    
-    
-    
-    
-    
+
 <head>
+    
     <meta charset="UTF-8">
-    <title>PHP CRUD Operations Using PDO Connection</title>
+    <title>Make your own Team</title>
  
 
-  
+   
        
    <?php
-//   include('../views/partials/head.php')
+   
+  include('../views/partials/head.php')
    
    ?>
+  <!--<script src="ajax/search.js"></script>-->
+   <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+   
 </head>
  
 <body>
+    
   <?php
-// include('../views/partials/navbar.php');
+ include('../views/partials/navbar.php');
 
 ?>
     
@@ -35,7 +34,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>PHP CRUD Operations Using PDO Connection</h1>
+            <h1>Create your own team</h1>
         </div>
     </div>
     <div class="row">
@@ -128,12 +127,10 @@
 <!-- // Modal -->
 
 
-
-
- <!--Custom JS file -->
- <script type="text/javascript" >
- 
-//  // Add Record
+<script>
+    
+    
+// Add Record
 function addRecord() {
     // get values
     var location = $("#location").val();
@@ -154,7 +151,7 @@ function addRecord() {
     }
     else {
         // Add record
-        $.post("createa", {
+        $.post("createarezki", {
             location: location,
             subject: subject,
             title: title
@@ -176,7 +173,8 @@ function addRecord() {
 
 // READ records
 function readRecords() {
-    $.get("reada", {}, function (data, status) {
+    $.get("readarezki", {}, function (data, status) {
+        console.log(data);
         $(".records_content").html(data);
     });
 }
@@ -184,7 +182,7 @@ function readRecords() {
 function GetUserDetails(id) {
     // Add User ID to the hidden field
     $("#hidden_user_id").val(id);
-    $.post("detailsa", {
+    $.post("detailsarezki", {
             id: id
         },
         function (data, status) {
@@ -224,7 +222,7 @@ function UpdateUserDetails() {
         var id = $("#hidden_user_id").val();
  
         // Update the details by requesting to the server using ajax
-        $.post("updatea", {
+        $.post("updatearezki", {
                 id: id,
                 location: location,
                 subject: subject,
@@ -244,7 +242,7 @@ function UpdateUserDetails() {
 function DeleteUser(id) {
     var conf = confirm("Are you sure, do you really want to delete User?");
     if (conf == true) {
-        $.post("deletea", {
+        $.post("deletearezki", {
                 id: id
             },
             function (data, status) {
@@ -259,11 +257,11 @@ $(document).ready(function () {
     // READ records on page load
     readRecords(); // calling function
 });
+</script>
+
+
  
- 
- 
- 
- </script>
+
  
 </body>
 
