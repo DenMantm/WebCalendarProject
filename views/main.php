@@ -7,8 +7,19 @@
   <title>Main</title>
 
 <?php include('partials/head.php') ?>
-   <script type="text/javascript" src="js/target.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="/css/calendar.css">
+    <link href='css/main.css' rel='stylesheet' media='print' />
+    <link href='calendarLib/fullcalendar.css' rel='stylesheet' />
+    <link href='calendarLib/fullcalendar.print.css' rel='stylesheet' media='print' />
+    <script src='calendarLib/lib/jquery.min.js'></script>
+    <script src='calendarLib/lib/jquery-ui.min.js'></script>
+    <script src='calendarLib/fullcalendar.min.js'></script>
+    <script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/target.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  
 
 </head>
 <body>
@@ -524,7 +535,6 @@
           </div>
         </div>
         </div>
-        
 
 
 </body>
