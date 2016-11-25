@@ -7,6 +7,7 @@
   <title>Main</title>
 
 <?php include('partials/head.php') ?>
+<script src='calendarLib/lib/moment.min.js'></script>
     <link rel="stylesheet" href="/css/calendar.css">
     <link href='css/main.css' rel='stylesheet' media='print' />
     <link href='calendarLib/fullcalendar.css' rel='stylesheet' />
