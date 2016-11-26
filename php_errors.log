@@ -1,1 +1,93 @@
 [25-Nov-2016 13:48:08 UTC] HTTP 404 (GET /views/index_page.php)
+[26-Nov-2016 15:15:21 UTC] include(partials/getmails.php): failed to open stream: No such file or directory
+[26-Nov-2016 15:20:18 UTC] include(partials/getmails.php): failed to open stream: No such file or directory
+[26-Nov-2016 15:21:25 UTC] include(partials/getmails.php): failed to open stream: No such file or directory
+[26-Nov-2016 15:24:16 UTC] include(partials/getmails.php): failed to open stream: No such file or directory
+[26-Nov-2016 15:26:00 UTC] include(partials/getmails.php): failed to open stream: No such file or directory
+[26-Nov-2016 15:26:34 UTC] include(partials/getmails.php): failed to open stream: No such file or directory
+[26-Nov-2016 18:28:38 UTC] HTTP 404 (GET /views/index_page.php)
+[26-Nov-2016 18:28:38 UTC] HTTP 404 (GET /favicon.ico)
+[26-Nov-2016 18:28:41 UTC] HTTP 404 (GET /views/index_page.php)
+[26-Nov-2016 18:28:46 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[26-Nov-2016 18:28:46 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[26-Nov-2016 18:28:46 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[26-Nov-2016 20:22:54 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/modules/addmeeting.php on line 14
+[26-Nov-2016 20:22:54 UTC] PHP Stack trace:
+[26-Nov-2016 20:22:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[26-Nov-2016 20:22:54 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[26-Nov-2016 20:22:54 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:612
+[26-Nov-2016 20:22:54 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[26-Nov-2016 20:22:54 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[26-Nov-2016 20:22:54 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:335-338}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[26-Nov-2016 20:22:54 UTC] Fatal error: syntax error, unexpected '.'
+[26-Nov-2016 21:22:00 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[26-Nov-2016 21:22:00 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[26-Nov-2016 21:22:00 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[26-Nov-2016 21:51:23 UTC] PDOStatement::bindParam() expects parameter 3 to be long, string given
+[26-Nov-2016 21:52:53 UTC] Object of class DateTime could not be converted to string
+[26-Nov-2016 21:56:53 UTC] PDOStatement::bindParam() expects parameter 3 to be long, string given
+[26-Nov-2016 21:57:14 UTC] Invalid argument supplied for foreach()
+[26-Nov-2016 21:57:36 UTC] Invalid argument supplied for foreach()
+[26-Nov-2016 21:58:25 UTC] Object of class DateTime could not be converted to string
+[26-Nov-2016 22:02:46 UTC] Only variables should be passed by reference
+[26-Nov-2016 22:03:16 UTC] Only variables should be passed by reference
+[26-Nov-2016 22:09:42 UTC] PHP Fatal error:  Call to a member function format() on a non-object in /home/ubuntu/workspace/modules/addmeeting.php on line 20
+[26-Nov-2016 22:09:42 UTC] PHP Stack trace:
+[26-Nov-2016 22:09:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[26-Nov-2016 22:09:42 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[26-Nov-2016 22:09:42 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:612
+[26-Nov-2016 22:09:42 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[26-Nov-2016 22:09:42 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[26-Nov-2016 22:09:42 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:335-338}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[26-Nov-2016 22:09:42 UTC] PHP   7. require() /home/ubuntu/workspace/modules/roots.php:337
+[26-Nov-2016 22:09:42 UTC] Fatal error: Call to a member function format() on a non-object
+[26-Nov-2016 22:15:48 UTC] PHP Fatal error:  Call to a member function format() on a non-object in /home/ubuntu/workspace/modules/addmeeting.php on line 20
+[26-Nov-2016 22:15:48 UTC] PHP Stack trace:
+[26-Nov-2016 22:15:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[26-Nov-2016 22:15:48 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[26-Nov-2016 22:15:48 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:612
+[26-Nov-2016 22:15:48 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[26-Nov-2016 22:15:48 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[26-Nov-2016 22:15:48 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:335-338}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[26-Nov-2016 22:15:48 UTC] PHP   7. require() /home/ubuntu/workspace/modules/roots.php:337
+[26-Nov-2016 22:15:48 UTC] Fatal error: Call to a member function format() on a non-object
+[26-Nov-2016 22:16:13 UTC] PHP Fatal error:  Call to a member function format() on a non-object in /home/ubuntu/workspace/modules/addmeeting.php on line 20
+[26-Nov-2016 22:16:13 UTC] PHP Stack trace:
+[26-Nov-2016 22:16:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[26-Nov-2016 22:16:13 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[26-Nov-2016 22:16:13 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:612
+[26-Nov-2016 22:16:13 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[26-Nov-2016 22:16:13 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[26-Nov-2016 22:16:13 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:335-338}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[26-Nov-2016 22:16:13 UTC] PHP   7. require() /home/ubuntu/workspace/modules/roots.php:337
+[26-Nov-2016 22:16:13 UTC] Fatal error: Call to a member function format() on a non-object
+[26-Nov-2016 22:17:12 UTC] PHP Fatal error:  Call to a member function format() on a non-object in /home/ubuntu/workspace/modules/addmeeting.php on line 20
+[26-Nov-2016 22:17:12 UTC] PHP Stack trace:
+[26-Nov-2016 22:17:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[26-Nov-2016 22:17:12 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[26-Nov-2016 22:17:12 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:612
+[26-Nov-2016 22:17:12 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[26-Nov-2016 22:17:12 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[26-Nov-2016 22:17:12 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:335-338}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[26-Nov-2016 22:17:12 UTC] PHP   7. require() /home/ubuntu/workspace/modules/roots.php:337
+[26-Nov-2016 22:17:12 UTC] Fatal error: Call to a member function format() on a non-object
+[26-Nov-2016 22:18:13 UTC] PHP Fatal error:  Call to a member function format() on a non-object in /home/ubuntu/workspace/modules/addmeeting.php on line 20
+[26-Nov-2016 22:18:13 UTC] PHP Stack trace:
+[26-Nov-2016 22:18:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[26-Nov-2016 22:18:13 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[26-Nov-2016 22:18:13 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:612
+[26-Nov-2016 22:18:13 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[26-Nov-2016 22:18:13 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[26-Nov-2016 22:18:13 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:335-338}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[26-Nov-2016 22:18:13 UTC] PHP   7. require() /home/ubuntu/workspace/modules/roots.php:337
+[26-Nov-2016 22:18:13 UTC] Fatal error: Call to a member function format() on a non-object
+[26-Nov-2016 22:19:40 UTC] PHP Fatal error:  Call to a member function format() on a non-object in /home/ubuntu/workspace/modules/addmeeting.php on line 20
+[26-Nov-2016 22:19:40 UTC] PHP Stack trace:
+[26-Nov-2016 22:19:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[26-Nov-2016 22:19:40 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[26-Nov-2016 22:19:40 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:612
+[26-Nov-2016 22:19:40 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[26-Nov-2016 22:19:40 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[26-Nov-2016 22:19:40 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:335-338}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[26-Nov-2016 22:19:40 UTC] PHP   7. require() /home/ubuntu/workspace/modules/roots.php:337
+[26-Nov-2016 22:19:40 UTC] Fatal error: Call to a member function format() on a non-object

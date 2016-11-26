@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="/css/animate.css">
   <!--Metro icons used in lefthandside menu-->
   <link rel="stylesheet" href="/css/metro-icons.min.css">
+  <link rel="stylesheet" href="/css/select2.min.css">
+  
   <script type='text/javascript' src="/js/metro.min.js"></script>
   <script type='text/javascript' src="/js/database.js"></script>
   

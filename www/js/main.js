@@ -27,7 +27,54 @@ var events = [];
 //var clone;
 
 	$(document).ready(function() {
-
+$("#btnSaveNewMeeting").click(function (e) {
+			e.preventDefault();
+// 			if($("#t_name").val()==='')
+// 			{
+// 				alert("Please provide team name!");
+// 				return false;
+// 			}
+			
+			$("#btnSaveNewMeeting").hide(); //hide submit button
+			$("#LoadingImage").show(); //show loading image
+			
+		   // var myData = 'subject_text='+ $("#m_subject").val();//build a post data structur
+		 //	var myData1 = 'location_text='+ $("#m_location").val();
+		 //	var myData2 = 'date_text='+ $("#m_date").val();
+		 
+			jQuery.ajax({
+			type: "POST", // HTTP method POST or GET
+			url: "addmeeting", //Where to make Ajax calls
+			dataType:"text", // Data type, HTML, json etc.
+			data:
+			{title:$("#m_title").val(),
+			    participants:$("#m_participants").val(),
+			    subject:$("#m_subject").val(),
+			    location:$("#m_location").val(),
+			    from:$("#m_from").val(),
+			    to:$("#m_to").val()
+			},
+			
+			success:function(response){
+				$("#m_title").val(''); 
+				$("#m_participants").val(''); 
+				$("#m_subject").val(''); 
+				$("#m_location").val(''); 
+				$("#m_from").val(''); 
+				$("#m_to").val(''); 
+				$("#btnSaveNewTeam").show(); //show submit button
+				$("#LoadingImage").hide(); //hide loading image
+				$('#newmeeting').modal('hide');
+				window.open("/main","_self")
+				//alert(response);
+			},
+			error:function (xhr, ajaxOptions, thrownError){
+				$("#btnSaveNewTeam").show(); //show submit button
+				$("#LoadingImage").hide(); //hide loading image
+				alert(thrownError);
+			}
+			});
+	});
 
 		/* initialize the external events
 		-----------------------------------------------------------------*/
@@ -167,7 +214,12 @@ function day_click(short, full) {
                                 //alert("You click on day!\nShort: "+short+"\nFull: " + full);
                             }
 
+    $(function(){
+        $('select').select2({
+        placeholder: 'Email address'
+        });
 
+    });
 
 
 	

@@ -20,6 +20,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/target.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/select2.full.min.js"></script>
   
 
 </head>
@@ -488,7 +489,10 @@
               <div class="row">
                 <label class="col-sm-2" control-label>Participants</label>
                 <div class="col-sm-10">
-                  <input type="text" name="participants_text"id="m_to" class="form-control" placeholder="Enter participants here" required/>
+                    <select id="m_participants" class="js-example-basic-single js-states form-control" multiple="multiple" style="width: 100%;">
+                        <?php include("../modules/getemails.php") ?>
+                    </select>
+                  <!--<input type="text" name="participants_text" id="m_to" class="form-control" placeholder="Enter participants here" required/>-->
                   
                   
                   
@@ -510,12 +514,26 @@
               </div>
               
             <div class="row">
-                <label htmlFor="inputDate" class="col-sm-2" control-label>Date</label>
+                <label htmlFor="inputDate" class="col-sm-2" control-label>Start date</label>
                 <div class="col-sm-10">
-                  <input type="text" id="m_date" name="date_text"class="form-control" placeholder="Enter date" required/>
+                  <input type="text" id="m_from" name="date_text"class="form-control" placeholder="Choose date"  required/>
                   <script type="text/javascript">
                     $(function() {
-                      $('#m_date').datetimepicker();
+                      $('#m_from').datetimepicker();
+                      dateFormat: 'yy-mm-dd'
+                    });
+                    
+                  </script>
+                  
+                </div>
+              </div>
+            <div class="row">
+                <label htmlFor="inputDate" class="col-sm-2" control-label>End date</label>
+                <div class="col-sm-10">
+                  <input type="text" id="m_to" name="date_text"class="form-control" placeholder="Choose date" required/>
+                  <script type="text/javascript">
+                    $(function() {
+                      $('#m_to').datetimepicker();
                       dateFormat: 'yy-mm-dd'
                     });
                     
@@ -530,7 +548,7 @@
             
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button id="btnSaveNewMeeting" class="btn btn-primary">Save fund</button>
+              <button id="btnSaveNewMeeting" class="btn btn-primary">Save</button>
             </div>
 
           </div>

@@ -62,21 +62,21 @@
                           if ($role == "editor") {
                               $teams .= ' 
                                 <div class="col-md-6">
-                                <div class="btn-group pull-left" role="group" aria-label="...">
-                                 <a href="#" onclick="edit(\'' . $teamId . '\');"class="btn btn-default" aria-label="Left Align">
+                                <div class="btn-group" role="group" aria-label="...">
+                                <a href="/editteam/' . $teamId . '" class="btn btn-default" aria-label="Left Align">
                                 Edit  <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
                                 </a>
-                                <a href="#" onclick="invite(\'' . $teamId . '\');"class="btn btn-default" aria-label="Left Align" data-toggle="modal" data-target="#invite">
+                                <a href="/teaminvite/' . $teamId . '" class="btn btn-default" aria-label="Left Align">
                                 Invite  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                                  </a>';  
                           } else {
                               $teams .= '
                               <div class="col-md-6">
-                                <div class="btn-group pull-left" role="group" aria-label="...">
+                                <div class="btn-group" role="group" aria-label="...">
                                 <a href="/editteam/' . $teamId . '" class="btn btn-default disabled" aria-label="Left Align">
                                 Edit  <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
                                 </a>
-                                <a href="#" onclick="leave(\'' . $teamId . '\');"class="btn btn-default disabled" aria-label="Left Align" data-toggle="modal" data-target="#invite">
+                                <a href="/teaminvite/' . $teamId . '" class="btn btn-default disabled" aria-label="Left Align">
                                 Invite  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                                  </a>'; 
                           }
@@ -87,11 +87,11 @@
                          
                       }  else if ($confirmed == 0) {
                           $invites .= '<div class="row">
-                                        <div class="col-md-3">' . $teamName . '</div>
-                                        <div class="col-md-1"><div>Role:</div><div>' . $role . '</div></div>
+                                        <div class="col-md-2">' . $teamName . '</div>
                                         <div class="col-md-1"><div>Users:</div><div>' . $users_cout . '</div></div>
+                                        <div class="col-md-1"><div>Role:</div><div>' . $role . '</div></div>
                                         <div class="col-md-6">
-                                            <div class="btn-group pull-left" role="group" aria-label="...">
+                                            <div class="btn-group" role="group" aria-label="...">
                                                 <a href="#" onclick="showusers(\'' . $teamId . '\');" class="btn btn-default" aria-label="Left Align">
                                                     Users <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
                                                 </a>

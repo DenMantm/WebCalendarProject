@@ -99,6 +99,8 @@ $f3->route('GET /showteam',
     }
 );
 
+
+
 $f3->route('GET /showusers/@id',
     function($f3,$params) {
         isUserLogged();
@@ -326,6 +328,13 @@ $f3->route('POST /addteam',
     function() {
         
         require("addteam.php"); 
+    }
+);
+
+$f3->route('POST /addmeeting',
+    function() {
+        
+        require("addmeeting.php"); 
     }
 );
 
