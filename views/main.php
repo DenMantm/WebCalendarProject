@@ -207,30 +207,6 @@
                                         
                                     </ul>
                                 </li>
-                                <!--<li class="node">-->
-                                <!--  <span class="node-toggle"></span>-->
-                                <!--    <span class="leaf">My Calendars</span>-->
-                                    
-                                <!--    <ul>-->
-                                <!--        <li class="node collapsed">-->
-                                <!--            <span class="leaf">International Flinstones</span>-->
-                                <!--            <span class="node-toggle"></span>-->
-                                <!--            <ul style="display: none;">-->
-                                <!--                <li><span class="leaf">Deniss</span></li>-->
-                                <!--                <li><span class="leaf">Kamil</span></li>-->
-                                <!--                <li><span class="leaf">Arezki</span></li>-->
-                                <!--                <li><span class="leaf">Maurice</span></li>-->
-                                <!--                <li><span class="leaf">Michael</span></li>-->
-                                <!--            </ul>-->
-                                <!--        </li>-->
-                                <!--        <li><span class="leaf">My Calendar</span></li>-->
-                                <!--        <li><span class="leaf">Team Calendar 1</span></li>-->
-                                <!--        <li><span class="leaf">Team Calendar 2</span></li>-->
-                                <!--        <li><span class="leaf">Team Calendar 3</span></li>-->
-                                <!--    </ul>-->
-                                <!--</li>-->
-                                
-                                
                             </ul>
                         </div>
                     </div>
@@ -378,19 +354,18 @@
             <div id='external-events' style="max-width:200px padding:0">
             <div class="accordion" data-role="accordion" data-close-any="true">
                             <div class="frame" style="padding:7px">
-                                <div class="heading">International Flinstones</div>
+                                <div class="heading">Actions</div>
                                 <div class="content" style="display: none;">
                                     <span data-role="hint"
                                                         data-hint-background="bg-orange"
                                                         data-hint-color="fg-white"
                                                         data-hint-mode="2"
                                                         data-hint-position="top"
-                                                        data-hint="Presenting|Wo is this guy?"
-                                                    ><div class='fc-event' style="background-color:orange">Deniss</div></span>
-                                    <div class='fc-event' style="background-color:red">Kamil</div>
-                                    <div class='fc-event' style="background-color:green">Arezki</div>
-                                    <div class='fc-event'>Maurice</div>
-                                    <div class='fc-event' style="background-color:purple">Michael</div>
+                                                        data-hint="Add new Meeting"
+                                                    ><div class='fc-event' style="background-color:orange"> Personal meeting</div></span>
+                                    <div class='fc-event' style="background-color:green"> Personal task</div>
+                                    <div class='fc-event'> Team meeting</div>
+                                    <div class='fc-event' style="background-color:purple"> Team task</div>
                                   
                                     
                                     
@@ -477,9 +452,9 @@
             
             <div class="modal-body">
                 <div class="row">
-                <label class="col-sm-2" control-label>Task Title</label>
+                <label class="col-sm-2" control-label>Subject</label>
                 <div class="col-sm-10">
-                  <input type="text" name="title_text"id="m_title" class="form-control" placeholder="Enter The Task Title here" required/>
+                  <input type="text" name="title_text"id="m_subject" class="form-control" placeholder="Enter The Task Title here" required/>
                   
                   
                   
@@ -499,17 +474,18 @@
                 </div>
               </div>
               
-              <div class="row">
-                <label htmlFor="inputName" class="col-sm-2" control-label>Subject</label>
-                <div class="col-sm-10">
-                  <input type="text" name="subject_text" id="m_subject" class="form-control" placeholder="Enter meeting subject here" required/>
-                </div>
-              </div>
               
               <div class="row">
                 <label htmlFor="inputCode" class="col-sm-2" control-label>Location</label>
                 <div class="col-sm-10">
                   <input type="text"name="location_text" id="m_location" class="form-control" placeholder="Enter meeting location here" required/>
+                </div>
+              </div>
+              
+             <div class="row">
+                <label htmlFor="inputName" class="col-sm-2" control-label>Details</label>
+                <div class="col-sm-10">
+                  <textarea class="form-control" id="m_details" placeholder="Enter meeting details here" rows="7"></textarea>
                 </div>
               </div>
               

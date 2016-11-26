@@ -9,7 +9,7 @@ include_once("../modules/db.php");
  	$participants = $_POST["participants"];
  	$title = $_POST["title"];
  	$location = $_POST["location"];
- 	$description = $_POST["description"];
+ 	$description = nl2br(htmlentities($_POST["details"], ENT_QUOTES, 'UTF-8'));
  	$from = $_POST["from"];
  	$to = $_POST["to"];
  	
@@ -40,7 +40,6 @@ include_once("../modules/db.php");
  	                Meetings    (
  	                    meetingID,
  	                    subject,
- 	                    title,
  	                    location,
  	                    description,
  	                    start,
@@ -48,7 +47,6 @@ include_once("../modules/db.php");
  	                VALUES (
  	                    '" . $meeting_uid . "',
  	                    '" . $subject . "',
- 	                    '" . $title  . "',
  	                    '" . $location . "',
  	                    '" . $description . "',
  	                    '" . $date_from_str . "',
@@ -65,7 +63,7 @@ include_once("../modules/db.php");
 		echo "Error: " . $e->getMessage();
 		}
  	
- 	echo($query);
+ 	echo($description);
 	
  }
 ?>

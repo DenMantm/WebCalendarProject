@@ -47,7 +47,7 @@ $("#btnSaveNewMeeting").click(function (e) {
 			url: "addmeeting", //Where to make Ajax calls
 			dataType:"text", // Data type, HTML, json etc.
 			data:
-			{title:$("#m_title").val(),
+			{details:$("#m_details").val(),
 			    participants:$("#m_participants").val(),
 			    subject:$("#m_subject").val(),
 			    location:$("#m_location").val(),
@@ -56,7 +56,7 @@ $("#btnSaveNewMeeting").click(function (e) {
 			},
 			
 			success:function(response){
-				$("#m_title").val(''); 
+				$("#m_details").val(''); 
 				$("#m_participants").val(''); 
 				$("#m_subject").val(''); 
 				$("#m_location").val(''); 
