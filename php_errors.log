@@ -1,8 +1,0 @@
-[27-Nov-2016 16:24:12 UTC] HTTP 404 (GET /css/bootstrap.min.css.map)
-[27-Nov-2016 16:24:13 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
-[27-Nov-2016 16:24:13 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
-[27-Nov-2016 16:24:13 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
-[27-Nov-2016 16:33:26 UTC] Invalid argument supplied for foreach()
-[27-Nov-2016 16:34:59 UTC] Invalid argument supplied for foreach()
-[27-Nov-2016 16:38:06 UTC] Invalid argument supplied for foreach()
-[27-Nov-2016 16:40:43 UTC] Invalid argument supplied for foreach()
