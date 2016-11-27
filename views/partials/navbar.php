@@ -39,7 +39,7 @@
                 </li>
                  <li><a href="/search">New Search</a>
                 </li>
-                <li><a href="/manageTeams">Manage Teams</a>
+                <li><a href="/team">Manage Teams</a>
                 </li>
                 <li><a href="/logout">Logout</a></li>
         <li>

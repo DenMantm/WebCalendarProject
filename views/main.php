@@ -211,97 +211,97 @@
                         </div>
                     </div>
                     
-                            <div class="cell">
-          <ul class="sidebar no-responsive-future" id="sidebar">
-            <li>
-              <a href="#">
-                <span class="mif-calendar icon"></span>
-                <span class="title">Calendar</span>
-                <span class="counter">0</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="mif-event-available icon"></span>
-                <span class="title">Meetings</span>
-                <span class="counter">0</span>
-              </a>
-            </li>
-            <li class="active">
-              <a href="#">
-                <span class="mif-list icon"></span>
-                <span class="title">Tasks</span>
-                <span class="counter">0</span>
-              </a>
-            </li>
-            <li class="active">
-              <a href="/team">
-                <span class="mif-list icon"></span>
-                <span class="title">Teams</span>
-                <span class="counter">0</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="mif-file-text icon"></span>
-                <span class="title">Notes</span>
-                <span class="counter">0</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="mif-cogs icon"></span>
-                <span class="title">Settings</span>
-                <span class="counter">0</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <!--                    <div class="cell">-->
+        <!--  <ul class="sidebar no-responsive-future" id="sidebar">-->
+        <!--    <li>-->
+        <!--      <a href="#">-->
+        <!--        <span class="mif-calendar icon"></span>-->
+        <!--        <span class="title">Calendar</span>-->
+        <!--        <span class="counter">0</span>-->
+        <!--      </a>-->
+        <!--    </li>-->
+        <!--    <li>-->
+        <!--      <a href="#">-->
+        <!--        <span class="mif-event-available icon"></span>-->
+        <!--        <span class="title">Meetings</span>-->
+        <!--        <span class="counter">0</span>-->
+        <!--      </a>-->
+        <!--    </li>-->
+        <!--    <li class="active">-->
+        <!--      <a href="#">-->
+        <!--        <span class="mif-list icon"></span>-->
+        <!--        <span class="title">Tasks</span>-->
+        <!--        <span class="counter">0</span>-->
+        <!--      </a>-->
+        <!--    </li>-->
+        <!--    <li class="active">-->
+        <!--      <a href="/team">-->
+        <!--        <span class="mif-list icon"></span>-->
+        <!--        <span class="title">Teams</span>-->
+        <!--        <span class="counter">0</span>-->
+        <!--      </a>-->
+        <!--    </li>-->
+        <!--    <li>-->
+        <!--      <a href="#">-->
+        <!--        <span class="mif-file-text icon"></span>-->
+        <!--        <span class="title">Notes</span>-->
+        <!--        <span class="counter">0</span>-->
+        <!--      </a>-->
+        <!--    </li>-->
+        <!--    <li>-->
+        <!--      <a href="#">-->
+        <!--        <span class="mif-cogs icon"></span>-->
+        <!--        <span class="title">Settings</span>-->
+        <!--        <span class="counter">0</span>-->
+        <!--      </a>-->
+        <!--    </li>-->
+        <!--  </ul>-->
+        <!--</div>-->
                     
-                    <div class="cell">
-                        <h5>Chose Team</h5>
-                        <div class="treeview" data-role="treeview">
-                            <ul>
-                                <li class="node" data-mode="checkbox" data-name="c0">
-                                    <label class="input-control checkbox small-check"><input type="checkbox" name="c0" class=""><span class="check"></span></label><span class="leaf">Calendars:</span>
-                                    <span class="node-toggle"></span>
-                                    <ul>
-                                        <li data-mode="checkbox" data-name="c3_1_1">
-                                            <label class="input-control checkbox small-check"><input type="checkbox" name="c3_1_1"><span class="check"></span></label><span class="leaf">Team Calendar 1</span>
-                                        </li>
-                                                                                <li data-mode="checkbox" data-name="c3_1_1">
-                                            <label class="input-control checkbox small-check"><input type="checkbox" name="c3_1_1"><span class="check"></span></label><span class="leaf">Team Calendar 2</span>
-                                        </li>
-                                        <li data-mode="checkbox" data-name="c3_1_1">
-                                            <label class="input-control checkbox small-check"><input type="checkbox" name="c3_1_1"><span class="check"></span></label><span class="leaf">My Calendar</span>
-                                        </li>
-                                        <li data-mode="checkbox" data-name="c1" class="node">
-                                            <label class="input-control checkbox small-check"><input type="checkbox" name="c1"><span class="check"></span></label><span class="leaf">International Flinstones</span>
-                                            <span class="node-toggle"></span>
-                                            <ul>
-                                                <li data-mode="checkbox" data-name="c1_1">
-                                                    <label class="input-control checkbox small-check"><input type="checkbox" name="c1_1"><span class="check"></span></label><span class="leaf">Deniss</span>
-                                                </li>
-                                                <li data-mode="checkbox" data-name="c1_2">
-                                                    <label class="input-control checkbox small-check"><input type="checkbox" name="c1_2"><span class="check"></span></label><span class="leaf">Kamil</span>
-                                                </li>
-                                                <li data-mode="checkbox" data-name="c1_3">
-                                                    <label class="input-control checkbox small-check"><input type="checkbox" name="c1_3"><span class="check"></span></label><span class="leaf">Arezki</span>
-                                                </li>
-                                                <li data-mode="checkbox" data-name="c1_4">
-                                                    <label class="input-control checkbox small-check"><input type="checkbox" name="c1_4"><span class="check"></span></label><span class="leaf">Maurice</span>
-                                                </li>
-                                                  <li data-mode="checkbox" data-name="c1_5">
-                                                    <label class="input-control checkbox small-check"><input type="checkbox" name="c1_5"><span class="check"></span></label><span class="leaf">Michael</span>
-                                                </li>
-                                            </ul>
-                                        </li>
+        <!--            <div class="cell">-->
+        <!--                <h5>Chose Team</h5>-->
+        <!--                <div class="treeview" data-role="treeview">-->
+        <!--                    <ul>-->
+        <!--                        <li class="node" data-mode="checkbox" data-name="c0">-->
+        <!--                            <label class="input-control checkbox small-check"><input type="checkbox" name="c0" class=""><span class="check"></span></label><span class="leaf">Calendars:</span>-->
+        <!--                            <span class="node-toggle"></span>-->
+        <!--                            <ul>-->
+        <!--                                <li data-mode="checkbox" data-name="c3_1_1">-->
+        <!--                                    <label class="input-control checkbox small-check"><input type="checkbox" name="c3_1_1"><span class="check"></span></label><span class="leaf">Team Calendar 1</span>-->
+        <!--                                </li>-->
+        <!--                                                                        <li data-mode="checkbox" data-name="c3_1_1">-->
+        <!--                                    <label class="input-control checkbox small-check"><input type="checkbox" name="c3_1_1"><span class="check"></span></label><span class="leaf">Team Calendar 2</span>-->
+        <!--                                </li>-->
+        <!--                                <li data-mode="checkbox" data-name="c3_1_1">-->
+        <!--                                    <label class="input-control checkbox small-check"><input type="checkbox" name="c3_1_1"><span class="check"></span></label><span class="leaf">My Calendar</span>-->
+        <!--                                </li>-->
+        <!--                                <li data-mode="checkbox" data-name="c1" class="node">-->
+        <!--                                    <label class="input-control checkbox small-check"><input type="checkbox" name="c1"><span class="check"></span></label><span class="leaf">International Flinstones</span>-->
+        <!--                                    <span class="node-toggle"></span>-->
+        <!--                                    <ul>-->
+        <!--                                        <li data-mode="checkbox" data-name="c1_1">-->
+        <!--                                            <label class="input-control checkbox small-check"><input type="checkbox" name="c1_1"><span class="check"></span></label><span class="leaf">Deniss</span>-->
+        <!--                                        </li>-->
+        <!--                                        <li data-mode="checkbox" data-name="c1_2">-->
+        <!--                                            <label class="input-control checkbox small-check"><input type="checkbox" name="c1_2"><span class="check"></span></label><span class="leaf">Kamil</span>-->
+        <!--                                        </li>-->
+        <!--                                        <li data-mode="checkbox" data-name="c1_3">-->
+        <!--                                            <label class="input-control checkbox small-check"><input type="checkbox" name="c1_3"><span class="check"></span></label><span class="leaf">Arezki</span>-->
+        <!--                                        </li>-->
+        <!--                                        <li data-mode="checkbox" data-name="c1_4">-->
+        <!--                                            <label class="input-control checkbox small-check"><input type="checkbox" name="c1_4"><span class="check"></span></label><span class="leaf">Maurice</span>-->
+        <!--                                        </li>-->
+        <!--                                          <li data-mode="checkbox" data-name="c1_5">-->
+        <!--                                            <label class="input-control checkbox small-check"><input type="checkbox" name="c1_5"><span class="check"></span></label><span class="leaf">Michael</span>-->
+        <!--                                        </li>-->
+        <!--                                    </ul>-->
+        <!--                                </li>-->
 
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+        <!--                            </ul>-->
+        <!--                        </li>-->
+        <!--                    </ul>-->
+        <!--                </div>-->
+        <!--            </div>-->
                     
                     
                     
@@ -390,10 +390,11 @@
       <button type="button" id="newmeetingBtn" class="btn btn-default btn-lg btn-block" data-toggle="modal" data-target="#newmeeting">New meeting</button>
 
             <div id='external-events' style="max-width:200px padding:0">
-            <div class="accordion" data-role="accordion" data-close-any="true">
+        
                             <div class="frame" style="padding:7px">
-                                <div class="heading">Actions</div>
-                                <div class="content" style="display: none;">
+                                <div class="heading">Drag and drop Actions:</div>
+                                <br/>
+                                <div class="content" >
                                     <span data-role="hint"
                                                         data-hint-background="bg-orange"
                                                         data-hint-color="fg-white"
@@ -409,19 +410,7 @@
                                     
                                 </div>
                             </div>
-                            <div class="frame" style="padding:7px">
-                                <div class="heading">Team Calendar 1</div>
-                                <div class="content" style="display: none;">
-                                    
-                                </div>
-                            </div>
-                            <div class="frame" style="padding:7px">
-                                <div class="heading">Team calendar 2</div>
-                                <div class="content">
-                                   
-                                </div>
-                            </div>
-                        </div>
+                       
             </div>
         
         </div>
