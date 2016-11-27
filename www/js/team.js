@@ -62,14 +62,15 @@ $("#btnSaveNewTeam").click(function (e) {
 			type: "POST", // HTTP method POST or GET
 			url: "addTeam", //Where to make Ajax calls
 			dataType:"text", // Data type, HTML, json etc.
-			data:'team_name='+ $("#m_title").val(),//Form variable
+			data:'team_name='+ $("#t_name").val(),//Form variable
 			
 			success:function(response){
 				$("#responds").append(response);
 				$("#t_name").val(''); //empty text field on successful
 				$("#btnSaveNewTeam").show(); //show submit button
 				$("#LoadingImage").hide(); //hide loading image
-				window.open("/team","_self")
+				//window.open("/team","_self")
+				alert(response)
 			},
 			error:function (xhr, ajaxOptions, thrownError){
 				$("#btnSaveNewTeam").show(); //show submit button

@@ -4,6 +4,7 @@
           $teams = '<H2>Your Teams:</H2>'; 
           $invites = '<H2>Your invitations:</H2>';
           $user = $_SESSION['user']['username'];
+          $userUID = $_SESSION['user']['uID'];
           $query = "SELECT 
                         t.teamId, 
                         t.teamName, 
@@ -23,7 +24,7 @@
                         Teams t 
                     WHERE 
                         c.teamID = t.teamID 
-                        and userID = '" . $user . "';";
+                        and userUID = '" . $userUID . "';";
           
                       
           $sth = $db->prepare($query);  

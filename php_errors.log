@@ -34,3 +34,12 @@
 [27-Nov-2016 14:36:53 UTC] HTTP 404 (GET /teaminvite/582cf42a3a68d)
 [27-Nov-2016 14:53:11 UTC] HTTP 404 (GET /teaminvite/582cb9bf4326b)
 [27-Nov-2016 14:53:17 UTC] HTTP 404 (GET /teaminvite/582cb9bf4326b)
+[27-Nov-2016 15:37:12 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[27-Nov-2016 15:37:12 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[27-Nov-2016 15:37:13 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[27-Nov-2016 15:37:13 UTC] HTTP 404 (GET /css/bootstrap.min.css.map)
+[27-Nov-2016 15:37:15 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[27-Nov-2016 15:37:16 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[27-Nov-2016 15:37:16 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[27-Nov-2016 15:37:20 UTC] PDOStatement: Unknown column 'userID' in 'where clause'
+[27-Nov-2016 15:40:50 UTC] PDOStatement: Unknown column 'userID' in 'where clause'
