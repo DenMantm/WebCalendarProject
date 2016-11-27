@@ -100,6 +100,7 @@ $("#btnSaveNewMeeting").click(function (e) {
         $("#m_subject").val(calEvent.title); 
         $("#m_from").val(start); 
 		$("#m_to").val(end); 
+		$("#m_location").val(calEvent._id); 
         $('#newmeeting').modal('show');
        //updateDatabase();
 

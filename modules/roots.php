@@ -71,7 +71,7 @@ $f3->route('POST /updatearezki',
 $f3->route('GET /readarezki',
     function($f3) {
         isUserLogged();
-        echo "test";
+      
         //echo View::instance()->render('../views/showteam.php');
         echo View::instance()->render('../views/search/ajax/read.php');
     }
