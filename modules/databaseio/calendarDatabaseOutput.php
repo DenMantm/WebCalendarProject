@@ -49,7 +49,7 @@ class DatabaseOutput{
         session_start();
         $user = $_SESSION['user']['username'];
         
-        $teamList=$calendar->find(array('userID=? AND confirm=1',$user));
+        $teamList=$calendar->find(array('username=? AND confirm=1',$user));
         
         return $teamList;
         //generating array with teamlist, removing unnecesarry columns
