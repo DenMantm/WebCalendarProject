@@ -1,0 +1,8 @@
+[27-Nov-2016 11:47:06 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[27-Nov-2016 11:47:07 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[27-Nov-2016 11:47:07 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[27-Nov-2016 11:47:24 UTC] HTTP 404 (GET /teaminvite/582ce42b249cf)
+[27-Nov-2016 11:53:22 UTC] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'title' in 'field list'
+[27-Nov-2016 11:53:28 UTC] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'title' in 'field list'
+[27-Nov-2016 13:17:39 UTC] HTTP 404 (POST /detailsazki)
+[27-Nov-2016 13:23:44 UTC] Unable to open ../views/searcajax/update.php

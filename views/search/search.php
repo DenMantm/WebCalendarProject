@@ -61,7 +61,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Add New Record</h4>
+                <h4 class="modal-description" id="myModalLabel">Add New Record</h4>
             </div>
             <div class="modal-body">
  
@@ -76,8 +76,8 @@
                 </div>
  
                 <div class="form-group">
-                    <label for="title">title Address</label>
-                    <input type="text" id="title" placeholder="title Address" class="form-control"/>
+                    <label for="description">description Address</label>
+                    <input type="text" id="description" placeholder="description Address" class="form-control"/>
                 </div>
  
             </div>
@@ -96,7 +96,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Update</h4>
+                <h4 class="modal-description" id="myModalLabel">Update</h4>
             </div>
             <div class="modal-body">
  
@@ -111,8 +111,8 @@
                 </div>
  
                 <div class="form-group">
-                    <label for="update_title">title Address</label>
-                    <input type="text" id="update_title" placeholder="title Address" class="form-control"/>
+                    <label for="update_description">description Address</label>
+                    <input type="text" id="update_description" placeholder="description Address" class="form-control"/>
                 </div>
  
             </div>
@@ -137,8 +137,8 @@ function addRecord() {
     location = location.trim();
     var subject = $("#subject").val();
     subject = subject.trim();
-    var title = $("#title").val();
-    title = title.trim();
+    var description = $("#description").val();
+    description = description.trim();
  
     if (location == "") {
         alert("location field is required!");
@@ -146,15 +146,15 @@ function addRecord() {
     else if (subject == "") {
         alert("subject field is required!");
     }
-    else if (title == "") {
-        alert("title field is required!");
+    else if (description == "") {
+        alert("description field is required!");
     }
     else {
         // Add record
         $.post("createarezki", {
             location: location,
             subject: subject,
-            title: title
+            description: description
         }, function (data, status) {
             // close the popup
             $("#add_new_record_modal").modal("hide");
@@ -166,7 +166,7 @@ function addRecord() {
             // clear fields from the popup
             $("#location").val("");
             $("#subject").val("");
-            $("#title").val("");
+            $("#description").val("");
         });
     }
 }
@@ -191,7 +191,8 @@ function GetUserDetails(id) {
             // Assign existing values to the modal popup fields
             $("#update_location").val(user.location);
             $("#update_subject").val(user.subject);
-            $("#update_title").val(user.title);
+            $("#update_description").val(user.description);
+            
         }
     );
     // Open modal popup
@@ -205,8 +206,8 @@ function UpdateUserDetails() {
     location = location.trim();
     var subject = $("#update_subject").val();
     subject = subject.trim();
-    var title = $("#update_title").val();
-    title = title.trim();
+    var description = $("#update_description").val();
+    description = description.trim();
  
     if (location == "") {
         alert("location field is required!");
@@ -214,8 +215,8 @@ function UpdateUserDetails() {
     else if (subject == "") {
         alert("subject field is required!");
     }
-    else if (title == "") {
-        alert("title field is required!");
+    else if (description == "") {
+        alert("description field is required!");
     }
     else {
         // get hidden field value
@@ -226,14 +227,17 @@ function UpdateUserDetails() {
                 id: id,
                 location: location,
                 subject: subject,
-                title: title
+                description: description
+                
             },
+         
             function (data, status) {
                 // hide modal popup
                 $("#update_user_modal").modal("hide");
                 // reload Users by using readRecords();
                 readRecords();
             }
+            
         );
     }
 }

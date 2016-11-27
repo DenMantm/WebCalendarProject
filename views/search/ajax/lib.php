@@ -24,15 +24,15 @@ class CRUD
      *
      * @param $location
      * @param $subject
-     * @param $title
+     * @param $description
      * @return $mixed
      * */
-    public function Create($location, $subject, $title)
+    public function Create($location, $subject, $description)
     {
-        $query = $this->db->prepare("INSERT INTO Meetings(location,subject,title) VALUES (:location,:subject,:title)");
+        $query = $this->db->prepare("INSERT INTO Meetings(location,subject,description) VALUES (:location,:subject,:description)");
         $query->bindParam("location", $location, PDO::PARAM_STR);
         $query->bindParam("subject", $subject, PDO::PARAM_STR);
-        $query->bindParam("title", $title, PDO::PARAM_STR);
+        $query->bindParam("description", $description, PDO::PARAM_STR);
         $query->execute();
         return $this->db->lastInsertId();
     }
@@ -41,11 +41,11 @@ class CRUD
     /*
      * Delete Record
      *
-     * @param $meetingID
+     * @param $id
      * */
     public function Delete($user_id)
     {
-        $query = $this->db->prepare("DELETE FROM Meetings WHERE meetingID = :id");
+        $query = $this->db->prepare("DELETE FROM Meetings WHERE id = :id");
         $query->bindParam("id", $user_id, PDO::PARAM_STR);
         echo " hello";
         $query->execute();
@@ -56,28 +56,28 @@ class CRUD
      *
      * @param $
      * @param $subject
-     * @param $title
+     * @param $description
      * @return $mixed
      * */
-    public function Update($location, $subject, $title, $meetingID)
+    public function Update($location, $subject, $description, $id)
     {
-        $query = $this->db->prepare("UPDATE Meetings SET location = :location, subject = :subject, title = :title  WHERE meetingID = :id");
+        $query = $this->db->prepare("UPDATE Meetings SET location = :location, subject = :subject, description = :description  WHERE id = :id");
         $query->bindParam("location", $location, PDO::PARAM_STR);
         $query->bindParam("subject", $subject, PDO::PARAM_STR);
-        $query->bindParam("title", $title, PDO::PARAM_STR);
-        $query->bindParam("id", $meetingID, PDO::PARAM_STR);
+        $query->bindParam("description", $description, PDO::PARAM_STR);
+        $query->bindParam("id", $id, PDO::PARAM_STR);
         $query->execute();
     }
  
     /*
      * Get Details
      *
-     * @param $meetingID
+     * @param $id
      * */
-    public function Details($meetingID)
+    public function Details($id)
     {
-        $query = $this->db->prepare("SELECT * FROM Meetings WHERE meetingID = :id");
-        $query->bindParam("id", $meetingID, PDO::PARAM_STR);
+        $query = $this->db->prepare("SELECT * FROM Meetings WHERE id = :id");
+        $query->bindParam("id", $id, PDO::PARAM_STR);
         $query->execute();
         return json_encode($query->fetch(PDO::FETCH_ASSOC));
     }

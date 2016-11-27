@@ -54,8 +54,9 @@ $f3->route('POST /detailsarezki',
 );
 $f3->route('POST /deletearezki',
     function($f3) {
+      
         isUserLogged();
-        echo "arezki";
+        
 
         echo View::instance()->render('../views/search/ajax/delete.php');
     }
@@ -63,7 +64,7 @@ $f3->route('POST /deletearezki',
 $f3->route('POST /updatearezki',
     function($f3) {
         isUserLogged();
- echo "test";
+ echo "test1";
         echo View::instance()->render('../views/search/ajax/update.php');
     }
 );
