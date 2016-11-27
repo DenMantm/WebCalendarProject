@@ -38,7 +38,7 @@ if(isset($_POST['email']))
 	    
       while ($row2 = $pullTeamName -> fetch(PDO::FETCH_BOUND)){
           
-         	$insert_row = $db->prepare("INSERT INTO Teams (userID,teamName,teamID,role,confirm) VALUES (:var1,:var2,:var3,:var4,0)");
+         	$insert_row = $db->prepare("INSERT INTO Teams (username,teamName,teamID,role,confirm) VALUES (:var1,:var2,:var3,:var4,0)");
             
             try{
                 $insert_row->bindParam(':var1', $userName, PDO::PARAM_STR );
@@ -59,7 +59,7 @@ if(isset($_POST['email']))
 	    while ($row2 = $pullTeamName -> fetch(PDO::FETCH_BOUND)){
 		
 		      
-		      $insert_row2 = $db->prepare("INSERT INTO Teams (userID,teamName,teamID,role,confirm) VALUES (:var1,:var2,:var3,:var4,2)");
+		      $insert_row2 = $db->prepare("INSERT INTO Teams (username,teamName,teamID,role,confirm) VALUES (:var1,:var2,:var3,:var4,2)");
 		       try{
                 $insert_row2->bindParam(':var1', $email, PDO::PARAM_STR );
                 $insert_row2->bindParam(':var2', $teamName, PDO::PARAM_STR );

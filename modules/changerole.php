@@ -16,7 +16,7 @@ include_once("../modules/db.php");
         $role = "user";
     }
         
-	$delete_row = $db->prepare("UPDATE Teams SET role = :var3 WHERE userID = :var1 and teamID = :var2;");
+	$delete_row = $db->prepare("UPDATE Teams SET role = :var3 WHERE username = :var1 and teamID = :var2;");
     
      try{
      
