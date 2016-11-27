@@ -8,7 +8,7 @@
           $teamID = $_SESSION['currentTeam'];
           $me = $_SESSION['user']['username'];
           $sqlQuery = "SELECT 
-                        userID, teamName, role, confirm
+                        username, teamName, role, confirm
                     FROM 
                         Teams
                     WHERE 
