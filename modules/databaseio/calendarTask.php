@@ -9,7 +9,7 @@ class EventEntity{
         //getting connected to db
        require("connection.php");
 
-       $calendar= new DB\SQL\Mapper($db,'CALENDAR_TASK');
+        $calendar= new DB\SQL\Mapper($db,'CALENDAR_TASK');
 
         $tasks=$calendar->find(array('owner_calendar_id=?',$owner_calendar_id));
         

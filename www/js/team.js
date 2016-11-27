@@ -51,7 +51,7 @@ $("#btnSaveNewTeam").click(function (e) {
 				return false;
 			}
 			
-			$("#btnSaveNewMeeting").hide(); //hide submit button
+			$("#btnSaveNewTeam").hide(); //hide submit button
 		//	$("#LoadingImage").show(); //show loading image
 			
 		   // var myData = 'subject_text='+ $("#m_subject").val();//build a post data structur
@@ -62,7 +62,7 @@ $("#btnSaveNewTeam").click(function (e) {
 			type: "POST", // HTTP method POST or GET
 			url: "addTeam", //Where to make Ajax calls
 			dataType:"text", // Data type, HTML, json etc.
-			data:'team_name='+ $("#t_name").val(),//Form variable
+			data:'team_name='+ $("#m_title").val(),//Form variable
 			
 			success:function(response){
 				$("#responds").append(response);

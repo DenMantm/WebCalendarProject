@@ -92,11 +92,12 @@
                 echo json_encode($response);
                 die();
         } 
+        $uid = uniqid();
          
         // An INSERT query is used to add new rows to a database table.
         // Again, we are using special tokens (technically called parameters) to 
         // protect against SQL injection attacks. 
-        $query = "INSERT INTO Users ( username, password, salt, email ) VALUES ( :username, :password, :salt, :email ) ;"; 
+        $query = "INSERT INTO Users ( username, password, salt, email, uID ) VALUES ( :username, :password, :salt, :email, :uid ) ;"; 
          
         // A salt is randomly generated here to protect again brute force attacks 
         // and rainbow table attacks.  The following statement generates a hex 
@@ -120,7 +121,8 @@
             ':username' => $_POST['username'], 
             ':password' => $password, 
             ':salt' => $salt, 
-            ':email' => $_POST['email'] 
+            ':email' => $_POST['email'],
+            ':uid' => $uid
         ); 
          
         try { 

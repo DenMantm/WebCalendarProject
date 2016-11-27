@@ -7,8 +7,21 @@
   <title>Main</title>
 
 <?php include('partials/head.php') ?>
-   <script type="text/javascript" src="js/target.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+<script src='calendarLib/lib/moment.min.js'></script>
+    <link rel="stylesheet" href="/css/calendar.css">
+    <link href='css/main.css' rel='stylesheet' media='print' />
+    <link href='calendarLib/fullcalendar.css' rel='stylesheet' />
+    <link href='calendarLib/fullcalendar.print.css' rel='stylesheet' media='print' />
+    <script src='calendarLib/lib/jquery.min.js'></script>
+    <script src='calendarLib/lib/jquery-ui.min.js'></script>
+    <script src='calendarLib/fullcalendar.min.js'></script>
+    <script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/target.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/select2.full.min.js"></script>
+  
 
 </head>
 <body>
@@ -194,30 +207,6 @@
                                         
                                     </ul>
                                 </li>
-                                <!--<li class="node">-->
-                                <!--  <span class="node-toggle"></span>-->
-                                <!--    <span class="leaf">My Calendars</span>-->
-                                    
-                                <!--    <ul>-->
-                                <!--        <li class="node collapsed">-->
-                                <!--            <span class="leaf">International Flinstones</span>-->
-                                <!--            <span class="node-toggle"></span>-->
-                                <!--            <ul style="display: none;">-->
-                                <!--                <li><span class="leaf">Deniss</span></li>-->
-                                <!--                <li><span class="leaf">Kamil</span></li>-->
-                                <!--                <li><span class="leaf">Arezki</span></li>-->
-                                <!--                <li><span class="leaf">Maurice</span></li>-->
-                                <!--                <li><span class="leaf">Michael</span></li>-->
-                                <!--            </ul>-->
-                                <!--        </li>-->
-                                <!--        <li><span class="leaf">My Calendar</span></li>-->
-                                <!--        <li><span class="leaf">Team Calendar 1</span></li>-->
-                                <!--        <li><span class="leaf">Team Calendar 2</span></li>-->
-                                <!--        <li><span class="leaf">Team Calendar 3</span></li>-->
-                                <!--    </ul>-->
-                                <!--</li>-->
-                                
-                                
                             </ul>
                         </div>
                     </div>
@@ -270,7 +259,7 @@
         </div>
                     
                     <div class="cell">
-                        <h5>Filter Calendars</h5>
+                        <h5>Chose Team</h5>
                         <div class="treeview" data-role="treeview">
                             <ul>
                                 <li class="node" data-mode="checkbox" data-name="c0">
@@ -365,19 +354,18 @@
             <div id='external-events' style="max-width:200px padding:0">
             <div class="accordion" data-role="accordion" data-close-any="true">
                             <div class="frame" style="padding:7px">
-                                <div class="heading">International Flinstones</div>
+                                <div class="heading">Actions</div>
                                 <div class="content" style="display: none;">
                                     <span data-role="hint"
                                                         data-hint-background="bg-orange"
                                                         data-hint-color="fg-white"
                                                         data-hint-mode="2"
                                                         data-hint-position="top"
-                                                        data-hint="Presenting|Wo is this guy?"
-                                                    ><div class='fc-event' style="background-color:orange">Deniss</div></span>
-                                    <div class='fc-event' style="background-color:red">Kamil</div>
-                                    <div class='fc-event' style="background-color:green">Arezki</div>
-                                    <div class='fc-event'>Maurice</div>
-                                    <div class='fc-event' style="background-color:purple">Michael</div>
+                                                        data-hint="Add new Meeting"
+                                                    ><div class='fc-event' style="background-color:orange"> Personal meeting</div></span>
+                                    <div class='fc-event' style="background-color:green"> Personal task</div>
+                                    <div class='fc-event'> Team meeting</div>
+                                    <div class='fc-event' style="background-color:purple"> Team task</div>
                                   
                                     
                                     
@@ -464,9 +452,9 @@
             
             <div class="modal-body">
                 <div class="row">
-                <label class="col-sm-2" control-label>Task Title</label>
+                <label class="col-sm-2" control-label>Subject</label>
                 <div class="col-sm-10">
-                  <input type="text" name="title_text"id="m_title" class="form-control" placeholder="Enter The Task Title here" required/>
+                  <input type="text" name="title_text"id="m_subject" class="form-control" placeholder="Enter The Task Title here" required/>
                   
                   
                   
@@ -476,19 +464,16 @@
               <div class="row">
                 <label class="col-sm-2" control-label>Participants</label>
                 <div class="col-sm-10">
-                  <input type="text" name="participants_text"id="m_to" class="form-control" placeholder="Enter participants here" required/>
+                    <select id="m_participants" class="js-example-basic-single js-states form-control" multiple="multiple" style="width: 100%;">
+                        <?php include("../modules/getemails.php") ?>
+                    </select>
+                  <!--<input type="text" name="participants_text" id="m_to" class="form-control" placeholder="Enter participants here" required/>-->
                   
                   
                   
                 </div>
               </div>
               
-              <div class="row">
-                <label htmlFor="inputName" class="col-sm-2" control-label>Subject</label>
-                <div class="col-sm-10">
-                  <input type="text" name="subject_text" id="m_subject" class="form-control" placeholder="Enter meeting subject here" required/>
-                </div>
-              </div>
               
               <div class="row">
                 <label htmlFor="inputCode" class="col-sm-2" control-label>Location</label>
@@ -497,13 +482,34 @@
                 </div>
               </div>
               
-            <div class="row">
-                <label htmlFor="inputDate" class="col-sm-2" control-label>Date</label>
+             <div class="row">
+                <label htmlFor="inputName" class="col-sm-2" control-label>Details</label>
                 <div class="col-sm-10">
-                  <input type="text" id="m_date" name="date_text"class="form-control" placeholder="Enter date" required/>
+                  <textarea class="form-control" id="m_details" placeholder="Enter meeting details here" rows="7"></textarea>
+                </div>
+              </div>
+              
+            <div class="row">
+                <label htmlFor="inputDate" class="col-sm-2" control-label>Start date</label>
+                <div class="col-sm-10">
+                  <input type="text" id="m_from" name="date_text"class="form-control" placeholder="Choose date"  required/>
                   <script type="text/javascript">
                     $(function() {
-                      $('#m_date').datetimepicker();
+                      $('#m_from').datetimepicker();
+                      dateFormat: 'yy-mm-dd'
+                    });
+                    
+                  </script>
+                  
+                </div>
+              </div>
+            <div class="row">
+                <label htmlFor="inputDate" class="col-sm-2" control-label>End date</label>
+                <div class="col-sm-10">
+                  <input type="text" id="m_to" name="date_text"class="form-control" placeholder="Choose date" required/>
+                  <script type="text/javascript">
+                    $(function() {
+                      $('#m_to').datetimepicker();
                       dateFormat: 'yy-mm-dd'
                     });
                     
@@ -518,13 +524,12 @@
             
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button id="btnSaveNewMeeting" class="btn btn-primary">Save fund</button>
+              <button id="btnSaveNewMeeting" class="btn btn-primary">Save</button>
             </div>
 
           </div>
         </div>
         </div>
-        
 
 
 </body>

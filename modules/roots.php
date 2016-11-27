@@ -21,6 +21,14 @@ $f3->route('GET /',
     }
 );
 
+
+$f3->route('GET /teamFilterList',
+    function($f3) {
+        isUserLogged();
+        require("databaseio/getTeamList.php");
+    }
+);
+
 // Arezki part here 
 // root to check.php
 $f3->route('GET /check',
@@ -91,6 +99,8 @@ $f3->route('GET /showteam',
         echo View::instance()->render('../views/showteam.php');
     }
 );
+
+
 
 $f3->route('GET /showusers/@id',
     function($f3,$params) {
@@ -319,6 +329,13 @@ $f3->route('POST /addteam',
     function() {
         
         require("addteam.php"); 
+    }
+);
+
+$f3->route('POST /addmeeting',
+    function() {
+        
+        require("addmeeting.php"); 
     }
 );
 
