@@ -1,3 +1,0 @@
-[06-Nov-2016 12:00:04 UTC] PHP Warning:  include_once(../modules/db.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/www/views/check.php on line 3
-[06-Nov-2016 12:00:04 UTC] PHP Warning:  include_once(): Failed opening '../modules/db.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/www/views/check.php on line 3
-[06-Nov-2016 12:00:04 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/www/views/check.php on line 5

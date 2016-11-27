@@ -105,3 +105,48 @@
 [27-Nov-2016 00:44:31 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:335-338}() /home/ubuntu/workspace/modules/lib/base.php:1672
 [27-Nov-2016 00:44:31 UTC] PHP   7. require() /home/ubuntu/workspace/modules/roots.php:337
 [27-Nov-2016 00:44:31 UTC] Fatal error: Call to a member function format() on a non-object
+[27-Nov-2016 10:55:14 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[27-Nov-2016 10:55:14 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[27-Nov-2016 10:55:14 UTC] HTTP 404 (GET /favicon.ico)
+[27-Nov-2016 10:55:14 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[27-Nov-2016 10:57:31 UTC] HTTP 404 (GET /teaminvite/5829c0943e3e0)
+[27-Nov-2016 11:24:44 UTC] HTTP 404 (GET /database/Teams/list)
+[27-Nov-2016 11:24:59 UTC] HTTP 404 (GET /database/Teams/list)
+[27-Nov-2016 11:25:05 UTC] HTTP 404 (GET /database/Teams/list/)
+[27-Nov-2016 11:25:23 UTC] Argument 1 passed to DB\SQL\Mapper::__construct() must be an instance of DB\SQL, null given, called in /home/ubuntu/workspace/modules/databaseio/calendarDatabaseOutput.php on line 12 and defined
+[27-Nov-2016 11:26:02 UTC] Argument 1 passed to DB\SQL\Mapper::__construct() must be an instance of DB\SQL, null given, called in /home/ubuntu/workspace/modules/databaseio/calendarDatabaseOutput.php on line 12 and defined
+[27-Nov-2016 11:28:55 UTC] PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[27-Nov-2016 11:55:25 UTC] HTTP 404 (POST /database/Tasks/list)
+[27-Nov-2016 11:55:45 UTC] HTTP 404 (POST /database/Tasks/list/0)
+[27-Nov-2016 11:56:34 UTC] HTTP 405 (POST /database/Teams/list/0)
+[27-Nov-2016 13:28:48 UTC] HTTP 404 (GET /css/bootstrap.min.css.map)
+[27-Nov-2016 13:28:49 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[27-Nov-2016 13:28:49 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[27-Nov-2016 13:28:49 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[27-Nov-2016 13:29:05 UTC] Undefined field subject
+[27-Nov-2016 13:29:52 UTC] Undefined field subject
+[27-Nov-2016 13:30:06 UTC] Undefined field subject
+[27-Nov-2016 13:30:27 UTC] Undefined field subject
+[27-Nov-2016 13:30:29 UTC] Undefined field subject
+[27-Nov-2016 13:30:31 UTC] Undefined field subject
+[27-Nov-2016 13:30:40 UTC] Undefined field subject
+[27-Nov-2016 13:31:02 UTC] Undefined field subject
+[27-Nov-2016 13:31:57 UTC] Undefined field subject
+[27-Nov-2016 13:32:42 UTC] Undefined field subject
+[27-Nov-2016 13:33:02 UTC] Undefined field description
+[27-Nov-2016 13:33:09 UTC] Undefined field start
+[27-Nov-2016 13:36:12 UTC] Undefined field array
+[27-Nov-2016 13:37:17 UTC] Undefined field date
+[27-Nov-2016 13:43:02 UTC] HTTP 405 (POST /database/Teams/meetings/0)
+[27-Nov-2016 13:47:58 UTC] Invalid argument supplied for foreach()
+[27-Nov-2016 13:48:53 UTC] Invalid argument supplied for foreach()
+[27-Nov-2016 13:49:26 UTC] PHP Fatal error:  Call to a member function format() on a non-object in /home/ubuntu/workspace/modules/addmeeting.php on line 20
+[27-Nov-2016 13:49:26 UTC] PHP Stack trace:
+[27-Nov-2016 13:49:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[27-Nov-2016 13:49:26 UTC] PHP   2. require() /home/ubuntu/workspace/www/index.php:2
+[27-Nov-2016 13:49:26 UTC] PHP   3. Base->run() /home/ubuntu/workspace/modules/roots.php:552
+[27-Nov-2016 13:49:26 UTC] PHP   4. Base->call() /home/ubuntu/workspace/modules/lib/base.php:1500
+[27-Nov-2016 13:49:26 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/modules/lib/base.php:1672}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[27-Nov-2016 13:49:26 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:287-290}() /home/ubuntu/workspace/modules/lib/base.php:1672
+[27-Nov-2016 13:49:26 UTC] PHP   7. require() /home/ubuntu/workspace/modules/roots.php:289
+[27-Nov-2016 13:49:26 UTC] Fatal error: Call to a member function format() on a non-object

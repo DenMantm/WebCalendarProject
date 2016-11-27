@@ -313,9 +313,39 @@
       <!--##################-->
 
       <div class="col-md-6 remove_padding">
+    
+        <div class="tabcontrol2" data-role="tabcontrol"  data-role="tabcontrol" data-on-tab-change="tab_change">>
+   <ul class="tabs" id="teamsList">
+       
+       <?php 
+       $test =  require('../modules/databaseio/calendarDatabaseOutput.php');
+       
+       $teamList = $test -> getTeamListStatic();
+       
+       foreach($teamList as $team){
+       
+       //echo '<li class="active"><a href="#frame_static">Team1</a></li>';
+       
+       echo '<li class=""><a href="#frame_static" id="teamClick" name = "'.$team->teamID.'">'.$team->teamName.'</a></li>';
+       
+       }
+       
+       
+       ?>
+   
+      
+      
+   </ul>
+   <div class="frames">
+                               <!--CONTROL TAB 1-->
+      <div class="frame" id="frame_static" style="display: none;">
+          <div id='calendar'></div>
+        </div>
 
+   </div>
+</div>
         
-		<div id='calendar'></div>
+		
 
 		
 

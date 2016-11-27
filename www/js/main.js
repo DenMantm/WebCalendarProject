@@ -145,56 +145,54 @@ $("#btnSaveNewMeeting").click(function (e) {
 
 
 
-function updateDatabase(){
+// function updateDatabase(){
     
-    var convertedEvents=[];
-    for (var i = 0; i< events.length;i++){
-        var _convertedEvent={};
+//     var convertedEvents=[];
+//     for (var i = 0; i< events.length;i++){
+//         var _convertedEvent={};
         
-        _convertedEvent['title'] = events[i].title;
-        _convertedEvent['start'] = events[i]._start._d;
-        _convertedEvent['allDay'] = events[i]._allDay;
-        _convertedEvent['owner_calendar_id'] = 0;
-        _convertedEvent['color'] = events[i].color;
-        try{
-            _convertedEvent['end'] = events[i].end._d;
-        }
-        catch(Exception){
-            _convertedEvent['end'] = null;
-        }
+//         _convertedEvent['title'] = events[i].title;
+//         _convertedEvent['start'] = events[i]._start._d;
+//         _convertedEvent['allDay'] = events[i]._allDay;
+//         _convertedEvent['owner_calendar_id'] = 0;
+//         _convertedEvent['color'] = events[i].color;
+//         try{
+//             _convertedEvent['end'] = events[i].end._d;
+//         }
+//         catch(Exception){
+//             _convertedEvent['end'] = null;
+//         }
         
-        convertedEvents.push(_convertedEvent); 
-    }
+//         convertedEvents.push(_convertedEvent); 
+//     }
 
-    $.ajax({
-        type: "POST",
-        dataType: "json",
-        url: "/database/Tasks/create",
-        data: {json : JSON.stringify(convertedEvents)},
-        success: function(data){
-            console.log(data);
-        },
-        error: function(e){
-            console.log(e.message);
-        }
-});
+//     $.ajax({
+//         type: "POST",
+//         dataType: "json",
+//         url: "/database/Tasks/create",
+//         data: {json : JSON.stringify(convertedEvents)},
+//         success: function(data){
+//             console.log(data);
+//         },
+//         error: function(e){
+//             console.log(e.message);
+//         }
+// });
   
-}
-
-		
+// }
 
 
 
 
 	});
 	
-	function retrieveFromDatabase(){
+	function retrieveFromDatabase(teamId){
     
     
         $.ajax({
-        type: "POST",
+        type: "GET",
         dataType: "json",
-        url: "/database/Tasks/retrieve",
+        url: "database/Teams/meetings/"+teamId,
         data: {owner_calendar_id : 0},
         success: function(data){
             $('#calendar').fullCalendar( 'removeEvents');
@@ -213,7 +211,7 @@ function updateDatabase(){
 function day_click(short, full) {
                                 
                                 $('#calendar').fullCalendar( 'gotoDate', short );
-                                $('#calendar').fullCalendar( 'changeView', 'agendaDay'  );
+                                $('#calendar').fullCalendar( 'changeView', 'agendaDay' );
     
                                 //alert("You click on day!\nShort: "+short+"\nFull: " + full);
                             }
@@ -226,8 +224,40 @@ function day_click(short, full) {
     });
 
 
-	
-	
+
+//this is for now in global scope in case if we need ajax call for teamlist
+
+var selectedTeam = '';
+var teamList = [];
+
+function getTeamList(){
+    
+            $.ajax({
+        type: "GET",
+        dataType: "json",
+        url: "/database/Teams/list/0",
+        data: {},
+        success: function(data){
+            
+            //assigning team list to variable
+            console.log(data);
+            teamList = data;
+            
+            
+        },
+        error: function(e){
+            console.log(e.message);
+        }
+});
+}
+    //when selecting other team, loading calendar entries acordingly
+    function tab_change(tab){
+        
+       selectedTeam = $(tab).attr('name');
+       
+      
+        
+    }
 
 
 
