@@ -10,7 +10,7 @@ $data = '<table class="table table-bordered table-striped">
                             <th>No.</th>
                             <th>Location</th>
                             <th>Subject</th>
-                            <th>Title</th>
+                            <th>description</th>
                             <th>Update</th>
                             <th>Delete</th>
                         </tr>';
@@ -25,7 +25,7 @@ if (count($users) > 0) {
                 <td>' . $number . '</td>
                 <td>' . $user['location'] . '</td>
                 <td>' . $user['subject'] . '</td>
-                <td>' . $user['title'] . '</td>
+                <td>' . $user['description'] . '</td>
                 <td>
                     <button onclick="GetUserDetails(' . $user['id'] . ')" class="btn btn-warning">Update</button>
                 </td>

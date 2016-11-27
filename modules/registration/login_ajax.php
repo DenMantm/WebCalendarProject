@@ -12,7 +12,7 @@
     { 
         // This query retreives the user's information from the database using 
         // their username. 
-        $query = "SELECT userID, username, password, salt, email,email_verified FROM Users
+        $query = "SELECT * FROM Users
                   WHERE username = :username;"; 
          
         // The parameter values 

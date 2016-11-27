@@ -14,8 +14,8 @@ class calendarEntity{
        require("connection.php");
         
         
-       $calendar= new DB\SQL\Mapper($db,'CALENDAR_ENTITY');
-       $calendar->load(array('OWNER=?','Deniss'));
+       $calendar= new DB\SQL\Mapper($db,'Teams');
+       $calendar->load(array('userID=? AND confirmed=?','Deniss',1));
        
        echo $calendar->count();
        

@@ -42,28 +42,30 @@ $f3->route('POST /createarezki',
     function($f3) {
         isUserLogged();
 
-        echo View::instance()->render('create.php');
+        echo View::instance()->render('../views/search/ajax/create.php');
     }
 );
 $f3->route('POST /detailsarezki',
     function($f3) {
         isUserLogged();
 
-        echo View::instance()->render('details.php');
+        echo View::instance()->render('../views/search/ajax/details.php');
     }
 );
 $f3->route('POST /deletearezki',
     function($f3) {
+      
         isUserLogged();
+        
 
-        echo View::instance()->render('delete.php');
+        echo View::instance()->render('../views/search/ajax/delete.php');
     }
 );
 $f3->route('POST /updatearezki',
     function($f3) {
         isUserLogged();
-
-        echo View::instance()->render('update.php');
+ echo "test1";
+        echo View::instance()->render('../views/search/ajax/update.php');
     }
 );
 $f3->route('GET /readarezki',
@@ -182,84 +184,36 @@ $f3->route('GET /MyCalendars',
     }
 );
 
-$f3->route('POST /database/Calendar/@action',
-    function($f3,$params) {
-                
-                 //INITIALIZING INSTANCE OF THE OBJECT
-                 $test =  require('databaseio/calendarEntity.php');
-                 
-                 
-                //Creating serie of statements for CRUD
-                switch ($params['action']) {
-                    //CREATING ENTRIES IN DATABASE
-                case "create":
-                    
-                    $calendar_name = 'Calendar1';
-                    $owner = 'Deniss';
-                    $is_team_calendar = false;
-                    $tasks = 'tasks';
-                    $test -> createCalendar($calendar_name,$owner,$is_team_calendar,$tasks);
-                    break;
-                    
-                     //Retrieving ENTRIES FROM DATABASE
-                case "retrieve":
-                    $test -> getCalendars();
-                    break;
-                    //UPDATING ENTRIES IN THE DATABASE
-                case "update":
-                    echo "update";
-                    break;
-                    
-                    //DELETING ENTRIES IN DATABASE
-                case "delete":
-                    echo "delete";
-                    break;
-        }
-    }
-);
 
-$f3->route('POST|GET /database/Tasks/@action',
+
+$f3->route('GET /database/Teams/@action/@teamID',
     function($f3,$params) {
                 
                  //INITIALIZING INSTANCE OF THE OBJECT
                  
-                $test =  require('databaseio/calendarTask.php');
+                $test =  require('databaseio/calendarDatabaseOutput.php');
                  
                 //Creating serie of statements for CRUD
                 switch ($params['action']) {
                 
-                    //CREATING ENTRIES IN DATABASE
-                case "create":
-              // echo $_POST['json'];
-                  //  $taskPostObject = json_decode($_POST['json'],true);
-                   // echo $taskPostObject;
-
-                    $test -> createEvent($_POST['json']);
                     
-                    
-                    break;
-                    
-                     //Retrieving ENTRIES FROM DATABASE
-                case "retrieve":
-                    
+                     //Returning list of teams where user is currently registered
+                case "list":
                    // $test -> getEvents($_POST['owner_calendar_id']);
-                   $test -> getEvents(0);
+                   $test -> getTeamList();
+                    break;
+                
+                
+                //get tasks for specific team
+                case "meetings":
+                    
+                    $forTeam = $params['teamID'];
+                    
+                   
+                    $test -> getMeetingsByParticipation();
                     
                     break;
                     
-                    //UPDATING ENTRIES IN THE DATABASE
-                case "update":
-                    
-                    
-                    echo "update";
-                    break;
-                    
-                    //DELETING ENTRIES IN DATABASE
-                case "delete":
-                    
-                    
-                    echo "delete";
-                    break;
 }
 
     }
@@ -398,18 +352,6 @@ $f3->route('GET /arezki1',
     }
 );
 
-
-$f3->route('GET /calendar_example',
-    function() {
-        echo View::instance()->render('views/examples/calendar_example.php');
-    }
-);
-
-$f3->route('GET /calendar_example2',
-    function() {
-        echo View::instance()->render('views/examples/calendar_example2.php');
-    }
-);
 
 
 $f3->route('GET /verify_email/@arg1/@arg2',
