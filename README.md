@@ -3,10 +3,13 @@ CHANGING MAIN APACHE CONFIG FILE::::
 type in the console:
 sudo vi /etc/apache2/sites-enabled/001-cloud9.conf
 
+After press insert,
+
 Find DocumentRoot and replace it with /home/ubuntu/workspace/www
 
-
-
+Then press Esc
+Then press :wq!
+Then Enter
 
 # WebCalendarProject
 This is 3rd year project
