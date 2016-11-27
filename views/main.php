@@ -560,7 +560,7 @@
           </div>
         </div>
         </div>
-
+<script>retrieveFromDatabase(0);</script>
 
 </body>
 </html>
