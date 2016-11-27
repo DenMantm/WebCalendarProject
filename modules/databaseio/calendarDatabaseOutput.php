@@ -108,6 +108,65 @@ class DatabaseOutput{
     }
     
     
+    
+        public function getMeetingsByTeamId($forTeam){
+        
+        require("connection.php");
+        
+                //getting user name
+        //session_start();
+        //$uID = $_SESSION['user']['uID'];
+        
+       
+       // echo  $uID;
+        
+        $calendar= new DB\SQL\Mapper($db,'Participants');
+        
+        $meetings_ids=$calendar->find(array('participantID=?',$forTeam));
+            
+            
+            //filling this one and returning to front end
+            $front_meetingsList = array();
+            
+            foreach($meetings_ids as $meeting){
+                
+                $sub_calendar = new DB\SQL\Mapper($db,'Meetings');
+                
+                $meetings=$sub_calendar->find(array('meetingID=?',$meeting->meetingID));
+                
+                
+          
+        
+            foreach($meetings as $meet){
+           
+            
+            $front_meet = array('title'=> $meet->subject,
+                      'description'=> $meet->description,
+                      'start'  => $meet->start,
+                      'end'  => $meet->end,
+                      'color'  => $meet->color,
+                      'id'  => $meet->meetingID);
+                 
+            array_push($front_meetingsList,$front_meet);
+            
+            }
+                
+              
+            
+            }
+        
+              echo json_encode($front_meetingsList);
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     public static function getEvents($owner_calendar_id){
         
         //getting connected to db
