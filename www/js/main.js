@@ -24,24 +24,55 @@ $('#calendar').followTo(250);
 
 
 var events = [];
-//var clone;
+
 
 	$(document).ready(function() {
+		$("#btnSaveNewTeamMeeting").click(function (e) {
+			e.preventDefault();
+
+			$("#btnSaveNewTeamMeeting").hide(); //hide submit button
+			$("#LoadingImage").show(); //show loading image
+			
+			jQuery.ajax({
+			type: "POST", // HTTP method POST or GET
+			url: "addteammeeting", //Where to make Ajax calls
+			dataType:"text", // Data type, HTML, json etc.
+			data:
+			{details:$("#tm_details").val(),
+			    participants:$("#tm_participants").val(),
+			    subject:$("#tm_subject").val(),
+			    location:$("#tm_location").val(),
+			    from:$("#tm_from").val(),
+			    to:$("#tm_to").val()
+			},
+			
+			success:function(response){
+				$("#tm_details").val(''); 
+				$("#tm_participants").val(''); 
+				$("#tm_subject").val(''); 
+				$("#tm_location").val(''); 
+				$("#tm_from").val(''); 
+				$("#tm_to").val(''); 
+				$("#btnSaveNewTeamMeeting").show(); //show submit button
+				$("#LoadingImage").hide(); //hide loading image
+				$('#newteammeeting').modal('hide');
+				window.open("/main","_self")
+				//alert(response);
+			},
+			error:function (xhr, ajaxOptions, thrownError){
+				$("#btnSaveNewTeam").show(); //show submit button
+				$("#LoadingImage").hide(); //hide loading image
+				alert(thrownError);
+			}
+			});
+	});
+	
 $("#btnSaveNewMeeting").click(function (e) {
 			e.preventDefault();
-// 			if($("#t_name").val()==='')
-// 			{
-// 				alert("Please provide team name!");
-// 				return false;
-// 			}
-			
+
 			$("#btnSaveNewMeeting").hide(); //hide submit button
 			$("#LoadingImage").show(); //show loading image
 			
-		   // var myData = 'subject_text='+ $("#m_subject").val();//build a post data structur
-		 //	var myData1 = 'location_text='+ $("#m_location").val();
-		 //	var myData2 = 'date_text='+ $("#m_date").val();
-		 
 			jQuery.ajax({
 			type: "POST", // HTTP method POST or GET
 			url: "addmeeting", //Where to make Ajax calls
@@ -97,11 +128,23 @@ $("#btnSaveNewMeeting").click(function (e) {
         var end=moment(calEvent._end).format('MM/DD/YYYY H:mm A');
         // change the border color just for fun
         $(this).css('border-color', 'red');
-        $("#m_subject").val(calEvent.title); 
-        $("#m_from").val(start); 
-		$("#m_to").val(end); 
-		$("#m_location").val(calEvent._id); 
-        $('#newmeeting').modal('show');
+        
+	    switch(calEvent.title) {
+		    case "Team meeting":
+		        $("#tm_subject").val(calEvent.title); 
+		        $("#tm_from").val(start); 
+				$("#tm_to").val(end); 
+				$("#tm_location").val(calEvent._id); 
+		        $('#newteammeeting').modal('show');
+		        break;
+		    default:
+		        $("#m_subject").val(calEvent.title); 
+		        $("#m_from").val(start); 
+				$("#m_to").val(end); 
+				$("#m_location").val(calEvent._id); 
+		        $('#newmeeting').modal('show');
+		} 
+        
        //updateDatabase();
 
     },

@@ -303,6 +303,13 @@ $f3->route('POST /addmeeting',
     }
 );
 
+$f3->route('POST /addteammeeting',
+    function() {
+        
+        require("addteammeeting.php"); 
+    }
+);
+
 $f3->route('POST /inviteOK',
     function() {
         
