@@ -47,6 +47,7 @@ class CRUD
     {
         $query = $this->db->prepare("DELETE FROM Meetings WHERE meetingID = :id");
         $query->bindParam("id", $user_id, PDO::PARAM_STR);
+        echo " hello";
         $query->execute();
     }
  

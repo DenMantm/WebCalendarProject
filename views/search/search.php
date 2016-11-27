@@ -242,9 +242,12 @@ function UpdateUserDetails() {
 function DeleteUser(id) {
     var conf = confirm("Are you sure, do you really want to delete User?");
     if (conf == true) {
+        
         $.post("deletearezki", {
                 id: id
+                
             },
+            
             function (data, status) {
                 // reload Users by using readRecords();
                 readRecords();
@@ -256,6 +259,7 @@ function DeleteUser(id) {
 $(document).ready(function () {
     // READ records on page load
     readRecords(); // calling function
+    
 });
 </script>
 

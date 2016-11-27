@@ -1,6 +1,6 @@
 <?php
 if (isset($_POST)) {
-    require 'lib.php';
+    include_once('../views/search/ajax/lib.php');
  
     $id = $_POST['id'];
     $first_name = $_POST['location'];
