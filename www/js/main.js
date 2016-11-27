@@ -93,11 +93,15 @@ $("#btnSaveNewMeeting").click(function (e) {
         
     },
 	    eventClick: function(calEvent, jsEvent, view) {
-
+        var start=moment(calEvent._start).format('MM/DD/YYYY H:mm A');
+        var end=moment(calEvent._end).format('MM/DD/YYYY H:mm A');
         // change the border color just for fun
         $(this).css('border-color', 'red');
-       $('#newmeeting').modal('show');
-       updateDatabase();
+        $("#m_subject").val(calEvent.title); 
+        $("#m_from").val(start); 
+		$("#m_to").val(end); 
+        $('#newmeeting').modal('show');
+       //updateDatabase();
 
     },
 
