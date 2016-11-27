@@ -31,3 +31,6 @@
 [27-Nov-2016 14:03:10 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:289-292}() /home/ubuntu/workspace/modules/lib/base.php:1672
 [27-Nov-2016 14:03:10 UTC] PHP   7. require() /home/ubuntu/workspace/modules/roots.php:291
 [27-Nov-2016 14:03:10 UTC] Fatal error: Call to a member function format() on a non-object
+[27-Nov-2016 14:36:53 UTC] HTTP 404 (GET /teaminvite/582cf42a3a68d)
+[27-Nov-2016 14:53:11 UTC] HTTP 404 (GET /teaminvite/582cb9bf4326b)
+[27-Nov-2016 14:53:17 UTC] HTTP 404 (GET /teaminvite/582cb9bf4326b)
