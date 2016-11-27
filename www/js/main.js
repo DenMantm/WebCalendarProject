@@ -227,7 +227,7 @@ function day_click(short, full) {
 
 //this is for now in global scope in case if we need ajax call for teamlist
 
-var selectedTeam = '';
+var selectedTeam = 'personal';
 var teamList = [];
 
 function getTeamList(){
@@ -255,6 +255,15 @@ function getTeamList(){
         
        selectedTeam = $(tab).attr('name');
        
+       if(selectedTeam=='personal'){
+           
+           retrieveFromDatabase(0);
+           
+       }
+       else{
+           retrieveFromDatabase(selectedTeam);
+           
+       }
       
         
     }

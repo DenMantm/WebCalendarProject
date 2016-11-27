@@ -317,10 +317,18 @@
         <div class="tabcontrol2" data-role="tabcontrol"  data-role="tabcontrol" data-on-tab-change="tab_change">>
    <ul class="tabs" id="teamsList">
        
+       
        <?php 
        $test =  require('../modules/databaseio/calendarDatabaseOutput.php');
        
        $teamList = $test -> getTeamListStatic();
+       
+       //personal calendar tab - >
+               session_start();
+        $uID = $_SESSION['user']['uID'];
+       
+       echo '<li class=""><a href="#frame_static" id="teamClick" name = "personal">Personal Calendar</a></li>';
+       
        
        foreach($teamList as $team){
        
@@ -541,6 +549,7 @@
                     $(function() {
                       $('#m_to').datetimepicker();
                       dateFormat: 'yy-mm-dd'
+                      
                     });
                     
                   </script>

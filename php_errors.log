@@ -31,3 +31,4 @@
 [27-Nov-2016 14:03:10 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:289-292}() /home/ubuntu/workspace/modules/lib/base.php:1672
 [27-Nov-2016 14:03:10 UTC] PHP   7. require() /home/ubuntu/workspace/modules/roots.php:291
 [27-Nov-2016 14:03:10 UTC] Fatal error: Call to a member function format() on a non-object
+[27-Nov-2016 15:36:06 UTC] PDOStatement: Unknown column 'userID' in 'where clause'

@@ -209,8 +209,19 @@ $f3->route('GET /database/Teams/@action/@teamID',
                     
                     $forTeam = $params['teamID'];
                     
+                    //if personal meetings selected
+                    if( $forTeam == 0){
+                        
+                         $test -> getMeetingsByParticipation();
+                    }
+                    
+                    //if team meetings are selected
+                    else{
+                        
+                        $test -> getMeetingsByTeamId($forTeam);
+                        
+                    }
                    
-                    $test -> getMeetingsByParticipation();
                     
                     break;
                     
