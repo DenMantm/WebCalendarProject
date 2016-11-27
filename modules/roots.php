@@ -42,28 +42,30 @@ $f3->route('POST /createarezki',
     function($f3) {
         isUserLogged();
 
-        echo View::instance()->render('create.php');
+        echo View::instance()->render('../views/search/ajax/create.php');
     }
 );
 $f3->route('POST /detailsarezki',
     function($f3) {
         isUserLogged();
 
-        echo View::instance()->render('details.php');
+        echo View::instance()->render('../views/search/ajax/details.php');
     }
 );
 $f3->route('POST /deletearezki',
     function($f3) {
+      
         isUserLogged();
+        
 
-        echo View::instance()->render('delete.php');
+        echo View::instance()->render('../views/search/ajax/delete.php');
     }
 );
 $f3->route('POST /updatearezki',
     function($f3) {
         isUserLogged();
-
-        echo View::instance()->render('update.php');
+ echo "test1";
+        echo View::instance()->render('../views/search/ajax/update.php');
     }
 );
 $f3->route('GET /readarezki',
