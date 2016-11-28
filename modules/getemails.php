@@ -4,7 +4,7 @@
 
           $result =''; 
           $query = "SELECT 
-                        email, uid
+                        name, surname, username, uid
                     FROM 
                         Users;";
                       
@@ -13,8 +13,10 @@
           try{
               
           $sth->execute();
-          $sth->bindColumn(1,$user);
-          $sth->bindColumn(2,$uid);
+          $sth->bindColumn(1,$name);
+          $sth->bindColumn(2,$surname);
+          $sth->bindColumn(3,$uname);
+          $sth->bindColumn(4,$uid);
 
           }
                   
@@ -30,7 +32,7 @@
                   while ($row = $sth ->fetch(PDO::FETCH_BOUND)) {
                      
                     if($uid != $_SESSION['user']['uID']){
-                        $result .= '<option value="'  . $uid . '">' . $user . '</option>';
+                        $result .= '<option value="'  . $uid . '">' . $name . ' ' . $surname . ' ( ' . $uname . ' )</option>';
                     }
                 }
             }
