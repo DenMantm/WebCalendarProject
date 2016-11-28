@@ -24,7 +24,7 @@ class CRUD
     {
        
        
-        $query = $this->db->prepare("UPDATE Users  SET username=:Username, email = :Email, password=:Password where username= :Name");
+        $query = $this->db->prepare("UPDATE Users  SET  email = :Email,username=:Username, password=:Password where username= :Name");
        // $name=$_SESSION['user']['username'];
         $query->bindParam("Email", $Email, PDO::PARAM_STR);
         $query->bindParam("Name", $_SESSION['user']['username'], PDO::PARAM_STR);

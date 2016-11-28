@@ -77,7 +77,7 @@
                     </div>
                       <div class="form-group">
                         <label for="update_Password">New Password</label>
-                        <input type="text" id="update_Password" placeholder="Password" class="form-control"/>
+                        <input type="password" id="update_Password" placeholder="Password" class="form-control"/>
                     </div>
      
                 </div>
