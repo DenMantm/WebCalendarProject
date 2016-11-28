@@ -1,0 +1,15 @@
+[28-Nov-2016 12:22:28 UTC] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'calendar2.Taskss' doesn't exist
+[28-Nov-2016 12:22:34 UTC] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'location' in 'field list'
+[28-Nov-2016 12:24:50 UTC] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'calendar2.Taskss' doesn't exist
+[28-Nov-2016 12:24:56 UTC] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'location' in 'field list'
+[28-Nov-2016 12:25:01 UTC] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'location' in 'field list'
+[28-Nov-2016 12:30:42 UTC] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'location' in 'field list'
+[28-Nov-2016 12:30:48 UTC] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'location' in 'field list'
+[28-Nov-2016 12:31:16 UTC] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'location' in 'field list'
+[28-Nov-2016 12:59:51 UTC] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'location' in 'field list'
+[28-Nov-2016 13:08:10 UTC] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`calendar2`.`Tasks`, CONSTRAINT `user1` FOREIGN KEY (`userID`) REFERENCES `Users` (`userID`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+[28-Nov-2016 13:08:10 UTC] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`calendar2`.`Tasks`, CONSTRAINT `user1` FOREIGN KEY (`userID`) REFERENCES `Users` (`userID`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+[28-Nov-2016 13:12:28 UTC] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`calendar2`.`Tasks`, CONSTRAINT `user1` FOREIGN KEY (`userID`) REFERENCES `Users` (`userID`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+[28-Nov-2016 13:45:54 UTC] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`calendar2`.`Tasks`, CONSTRAINT `user1` FOREIGN KEY (`userID`) REFERENCES `Users` (`userID`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+[28-Nov-2016 13:58:02 UTC] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`calendar2`.`Tasks`, CONSTRAINT `user1` FOREIGN KEY (`userID`) REFERENCES `Users` (`userID`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+[28-Nov-2016 13:58:02 UTC] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`calendar2`.`Tasks`, CONSTRAINT `user1` FOREIGN KEY (`userID`) REFERENCES `Users` (`userID`) ON DELETE NO ACTION ON UPDATE NO ACTION)

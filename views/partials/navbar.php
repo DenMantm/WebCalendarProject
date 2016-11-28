@@ -37,7 +37,7 @@
                 </li>
                 <li><a href="/check">Check Meetings</a>
                 </li>
-                 <li><a href="/search">New Search</a>
+                 <li><a href="/search">Manage Tasks </a>
                 </li>
                 <li><a href="/team">Manage Teams</a>
                 </li>

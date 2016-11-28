@@ -4,7 +4,7 @@
 <head>
     
     <meta charset="UTF-8">
-    <title>Create your own Team</title>
+    <title>Asseign Tasks</title>
  
 
    
@@ -34,7 +34,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Create your own Team</h1>
+            <h1>Asseign Tasks To Your Teams</h1>
         </div>
     </div>
     <div class="row">
@@ -65,14 +65,11 @@
             </div>
             <div class="modal-body">
  
-                <div class="form-group">
-                    <label for="location">location</label>
-                    <input type="text" id="location" placeholder="location" class="form-control"/>
-                </div>
+               
  
                 <div class="form-group">
-                    <label for="subject">subject</label>
-                    <input type="text" id="subject" placeholder="subject" class="form-control"/>
+                    <label for="Completed">Completed</label>
+                    <input type="text" id="Completed" placeholder="Completed" class="form-control"/>
                 </div>
  
                 <div class="form-group">
@@ -100,14 +97,10 @@
             </div>
             <div class="modal-body">
  
-                <div class="form-group">
-                    <label for="update_location">location</label>
-                    <input type="text" id="update_location" placeholder="location" class="form-control"/>
-                </div>
  
                 <div class="form-group">
-                    <label for="update_subject">subject</label>
-                    <input type="text" id="update_subject" placeholder="subject" class="form-control"/>
+                    <label for="update_Completed">Completed</label>
+                    <input type="text" id="update_Completed" placeholder="Completed" class="form-control"/>
                 </div>
  
                 <div class="form-group">

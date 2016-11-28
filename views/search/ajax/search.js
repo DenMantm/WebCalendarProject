@@ -4,16 +4,16 @@ function addRecord() {
     // get values
     var location = $("#location").val();
     location = location.trim();
-    var subject = $("#subject").val();
-    subject = subject.trim();
+    var Completed = $("#Completed").val();
+   Completed = Completed.trim();
     var title = $("#title").val();
     title = title.trim();
  
     if (location == "") {
         alert("location field is required!");
     }
-    else if (subject == "") {
-        alert("subject field is required!");
+    else if (Completed == "") {
+        alert("Completed field is required!");
     }
     else if (title == "") {
         alert("title field is required!");
@@ -22,7 +22,7 @@ function addRecord() {
         // Add record
         $.post("ajax/create.php", {
             location: location,
-            subject: subject,
+            Completed: Completed,
             title: title
         }, function (data, status) {
             // close the popup
@@ -34,7 +34,7 @@ function addRecord() {
  
             // clear fields from the popup
             $("#location").val("");
-            $("#subject").val("");
+            $("#Completed").val("");
             $("#title").val("");
         });
     }
@@ -58,7 +58,7 @@ function GetUserDetails(id) {
             var user = JSON.parse(data);
             // Assign existing values to the modal popup fields
             $("#update_location").val(user.location);
-            $("#update_subject").val(user.subject);
+            $("#update_Completed").val(user.Completed);
             $("#update_title").val(user.title);
         }
     );
@@ -71,16 +71,16 @@ function UpdateUserDetails() {
     // get values
     var location = $("#update_location").val();
     location = location.trim();
-    var subject = $("#update_subject").val();
-    subject = subject.trim();
+    var Completed = $("#update_Completed").val();
+    Completed = Completed.trim();
     var title = $("#update_title").val();
     title = title.trim();
  
     if (location == "") {
         alert("location field is required!");
     }
-    else if (subject == "") {
-        alert("subject field is required!");
+    else if (Completed == "") {
+        alert("Completed field is required!");
     }
     else if (title == "") {
         alert("title field is required!");
@@ -93,7 +93,7 @@ function UpdateUserDetails() {
         $.post("ajax/update.php", {
                 id: id,
                 location: location,
-                subject: subject,
+                Completed: Completed,
                 title: title
             },
             function (data, status) {

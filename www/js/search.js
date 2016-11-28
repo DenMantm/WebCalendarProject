@@ -3,18 +3,15 @@
 // Add Record
 function addRecord() {
     // get values
-    var location = $("#location").val();
-    location = location.trim();
-    var subject = $("#subject").val();
-    subject = subject.trim();
+   
+    var Completed = $("#Completed").val();
+    Completed = Completed.trim();
     var description = $("#description").val();
     description = description.trim();
  
-    if (location == "") {
-        alert("location field is required!");
-    }
-    else if (subject == "") {
-        alert("subject field is required!");
+   
+     if (Completed == "") {
+        alert("Completed field is required!");
     }
     else if (description == "") {
         alert("description field is required!");
@@ -22,8 +19,8 @@ function addRecord() {
     else {
         // Add record
         $.post("createarezki", {
-            location: location,
-            subject: subject,
+   
+            Completed: Completed,
             description: description
         }, function (data, status) {
             // close the popup
@@ -34,8 +31,8 @@ function addRecord() {
             alert("record added");
  
             // clear fields from the popup
-            $("#location").val("");
-            $("#subject").val("");
+           
+            $("#Completed").val("");
             $("#description").val("");
         });
     }
@@ -59,8 +56,8 @@ function GetUserDetails(id) {
             // PARSE json data
             var user = JSON.parse(data);
             // Assign existing values to the modal popup fields
-            $("#update_location").val(user.location);
-            $("#update_subject").val(user.subject);
+          
+            $("#update_Completed").val(user.Completed);
             $("#update_description").val(user.description);
             
         }
@@ -72,18 +69,15 @@ function GetUserDetails(id) {
 
 function UpdateUserDetails() {
     // get values
-    var location = $("#update_location").val();
-    location = location.trim();
-    var subject = $("#update_subject").val();
-    subject = subject.trim();
+   
+    var Completed = $("#update_Completed").val();
+    Completed = Completed.trim();
     var description = $("#update_description").val();
     description = description.trim();
  
-    if (location == "") {
-        alert("location field is required!");
-    }
-    else if (subject == "") {
-        alert("subject field is required!");
+   
+    if (Completed == "") {
+        alert("Completed field is required!");
     }
     else if (description == "") {
         alert("description field is required!");
@@ -95,8 +89,8 @@ function UpdateUserDetails() {
         // Update the details by requesting to the server using ajax
         $.post("updatearezki", {
                 id: id,
-                location: location,
-                subject: subject,
+              
+                Completed: Completed,
                 description: description
                 
             },
