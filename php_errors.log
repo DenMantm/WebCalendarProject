@@ -13,3 +13,53 @@
 [28-Nov-2016 13:45:54 UTC] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`calendar2`.`Tasks`, CONSTRAINT `user1` FOREIGN KEY (`userID`) REFERENCES `Users` (`userID`) ON DELETE NO ACTION ON UPDATE NO ACTION)
 [28-Nov-2016 13:58:02 UTC] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`calendar2`.`Tasks`, CONSTRAINT `user1` FOREIGN KEY (`userID`) REFERENCES `Users` (`userID`) ON DELETE NO ACTION ON UPDATE NO ACTION)
 [28-Nov-2016 13:58:02 UTC] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`calendar2`.`Tasks`, CONSTRAINT `user1` FOREIGN KEY (`userID`) REFERENCES `Users` (`userID`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+[28-Nov-2016 16:30:04 UTC] HTTP 404 (POST /ajax/update.php)
+[28-Nov-2016 16:58:29 UTC] Unable to open ../views/Settings/updatesettings.php
+[28-Nov-2016 17:01:28 UTC] Unable to open ../views/Settings/updatesettings.php
+[28-Nov-2016 17:03:42 UTC] Unable to open ../views/Settings/updatesettings.php
+[28-Nov-2016 17:04:05 UTC] Unable to open ../views/Settings/updatesettings.php
+[28-Nov-2016 17:04:07 UTC] Unable to open ../views/Settings/updatesettings.php
+[28-Nov-2016 17:04:13 UTC] Unable to open ../views/Settings/updatesettings.php
+[28-Nov-2016 17:04:13 UTC] Unable to open ../views/Settings/updatesettings.php
+[28-Nov-2016 17:04:31 UTC] Unable to open ../views/Settings/updatesettings.php
+[28-Nov-2016 17:04:32 UTC] Unable to open ../views/Settings/updatesettings.php
+[28-Nov-2016 17:09:35 UTC] Unable to open ../views/Settings/updatesettings.php
+[28-Nov-2016 17:13:52 UTC] Unable to open ../views/Settings/updatesettings.php
+[28-Nov-2016 17:13:57 UTC] Unable to open ../views/Settings/updatesettings.php
+[28-Nov-2016 17:15:34 UTC] Unable to open ../views/Settings/updatesettings.php
+[28-Nov-2016 17:28:24 UTC] Unable to open ../views/Settings/updatesettings.php
+[28-Nov-2016 17:33:39 UTC] Unable to open ../views/Settings/updatesettings.php
+[28-Nov-2016 17:38:30 UTC] Unable to open ../views/Settings/updatesettings.php
+[28-Nov-2016 17:38:44 UTC] Unable to open ../views/Settings/updatesettings.php
+[28-Nov-2016 17:38:48 UTC] Unable to open ../views/Settings/updatesettings.php
+[28-Nov-2016 18:22:44 UTC] Unable to open ../views/Settings/updatesettings.php
+[28-Nov-2016 18:22:47 UTC] Unable to open ../views/Settings/updatesettings.php
+[28-Nov-2016 18:26:14 UTC] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'arezki' in 'where clause'
+[28-Nov-2016 18:31:12 UTC] Missing argument 3 for CRUD::Update(), called in /home/ubuntu/workspace/views/Settings/ajax/updatesettings.php on line 13 and defined
+[28-Nov-2016 18:32:13 UTC] Missing argument 3 for CRUD::Update(), called in /home/ubuntu/workspace/views/Settings/ajax/updatesettings.php on line 13 and defined
+[28-Nov-2016 18:33:07 UTC] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'password=? where username= ?' at line 1
+[28-Nov-2016 18:34:13 UTC] HTTP 404 (GET /css/bootstrap.min.css.map)
+[28-Nov-2016 18:34:16 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[28-Nov-2016 18:34:16 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[28-Nov-2016 18:34:16 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[28-Nov-2016 18:42:40 UTC] HTTP 404 (GET /css/bootstrap.min.css.map)
+[28-Nov-2016 18:42:43 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[28-Nov-2016 18:42:43 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[28-Nov-2016 18:42:44 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[28-Nov-2016 18:43:09 UTC] PHP Fatal error:  Call to undefined function curl_init() in /home/ubuntu/workspace/modules/send_email.php on line 33
+[28-Nov-2016 18:43:09 UTC] Fatal error: Call to undefined function curl_init()
+[28-Nov-2016 18:45:47 UTC] HTTP 404 (GET /views/Settings/ajax/libsettings.php)
+[28-Nov-2016 18:48:37 UTC] HTTP 404 (GET /css/bootstrap.min.css.map)
+[28-Nov-2016 18:48:39 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[28-Nov-2016 18:48:40 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[28-Nov-2016 18:48:40 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[28-Nov-2016 18:49:23 UTC] Fatal error: Call to undefined function curl_init()
+[28-Nov-2016 18:49:59 UTC] Fatal error: Call to undefined function curl_init()
+[28-Nov-2016 18:54:23 UTC] HTTP 404 (GET /css/bootstrap.min.css.map)
+[28-Nov-2016 18:54:26 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[28-Nov-2016 18:54:27 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[28-Nov-2016 18:54:27 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[28-Nov-2016 18:56:24 UTC] HTTP 404 (GET /css/bootstrap.min.css.map)
+[28-Nov-2016 18:56:27 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[28-Nov-2016 18:56:28 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[28-Nov-2016 18:56:28 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)

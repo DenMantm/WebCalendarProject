@@ -33,7 +33,7 @@
     <ul class="app-bar-menu">
                 <li><a href="/main">Calendar Screen</a>
                 </li>
-                <li><a href="#">User Settings</a>
+                <li><a href="/settings">User Settings</a>
                 </li>
                 <li><a href="/check">Check Meetings</a>
                 </li>
