@@ -30,7 +30,9 @@ $("#ajax_register").click(function(){
     {
         username: $('#r_user_name_ajax').val(),
         password: $('#r_password_ajax').val(),
-        email: $('#r_email_ajax').val()
+        email: $('#r_email_ajax').val(),
+        fname: $('#r_fname_ajax').val(),
+        sname: $('#r_sname_ajax').val()
         //alert($('#user_name_ajax').val())
     },
     function(response, status,result){
