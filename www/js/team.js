@@ -1,5 +1,10 @@
 /*global $*/
 $(document).ready(function() {
+	$(function(){
+        $('select').select2();
+
+    });
+	
 $("#btnSendInvite").click(function (e) {
 			e.preventDefault();
 			if($("#i_email").val()==='')
@@ -8,7 +13,7 @@ $("#btnSendInvite").click(function (e) {
 				return false;
 			}
 			
-			$("#btnSaveNewMeeting").hide(); //hide submit button
+			$("#btnSendInvite").hide(); //hide submit button
 			var selectedVal = "";
 			var selected = $("input[type='radio'][name='role']:checked");
 			if (selected.length > 0) {
@@ -31,9 +36,10 @@ $("#btnSendInvite").click(function (e) {
 				$("#i_email").val(''); //empty text field on successful
 				$("#btnSendInvite").show(); //show submit button
 				$("#LoadingImage").hide(); //hide loading image
-				//window.open("/team","_self");
+				$('#invite').modal('hide');
 				$("#landing2").html(response); 
             	showDialog("#dialog8");
+            	
 			},
 			error:function (xhr, ajaxOptions, thrownError){
 				$("#btnSendInvite").show(); //show submit button
@@ -52,12 +58,7 @@ $("#btnSaveNewTeam").click(function (e) {
 			}
 			
 			$("#btnSaveNewTeam").hide(); //hide submit button
-		//	$("#LoadingImage").show(); //show loading image
-			
-		   // var myData = 'subject_text='+ $("#m_subject").val();//build a post data structur
-		 //	var myData1 = 'location_text='+ $("#m_location").val();
-		 //	var myData2 = 'date_text='+ $("#m_date").val();
-		 
+	
 			jQuery.ajax({
 			type: "POST", // HTTP method POST or GET
 			url: "addTeam", //Where to make Ajax calls
@@ -65,12 +66,11 @@ $("#btnSaveNewTeam").click(function (e) {
 			data:'team_name='+ $("#t_name").val(),//Form variable
 			
 			success:function(response){
-				$("#responds").append(response);
 				$("#t_name").val(''); //empty text field on successful
 				$("#btnSaveNewTeam").show(); //show submit button
 				$("#LoadingImage").hide(); //hide loading image
-				//window.open("/team","_self")
-				alert(response)
+				window.open("/team","_self")
+
 			},
 			error:function (xhr, ajaxOptions, thrownError){
 				$("#btnSaveNewTeam").show(); //show submit button
@@ -84,10 +84,28 @@ $("#btnSaveNewTeam").click(function (e) {
 
 function leave(id) {
 	var conf = confirm("Are you sure?");
-	var link = "/leaveteam/" + id;
+	var link = "leaveteam/" + id;
 
 	if (conf) {
-	window.open(link,"_self")
+	jQuery.ajax({
+		type: "GET", // HTTP method POST or GET
+		url: link, //Where to make Ajax calls
+		dataType:"text", // Data type, HTML, json etc.
+		
+		success:function(response){
+			if(response == "NO") {
+				alert("You are the last editor. Please promote another user to the editor role before leaving.")
+			} else {
+				window.open("/team","_self")
+			}
+            	
+			},
+			error:function (xhr, ajaxOptions, thrownError){
+				$("#btnSendInvite").show(); //show submit button
+				$("#LoadingImage").hide(); //hide loading image
+				alert(thrownError);
+			}
+			});
 	}
 };
 
@@ -181,7 +199,7 @@ function changerole(user , team, role) {
         url: link,             
         dataType: "html",   //expect html to be returned                
         success: function(response){   
-        	alert(response); 
+        	//alert(response); 
             
         	edit(team);
         },
@@ -193,3 +211,4 @@ function changerole(user , team, role) {
 	});
 	
 }
+

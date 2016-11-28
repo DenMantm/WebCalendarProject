@@ -29,10 +29,9 @@
                 {
                   while ($row = $sth ->fetch(PDO::FETCH_BOUND)) {
                      
-  
-                          $result .= '<option value="'  . $uid . '">' . $user . '</option>';
-                      
-                          
+                    if($uid != $_SESSION['user']['uID']){
+                        $result .= '<option value="'  . $uid . '">' . $user . '</option>';
+                    }
                 }
             }
          

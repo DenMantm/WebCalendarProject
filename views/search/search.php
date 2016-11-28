@@ -4,7 +4,7 @@
 <head>
     
     <meta charset="UTF-8">
-    <title>Make your own Team</title>
+    <title>Create your own Team</title>
  
 
    
@@ -34,19 +34,19 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Create your own team</h1>
+            <h1>Create your own Team</h1>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
             <div class="pull-right">
-                <button class="btn btn-success" data-toggle="modal" data-target="#add_new_record_modal">Add New Record</button>
+                <button class="btn btn-success" data-toggle="modal" data-target="#add_new_record_modal">Add New Task</button>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
-            <h3>Records:</h3>
+            <h3>Tasks:</h3>
  
             <div class="records_content"></div>
         </div>
@@ -61,7 +61,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-description" id="myModalLabel">Add New Record</h4>
+                <h4 class="modal-description" id="myModalLabel">Add New Task</h4>
             </div>
             <div class="modal-body">
  
