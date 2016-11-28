@@ -42,6 +42,5 @@ if(isset($_SESSION['currentTeam']))
     	}
     }
     
-    //echo('<script type="text/javascript">location.href = "/team";</script>');
 }
 ?>

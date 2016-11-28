@@ -8,7 +8,6 @@ include_once("../modules/db.php");
 	$team = filter_var($_SESSION["currentTeam"],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH); 
  	$userID = filter_var($_SESSION["currentUser"],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH); 
  	$currentrole = filter_var($_SESSION["currentrole"],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH); 
-    echo($currentrole);
 
     if ($currentrole == "user") {
         $role = "editor";

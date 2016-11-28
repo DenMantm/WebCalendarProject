@@ -6,3 +6,4 @@
 [27-Nov-2016 21:44:01 UTC] HTTP 404 (GET /changerole/583afe57d446a//editor)
 [27-Nov-2016 22:35:47 UTC] Fatal error: syntax error, unexpected end of file
 [28-Nov-2016 00:13:37 UTC] PDOStatement: Unknown column 'username' in 'where clause'
+[28-Nov-2016 00:29:02 UTC] PDOStatement: Unknown column 'username' in 'where clause'
