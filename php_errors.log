@@ -1,2 +1,7 @@
 [09-Oct-2016 20:34:23 UTC] PHP Warning:  require(modules/db.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/modules/registration/register_ajax.php on line 4
 [09-Oct-2016 20:34:23 UTC] PHP Fatal error:  require(): Failed opening required 'modules/db.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/modules/registration/register_ajax.php on line 4
+[28-Nov-2016 09:11:20 UTC] HTTP 404 (GET /favicon.ico)
+[28-Nov-2016 09:11:24 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[28-Nov-2016 09:11:24 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[28-Nov-2016 09:11:24 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[28-Nov-2016 09:11:30 UTC] PDOStatement: Unknown column 'username' in 'where clause'
