@@ -20,7 +20,8 @@ if(isset($_SESSION['currentTeam']))
         $check2->bindParam(':var2', $teamid, PDO::PARAM_STR );
         $check2->execute();
         $isEditor = $check2->rowCount();
-        echo('<script type="text/javascript">alert(' .  $isEditor  .  ' ------ ' . $coutEditors . ');</script>');
+
+        
     if (($coutEditors == 1) && ($isEditor == 1)){
         echo('NO');
     }   

@@ -93,7 +93,7 @@ function leave(id) {
 		dataType:"text", // Data type, HTML, json etc.
 		
 		success:function(response){
-			if(response = "NO") {
+			if(response == "NO") {
 				alert("You are the last editor. Please promote another user to the editor role before leaving.")
 			} else {
 				window.open("/team","_self")
