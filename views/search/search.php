@@ -73,14 +73,14 @@
                 </div>
  
                 <div class="form-group">
-                    <label for="description">description Address</label>
-                    <input type="text" id="description" placeholder="description Address" class="form-control"/>
+                    <label for="description">Description</label>
+                    <textarea type="text" id="description" placeholder="Description" class="form-control"/></textarea>
                 </div>
  
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-primary" onclick="addRecord()">Add Record</button>
+                <button type="button" class="btn btn-primary" onclick="addRecord()">Save This Task</button>
             </div>
         </div>
     </div>
@@ -104,8 +104,8 @@
                 </div>
  
                 <div class="form-group">
-                    <label for="update_description">description Address</label>
-                    <input type="text" id="update_description" placeholder="description Address" class="form-control"/>
+                    <label for="update_description">Description</label>
+                    <input type="text" id="update_description" placeholder="Description" class="form-control"/>
                 </div>
  
             </div>
