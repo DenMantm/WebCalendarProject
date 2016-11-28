@@ -9,6 +9,7 @@
 <?php include('partials/head.php') ?>
 <?php include_once("../modules/db.php") ?>
 <script type="text/javascript" src="js/team.js"></script>
+<script type="text/javascript" src="js/select2.full.min.js"></script>
 
   
 
@@ -100,53 +101,7 @@ include('partials/navbar.php');
 
       <div class="col-md-1 remove_right_padding dark" style="height:500px;">
 
-        </style>
-        <div class="cell">
-          <ul class="sidebar no-responsive-future" id="sidebar">
-            <li>
-              <a href="#">
-                <span class="mif-calendar icon"></span>
-                <span class="title">Calendar</span>
-                <span class="counter">0</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="mif-event-available icon"></span>
-                <span class="title">Meetings</span>
-                <span class="counter">0</span>
-              </a>
-            </li>
-            <li class="active">
-              <a href="#">
-                <span class="mif-list icon"></span>
-                <span class="title">Tasks</span>
-                <span class="counter">0</span>
-              </a>
-            </li>
-            <li class="active">
-              <a href="/team">
-                <span class="mif-list icon"></span>
-                <span class="title">Teams</span>
-                <span class="counter">0</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="mif-file-text icon"></span>
-                <span class="title">Notes</span>
-                <span class="counter">0</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="mif-cogs icon"></span>
-                <span class="title">Settings</span>
-                <span class="counter">0</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+    
       </div>
 
       <!--##################-->
@@ -255,7 +210,10 @@ include('partials/navbar.php');
               <div class="row">
                 <label class="col-sm-3" control-label>Email address:</label>
                 <div class="col-sm-9">
-                  <input type="text" name="inv_email" id="i_email" class="form-control" placeholder="Email address of invitee" required/>
+                  <select id="i_email" class="js-example-basic-single js-states form-control" multiple="multiple" style="width: 100%;">
+                        <?php include("../modules/getemails.php") ?>
+                    </select>
+
                 </div>
               </div>
               

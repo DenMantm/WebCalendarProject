@@ -6,11 +6,11 @@ if(isset($_SESSION['currentTeam']))
 {	
 	$contentToUpdate = filter_var($_SESSION["currentTeam"],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH); 
 
-	$insert_row = $db->prepare("UPDATE Teams SET confirm=1 WHERE username = :var1 and teamID = :var2;");
+	$insert_row = $db->prepare("UPDATE Teams SET confirm=1 WHERE userUID = :var1 and teamID = :var2;");
     
     try{
         $uid = uniqid();
-        $insert_row->bindParam(':var1', $_SESSION['user']['username'], PDO::PARAM_STR );
+        $insert_row->bindParam(':var1', $_SESSION['user']['uID'], PDO::PARAM_STR );
         $insert_row->bindParam(':var2', $contentToUpdate, PDO::PARAM_STR );
         $insert_row->execute();
     }

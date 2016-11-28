@@ -4,17 +4,16 @@ include_once("../modules/db.php");
 
 if(isset($_POST['team_name'])) 
 {	
-	$contentToSave = filter_var($_POST["team_name"],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH); 
+	$teamName= filter_var($_POST["team_name"],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH); 
 
-	$insert_row = $db->prepare("INSERT INTO Teams (userName,teamName,teamID,role,confirm,userUID) 
-    VALUES (:var1,:var2,:var3,'editor',1,:var4)");
+	$insert_row = $db->prepare("INSERT INTO Teams (teamName,teamID,role,confirm,userUID) 
+    VALUES (:var1,:var2,'editor',1,:var3)");
     
     try{
         $uid = uniqid();
-        $insert_row->bindParam(':var1', $_SESSION['user']['username'], PDO::PARAM_STR );
-        $insert_row->bindParam(':var2', $contentToSave, PDO::PARAM_STR );
-        $insert_row->bindParam(':var3', $uid, PDO::PARAM_STR );
-        $insert_row->bindParam(':var4', $_SESSION['user']['uID'], PDO::PARAM_STR );
+        $insert_row->bindParam(':var1', $teamName, PDO::PARAM_STR );
+        $insert_row->bindParam(':var2', $uid, PDO::PARAM_STR );
+        $insert_row->bindParam(':var3', $_SESSION['user']['uID'], PDO::PARAM_STR );
     $insert_row->execute();
     }
      
