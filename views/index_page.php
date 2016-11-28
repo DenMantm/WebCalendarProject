@@ -291,6 +291,20 @@
             </div>
             
             <div class="control-group">
+              <label class="control-label" for="fname">First name</label>
+              <div class="controls">
+                <input type="text" id="r_fname_ajax" name="fname" placeholder="Your name" class="form-control input-lg"/>
+              </div>
+            </div>
+            
+            <div class="control-group">
+              <label class="control-label" for="sname">Surname</label>
+              <div class="controls">
+                <input type="text" id="r_sname_ajax" name="sname" placeholder="Your surname" class="form-control input-lg"/>
+              </div>
+            </div>
+            
+            <div class="control-group">
               <label class="control-label" for="username">Username</label>
               <div class="controls">
                 <input type="text" id="r_user_name_ajax" name="username" placeholder="" class="form-control input-lg"/>
