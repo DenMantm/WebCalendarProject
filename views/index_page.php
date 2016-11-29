@@ -88,21 +88,18 @@
       <div class="container">
         <div class="row">
           <div class="feature-content">
-            <div class="col-lg-4 feature-caption">
+            <div class="col-lg-5 feature-caption">
               <h6>Simple, functional features</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Team Planner is a functional, fresh and free to use application aimed at small teams and SME's 
+                who need a solution to organise their tasks and communicate to their teammates. New users have the ability to create
+                a new team and add/remove members, assign them tasks and send out communications to them.</p>
             </div>
             <!-- for responsive when scaled, "hidden-sm-down" div will hide on small screens and below -->
             <div class="col-lg-6 text-sm-center hidden-sm-down">
             <!-- http://sweetclipart.com/multisite/sweetclipart/files/desktop_computer_line_art.png -->
-              <img src="img/desktop_Line.png" width="600" align="center">
+              <img src="img/cal1.png" width="300" align="right">
             </div>
-            <div class="col-lg-offset-2" id="off-one">
+            <div class="col-lg-offset-1" id="off-one">
             </div>
           </div>
         </div>
@@ -124,12 +121,11 @@
         </div>
       </div>
     </section>
-        
     <nav class="navbar navbar-default">
       <div class="container-fluid">
                 <ul class="navbar">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
+                  <li><a href="https://github.com/DenMantm/WebCalendarProject">Github Repository</a></li>
+                  <li><a href="https://fatfreeframework.com/3.6/home">FatFree Framework</a></li>
                   <li><a href="#">Something else here</a></li>
                   <li role="separator" class="divider"></li>
                   <li class="dropdown-header">Nav header</li>
@@ -236,7 +232,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header modal-header-login_modal">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">close</button>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> X </button>
                     <h2 style='float:left;'><i class="glyphicon glyphicon-user"></i>Login</h2>
                 </div>
                 <div class="modal-body">
@@ -278,7 +274,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header modal-header-signup_modal">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">close</button>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> X </button>
                     <h2 style='float:left;'><i class="glyphicon glyphicon-plus"></i>Signup</h2>
                 </div>
                 <div class="modal-body">
@@ -366,7 +362,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header modal-header-recover_modal">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">close</button>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> X </button>
                     <h2 style='float:left;'><i class="glyphicon glyphicon-user"></i>Recover Password</h2>
                 </div>
                 <div class="modal-body">
