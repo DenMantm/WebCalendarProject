@@ -57,5 +57,20 @@
                 </li>
             </ul>
         </li>
+        <li>
+            <a href="#" onclick="notifications();"class="btn btn-default" aria-label="Left Align" data-toggle="modal" data-target="#invite">
+                                Notifications  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                        </a>'
+        </li>
     </ul>
 </div>
+
+    <div data-role="charm" id="notifications">
+        <?php include("../modules/getminvitations.php") ?>
+    </div>
+    
+    <script>
+        function notifications(){
+            toggleMetroCharm($('#notifications'));
+        }
+    </script>

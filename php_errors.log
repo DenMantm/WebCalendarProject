@@ -82,3 +82,8 @@
 [28-Nov-2016 19:15:10 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
 [28-Nov-2016 19:15:10 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
 [28-Nov-2016 19:15:51 UTC] Fatal error: Call to undefined function curl_init()
+[28-Nov-2016 23:23:50 UTC] HTTP 404 (GET /favicon.ico)
+[28-Nov-2016 23:23:50 UTC] HTTP 404 (GET /favicon.ico)
+[28-Nov-2016 23:23:51 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[28-Nov-2016 23:23:51 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[28-Nov-2016 23:23:52 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
