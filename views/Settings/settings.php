@@ -129,7 +129,7 @@ function UpdateUserDetails() {
                 // hide modal popup
                 $("#update_user_modal").modal("hide");
                 // reload Users by using readRecords();
-          
+          alert("Successfully uodated your details");
             }
         );
     }
