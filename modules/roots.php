@@ -30,7 +30,27 @@ $f3->route('GET /teamFilterList',
 );
 
 // Arezki part here 
+
+//root to settings.php
+
+$f3->route('GET /settings',
+    function($f3) {
+        isUserLogged();
+
+        echo View::instance()->render('../views/Settings/settings.php');
+    }
+);
+//root to updatesettings
+$f3->route('POST /updatesettings',
+    function($f3) {
+        isUserLogged();
+
+        echo View::instance()->render('../views/Settings/ajax/updatesettings.php');
+    }
+);
+
 // root to check.php
+
 $f3->route('GET /check',
     function($f3) {
         isUserLogged();

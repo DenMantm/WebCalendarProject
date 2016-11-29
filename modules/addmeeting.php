@@ -18,11 +18,12 @@ include_once("../modules/db.php");
     
  	$date_to = DateTime::createFromFormat('m/d/Y g:i A', $to);
     $date_to_str = $date_to->format('Y-m-d H:i:s');
- 	
  	$result=$date_to->format('Y-m-d H:i:s');
  	
- 	$insert_row0 = $db->prepare("INSERT INTO Participants (meetingID,participantID) 
- 	                                    VALUES (:var1,:var2)");
+ 	// INSERT CREATOR TO PARTICIPANTS
+ 	
+ 	$insert_row0 = $db->prepare("INSERT INTO Participants (meetingID,participantID,accepted) 
+ 	                                    VALUES (:var1,:var2,1)");
  	                                    
  	    try{
  	        $insert_row0->bindParam(':var1',$meeting_uid, PDO::PARAM_STR );
@@ -36,8 +37,8 @@ include_once("../modules/db.php");
  	
  	foreach ($participants as $user_uid)
  	{
- 	    $insert_row = $db->prepare("INSERT INTO Participants (meetingID,participantID) 
- 	                                    VALUES (:var1,:var2)");
+ 	    $insert_row = $db->prepare("INSERT INTO Participants (meetingID,participantID,accepted) 
+ 	                                    VALUES (:var1,:var2,0)");
  	                                    
  	    try{
  	        $insert_row->bindParam(':var1',$meeting_uid, PDO::PARAM_STR );

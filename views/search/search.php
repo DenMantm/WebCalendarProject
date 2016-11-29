@@ -4,7 +4,7 @@
 <head>
     
     <meta charset="UTF-8">
-    <title>Make your own Team</title>
+    <title>Asseign Tasks</title>
  
 
    
@@ -34,19 +34,19 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Create your own team</h1>
+            <h1>Asseign Tasks To Your Teams</h1>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
             <div class="pull-right">
-                <button class="btn btn-success" data-toggle="modal" data-target="#add_new_record_modal">Add New Record</button>
+                <button class="btn btn-success" data-toggle="modal" data-target="#add_new_record_modal">Add New Task</button>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
-            <h3>Records:</h3>
+            <h3>Tasks:</h3>
  
             <div class="records_content"></div>
         </div>
@@ -61,29 +61,26 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-description" id="myModalLabel">Add New Record</h4>
+                <h4 class="modal-description" id="myModalLabel">Add New Task</h4>
             </div>
             <div class="modal-body">
  
+               
+ 
                 <div class="form-group">
-                    <label for="location">location</label>
-                    <input type="text" id="location" placeholder="location" class="form-control"/>
+                    <label for="Completed">Completed</label>
+                    <input type="text" id="Completed" placeholder="Completed" class="form-control"/>
                 </div>
  
                 <div class="form-group">
-                    <label for="subject">subject</label>
-                    <input type="text" id="subject" placeholder="subject" class="form-control"/>
-                </div>
- 
-                <div class="form-group">
-                    <label for="description">description Address</label>
-                    <input type="text" id="description" placeholder="description Address" class="form-control"/>
+                    <label for="description">Description</label>
+                    <textarea type="text" id="description" placeholder="Description" class="form-control"/></textarea>
                 </div>
  
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-primary" onclick="addRecord()">Add Record</button>
+                <button type="button" class="btn btn-primary" onclick="addRecord()">Save This Task</button>
             </div>
         </div>
     </div>
@@ -100,19 +97,15 @@
             </div>
             <div class="modal-body">
  
+ 
                 <div class="form-group">
-                    <label for="update_location">location</label>
-                    <input type="text" id="update_location" placeholder="location" class="form-control"/>
+                    <label for="update_Completed">Completed</label>
+                    <input type="text" id="update_Completed" placeholder="Completed" class="form-control"/>
                 </div>
  
                 <div class="form-group">
-                    <label for="update_subject">subject</label>
-                    <input type="text" id="update_subject" placeholder="subject" class="form-control"/>
-                </div>
- 
-                <div class="form-group">
-                    <label for="update_description">description Address</label>
-                    <input type="text" id="update_description" placeholder="description Address" class="form-control"/>
+                    <label for="update_description">Description</label>
+                    <input type="text" id="update_description" placeholder="Description" class="form-control"/>
                 </div>
  
             </div>
@@ -127,144 +120,8 @@
 <!-- // Modal -->
 
 
-<script>
-    
-    
-// Add Record
-function addRecord() {
-    // get values
-    var location = $("#location").val();
-    location = location.trim();
-    var subject = $("#subject").val();
-    subject = subject.trim();
-    var description = $("#description").val();
-    description = description.trim();
- 
-    if (location == "") {
-        alert("location field is required!");
-    }
-    else if (subject == "") {
-        alert("subject field is required!");
-    }
-    else if (description == "") {
-        alert("description field is required!");
-    }
-    else {
-        // Add record
-        $.post("createarezki", {
-            location: location,
-            subject: subject,
-            description: description
-        }, function (data, status) {
-            // close the popup
-            $("#add_new_record_modal").modal("hide");
- 
-            // read records again
-            readRecords();
-            alert("record added");
- 
-            // clear fields from the popup
-            $("#location").val("");
-            $("#subject").val("");
-            $("#description").val("");
-        });
-    }
-}
+<script src ="js/search.js">
 
-// READ records
-function readRecords() {
-    $.get("readarezki", {}, function (data, status) {
-        console.log(data);
-        $(".records_content").html(data);
-    });
-}
-
-function GetUserDetails(id) {
-    // Add User ID to the hidden field
-    $("#hidden_user_id").val(id);
-    $.post("detailsarezki", {
-            id: id
-        },
-        function (data, status) {
-            // PARSE json data
-            var user = JSON.parse(data);
-            // Assign existing values to the modal popup fields
-            $("#update_location").val(user.location);
-            $("#update_subject").val(user.subject);
-            $("#update_description").val(user.description);
-            
-        }
-    );
-    // Open modal popup
-    $("#update_user_modal").modal("show");
-}
-
-
-function UpdateUserDetails() {
-    // get values
-    var location = $("#update_location").val();
-    location = location.trim();
-    var subject = $("#update_subject").val();
-    subject = subject.trim();
-    var description = $("#update_description").val();
-    description = description.trim();
- 
-    if (location == "") {
-        alert("location field is required!");
-    }
-    else if (subject == "") {
-        alert("subject field is required!");
-    }
-    else if (description == "") {
-        alert("description field is required!");
-    }
-    else {
-        // get hidden field value
-        var id = $("#hidden_user_id").val();
- 
-        // Update the details by requesting to the server using ajax
-        $.post("updatearezki", {
-                id: id,
-                location: location,
-                subject: subject,
-                description: description
-                
-            },
-         
-            function (data, status) {
-                // hide modal popup
-                $("#update_user_modal").modal("hide");
-                // reload Users by using readRecords();
-                readRecords();
-            }
-            
-        );
-    }
-}
-
-
-function DeleteUser(id) {
-    var conf = confirm("Are you sure, do you really want to delete User?");
-    if (conf == true) {
-        
-        $.post("deletearezki", {
-                id: id
-                
-            },
-            
-            function (data, status) {
-                // reload Users by using readRecords();
-                readRecords();
-            }
-        );
-    }
-}
-
-$(document).ready(function () {
-    // READ records on page load
-    readRecords(); // calling function
-    
-});
 </script>
 
 

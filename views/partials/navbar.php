@@ -33,11 +33,11 @@
     <ul class="app-bar-menu">
                 <li><a href="/main">Calendar Screen</a>
                 </li>
-                <li><a href="#">User Settings</a>
+                <li><a href="/settings">User Settings</a>
                 </li>
                 <li><a href="/check">Check Meetings</a>
                 </li>
-                 <li><a href="/search">New Search</a>
+                 <li><a href="/search">Manage Tasks </a>
                 </li>
                 <li><a href="/team">Manage Teams</a>
                 </li>
@@ -57,5 +57,20 @@
                 </li>
             </ul>
         </li>
+        <li>
+            <a href="#" onclick="notifications();"class="btn btn-default" aria-label="Left Align" data-toggle="modal" data-target="#invite">
+                                Notifications  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                        </a>'
+        </li>
     </ul>
 </div>
+
+    <div data-role="charm" id="notifications">
+        <?php include("../modules/getminvitations.php") ?>
+    </div>
+    
+    <script>
+        function notifications(){
+            toggleMetroCharm($('#notifications'));
+        }
+    </script>

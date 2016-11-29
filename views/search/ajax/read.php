@@ -8,8 +8,8 @@ $object = new CRUD();
 $data = '<table class="table table-bordered table-striped">
                         <tr>
                             <th>No.</th>
-                            <th>Location</th>
-                            <th>Subject</th>
+                         
+                            <th>Completed</th>
                             <th>description</th>
                             <th>Update</th>
                             <th>Delete</th>
@@ -23,8 +23,8 @@ if (count($users) > 0) {
     foreach ($users as $user) {
         $data .= '<tr>
                 <td>' . $number . '</td>
-                <td>' . $user['location'] . '</td>
-                <td>' . $user['subject'] . '</td>
+              
+                <td>' . $user['Completed'] . '</td>
                 <td>' . $user['description'] . '</td>
                 <td>
                     <button onclick="GetUserDetails(' . $user['id'] . ')" class="btn btn-warning">Update</button>

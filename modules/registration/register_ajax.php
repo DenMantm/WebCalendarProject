@@ -18,6 +18,11 @@
         { 
             die("Please enter a password."); 
         } 
+        
+        if(empty($_POST['sname']) || empty($_POST['fname'])) 
+        { 
+            die("Please provide your name."); 
+        } 
          
         // Make sure the user entered a valid E-Mail address 
         
@@ -97,7 +102,7 @@
         // An INSERT query is used to add new rows to a database table.
         // Again, we are using special tokens (technically called parameters) to 
         // protect against SQL injection attacks. 
-        $query = "INSERT INTO Users ( username, password, salt, email, uID ) VALUES ( :username, :password, :salt, :email, :uid ) ;"; 
+        $query = "INSERT INTO Users ( username, password, salt, email, uID, name, surname) VALUES ( :username, :password, :salt, :email, :uid, :name, :surname) ;"; 
          
         // A salt is randomly generated here to protect again brute force attacks 
         // and rainbow table attacks.  The following statement generates a hex 
@@ -122,7 +127,9 @@
             ':password' => $password, 
             ':salt' => $salt, 
             ':email' => $_POST['email'],
-            ':uid' => $uid
+            ':uid' => $uid,
+            ':name' => $_POST['fname'],
+            ':surname' => $_POST['sname']
         ); 
          
         try { 

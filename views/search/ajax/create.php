@@ -1,13 +1,13 @@
 <?php
-if (isset($_POST['location']) && isset($_POST['subject']) && isset($_POST['description'])) {
+if (isset($_POST['Completed']) && isset($_POST['description'])) {
    include_once('../views/search/ajax/lib.php');
  
-    $location = $_POST['location'];
-    $subject = $_POST['subject'];
+  
+    $Completed = $_POST['Completed'];
     $description = $_POST['description'];
  
     $object = new CRUD();
  
-    $object->Create($location, $subject, $description);
+    $object->Create($Completed, $description);
 }
 ?>
