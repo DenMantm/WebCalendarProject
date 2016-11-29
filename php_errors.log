@@ -36,3 +36,8 @@
 [27-Nov-2016 17:54:26 UTC] PHP   6. {closure:/home/ubuntu/workspace/modules/roots.php:300-303}() /home/ubuntu/workspace/modules/lib/base.php:1672
 [27-Nov-2016 17:54:26 UTC] PHP   7. require() /home/ubuntu/workspace/modules/roots.php:302
 [27-Nov-2016 17:54:26 UTC] Fatal error: Call to a member function format() on a non-object
+[29-Nov-2016 19:51:46 UTC] HTTP 404 (GET /favicon.ico)
+[29-Nov-2016 19:51:48 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[29-Nov-2016 19:51:49 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[29-Nov-2016 19:51:49 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[29-Nov-2016 19:51:50 UTC] PDOStatement: Unknown column 'username' in 'where clause'
