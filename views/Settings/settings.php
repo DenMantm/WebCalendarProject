@@ -79,6 +79,10 @@
                         <label for="update_Password">New Password</label>
                         <input type="password" id="update_Password" placeholder="Password" class="form-control"/>
                     </div>
+                     <div class="form-group">
+                        <label for="update_Password">Confirm New Password</label>
+                        <input type="password" id="update_Password1" placeholder="Password" class="form-control"/>
+                    </div>
      
                 </div>
                 
@@ -102,6 +106,8 @@ function UpdateUserDetails() {
     // get values
     var Password = $("#update_Password").val();
     Password = Password.trim();
+    var Password1 = $("#update_Password1").val();
+    Password1 = Password1.trim();
     var Username = $("#update_Username").val();
     Username = Username.trim();
     var Email = $("#update_Email").val();
@@ -110,17 +116,23 @@ function UpdateUserDetails() {
     if (Password == "") {
         alert("Password field is required!");
     }
+      if (Password1 == "") {
+        alert("Confirm Password field is required!");
+    }
     else if (Username == "") {
         alert("Username field is required!");
     }
     else if (Email == "") {
         alert("Email field is required!");
     }
+     else if (Password!=Password1) {
+        alert("Password are not the same !");
+    }
     else {
        
         // Update the details by requesting to the server using ajax
         $.post("updatesettings", {
-              
+               
                 Password: Password,
                 Username: Username,
                 Email: Email
@@ -129,6 +141,7 @@ function UpdateUserDetails() {
                 // hide modal popup
                 $("#update_user_modal").modal("hide");
                 // reload Users by using readRecords();
+                alert(data);
           alert("Successfully uodated your details");
             }
         );
