@@ -126,7 +126,7 @@ function UpdateUserDetails() {
         alert("Email field is required!");
     }
      else if (Password!=Password1) {
-        alert("Password are not the same !");
+        alert("Oops! Password did not match! Try again. ");
     }
     else {
        

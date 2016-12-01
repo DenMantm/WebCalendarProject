@@ -71,8 +71,9 @@ include_once("../modules/db.php");
  	$insert_row2 = $db->prepare($query);
  	                                    
     try{
- 	   
+ 	    
  	        $insert_row2->execute();
+ 	        
  	    }
  	    catch(PDOException $e)
 		{
@@ -80,6 +81,7 @@ include_once("../modules/db.php");
 		}
  	
  	echo($description);
+ 
 	
  }
 ?>
