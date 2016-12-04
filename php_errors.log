@@ -147,3 +147,17 @@
 [01-Dec-2016 20:53:29 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
 [01-Dec-2016 20:53:30 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
 >>>>>>> c83a42428a7849fc969e49efc56472b652ad623e
+[03-Dec-2016 18:54:06 UTC] HTTP 404 (GET /favicon.ico)
+[03-Dec-2016 18:54:08 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[03-Dec-2016 18:54:08 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[03-Dec-2016 18:54:08 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[03-Dec-2016 23:33:08 UTC] Fatal error: Call to a member function bindColumn() on a non-object
+[03-Dec-2016 23:33:57 UTC] Fatal error: Call to a member function format() on a non-object
+[03-Dec-2016 23:34:03 UTC] Fatal error: Call to a member function format() on a non-object
+[03-Dec-2016 23:34:07 UTC] Fatal error: Call to a member function bindColumn() on a non-object
+[03-Dec-2016 23:34:14 UTC] Fatal error: Call to a member function bindColumn() on a non-object
+[03-Dec-2016 23:35:12 UTC] HTTP 404 (POST /addteamtask1)
+[03-Dec-2016 23:35:33 UTC] HTTP 404 (POST /addteamtask1)
+[03-Dec-2016 23:56:31 UTC] Fatal error: syntax error, unexpected '$insertTask' (T_VARIABLE)
+[03-Dec-2016 23:57:14 UTC] Fatal error: syntax error, unexpected '$insertTask' (T_VARIABLE)
+[03-Dec-2016 23:58:05 UTC] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tt' in 'field list'
