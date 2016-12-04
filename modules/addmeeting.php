@@ -66,13 +66,14 @@ include_once("../modules/db.php");
  	                    '" . $description . "',
  	                    '" . $date_from_str . "',
  	                    '" . $date_to_str . "',
- 	                    'm');";
+ 	                    'pm');";
  	                    
  	$insert_row2 = $db->prepare($query);
  	                                    
     try{
- 	   
+ 	    
  	        $insert_row2->execute();
+ 	        
  	    }
  	    catch(PDOException $e)
 		{
@@ -80,6 +81,7 @@ include_once("../modules/db.php");
 		}
  	
  	echo($description);
+ 
 	
  }
 ?>
