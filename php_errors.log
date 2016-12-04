@@ -53,3 +53,7 @@
 [01-Dec-2016 20:53:29 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
 [01-Dec-2016 20:53:29 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
 [01-Dec-2016 20:53:30 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[03-Dec-2016 15:15:48 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[03-Dec-2016 15:15:48 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[03-Dec-2016 15:15:48 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[03-Dec-2016 15:15:52 UTC] HTTP 404 (GET /favicon.ico)
