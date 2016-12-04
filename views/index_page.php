@@ -40,7 +40,8 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li class="nav-item active"><a class="nav-link" href="index.html">Home<span></span></a></li>
-              <li type="nav-item"><a href="#feature-three">Features</a></li>
+              <li type="nav-item"><a href="#" id="videoDiv">Demo</a></li>
+              <li type="nav-item"><a href="#" id="featThree">Features</a></li>
               <li type="nav-item" class="nav-item"><a  data-toggle="modal"  href="#signup_modal"><span></span>Sign Up</a></li>
               <li type="nav-item" class="nav-item"><a  data-toggle="modal" href="#login_modal"><span></span> Login</a></li>
             </ul>
@@ -51,15 +52,15 @@
       <br/>
     <div id="stage">
       <div id="stage-caption">
-        <h1 class="display-3 main-header">It's your Team Planner App</h1>
-        <p>Make it work for YOU!</p>
-        <a href="#signup_modal" class="btn btn-lg btn-success" data-toggle="modal" >
+        <h1 class="display-3 main-header m-fade">It's your Team Planner App</h1>
+        <p class="m-fade">Make it work for YOU!</p>
+        <a href="#signup_modal" class="btn btn-lg btn-success m-fade" id="regNow" data-toggle="modal" >
           Register now!
         </a>
       </div>
     </div>
     <div class="container">
-      <hr class="thickOne"
+      <hr class="thickOne"  id="nasaVid">
     </div>
     <!-- Feature -->
     <section id="feature-one">
@@ -81,9 +82,12 @@
           </div>
         </div>
       </div>
+      <br/>
+      <br/>
+      <br/>
       
     </section>
-
+    <br id="scrollToMe"/>
     <section id="feature-two" class="feature-dark">
       <div class="container">
         <div class="row">
@@ -97,7 +101,7 @@
             <!-- for responsive when scaled, "hidden-sm-down" div will hide on small screens and below -->
             <div class="col-lg-6 text-sm-center hidden-sm-down">
             <!-- http://sweetclipart.com/multisite/sweetclipart/files/desktop_computer_line_art.png -->
-              <img src="img/cal1.png" width="300" align="right">
+              <img class="img-responsive" src="img/cal1.png" width="300" align="right"/>
             </div>
             <div class="col-lg-offset-1" id="off-one">
             </div>
@@ -105,7 +109,9 @@
         </div>
       </div>
     </section>
-
+    <br/>
+    <br/>
+    <br/>
     <section id="feature-three">
       <div class="container">
         <div class ="row">
@@ -126,7 +132,6 @@
                 <ul class="navbar">
                   <li><a href="https://github.com/DenMantm/WebCalendarProject">Github Repository</a></li>
                   <li><a href="https://fatfreeframework.com/3.6/home">FatFree Framework</a></li>
-                  <li><a href="#">Something else here</a></li>
                   <li role="separator" class="divider"></li>
                   <li class="dropdown-header">Nav header</li>
                   <li><a href="#">Separated link</a></li>
@@ -134,7 +139,7 @@
                 </ul>
       </div>
     </nav>
-            <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
 
     <div class="footer">
       <div class="row">
@@ -396,34 +401,11 @@
 	<script src="js/bootstrap.min.js"></script>
 	      <!--AJAX LOGIN SCRIPT-->
   <script src="js/registration_ajax.js"></script>
-       
-       
-       
-       
-        <script>
-  // back to top of page with smooth scroll
-    $(document).ready(function(){
-     $(window).scroll(function () {
-            if ($(this).scrollTop() > 50) {
-                $('#back-to-top').fadeIn();
-            } else {
-                $('#back-to-top').fadeOut();
-            }
-        });
-        // scroll body to 0px on click
-        $('#back-to-top').click(function () {
-            $('#back-to-top').tooltip('hide');
-            $('body,html').animate({
-                scrollTop: 0
-            }, 800);
-            return false;
-        });
-        
-        $('#back-to-top').tooltip('show');
 
-});
-  </script>
-
+<script src="../www/js/m-scrollToTop.js"></script>
+<script src="../www/js/featureScroll.js"></script>
+<script src="../www/js/show.js"></script>
+<script src="../www/js/bounceyReg.js"></script>
 
 </body>
 
