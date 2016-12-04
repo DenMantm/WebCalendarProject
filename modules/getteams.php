@@ -10,7 +10,8 @@
                     FROM 
                         Teams
                     WHERE
-                        userUID = '" . $myuid . "';";
+                        userUID = '" . $myuid . "'
+                        and confirm = 1;";
                       
           $sth = $db->prepare($query);  
             
@@ -32,11 +33,9 @@
             if( $sth->rowCount() > 0) 
                 {
                   while ($row = $sth ->fetch(PDO::FETCH_BOUND)) {
-                     
-  
+
                           $result .= '<option value="'  . $teamID . '">' . $teamName . '</option>';
-                      
-                          
+
                 }
             } else {
                 $result .= '<option>NOTHING</option>';

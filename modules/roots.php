@@ -273,9 +273,7 @@ $f3->route('GET /main',
 
 $f3->route('GET /authorised_zone',
     function() {
-        
         isUserLogged();
-        
         echo View::instance()->render('../views/authorised_zone.php');
     }
 );
@@ -297,7 +295,6 @@ $f3->route('POST /login_ajax',
     function() {
         require("registration/login_ajax.php"); 
     }
-
 );
 
 $f3->route('POST /filter',
@@ -306,47 +303,44 @@ $f3->route('POST /filter',
     }
 );
 
-
-
-
 $f3->route('POST /addteam',
     function() {
-        
         require("addteam.php"); 
     }
 );
 
 $f3->route('POST /addmeeting',
     function() {
-        
         require("addmeeting.php"); 
+    }
+);
+
+$f3->route('POST /addteamtask',
+    function() {
+        require("add_team_task.php"); 
     }
 );
 
 $f3->route('POST /addteammeeting',
     function() {
-        
         require("addteammeeting.php"); 
     }
 );
 
 $f3->route('POST /inviteOK',
     function() {
-        
         require("inviteOK.php"); 
     }
 );
 
 $f3->route('POST /register_ajax',
     function() {
-        
         require("registration/register_ajax.php"); 
     }
 );
 
 $f3->route('POST /email_retrieve_password',
     function() {
-        
         require("registration/retrieve_password.php"); 
     }
 );
