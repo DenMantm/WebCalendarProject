@@ -18,7 +18,7 @@ class DatabaseOutput{
         session_start();
         $user = $_SESSION['user']['username'];
         
-        $teamList=$calendar->find(array('userID=? AND confirm=1',$user));
+        $teamList=$calendar->find(array('userUID=? AND confirm=1',$user));
         
         
         //generating array with teamlist, removing unnecesarry columns
@@ -47,7 +47,7 @@ class DatabaseOutput{
         
         //getting user name
         session_start();
-        $user = $_SESSION['user']['username'];
+        $user = $_SESSION['user']['uID'];
         
         $teamList=$calendar->find(array('userUID=? AND confirm=1',$user));
         

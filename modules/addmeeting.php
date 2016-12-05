@@ -66,7 +66,7 @@ include_once("../modules/db.php");
  	                    '" . $description . "',
  	                    '" . $date_from_str . "',
  	                    '" . $date_to_str . "',
- 	                    'm');";
+ 	                    'pm');";
  	                    
  	$insert_row2 = $db->prepare($query);
  	                                    
