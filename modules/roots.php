@@ -121,7 +121,12 @@ $f3->route('GET /showteam',
     }
 );
 
-
+$f3->route('GET /showtasks',
+    function($f3) {
+        isUserLogged();
+        echo View::instance()->render('../views/tasks.php');
+    }
+);
 
 $f3->route('GET /showusers/@id',
     function($f3,$params) {
@@ -130,6 +135,15 @@ $f3->route('GET /showusers/@id',
         echo View::instance()->render('../modules/showusers.php');
     }
 );
+
+$f3->route('GET /taskdetails/@id',
+    function($f3,$params) {
+        isUserLogged();
+        $f3->set('SESSION.details',$params['id']); 
+        echo View::instance()->render('../modules/showTaskDetails.php');
+    }
+);
+
 
 $f3->route('GET /removeuser/@team/@user',
     function($f3,$params) {
@@ -324,6 +338,18 @@ $f3->route('POST /addteamtask',
 $f3->route('POST /addteammeeting',
     function() {
         require("addteammeeting.php"); 
+    }
+);
+
+$f3->route('POST /change_task_name',
+    function() {
+        require("change_task_name.php"); 
+    }
+);
+
+$f3->route('POST /change_task_details',
+    function() {
+        require("change_task_details.php"); 
     }
 );
 

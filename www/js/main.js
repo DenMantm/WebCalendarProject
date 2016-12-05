@@ -86,7 +86,6 @@ $("#btnSaveNewTeamTask").click(function (e) {
 			{details:$("#tt_details").val(),
 			    team:$("#tt_team").val(),
 			    name:$("#tt_name").val(),
-			    from:$("#tt_from").val(),
 			    completed:selectedVal,
 			    to:$("#tt_to").val()
 			},
@@ -95,7 +94,6 @@ $("#btnSaveNewTeamTask").click(function (e) {
 				$("#tt_details").val(''); 
 				$("#tt_team").val(''); 
 				$("#tt_name").val(''); 
-				$("#tt_from").val(''); 
 				$("#tt_to").val(''); 
 				$("#btnSaveNewTeamTask").show(); //show submit button
 				$("#LoadingImage").hide(); //hide loading image

@@ -51,30 +51,14 @@
               
               
               
-              
-            <div class="row">
-                <label htmlFor="inputDate" class="col-sm-2" control-label>Start date</label>
-                <div class="col-sm-10">
-                  <input type="text" id="tt_from" name="date_text"class="form-control" placeholder="Choose date"  required/>
-                  <script type="text/javascript">
-                    $(function() {
-                      $('#m_from').datetimepicker();
-                      dateFormat: 'yy-mm-dd'
-                    });
-                    
-                  </script>
-                  
-                </div>
-              </div>
             <div class="row">
                 <label htmlFor="inputDate" class="col-sm-2" control-label>Due date</label>
                 <div class="col-sm-10">
                   <input type="text" id="tt_to" name="date_text"class="form-control" placeholder="Choose date" required/>
                   <script type="text/javascript">
                     $(function() {
-                      $('#m_to').datetimepicker();
+                      $('#tt_to').datetimepicker();
                       dateFormat: 'yy-mm-dd'
-                      
                     });
                     
                   </script>
