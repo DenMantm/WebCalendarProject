@@ -1,4 +1,4 @@
-   /*global $*/
+/*global $*/
 
     $.fn.followTo = function (pos) {
     var $this = this,
@@ -61,6 +61,50 @@ var events = [];
 			},
 			error:function (xhr, ajaxOptions, thrownError){
 				$("#btnSaveNewTeam").show(); //show submit button
+				$("#LoadingImage").hide(); //hide loading image
+				alert(thrownError);
+			}
+			});
+	});
+	
+$("#btnSaveNewTeamTask").click(function (e) {
+			e.preventDefault();
+
+			$("#btnSaveNewTeamTask").hide(); //hide submit button
+			$("#LoadingImage").show(); //show loading image
+			
+			var selectedVal = "";
+			var selected = $("input[type='radio'][name='compleeted']:checked");
+			if (selected.length > 0) {
+			    selectedVal = selected.val();
+			}
+			jQuery.ajax({
+			type: "POST", // HTTP method POST or GET
+			url: "addteamtask", //Where to make Ajax calls
+			dataType:"text", // Data type, HTML, json etc.
+			data:
+			{details:$("#tt_details").val(),
+			    team:$("#tt_team").val(),
+			    name:$("#tt_name").val(),
+			    from:$("#tt_from").val(),
+			    completed:selectedVal,
+			    to:$("#tt_to").val()
+			},
+			
+			success:function(response){
+				$("#tt_details").val(''); 
+				$("#tt_team").val(''); 
+				$("#tt_name").val(''); 
+				$("#tt_from").val(''); 
+				$("#tt_to").val(''); 
+				$("#btnSaveNewTeamTask").show(); //show submit button
+				$("#LoadingImage").hide(); //hide loading image
+				$('#newteamtask').modal('hide');
+				window.open("/main","_self")
+				//alert(response);
+			},
+			error:function (xhr, ajaxOptions, thrownError){
+				$("#btnSaveNewTeamTask").show(); //show submit button
 				$("#LoadingImage").hide(); //hide loading image
 				alert(thrownError);
 			}
@@ -136,6 +180,13 @@ $("#btnSaveNewMeeting").click(function (e) {
 				$("#tm_to").val(end); 
 				$("#tm_location").val(calEvent._id); 
 		        $('#newteammeeting').modal('show');
+		        break;
+		    case "Team task":
+		        $("#tt_name").val(calEvent.title); 
+		        $("#tt_from").val(start); 
+				$("#tt_to").val(end); 
+				$("#tt_details").val(calEvent._id); 
+		        $('#newteamtask').modal('show');
 		        break;
 		    default:
 		        $("#m_subject").val(calEvent.title); 
@@ -264,6 +315,10 @@ function day_click(short, full) {
         $('select').select2({
         placeholder: 'Email address'
         });
+        
+        $('#tt_team').select2({
+        placeholder: 'Select team'
+        });
 
     });
 
@@ -311,6 +366,3 @@ function getTeamList(){
       
         
     }
-
-
-
