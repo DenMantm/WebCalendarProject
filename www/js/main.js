@@ -1,4 +1,4 @@
-   /*global $*/
+/*global $*/
 
     $.fn.followTo = function (pos) {
     var $this = this,
@@ -366,6 +366,3 @@ function getTeamList(){
       
         
     }
-
-
-
