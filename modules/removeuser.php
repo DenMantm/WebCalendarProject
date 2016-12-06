@@ -10,7 +10,7 @@ include_once("../modules/db.php");
         echo("currentteam " . $team);
         echo("currenuser " . $user);
 
-	$delete_row = $db->prepare("DELETE FROM Teams WHERE username = :var1 and teamID = :var2;");
+	$delete_row = $db->prepare("DELETE FROM Teams WHERE userUID = :var1 and teamID = :var2;");
     
      try{
      

@@ -54,7 +54,6 @@ $f3->route('POST /updatesettings',
 $f3->route('GET /check',
     function($f3) {
         isUserLogged();
-
         echo View::instance()->render('../views/check.php');
     }
 );

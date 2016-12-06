@@ -8,7 +8,7 @@
           $teamID = $_SESSION['currentTeam'];
           $me = $_SESSION['user']['uID'];
           $sqlQuery = "SELECT 
-                        u.username, t.teamName, t.role, t.confirm, t.userUID
+                        u.name, u.surname, t.teamName, t.role, t.confirm, t.userUID
                     FROM 
                         Teams t,
                         Users u
@@ -21,11 +21,12 @@
           try{
               
           $query->execute();
-          $query->bindColumn(1,$user);
-          $query->bindColumn(2,$teamName);
-          $query->bindColumn(3,$role);
-          $query->bindColumn(4,$confirm);
-          $query->bindColumn(5,$userID);
+          $query->bindColumn(1,$name);
+          $query->bindColumn(2,$surname);
+          $query->bindColumn(3,$teamName);
+          $query->bindColumn(4,$role);
+          $query->bindColumn(5,$confirm);
+          $query->bindColumn(6,$userID);
           
 
           }
@@ -59,14 +60,14 @@
                         }
                         
                           $usersHTML .= '<div class="row" id="' . $userID . '">
-                                            <div class="col-md-2">' . $user . '</div>
+                                            <div class="col-md-2">' . $name . ' ' . $surname . '</div>
                                             <div class="col-md-1">' . $status . '</div>
                                             <div class="col-md-1">' . $role . '</div>
                                             <div class="btn-group pull-left" role="group" aria-label="...">
                                                 <a href="#" onclick="changerole(\'' . $userID . '\' , \'' . $teamID . '\' , \'' . $role . '\');"class="btn btn-default" aria-label="Left Align">
                                                 Change role  <span class="glyphicon glyphicon-random" aria-hidden="true"></span>
                                                 </a>
-                                                <a href="#" onclick="remove(\'' . $user . '\' , \'' . $teamID . '\');"class="btn btn-default" aria-label="Left Align">
+                                                <a href="#" onclick="remove(\'' . $userID . '\' , \'' . $teamID . '\');"class="btn btn-default" aria-label="Left Align">
                                                 Remove  <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                                                 </a>  
                                             </div>

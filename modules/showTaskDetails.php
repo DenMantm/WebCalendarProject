@@ -49,7 +49,8 @@
                                 Users u
                         where 	p.taskID = '" . $taskID . "'
                         		and p.participantID = t.teamID
-                                and t.userUID = u.uID;";
+                                and t.userUID = u.uID
+                                and t.confirm = 1;";
                         
             $users = $db->prepare($query2);
             $users->execute();

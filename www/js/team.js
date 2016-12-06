@@ -177,6 +177,7 @@ function remove(user , team) {
         url: link,             
         dataType: "html",   //expect html to be returned                
         success: function(response){   
+        	alert(response)
         	$("#landing3").html(response); 
             showDialog("#dialog7");
         	edit(team);
