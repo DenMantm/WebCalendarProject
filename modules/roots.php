@@ -127,6 +127,13 @@ $f3->route('GET /showtasks',
     }
 );
 
+$f3->route('GET /show_tbc',
+    function($f3) {
+        isUserLogged();
+        echo View::instance()->render('../modules/show_to_be_completed.php');
+    }
+);
+
 $f3->route('GET /showusers/@id',
     function($f3,$params) {
         isUserLogged();
@@ -140,6 +147,14 @@ $f3->route('GET /taskdetails/@id',
         isUserLogged();
         $f3->set('SESSION.details',$params['id']); 
         echo View::instance()->render('../modules/showTaskDetails.php');
+    }
+);
+
+$f3->route('GET /tbc_details/@id',
+    function($f3,$params) {
+        isUserLogged();
+        $f3->set('SESSION.details',$params['id']); 
+        echo View::instance()->render('../modules/showTbcDetails.php');
     }
 );
 

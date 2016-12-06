@@ -56,16 +56,16 @@ include('partials/navbar.php');
 
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Issued by me  <span class="badge"><?php include('../modules/get_tasks_issued.php') ?></span></a></li>
-    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Personal  <span class="badge">1</span></a></li>
-    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">To be completed  <span class="badge">0</span></a></li>
+    <li role="presentation" class="active"><a href="#issued_by_me" aria-controls="issued_by_me" role="tab" data-toggle="tab">Issued by me  <span class="badge"><?php include('../modules/get_tasks_issued.php') ?></span></a></li>
+    <li role="presentation"><a href="#personal" aria-controls="personal" role="tab" data-toggle="tab">Personal  <span class="badge">1</span></a></li>
+    <li role="presentation"><a href="#to_be_completed" onclick="populate_tbc(); return false;" aria-controls="to_be_completed" role="tab" data-toggle="tab">To be completed  <span class="badge">0</span></a></li>
   </ul>
 
   <!-- Tab panes -->
   <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="home"><?php include('../modules/show_tasks.php') ?></div>
-    <div role="tabpanel" class="tab-pane" id="profile">.dd</div>
-    <div role="tabpanel" class="tab-pane" id="messages">...</div>
+    <div role="tabpanel" class="tab-pane active" id="issued_by_me"><?php include('../modules/show_tasks.php') ?></div>
+    <div role="tabpanel" class="tab-pane" id="personal"></div>
+    <div role="tabpanel" class="tab-pane" id="to_be_completed">...</div>
   </div>
 
 </div>

@@ -9,8 +9,26 @@ $(document).ready(function() {
 // 			  .ajaxStop(function () {
 // 			    $loading.hide();
 // 			  });
+
+
 });
-			  
+	
+function populate_tbc(){
+	jQuery.ajax({
+		type: "GET", // HTTP method POST or GET
+		url: "show_tbc", //Where to make Ajax calls
+		dataType:"text", // Data type, HTML, json etc.
+		
+		success:function(response){
+			$("#to_be_completed").html(response); 
+			
+			},
+			error:function (xhr, ajaxOptions, thrownError){
+				alert(thrownError);
+			}
+			});
+}
+
 function details(id) {
 	var link = "taskdetails/" + id;
 
@@ -31,9 +49,34 @@ function details(id) {
 	
 };
 
+function tbc_details(id) {
+	var link = "tbc_details/" + id;
+
+	jQuery.ajax({
+		type: "GET", // HTTP method POST or GET
+		url: link, //Where to make Ajax calls
+		dataType:"text", // Data type, HTML, json etc.
+		
+		success:function(response){
+		    $(".tbc_details").html(''); 
+			$("#tbc_details"+id).html(response); 
+			
+			},
+			error:function (xhr, ajaxOptions, thrownError){
+				alert(thrownError);
+			}
+			});
+	
+};
+
+function close_tbc_details() {
+    $(".tbc_details").html(''); 
+}
+
 function close_details() {
     $(".details").html(''); 
 }
+close_tbc_details
 
 function delete_task(id) {
     var conf = confirm("Are you sure you want to remove this task??");

@@ -117,3 +117,18 @@
 [06-Dec-2016 07:28:06 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
 [06-Dec-2016 07:28:06 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
 [06-Dec-2016 07:28:07 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[06-Dec-2016 11:22:04 UTC] HTTP 404 (GET /favicon.ico)
+[06-Dec-2016 11:22:04 UTC] HTTP 404 (GET /favicon.ico)
+[06-Dec-2016 11:22:06 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[06-Dec-2016 11:22:06 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[06-Dec-2016 11:22:06 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[06-Dec-2016 11:43:36 UTC] Unable to open ../views/show_to_be_completed.php
+[06-Dec-2016 12:57:10 UTC] Unable to open ../views/show_to_be_completed.php
+[06-Dec-2016 12:58:15 UTC] Unable to open ../views/show_to_be_completed.php
+[06-Dec-2016 12:58:45 UTC] Unable to open ../views/show_to_be_completed.php
+[06-Dec-2016 12:58:49 UTC] Unable to open ../views/show_to_be_completed.php
+[06-Dec-2016 13:11:46 UTC] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '')
+                        and ta.type = 'tt'
+                        and ta.end' at line 10
+[06-Dec-2016 13:26:42 UTC] HTTP 404 (GET /tbc_details/t_5845780bc57c0)
+[06-Dec-2016 13:26:44 UTC] HTTP 404 (GET /tbc_details/t_5845780bc57c0)
