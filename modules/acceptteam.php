@@ -20,6 +20,22 @@ if(isset($_SESSION['currentTeam']))
 		echo "Error: " . $e->getMessage();
 		}
 	
+	
+    $query = "select taskID
+                    from Participants_t
+                    where participantID = '". $contentToUpdate ."';";
+                    
+        $getteams = $db->prepare($query);
+        $getteams->execute();
+        $getteams->bindColumn(1,$task);
+        
+        while ($getteams -> fetch(PDO::FETCH_BOUND)){
+            $query2 = "insert into Task_completion (task_uid, user_uid, completed) values (:var1,:var2,0);";
+            $insertCompletions = $db->prepare($query2);
+            $insertCompletions->bindParam(':var1', $task, PDO::PARAM_STR );
+            $insertCompletions->bindParam(':var2', $_SESSION['user']['uID'] , PDO::PARAM_STR );
+            $insertCompletions->execute();
+        }
 
         echo('<script type="text/javascript">location.href = "/team";</script>');
 

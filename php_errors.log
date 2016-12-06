@@ -145,3 +145,22 @@
 [06-Dec-2016 16:28:08 UTC] Fatal error: syntax error, unexpected '$getrows' (T_VARIABLE)
 [06-Dec-2016 16:29:42 UTC] Fatal error: syntax error, unexpected '='
 [06-Dec-2016 16:30:39 UTC] Fatal error: syntax error, unexpected '='
+[06-Dec-2016 17:02:43 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[06-Dec-2016 17:02:43 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[06-Dec-2016 17:02:43 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[06-Dec-2016 17:04:03 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[06-Dec-2016 17:04:03 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[06-Dec-2016 17:04:03 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[06-Dec-2016 17:04:26 UTC] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':0)' at line 1
+[06-Dec-2016 17:05:04 UTC] Fatal error: syntax error, unexpected '='
+[06-Dec-2016 17:05:07 UTC] Fatal error: syntax error, unexpected '='
+[06-Dec-2016 17:06:21 UTC] Fatal error: syntax error, unexpected '}'
+[06-Dec-2016 17:07:18 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[06-Dec-2016 17:07:18 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[06-Dec-2016 17:07:18 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[06-Dec-2016 17:08:20 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[06-Dec-2016 17:08:20 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[06-Dec-2016 17:08:20 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[06-Dec-2016 17:09:13 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[06-Dec-2016 17:09:13 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[06-Dec-2016 17:09:13 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)

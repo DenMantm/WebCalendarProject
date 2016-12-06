@@ -16,7 +16,7 @@ try
 	echo "Error: " . $e->getMessage();
 }
 	
-while ($row2 = $pullTeamName -> fetch(PDO::FETCH_BOUND)){
+while ($pullTeamName -> fetch(PDO::FETCH_BOUND)){
        
     foreach ($uID as $user_uid)
     {
@@ -31,14 +31,15 @@ while ($row2 = $pullTeamName -> fetch(PDO::FETCH_BOUND)){
         } catch(PDOException $e) {
             echo "Error: " . $e->getMessage();
         }    
+        
+        
+        
     }
 }
 echo('<div>Invite to team</div>
 <div><h4> ' . $teamName . '</h4></div>
-<div>has been set.</div>');
+<div>has been sent.</div>');
 
 	    
-       
-    
 
 ?>
