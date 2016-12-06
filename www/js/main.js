@@ -181,8 +181,7 @@ $("#btnSaveNewMeeting").click(function (e) {
 		        break;
 		    case "Team task":
 		        $("#tt_name").val(calEvent.title); 
-		        $("#tt_from").val(start); 
-				$("#tt_to").val(end); 
+				$("#tt_to").val(moment(calEvent._start).format('DD/MM/YYYY')); 
 				$("#tt_details").val(calEvent._id); 
 		        $('#newteamtask').modal('show');
 		        break;

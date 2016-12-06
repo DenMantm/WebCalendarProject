@@ -1,5 +1,16 @@
 /*global $*/
 
+$(document).ready(function() {
+    var $loading = $('#modal').hide();
+// 			$(document)
+// 			  .ajaxStart(function () {
+// 			    $loading.show();
+// 			  })
+// 			  .ajaxStop(function () {
+// 			    $loading.hide();
+// 			  });
+});
+			  
 function details(id) {
 	var link = "taskdetails/" + id;
 
@@ -9,8 +20,9 @@ function details(id) {
 		dataType:"text", // Data type, HTML, json etc.
 		
 		success:function(response){
-			
+		    $(".details").html(''); 
 			$("#details"+id).html(response); 
+			
 			},
 			error:function (xhr, ajaxOptions, thrownError){
 				alert(thrownError);
@@ -19,14 +31,45 @@ function details(id) {
 	
 };
 
+function close_details() {
+    $(".details").html(''); 
+}
+
+function delete_task(id) {
+    var conf = confirm("Are you sure you want to remove this task??");
+    
+    if(conf) {
+        jQuery.ajax({
+		type: "POST", // HTTP method POST or GET
+		url: "delete_task", //Where to make Ajax calls
+		dataType:"text", // Data type, HTML, json etc.
+		data:{task_id:id},
+		
+		success:function(response){
+			window.open("/showtasks","_self")
+			$.Notify({
+                caption: 'Deleted',
+                content: 'Task has been succesfuly deleted',
+                type: 'alert'
+            });
+			},
+			error:function (xhr, ajaxOptions, thrownError){
+				alert(thrownError);
+			}
+			});
+        }
+
+    
+}
+
 function editname(id) {
     var value = $('#tn_' + id).text();
     var html = '<form class="form-inline">'+
                 '<input type="text" id="t_name" class="form-control" value = "' + value.trim() + '" required/>' + 
-                '<a href="#" onclick="changename(\'' + id + '\');"class="btn btn-default" aria-label="Left Align">' +
+                '<a href="#" onclick="changename(\'' + id + '\'); return false;"class="btn btn-default" aria-label="Left Align">' +
                             '<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>' + 
                     '</a>' +
-                '<a href="#" onclick="details(\'' + id + '\');"class="btn btn-default" aria-label="Left Align">' +
+                '<a href="#" onclick="details(\'' + id + '\'); return false;"class="btn btn-default" aria-label="Left Align">' +
                             '<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>' + 
                     '</a>' +
                 '</form>';
@@ -42,10 +85,10 @@ function editdetails(id) {
     
     var html = '<form >'+
                 '<textarea class="form-control" id="t_details" rows="7">' + value.trim() + '</textarea>' + 
-                '<a href="#" onclick="changedetails(\'' + id + '\');"class="btn btn-default" aria-label="Left Align">' +
+                '<a href="#" onclick="changedetails(\'' + id + '\'); return false;"class="btn btn-default" aria-label="Left Align">' +
                             '<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>' + 
                     '</a>' +
-                '<a href="#" onclick="details(\'' + id + '\');"class="btn btn-default" aria-label="Left Align">' +
+                '<a href="#" onclick="details(\'' + id + '\'); return false;"class="btn btn-default" aria-label="Left Align">' +
                             '<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>' + 
                     '</a>' +
                 '</form>';
@@ -68,6 +111,12 @@ function changename(id) {
 		
 		success:function(response){
 			details(id);
+			$.Notify({
+                caption: 'Changed',
+                content: 'Task name has been upated successfully.',
+                type: 'success',
+                timeout: 7000
+            });
 			},
 			error:function (xhr, ajaxOptions, thrownError){
 				alert(thrownError);
@@ -87,6 +136,60 @@ function changedetails(id) {
 		
 		success:function(response){
 			details(id);
+			$.Notify({
+                caption: 'Changed',
+                content: 'Task details have been upated successfully.',
+                type: 'success',
+                timeout: 7000
+            });
+			},
+			error:function (xhr, ajaxOptions, thrownError){
+				alert(thrownError);
+			}
+			});
+}
+
+function completionToSingle(id) {
+    jQuery.ajax({
+		type: "POST", // HTTP method POST or GET
+		url: "change_completion_by", //Where to make Ajax calls
+		dataType:"text", // Data type, HTML, json etc.
+		data:{task_id:id,
+			  state:'single'
+			},
+		
+		success:function(response){
+			details(id);
+			$.Notify({
+                caption: 'Changed',
+                content: 'Task completion rules has been changed to single user.',
+                type: 'success',
+                timeout: 7000
+            });
+			},
+			error:function (xhr, ajaxOptions, thrownError){
+				alert(thrownError);
+			}
+			});
+}
+
+function completionToAll(id) {
+    jQuery.ajax({
+		type: "POST", // HTTP method POST or GET
+		url: "change_completion_by", //Where to make Ajax calls
+		dataType:"text", // Data type, HTML, json etc.
+		data:{task_id:id,
+			  state:'everyone'
+			},
+		
+		success:function(response){
+			details(id);
+			$.Notify({
+                caption: 'Changed',
+                content: 'Task completion rules has been changed to all users.',
+                type: 'success',
+                timeout: 7000
+            });
 			},
 			error:function (xhr, ajaxOptions, thrownError){
 				alert(thrownError);

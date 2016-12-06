@@ -12,7 +12,7 @@ include_once("../modules/db.php");
  	$meID = $_SESSION['user']['uID'];
  	
 
- 	$date_to = DateTime::createFromFormat('m/d/Y g:i A', $to);
+ 	$date_to = DateTime::createFromFormat('d/m/Y', $to);
     $date_to_str = $date_to->format('Y-m-d');
 
  	//LOOP THROUGH EVERY TEAM ID ADDED TO TASK

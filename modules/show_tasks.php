@@ -35,16 +35,32 @@
             if( $result->rowCount() > 0) 
                 {
                   while ($result ->fetch(PDO::FETCH_BOUND)) {
-                      
-                      $text .= '
+                    
+                    $date_to = DateTime::createFromFormat('Y-m-d', $taskDue);
+                    $date_today = DateTime::createFromFormat('Y-m-d', date('Y-m-d'));
+                    
+                    $days = date_diff($date_today, $date_to);
+                    
+                    if ($days->format('%a') == '0') {
+                        $due_status = 'Due: Today';
+                    } elseif ($days->format('%R%a') == '+1') {
+                        $due_status = 'Due: Tomorrow';
+                    } elseif ($days->format('%R') == '+') {
+                        $due_status = $days->format('Due: %a days');
+                    } elseif ($days->format('%R') == '-') {
+                        $due_status = $days->format('Expired %a days ago');
+                    };
+                  
+                    $text .= '
      
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                            <h3 class="panel-title">
-                                <span><a href="#" onclick="details(\'' . $taskID . '\');">' . $taskName . '</a></span><span class="span-right">Due: ' . $taskDue . '</span>
-                            </h3>
+                      <div class="panel panel-default" >
+                          <div class="panel-heading" onclick="details(\'' . $taskID . '\'); return false;">
+                            
+                                <span>' . $taskName . '</span>
+                                <span class="span-right">' . $due_status . '</span>
+                          
                           </div>
-                          <div id="details' . $taskID . '">
+                          <div class="details" id="details' . $taskID . '">
                           </div>
                         </div>';
                       

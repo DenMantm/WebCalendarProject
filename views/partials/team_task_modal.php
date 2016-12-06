@@ -57,8 +57,9 @@
                   <input type="text" id="tt_to" name="date_text"class="form-control" placeholder="Choose date" required/>
                   <script type="text/javascript">
                     $(function() {
-                      $('#tt_to').datetimepicker();
-                      dateFormat: 'yy-mm-dd'
+                      $('#tt_to').datetimepicker({
+                      format: 'DD/MM/YYYY'
+                      });
                     });
                     
                   </script>

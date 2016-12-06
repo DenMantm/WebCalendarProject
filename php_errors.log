@@ -78,3 +78,29 @@
 [05-Dec-2016 18:36:02 UTC] Invalid argument supplied for foreach()
 [05-Dec-2016 18:36:40 UTC] Invalid argument supplied for foreach()
 [05-Dec-2016 18:50:45 UTC] Invalid argument supplied for foreach()
+[05-Dec-2016 20:39:43 UTC] Fatal error: syntax error, unexpected 'if' (T_IF)
+[05-Dec-2016 20:39:46 UTC] Fatal error: syntax error, unexpected 'if' (T_IF)
+[05-Dec-2016 20:40:18 UTC] Fatal error: syntax error, unexpected 'if' (T_IF)
+[05-Dec-2016 22:05:00 UTC] Fatal error: syntax error, unexpected '$resylt' (T_VARIABLE)
+[05-Dec-2016 22:05:11 UTC] Fatal error: syntax error, unexpected '$result' (T_VARIABLE)
+[05-Dec-2016 22:05:32 UTC] Fatal error: syntax error, unexpected '$result' (T_VARIABLE)
+[05-Dec-2016 22:05:55 UTC] Fatal error: syntax error, unexpected '$result' (T_VARIABLE)
+[05-Dec-2016 22:06:48 UTC] Fatal error: syntax error, unexpected '$result' (T_VARIABLE)
+[05-Dec-2016 22:07:01 UTC] Fatal error: syntax error, unexpected '$result' (T_VARIABLE)
+[05-Dec-2016 22:07:08 UTC] Fatal error: syntax error, unexpected '$result' (T_VARIABLE)
+[05-Dec-2016 22:07:17 UTC] Fatal error: syntax error, unexpected '$result' (T_VARIABLE)
+[05-Dec-2016 22:07:36 UTC] Fatal error: syntax error, unexpected '$result' (T_VARIABLE)
+[05-Dec-2016 22:07:42 UTC] Fatal error: syntax error, unexpected '$result' (T_VARIABLE)
+[05-Dec-2016 22:08:02 UTC] Fatal error: syntax error, unexpected '$result' (T_VARIABLE)
+[05-Dec-2016 22:33:26 UTC] date_diff() expects parameter 2 to be DateTimeInterface, string given
+[05-Dec-2016 22:34:04 UTC] Fatal error: syntax error, unexpected ';'
+[05-Dec-2016 22:34:15 UTC] Object of class DateInterval could not be converted to string
+[05-Dec-2016 22:34:43 UTC] Fatal error: syntax error, unexpected '.'
+[05-Dec-2016 22:34:49 UTC] Fatal error: syntax error, unexpected '.'
+[05-Dec-2016 22:34:54 UTC] Fatal error: syntax error, unexpected '.'
+[06-Dec-2016 01:03:07 UTC] Fatal error: Call to a member function format() on a non-object
+[06-Dec-2016 01:03:11 UTC] Fatal error: Call to a member function format() on a non-object
+[06-Dec-2016 01:03:40 UTC] Fatal error: Call to a member function format() on a non-object
+[06-Dec-2016 01:03:45 UTC] Fatal error: Call to a member function format() on a non-object
+[06-Dec-2016 01:07:34 UTC] Invalid argument supplied for foreach()
+[06-Dec-2016 01:07:37 UTC] Invalid argument supplied for foreach()

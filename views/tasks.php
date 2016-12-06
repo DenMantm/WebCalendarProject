@@ -10,6 +10,7 @@
 <?php include_once("../modules/db.php") ?>
 <script type="text/javascript" src="js/tasks.js"></script>
 <link rel="stylesheet" href="/css/tasks.css">
+<script type="text/javascript" src="js/metro.min.js"></script>
   
   
 <style>
@@ -85,6 +86,7 @@ include('partials/navbar.php');
         
 
       </div>
+          <div class="modal" id="modal"></div>
     </div>
-    
+
 </body>

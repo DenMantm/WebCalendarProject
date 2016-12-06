@@ -353,9 +353,21 @@ $f3->route('POST /change_task_details',
     }
 );
 
+$f3->route('POST /change_completion_by',
+    function() {
+        require("change_completion_by.php"); 
+    }
+);
+
 $f3->route('POST /inviteOK',
     function() {
         require("inviteOK.php"); 
+    }
+);
+
+$f3->route('POST /delete_task',
+    function() {
+        require("delete_task.php"); 
     }
 );
 
