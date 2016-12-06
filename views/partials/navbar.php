@@ -28,7 +28,7 @@
                         
                         
                         <div class="app-bar">
-    <a class="app-bar-element" href="...">Home</a>
+    <a class="app-bar-element" href="/main">Home</a>
     <span class="app-bar-divider"></span>
     <ul class="app-bar-menu">
                 <li><a href="/main">Calendar Screen</a>
@@ -37,7 +37,7 @@
                 </li>
                 <li><a href="/check">Check Meetings</a>
                 </li>
-                 <li><a href="/search">Manage Tasks </a>
+                 <li><a href="/showtasks">Manage Tasks </a>
                 </li>
                 <li><a href="/team">Manage Teams</a>
                 </li>

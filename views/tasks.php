@@ -56,7 +56,7 @@ include('partials/navbar.php');
 
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Issued by me  <span class="badge">14</span></a></li>
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Issued by me  <span class="badge"><?php include('../modules/get_tasks_issued.php') ?></span></a></li>
     <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Personal  <span class="badge">1</span></a></li>
     <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">To be completed  <span class="badge">0</span></a></li>
   </ul>

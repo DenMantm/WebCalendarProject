@@ -1,5 +1,4 @@
-      
-         <?php  
+<?php  
 include_once("../modules/db.php");  
   
   $sth = $db->prepare(" SELECT * FROM Meetings ORDER BY meetingID desc");  
