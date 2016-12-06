@@ -19,10 +19,10 @@ include_once("../modules/db.php");
  	foreach ($teams as $team)
  	{
  	    //GETTING EVERY USER ID OF CURRENT TEAM
- 	    $getUsers = $db->prepare("SELECT userUID FROM Teams WHERE teamID = '" . $team . "';");
+ 	    $getUsers = $db->prepare("SELECT userUID FROM Teams WHERE teamID = '" . $team . "' and confirm = 1;");
  	    $getUsers->execute();
  	    $getUsers->bindColumn(1,$userID);
- 	    
+ 	     
  	    //INSERTING EVERY USER CONNECTED WITH TASK TO TASK_COMPLETION TABLE 
  	    if( $getUsers->rowCount() > 0) {
  	        while ($row = $getUsers ->fetch(PDO::FETCH_BOUND)) {

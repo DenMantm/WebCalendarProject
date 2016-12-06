@@ -239,3 +239,19 @@ function completionToAll(id) {
 			}
 			});
 }
+
+function complete_task(id){
+	jQuery.ajax({
+		type: "POST", // HTTP method POST or GET
+		url: "complete_task", //Where to make Ajax calls
+		dataType:"text", // Data type, HTML, json etc.
+		data:{task_id:id},
+		
+		success:function(response){
+			populate_tbc();
+			},
+			error:function (xhr, ajaxOptions, thrownError){
+				alert(thrownError);
+			}
+	});
+}

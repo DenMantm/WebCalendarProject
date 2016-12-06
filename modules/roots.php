@@ -373,6 +373,12 @@ $f3->route('POST /change_completion_by',
     }
 );
 
+$f3->route('POST /complete_task',
+    function() {
+        require("complete_task.php"); 
+    }
+);
+
 $f3->route('POST /inviteOK',
     function() {
         require("inviteOK.php"); 

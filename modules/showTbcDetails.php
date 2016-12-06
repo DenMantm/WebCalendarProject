@@ -47,14 +47,14 @@
                         		u.surname,
                         		c.completed,
                         		t.teamName
-                        FROM    Task_completion c,
-                        		Participants_t p,
-                                Teams t,
-                                Users u
-                        where 	p.taskID = '" . $taskID . "'
-                        		and p.participantID = t.teamID
-                                and t.userUID = u.uID
-                                and t.confirm = 1;";
+                        FROM    Task_completion c
+								left join Participants_t p
+                                on c.task_uid = p.taskID
+                                left join Teams t
+                                on t.teamID = p.participantID
+                                left join Users u
+                                on u.uID = c.user_uid
+                        where 	p.taskID = '" . $taskID . "'";
                         
             $users = $db->prepare($query2);
             $users->execute();
@@ -158,7 +158,7 @@
                                         </span>
                                         </label>
                                     <div class="col-sm-9" >
-                                        <button type="button" onclick="complet_task(\'' . $taskID . '\'); return false;" class="btn btn-success span-left">Complete</button>
+                                        <button type="button" onclick="complete_task(\'' . $taskID . '\'); return false;" class="btn btn-success span-left">Complete</button>
                                     </div>
                                     </div>
                                     

@@ -132,3 +132,16 @@
                         and ta.end' at line 10
 [06-Dec-2016 13:26:42 UTC] HTTP 404 (GET /tbc_details/t_5845780bc57c0)
 [06-Dec-2016 13:26:44 UTC] HTTP 404 (GET /tbc_details/t_5845780bc57c0)
+[06-Dec-2016 15:25:52 UTC] Fatal error: syntax error, unexpected '$query3' (T_VARIABLE)
+[06-Dec-2016 15:28:39 UTC] Fatal error: syntax error, unexpected '$query3' (T_VARIABLE)
+[06-Dec-2016 15:28:53 UTC] Fatal error: syntax error, unexpected '$query3' (T_VARIABLE)
+[06-Dec-2016 15:29:03 UTC] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'calendar2.Task' doesn't exist
+[06-Dec-2016 15:30:00 UTC] Fatal error: syntax error, unexpected '}'
+[06-Dec-2016 15:30:54 UTC] Fatal error: syntax error, unexpected '}'
+[06-Dec-2016 15:31:07 UTC] Fatal error: syntax error, unexpected '}'
+[06-Dec-2016 15:31:14 UTC] Fatal error: syntax error, unexpected '}'
+[06-Dec-2016 15:31:21 UTC] Fatal error: syntax error, unexpected '}'
+[06-Dec-2016 15:32:46 UTC] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'calendar2.Task' doesn't exist
+[06-Dec-2016 16:28:08 UTC] Fatal error: syntax error, unexpected '$getrows' (T_VARIABLE)
+[06-Dec-2016 16:29:42 UTC] Fatal error: syntax error, unexpected '='
+[06-Dec-2016 16:30:39 UTC] Fatal error: syntax error, unexpected '='

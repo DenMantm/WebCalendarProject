@@ -19,8 +19,6 @@
           
           
           $result = $db->prepare($query);  
-            
-        
               
           $result->execute();
           $result->bindColumn(1,$taskID);
@@ -64,10 +62,8 @@
                 }
                 else  
                 {  
-                  $teams .= '<div> You are are not member of any team yet. Create your own or ask to be invited to exsisting one </div>';
+                  $teams .= '<div> You do not have any team tasks to br completed. Lucky you!!!</div>';
                 }  
                     
               echo $text;  
-
-           
- ?>
+?>
