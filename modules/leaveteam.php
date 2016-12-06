@@ -33,22 +33,23 @@ if(isset($_SESSION['currentTeam']))
         $insert_row->bindParam(':var2', $teamid, PDO::PARAM_STR );
         $insert_row->execute();
        
-    //   $query = "select t.id
-    //             from Task_completion t
-    //             left join Participants_t p
-    //             on p.taskID = t.task_uid
-    //             where participantID = '".$teamid."'
-    //             and t.user_uid = '".$me."';";
-    //     $getrows = $db->prepare($query);
-    //     $getrows->execute();
-    //     $getrows->bindColumn(1,$id);
+       $query = "select t.id
+                from Task_completion t
+                left join Participants_t p
+                on p.taskID = t.task_uid
+                where participantID = '".$teamid."'
+                and t.user_uid = '".$me."';";
+        $getrows = $db->prepare($query);
+        $getrows->execute();
+        $getrows->bindColumn(1,$id);
         
-    //     while ($getrows ->fetch(PDO::FETCH_BOUND)) {
-    //         $query2 = "delete from Task_completion 
-    //                     where id = '" . $id . "';";
-    //         $remove =  = $db->prepare($query2);
-    //         $remove->execute();
-     //   }
+        while ($getrows ->fetch(PDO::FETCH_BOUND)) {
+            $query2 = "delete from Task_completion 
+                        where id = '" . $id . "';";
+            $remove = $db->prepare($query2);
+            $remove->execute();
+        echo($query);
+        }
     }
     
 }

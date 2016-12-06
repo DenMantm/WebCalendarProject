@@ -164,3 +164,16 @@
 [06-Dec-2016 17:09:13 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
 [06-Dec-2016 17:09:13 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
 [06-Dec-2016 17:09:13 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[06-Dec-2016 17:10:56 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[06-Dec-2016 17:10:56 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[06-Dec-2016 17:10:57 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[06-Dec-2016 17:12:05 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[06-Dec-2016 17:12:05 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[06-Dec-2016 17:12:05 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[06-Dec-2016 17:15:04 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[06-Dec-2016 17:15:04 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[06-Dec-2016 17:15:04 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[06-Dec-2016 17:15:21 UTC] Fatal error: syntax error, unexpected '='
+[06-Dec-2016 17:15:45 UTC] Fatal error: syntax error, unexpected '='
+[06-Dec-2016 17:18:50 UTC] Fatal error: syntax error, unexpected '='
+[06-Dec-2016 17:19:15 UTC] Fatal error: syntax error, unexpected '='

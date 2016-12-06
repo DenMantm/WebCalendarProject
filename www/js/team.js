@@ -96,6 +96,7 @@ function leave(id) {
 			if(response == "NO") {
 				alert("You are the last editor. Please promote another user to the editor role before leaving.")
 			} else {
+				alert(response)
 				window.open("/team","_self")
 			}
             	
