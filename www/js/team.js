@@ -139,8 +139,8 @@ function invite(id) {
         type: "POST",
         url: link,             
         dataType: "HTML",   //expect html to be returned                
-        success: function(){   
-		
+        success: function(response){  
+        	$("#i_email").html(response);
         }
 	});
 }

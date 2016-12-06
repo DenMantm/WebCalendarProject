@@ -113,3 +113,7 @@
 [06-Dec-2016 01:46:36 UTC] HTTP 404 (GET /removeuser/583afe57d446a/)
 [06-Dec-2016 01:46:39 UTC] HTTP 404 (GET /removeuser/583afe57d446a/)
 [06-Dec-2016 01:48:10 UTC] HTTP 404 (GET /removeuser/583afe57d446a/)
+[06-Dec-2016 07:28:04 UTC] HTTP 404 (GET /favicon.ico)
+[06-Dec-2016 07:28:06 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[06-Dec-2016 07:28:06 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[06-Dec-2016 07:28:07 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)

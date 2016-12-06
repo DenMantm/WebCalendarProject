@@ -207,7 +207,7 @@ $f3->route('POST /invite/@id',
     function($f3,$params) {
         isUserLogged();
         $f3->set('SESSION.currentTeam',$params['id']); 
-        echo('');
+        echo View::instance()->render('../modules/getInvEmails.php');
     }
 );
 
