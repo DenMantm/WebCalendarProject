@@ -177,3 +177,33 @@
 [06-Dec-2016 17:15:45 UTC] Fatal error: syntax error, unexpected '='
 [06-Dec-2016 17:18:50 UTC] Fatal error: syntax error, unexpected '='
 [06-Dec-2016 17:19:15 UTC] Fatal error: syntax error, unexpected '='
+[06-Dec-2016 17:22:05 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[06-Dec-2016 17:22:06 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[06-Dec-2016 17:22:06 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[06-Dec-2016 17:22:33 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[06-Dec-2016 17:22:33 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[06-Dec-2016 17:22:33 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[06-Dec-2016 19:31:45 UTC] HTTP 404 (GET /favicon.ico)
+[06-Dec-2016 20:16:53 UTC] HTTP 404 (POST /check_if_completed)
+[06-Dec-2016 20:16:59 UTC] HTTP 404 (POST /check_if_completed)
+[06-Dec-2016 20:17:02 UTC] HTTP 404 (POST /check_if_completed)
+[06-Dec-2016 20:21:49 UTC] HTTP 404 (POST /check_if_completed)
+[06-Dec-2016 20:21:52 UTC] HTTP 404 (POST /check_if_completed)
+[06-Dec-2016 20:26:39 UTC] HTTP 404 (POST /check_if_completed)
+[06-Dec-2016 20:26:45 UTC] HTTP 404 (POST /check_if_completed)
+[06-Dec-2016 20:27:22 UTC] HTTP 404 (POST /check_if_completed)
+[06-Dec-2016 20:27:25 UTC] HTTP 404 (POST /check_if_completed)
+[06-Dec-2016 20:27:28 UTC] HTTP 404 (POST /check_if_completed)
+[06-Dec-2016 20:28:02 UTC] HTTP 404 (POST /check_if_completed)
+[06-Dec-2016 20:28:21 UTC] HTTP 404 (POST /check_if_completed)
+[06-Dec-2016 20:28:22 UTC] HTTP 404 (POST /check_if_completed)
+[06-Dec-2016 20:28:23 UTC] HTTP 404 (POST /check_if_completed)
+[06-Dec-2016 20:29:02 UTC] HTTP 404 (POST /check_if_completed)
+[06-Dec-2016 20:29:04 UTC] HTTP 404 (POST /check_if_completed)
+[06-Dec-2016 20:29:05 UTC] HTTP 404 (POST /check_if_completed)
+[06-Dec-2016 20:29:29 UTC] HTTP 404 (POST /check_if_completed)
+[06-Dec-2016 20:29:30 UTC] HTTP 404 (POST /check_if_completed)
+[06-Dec-2016 20:29:50 UTC] HTTP 404 (POST /check_if_completed)
+[06-Dec-2016 20:30:52 UTC] HTTP 404 (POST /check_if_completed)
+[06-Dec-2016 20:32:12 UTC] Fatal error: syntax error, unexpected '}', expecting ',' or ';'
+[06-Dec-2016 20:32:15 UTC] Fatal error: syntax error, unexpected '}', expecting ',' or ';'

@@ -31,9 +31,7 @@ while ($pullTeamName -> fetch(PDO::FETCH_BOUND)){
         } catch(PDOException $e) {
             echo "Error: " . $e->getMessage();
         }    
-        
-        
-        
+    
     }
 }
 echo('<div>Invite to team</div>

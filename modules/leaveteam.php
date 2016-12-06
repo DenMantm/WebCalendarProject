@@ -48,7 +48,7 @@ if(isset($_SESSION['currentTeam']))
                         where id = '" . $id . "';";
             $remove = $db->prepare($query2);
             $remove->execute();
-        echo($query);
+        
         }
     }
     

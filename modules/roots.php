@@ -379,6 +379,12 @@ $f3->route('POST /complete_task',
     }
 );
 
+$f3->route('POST /check_if_completed',
+    function() {
+        require("check_if_completed.php"); 
+    }
+);
+
 $f3->route('POST /inviteOK',
     function() {
         require("inviteOK.php"); 

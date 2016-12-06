@@ -42,33 +42,36 @@
                     $days = date_diff($date_today, $date_to);
                     
                     if ($days->format('%a') == '0') {
-                        $due_status = 'Due: Today';
+                        $due_status = '<div class="text-info">Due: Today</div>';
                     } elseif ($days->format('%R%a') == '+1') {
-                        $due_status = 'Due: Tomorrow';
+                        $due_status = '<div class="text-info">Due: Tomorrow</div>';
                     } elseif ($days->format('%R') == '+') {
-                        $due_status = $days->format('Due: %a days');
+                        $due_status = '<div class="text-success">' . $days->format('Due: %a days') . '</div>';
                     } elseif ($days->format('%R') == '-') {
-                        $due_status = $days->format('Expired %a days ago');
+                        $due_status = '<div class="text-danger">' . $days->format('Expired %a days ago') . '</div>';
                     };
-                  
+                    if($taksCompleted = 1) {
                     $text .= '
-     
-                      <div class="panel panel-default" >
-                          <div class="panel-heading" onclick="details(\'' . $taskID . '\'); return false;">
+                        
+                        <div class="panel panel-default" >
                             
-                                <span>' . $taskName . '</span>
-                                <span class="span-right">' . $due_status . '</span>
-                          
-                          </div>
-                          <div class="details" id="details' . $taskID . '">
-                          </div>
+                            <div class="panel-heading" onclick="details(\'' . $taskID . '\'); return false;">
+                            <div class="row">
+                                <span class="col-sm-9">' . $taskName . '</span>
+                                <span class="col-sm-3 span-right">' . $due_status . '<div>Completed</div></span>
+                            </div>
+                            </div>
+                            <div class="details" id="details' . $taskID . '">
+                            </div>
                         </div>';
-                      
+                    } else {
+                        
+                    }
                   } 
                 }
                 else  
                 {  
-                  $teams .= '<div> You are are not member of any team yet. Create your own or ask to be invited to exsisting one </div>';
+                  $teams .= '<div>You did not issue any tasks yet. you can do it from the calendar screen.</div>';
                 }  
                     
               echo $text;  

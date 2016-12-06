@@ -202,6 +202,7 @@ function completionToSingle(id) {
 			},
 		
 		success:function(response){
+			checkIfCompleted(id);
 			details(id);
 			$.Notify({
                 caption: 'Changed',
@@ -226,6 +227,7 @@ function completionToAll(id) {
 			},
 		
 		success:function(response){
+			
 			details(id);
 			$.Notify({
                 caption: 'Changed',
@@ -233,9 +235,10 @@ function completionToAll(id) {
                 type: 'success',
                 timeout: 7000
             });
+            checkIfCompleted(id);
 			},
 			error:function (xhr, ajaxOptions, thrownError){
-				alert(thrownError);
+				//alert(thrownError);
 			}
 			});
 }
@@ -248,7 +251,23 @@ function complete_task(id){
 		data:{task_id:id},
 		
 		success:function(response){
-			populate_tbc();
+			checkIfCompleted(id);
+			},
+			error:function (xhr, ajaxOptions, thrownError){
+				alert(thrownError);
+			}
+	});
+}
+
+function checkIfCompleted(id) {
+	jQuery.ajax({
+		type: "POST", // HTTP method POST or GET
+		url: "check_if_completed", //Where to make Ajax calls
+		dataType:"text", // Data type, HTML, json etc.
+		data:{task_id:id},
+		
+		success:function(response){
+
 			},
 			error:function (xhr, ajaxOptions, thrownError){
 				alert(thrownError);
