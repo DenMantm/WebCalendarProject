@@ -9,3 +9,4 @@ $("#videoDiv").click(function() {
         scrollTop: $("#nasaVid").offset().top},
         'slow');
 });
+

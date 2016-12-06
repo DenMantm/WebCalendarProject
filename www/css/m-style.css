@@ -9,6 +9,12 @@ body{
 	color:#6c6f73;
 }
 
+.modal{
+	
+	width: 50%;
+	height: 50%;
+}
+
 h1,h2,h4,h5{
 	color:#333;
 	text-shadow: 4px 4px 6px rgba(150, 150, 150, 1);
@@ -121,10 +127,10 @@ h6{
 
 /* http://bootsnipp.com/snippets/featured/link-to-top-page */
 .back-to-top {
-    cursor: pointer;
+    cursor: wait;
     position: fixed;
-    bottom: 15px;
-    right: 15px;
+    bottom: 25px;
+    right: 25px;
     display:none;
 }
 
@@ -153,3 +159,8 @@ h6{
 /*#tPop:hover #popText {*/
 /*  display: block;*/
 /*}*/
+
+.p-fade{
+	opacity: 1;
+}
+

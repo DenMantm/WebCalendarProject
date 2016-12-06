@@ -1,11 +1,7 @@
-// $(document).ready(function(){
-//     ('').onload(function(){
-//         ('p', 'h1').show(700);
-//     })
-// });
 
+// fade text on load
 $(document).ready(function(){
     // fade in text
-    $(".m-fade").hide(0).delay(50).fadeIn(2200);
+    $(".m-fade").hide(10).delay(500).fadeIn(5000);
 });
 

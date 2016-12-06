@@ -19,7 +19,7 @@
 
 	<title></title>
 </head>
-<body>
+<body id="mainScroll">
 
 	<!-- Static navbar -->
       <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -39,7 +39,7 @@
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li class="nav-item active"><a class="nav-link" href="index.html">Home<span></span></a></li>
+              <li class="nav-item active"><a href="#" id="homeDiv">Home<span></span></a></li>
               <li type="nav-item"><a href="#" id="videoDiv">Demo</a></li>
               <li type="nav-item"><a href="#" id="featThree">Features</a></li>
               <li type="nav-item" class="nav-item"><a  data-toggle="modal"  href="#signup_modal"><span></span>Sign Up</a></li>
@@ -52,7 +52,7 @@
       <br/>
     <div id="stage">
       <div id="stage-caption">
-        <h1 class="display-3 main-header m-fade">It's your Team Planner App</h1>
+        <h1 class="display-3 main-header" id="autoText">It's your Team Planner App</h1>
         <p class="m-fade">Make it work for YOU!</p>
         <a href="#signup_modal" class="btn btn-lg btn-success m-fade" id="regNow" data-toggle="modal" >
           Register now!
@@ -72,8 +72,8 @@
             </div>
             <div class="col-lg-5">
               <h6>Check it out!</h6>
-              <h2>Watch this video...</h2>
-              <p>...and be amazed as Nasa's astronauts schedule their EVA with our Team Planner Application in SPACE!!!</p>
+              <h2 class="p-fade">Watch this video...</h2>
+              <p class="p-fade">...and be amazed as Nasa's astronauts schedule their EVA with our Team Planner Application in SPACE!!!</p>
             </div>
             <!-- one column of space between the left and right column of divs -->
             <div class="col-lg-offset-1">
@@ -94,14 +94,13 @@
           <div class="feature-content">
             <div class="col-lg-5 feature-caption">
               <h6>Simple, functional features</h6>
-              <p>Team Planner is a functional, fresh and free to use application aimed at small teams and SME's 
+              <p class="p-fade">Team Planner is a functional, fresh and free to use application aimed at small teams and SME's 
                 who need a solution to organise their tasks and communicate to their teammates. New users have the ability to create
                 a new team and add/remove members, assign them tasks and send out communications to them.</p>
             </div>
             <!-- for responsive when scaled, "hidden-sm-down" div will hide on small screens and below -->
             <div class="col-lg-6 text-sm-center hidden-sm-down">
-            <!-- http://sweetclipart.com/multisite/sweetclipart/files/desktop_computer_line_art.png -->
-              <img class="img-responsive" src="img/cal1.png" width="300" align="right"/>
+              <img class="img-responsive p-fade" src="img/cal1.png" width="300" align="right"/>
             </div>
             <div class="col-lg-offset-1" id="off-one">
             </div>
@@ -117,11 +116,11 @@
         <div class ="row">
           <div class="feature-content">
             <div class="col-lg-6">
-              <img src="img/calendar.png" class="img-responsive center-block">
+              <img src="img/calendar.png" class="img-responsive center-block p-fade">
             </div>
             <div class="col-lg-6">
-              <h6>Plan your tasks and schedule a meeting</h6>
-              <p class = "lead">Never miss a meeting again, plan your next presidential assassination and be confident with the fact that your team will be prepared for the outcome</p>
+              <h6 class="p-fade">Plan your tasks and schedule a meeting</h6>
+              <p class = "lead p-fade">Never miss a meeting again, plan your next presidential assassination and be confident with the fact that your team will be prepared for the outcome</p>
             </div>
           </div>
         </div>
@@ -139,8 +138,9 @@
                 </ul>
       </div>
     </nav>
-    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
-
+    <section>
+      <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+    </section>
     <div class="footer">
       <div class="row">
          Group E NCI &copy; 2016
@@ -406,7 +406,8 @@
 <script src="../www/js/featureScroll.js"></script>
 <script src="../www/js/show.js"></script>
 <script src="../www/js/bounceyReg.js"></script>
-
+<script src="../www/js/autoWriterDenissStrods.js"></script>
+<script src="../www/js/fadeOnScroll.js"></script>
 </body>
 
 	
