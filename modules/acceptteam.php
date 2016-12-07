@@ -4,14 +4,14 @@ include_once("../modules/db.php");
 
 if(isset($_SESSION['currentTeam'])) 
 {	
-	$contentToUpdate = filter_var($_SESSION["currentTeam"],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH); 
+	$team = filter_var($_SESSION["currentTeam"],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH); 
 
 	$insert_row = $db->prepare("UPDATE Teams SET confirm=1 WHERE userUID = :var1 and teamID = :var2;");
     
     try{
         $uid = uniqid();
         $insert_row->bindParam(':var1', $_SESSION['user']['uID'], PDO::PARAM_STR );
-        $insert_row->bindParam(':var2', $contentToUpdate, PDO::PARAM_STR );
+        $insert_row->bindParam(':var2', $team, PDO::PARAM_STR );
         $insert_row->execute();
     }
      
@@ -23,7 +23,7 @@ if(isset($_SESSION['currentTeam']))
 	
     $query = "select taskID
                     from Participants_t
-                    where participantID = '". $contentToUpdate ."';";
+                    where participantID = '". $team ."';";
                     
         $getteams = $db->prepare($query);
         $getteams->execute();
@@ -35,6 +35,9 @@ if(isset($_SESSION['currentTeam']))
             $insertCompletions->bindParam(':var1', $task, PDO::PARAM_STR );
             $insertCompletions->bindParam(':var2', $_SESSION['user']['uID'] , PDO::PARAM_STR );
             $insertCompletions->execute();
+            
+            $_POST["task_id"] = $task;
+ 	        include('../modules/check_if_completed.php');
         }
 
         echo('<script type="text/javascript">location.href = "/team";</script>');

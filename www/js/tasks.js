@@ -13,6 +13,21 @@ $(document).ready(function() {
 
 });
 	
+function populate_ibm(id){
+	jQuery.ajax({
+		type: "GET", // HTTP method POST or GET
+		url: "show_ibm", //Where to make Ajax calls
+		dataType:"text", // Data type, HTML, json etc.
+		
+		success:function(response){
+			$("#issued_by_me").html(response); 
+			details(id);
+			},
+			error:function (xhr, ajaxOptions, thrownError){
+				alert(thrownError);
+			}
+			});
+}
 function populate_tbc(){
 	jQuery.ajax({
 		type: "GET", // HTTP method POST or GET
@@ -153,13 +168,14 @@ function changename(id) {
 			},
 		
 		success:function(response){
-			details(id);
+			populate_ibm(id)
 			$.Notify({
                 caption: 'Changed',
                 content: 'Task name has been upated successfully.',
                 type: 'success',
                 timeout: 7000
             });
+            details(id);
 			},
 			error:function (xhr, ajaxOptions, thrownError){
 				alert(thrownError);
@@ -203,7 +219,7 @@ function completionToSingle(id) {
 		
 		success:function(response){
 			checkIfCompleted(id);
-			details(id);
+			populate_ibm(id)
 			$.Notify({
                 caption: 'Changed',
                 content: 'Task completion rules has been changed to single user.',
@@ -252,6 +268,7 @@ function complete_task(id){
 		
 		success:function(response){
 			checkIfCompleted(id);
+			populate_tbc();
 			},
 			error:function (xhr, ajaxOptions, thrownError){
 				alert(thrownError);
