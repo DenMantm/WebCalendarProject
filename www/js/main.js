@@ -288,10 +288,6 @@ $("#btnSaveNewMeeting").click(function (e) {
 // });
   
 // }
-
-
-
-
 	});
 	
 	function retrieveFromDatabase(teamId){
@@ -371,8 +367,24 @@ function getTeamList(){
            
            retrieveFromDatabase(0);
            
+           
+           
+           
+           //limiting user controls if personal task is selected::
+           $('#user_drag_menu').html(
+           	"<div class='fc-event' style='background-color:orange'> Personal meeting</div></span> <div class='fc-event' style='background-color:green'> Personal task</div>"
+           	)
+           
+           
+           
        }
        else{
+       	$('#user_drag_menu').html(
+       		"<div class='fc-event'> Team meeting</div> <div class='fc-event' style='background-color:purple'> Team task</div>"
+       		)
+       	
+       	
+       	
            retrieveFromDatabase(selectedTeam);
            
        }

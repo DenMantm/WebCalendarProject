@@ -326,12 +326,15 @@
                                         
                                     </span>
                                     
-                                    <div class='fc-event' style="background-color:orange"> Personal meeting</div></span>
-                                    <div class='fc-event' style="background-color:green"> Personal task</div>
-                                    <div class='fc-event'> Team meeting</div>
-                                    <div class='fc-event' style="background-color:purple"> Team task</div>
-                                  
+                                    <div id='user_drag_menu'>
                                     
+                                    <div class='fc-event' style='background-color:orange'> Personal meeting</div></span>
+                                    <div class='fc-event' style='background-color:green'> Personal task</div>
+                                    
+                                    <!--<div class='fc-event'> Team meeting</div>-->
+                                    <!--<div class='fc-event' style='background-color:purple'> Team task</div>-->
+                                  
+                                    </div>
                                     
                                 </div>
                             </div>
