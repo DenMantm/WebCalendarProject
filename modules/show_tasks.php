@@ -50,11 +50,9 @@
                     } elseif ($days->format('%R') == '-') {
                         $due_status = '<div class="text-danger">' . $days->format('Expired %a days ago') . '</div>';
                     };
-                    if($taksCompleted = 1) {
+                    if($taksCompleted == 1) {
                     $text .= '
-                        
                         <div class="panel panel-default" >
-                            
                             <div class="panel-heading" onclick="details(\'' . $taskID . '\'); return false;">
                             <div class="row">
                                 <span class="col-sm-9">' . $taskName . '</span>
@@ -65,7 +63,17 @@
                             </div>
                         </div>';
                     } else {
-                        
+                        $text .= '
+                        <div class="panel panel-default" >
+                            <div class="panel-heading" onclick="details(\'' . $taskID . '\'); return false;">
+                            <div class="row">
+                                <span class="col-sm-9">' . $taskName . '</span>
+                                <span class="col-sm-3 span-right">' . $due_status . '<div>Not completed</div></span>
+                            </div>
+                            </div>
+                            <div class="details" id="details' . $taskID . '">
+                            </div>
+                        </div>';
                     }
                   } 
                 }

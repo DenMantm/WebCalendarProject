@@ -134,6 +134,13 @@ $f3->route('GET /show_tbc',
     }
 );
 
+$f3->route('GET /show_ibm',
+    function($f3) {
+        isUserLogged();
+        echo View::instance()->render('../modules/show_tasks.php');
+    }
+);
+
 $f3->route('GET /showusers/@id',
     function($f3,$params) {
         isUserLogged();
@@ -364,6 +371,12 @@ $f3->route('POST /change_task_name',
 $f3->route('POST /change_task_details',
     function() {
         require("change_task_details.php"); 
+    }
+);
+
+$f3->route('POST /check_team_tasks',
+    function() {
+        require("check_team_tasks.php"); 
     }
 );
 

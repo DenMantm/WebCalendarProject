@@ -96,6 +96,15 @@ function leave(id) {
 			if(response == "NO") {
 				alert("You are the last editor. Please promote another user to the editor role before leaving.")
 			} else {
+				jQuery.ajax({
+					type: "POST", // HTTP method POST or GET
+					url: "check_team_tasks", //Where to make Ajax calls
+					dataType:"text", // Data type, HTML, json etc.
+					data:{task_id:id},
+					error:function (xhr, ajaxOptions, thrownError){
+					alert(thrownError);
+					}
+				});
 				window.open("/team","_self")
 			}
             	
@@ -177,6 +186,15 @@ function remove(user , team) {
         url: link,             
         dataType: "html",   //expect html to be returned                
         success: function(response){  
+        	jQuery.ajax({
+					type: "POST", // HTTP method POST or GET
+					url: "check_team_tasks", //Where to make Ajax calls
+					dataType:"text", // Data type, HTML, json etc.
+					data:{team_id:team},
+					error:function (xhr, ajaxOptions, thrownError){
+					alert(thrownError);
+					}
+			});
         	$("#landing3").html(response); 
             showDialog("#dialog7");
         	edit(team);
@@ -210,20 +228,4 @@ function changerole(user , team, role) {
 			}
 	});
 	
-}
-
-function checkIfCompleted(id) {
-	jQuery.ajax({
-		type: "POST", // HTTP method POST or GET
-		url: "check_if_completed", //Where to make Ajax calls
-		dataType:"text", // Data type, HTML, json etc.
-		data:{task_id:id},
-		
-		success:function(response){
-		
-			},
-			error:function (xhr, ajaxOptions, thrownError){
-				alert(thrownError);
-			}
-	});
 }
