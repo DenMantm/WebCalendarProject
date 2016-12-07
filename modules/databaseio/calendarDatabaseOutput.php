@@ -68,7 +68,7 @@ class DatabaseOutput{
        
        // echo  $uID;
         
-        $calendar= new DB\SQL\Mapper($db,'Participants');
+        $calendar = new DB\SQL\Mapper($db,'Participants');
         
         $meetings_ids=$calendar->find(array('participantID=?',$uID));
             
@@ -92,7 +92,8 @@ class DatabaseOutput{
                       'description'=> $meet->description,
                       'start'  => $meet->start,
                       'end'  => $meet->end,
-                      'color'  => $meet->color,
+                      'color' => 'orange',
+                      //'color'  => $meet->color,
                       'id'  => $meet->meetingID);
                  
             array_push($front_meetingsList,$front_meet);
@@ -102,6 +103,48 @@ class DatabaseOutput{
               
             
             }
+            
+            
+            //INCLUDING PERSONAL TASKS HERE
+            
+            
+            
+             $calendar = new DB\SQL\Mapper($db,'Participants_t');
+        
+        $meetings_ids=$calendar->find(array('participantID=?',$uID));
+            
+            
+            //filling this one and returning to front end
+            
+            foreach($meetings_ids as $meeting){
+                
+                $sub_calendar = new DB\SQL\Mapper($db,'Tasks');
+                
+                $meetings=$sub_calendar->find(array('task_uid=?',$meeting->taskID));
+                
+                
+          
+        
+            foreach($meetings as $meet){
+           
+            
+            $front_meet = array('title'=> $meet->name,
+                      'description'=> $meet->completed,
+                      'start'  => $meet->end,
+                      'end'  => $meet->end,
+                      'color'  => 'green',
+                      'allday' => true,
+                     // 'color'  => $meet->color,
+                      'id'  => $meet->task_uid);
+                 
+            array_push($front_meetingsList,$front_meet);
+            
+            }
+                
+              
+            
+            }
+            
         
               echo json_encode($front_meetingsList);
         
@@ -144,7 +187,8 @@ class DatabaseOutput{
                       'description'=> $meet->description,
                       'start'  => $meet->start,
                       'end'  => $meet->end,
-                      'color'  => $meet->color,
+                     // 'color'  => 'green',
+                      //'color'  => $meet->color,
                       'id'  => $meet->meetingID);
                  
             array_push($front_meetingsList,$front_meet);
@@ -154,6 +198,44 @@ class DatabaseOutput{
               
             
             }
+            
+            
+            
+            
+            // INCLUDING LOGIC TO PULL OUT TASKS -->
+            
+            $calendar= new DB\SQL\Mapper($db,'Participants_t');
+        
+            $meetings_ids=$calendar->find(array('participantID=?',$forTeam));
+            
+            
+            //filling this one and returning to front end
+            
+            foreach($meetings_ids as $meeting){
+                
+                $sub_calendar = new DB\SQL\Mapper($db,'Tasks');
+                
+                $meetings=$sub_calendar->find(array('task_uid=?',$meeting->taskID));
+                
+        
+            foreach($meetings as $meet){
+           
+            
+            $front_meet = array('title'=> $meet->name,
+                      'description'=> $meet->completed,
+                      'start'  => $meet->end,
+                      'end'  => $meet->end,
+                      'color'  => 'purple',
+                      'allday' => true,
+                     // 'color'  => $meet->color,
+                      'id'  => $meet->task_uid);
+                 
+            array_push($front_meetingsList,$front_meet);
+            
+            }
+  
+            }
+
         
               echo json_encode($front_meetingsList);
         
