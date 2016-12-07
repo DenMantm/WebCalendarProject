@@ -34,13 +34,13 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Asseign Tasks To Your Teams</h1>
+            <h1>Manage your Meetings </h1>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
             <div class="pull-right">
-                <button class="btn btn-success" data-toggle="modal" data-target="#add_new_record_modal">Add New Task</button>
+                <button class="btn btn-success" data-toggle="modal" data-target="#add_new_record_modal">Add New Meeting</button>
             </div>
         </div>
     </div>
@@ -61,16 +61,28 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-description" id="myModalLabel">Add New Task</h4>
+                <h4 class="modal-description" id="myModalLabel">Add New Meeting</h4>
             </div>
             <div class="modal-body">
  
                
  
                 <div class="form-group">
-                    <label for="Completed">Completed</label>
-                    <input type="text" id="Completed" placeholder="Completed" class="form-control"/>
+                    <label for="subject">subject</label>
+                    <input type="text" id="subject" placeholder="subject" class="form-control"/>
                 </div>
+                
+                <div class="form-group">
+                    <label for="start">start</label>
+                    <input type="text" id="start" placeholder="start" class="form-control"/>
+                </div>
+                
+                <div class="form-group">
+                    <label for="end">end</label>
+                    <input type="text" id="end" placeholder="end" class="form-control"/>
+                </div>
+ 
+ 
  
                 <div class="form-group">
                     <label for="description">Description</label>
@@ -99,9 +111,19 @@
  
  
                 <div class="form-group">
-                    <label for="update_Completed">Completed</label>
-                    <input type="text" id="update_Completed" placeholder="Completed" class="form-control"/>
+                    <label for="update_subject">subject</label>
+                    <input type="text" id="update_subject" placeholder="subject" class="form-control"/>
                 </div>
+                  <div class="form-group">
+                    <label for="update_start">start</label>
+                    <input type="text" id="update_start" placeholder="start" class="form-control"/>
+                </div>
+                  <div class="form-group">
+                    <label for="update_end">end</label>
+                    <input type="text" id="update_end" placeholder="end" class="form-control"/>
+                </div>
+ 
+ 
  
                 <div class="form-group">
                     <label for="update_description">Description</label>

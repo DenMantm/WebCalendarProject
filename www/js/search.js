@@ -3,15 +3,26 @@
 // Add Record
 function addRecord() {
     // get values
-   
-    var Completed = $("#Completed").val();
-    Completed = Completed.trim();
-    var description = $("#description").val();
+    $.datepicker.setDefaults({  
+                dateFormat: 'yy-mm-dd'   
+           });  
+           $(function(){  
+                $("#start").datepicker();  
+                $("#end").datepicker();  
+           });  
+    var subject = $("#subject").val();
+    subject = subject.trim();
+    
+    
+     var start = $("#start").val();
+     
+     var end = $("#end").val();
+     var description = $("#description").val();
     description = description.trim();
  
    
-     if (Completed == "") {
-        alert("Completed field is required!");
+     if (subject == "") {
+        alert("subject field is required!");
     }
     else if (description == "") {
         alert("description field is required!");
@@ -20,7 +31,9 @@ function addRecord() {
         // Add record
         $.post("createarezki", {
    
-            Completed: Completed,
+            subject: subject,
+            start:start,
+            end:end,
             description: description
         }, function (data, status) {
             // close the popup
@@ -32,7 +45,9 @@ function addRecord() {
  
             // clear fields from the popup
            
-            $("#Completed").val("");
+            $("#subject").val("");
+            $("#start").val("");
+            $("#end").val("");
             $("#description").val("");
         });
     }
@@ -57,7 +72,9 @@ function GetUserDetails(id) {
             var user = JSON.parse(data);
             // Assign existing values to the modal popup fields
           
-            $("#update_Completed").val(user.Completed);
+            $("#update_subject").val(user.subject);
+             $("#update_start").val(user.start);
+              $("#update_end").val(user.end);
             $("#update_description").val(user.description);
             
         }
@@ -70,14 +87,24 @@ function GetUserDetails(id) {
 function UpdateUserDetails() {
     // get values
    
-    var Completed = $("#update_Completed").val();
-    Completed = Completed.trim();
+    var subject = $("#update_subject").val();
+    subject = subject.trim();
+     $.datepicker.setDefaults({  
+                dateFormat: 'yy-mm-dd'   
+           });  
+           $(function(){  
+                $("#update_start").datepicker();  
+                $("#update_end").datepicker();  
+           });  
+     var start = $("#update_start").val();
+     var end = $("#update_end").val();
+  
     var description = $("#update_description").val();
     description = description.trim();
  
    
-    if (Completed == "") {
-        alert("Completed field is required!");
+    if (subject == "") {
+        alert("subject field is required!");
     }
     else if (description == "") {
         alert("description field is required!");
@@ -90,7 +117,9 @@ function UpdateUserDetails() {
         $.post("updatearezki", {
                 id: id,
               
-                Completed: Completed,
+                subject: subject,
+                 start: start,
+                 end:end,
                 description: description
                 
             },

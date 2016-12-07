@@ -9,8 +9,10 @@ $data = '<table class="table table-bordered table-striped">
                         <tr>
                             <th>No.</th>
                          
-                            <th>Completed</th>
-                            <th>description</th>
+                            <th>Subject</th>
+                            <th>Start</th>
+                            <th>End</th>
+                            <th>Description</th>
                             <th>Update</th>
                             <th>Delete</th>
                         </tr>';
@@ -24,9 +26,11 @@ if (count($users) > 0) {
         $data .= '<tr>
                 <td>' . $number . '</td>
               
-                <td>' . $user['Completed'] . '</td>
-                <td>' . $user['description'] . '</td>
-                <td>
+                 <td>' . $user['subject'] . '</td>
+                 <td>' . $user['start'] . '</td>
+                 <td>' . $user['end'] . '</td>
+                 <td>' . $user['description'] . '</td>
+                 <td>
                     <button onclick="GetUserDetails(' . $user['id'] . ')" class="btn btn-warning">Update</button>
                 </td>
                 <td>

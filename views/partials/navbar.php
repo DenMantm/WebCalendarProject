@@ -35,7 +35,7 @@
                 </li>
                 <li><a href="/settings">User Settings</a>
                 </li>
-                <li><a href="/search">Check Meetings</a>
+                <li><a href="/search">Manage Meetings</a>
                 </li>
                  <li><a href="/showtasks">Manage Tasks </a>
                 </li>

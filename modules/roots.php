@@ -102,7 +102,7 @@ $f3->route('POST /addtask',
     }
 );
 
-//root to new serach
+//root to new s
 
 $f3->route('GET /search',
     function($f3) {
