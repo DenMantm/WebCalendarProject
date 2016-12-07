@@ -65,7 +65,7 @@
     </ul>
     
     
-    <a style='float:right' class="app-bar-element" href="/main">Logout</a>
+    <a style='float:right' class="app-bar-element" href="/logout">Logout</a>
     
     <?php
     
