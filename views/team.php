@@ -211,9 +211,7 @@ include('partials/navbar.php');
                 <label class="col-sm-3" control-label>Email address:</label>
                 <div class="col-sm-9">
                   <select id="i_email" class="js-example-basic-single js-states form-control" multiple="multiple" style="width: 100%;">
-                        <?php include("../modules/getemails.php") ?>
                     </select>
-
                 </div>
               </div>
               
