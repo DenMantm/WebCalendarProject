@@ -45,7 +45,6 @@ var events = [];
 			    from:$("#tm_from").val(),
 			    to:$("#tm_to").val()
 			},
-			
 			success:function(response){
 				$("#tm_details").val(''); 
 				$("#tm_participants").val(''); 
@@ -56,7 +55,10 @@ var events = [];
 				$("#btnSaveNewTeamMeeting").show(); //show submit button
 				$("#LoadingImage").hide(); //hide loading image
 				$('#newteammeeting').modal('hide');
-				window.open("/main","_self")
+				
+				//window.open("/main","_self")
+				retrieveFromDatabase(selectedTeam);
+				
 				//alert(response);
 			},
 			error:function (xhr, ajaxOptions, thrownError){
@@ -98,7 +100,13 @@ $("#btnSaveNewTeamTask").click(function (e) {
 				$("#btnSaveNewTeamTask").show(); //show submit button
 				$("#LoadingImage").hide(); //hide loading image
 				$('#newteamtask').modal('hide');
-				window.open("/main","_self")
+				
+				
+				
+			//	window.open("/main","_self")
+				
+				retrieveFromDatabase(selectedTeam);
+				
 				//alert(response);
 			},
 			error:function (xhr, ajaxOptions, thrownError){
@@ -138,7 +146,15 @@ $("#btnSaveNewMeeting").click(function (e) {
 				$("#btnSaveNewTeam").show(); //show submit button
 				$("#LoadingImage").hide(); //hide loading image
 				$('#newmeeting').modal('hide');
-				window.open("/main","_self")
+				
+				
+				
+				//window.open("/main","_self")
+				
+				retrieveFromDatabase(selectedTeam);
+				
+				
+				
 				//alert(response);
 			},
 			error:function (xhr, ajaxOptions, thrownError){
