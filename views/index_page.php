@@ -36,7 +36,7 @@
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li class="nav-item active"><a class="nav-link" href="#" id="homeDiv">Home<span></span></a></li>
+              <li class="nav-item active"><a class="nav-link" href="#" id="homeDiv" onclick="scrollToTop.js">Home<span></span></a></li>
               <li type="nav-item"><a href="#" id="videoDiv">Demo</a></li>
               <li type="nav-item"><a href="#" id="featThree">Features</a></li>
               <li type="nav-item" class="nav-item"><a  data-toggle="modal"  href="#signup_modal"><span></span>Sign Up</a></li>
@@ -94,7 +94,7 @@
             </div>
             <!-- for responsive when scaled, "hidden-sm-down" div will hide on small screens and below -->
             <div class="col-lg-6 text-sm-center hidden-sm-down">
-              <img class="img-responsive p-fade" src="img/cal1.png" width="300" align="right">
+              <img class="img-responsive p-fade" src="img/cal1.png" width="300" align="right"/>
             </div>
             <div class="col-lg-offset-2" id="off-one">
             </div>
@@ -402,7 +402,13 @@
   <script src="js/featureScroll.js"></script>
   <!--fade in text in modal-->
   <script src="js/show.js"></script>
-  <script type="text/javascript" src="js/bounceyReg.js"></script>
+  <!--flashing registration button-->
+  <script src="js/bounceyReg.js"></script>
+  <!--fade in text when page scrolls-->
+  <script src="js/fadeOnScroll.js"></script>
+  <script src="js/autoWriterDenissStrods.js"></script>
+  
+  
   
   
   
