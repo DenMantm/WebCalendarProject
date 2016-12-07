@@ -271,3 +271,13 @@
 [07-Dec-2016 14:43:44 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
 [07-Dec-2016 14:43:44 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
 [07-Dec-2016 14:43:44 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[07-Dec-2016 19:28:31 UTC] HTTP 404 (GET /favicon.ico)
+[07-Dec-2016 19:28:32 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[07-Dec-2016 19:28:32 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[07-Dec-2016 19:28:32 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[07-Dec-2016 19:33:34 UTC] Fatal error: Call to a member function format() on a non-object
+[07-Dec-2016 19:33:41 UTC] Fatal error: Call to a member function format() on a non-object
+[07-Dec-2016 19:57:28 UTC] Fatal error: Call to a member function format() on a non-object
+[07-Dec-2016 20:43:34 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[07-Dec-2016 20:43:35 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[07-Dec-2016 20:43:35 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
