@@ -7,6 +7,6 @@ $(".m-fade").css({opacity: 0});
 // fade text on load without jumping div
 // http://jsfiddle.net/nick_craver/P9wWu/
 
-$(".m-fade").delay(200).fadeTo(1000, 1);
+$(".m-fade").delay(5000).fadeTo(2000, 1);
 
 
