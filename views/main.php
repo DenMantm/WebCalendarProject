@@ -392,6 +392,8 @@
 <?php include('partials/personal_meeting_modal.php') ?>
 <?php include('partials/team_meeting_modal.php') ?>
 <?php include('partials/team_task_modal.php') ?>
+<?php include('partials/personal.task_modal.php') ?>
+
                   
         
 
