@@ -265,3 +265,9 @@
 [07-Dec-2016 13:39:58 UTC] include(../../modules/getteams.php): failed to open stream: No such file or directory
 [07-Dec-2016 13:40:20 UTC] include(../../../modules/getteams.php): failed to open stream: No such file or directory
 [07-Dec-2016 14:00:16 UTC] include(../modules/getmails.php): failed to open stream: No such file or directory
+[07-Dec-2016 14:41:09 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[07-Dec-2016 14:41:10 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[07-Dec-2016 14:41:10 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[07-Dec-2016 14:43:44 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[07-Dec-2016 14:43:44 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[07-Dec-2016 14:43:44 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)

@@ -40,9 +40,10 @@
     
     <!-- Content Section -->
 <div class="container">
-    <div class="row">
+    <div class="row"></br>
         <div class="col-md-12">
-            <h1>Manage your Meetings </h1>
+            <h1 style="margin: auto;
+    width: 50%;">Manage your Meetings </h1>
         </div>
     </div>
     <div class="row">
@@ -54,7 +55,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <h3>Tasks:</h3>
+            <h3>List of meetings:</h3></br>
  
             <div class="records_content"></div>
         </div>
