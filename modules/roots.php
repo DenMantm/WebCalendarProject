@@ -362,6 +362,18 @@ $f3->route('POST /addteammeeting',
     }
 );
 
+$f3->route('POST /add_personal_task',
+    function() {
+        require("add_personal_task.php"); 
+    }
+);
+
+$f3->route('POST /addteammeeting',
+    function() {
+        require("addteammeeting.php"); 
+    }
+);
+
 $f3->route('POST /change_task_name',
     function() {
         require("change_task_name.php"); 

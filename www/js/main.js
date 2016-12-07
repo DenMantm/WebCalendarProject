@@ -55,11 +55,7 @@ var events = [];
 				$("#btnSaveNewTeamMeeting").show(); //show submit button
 				$("#LoadingImage").hide(); //hide loading image
 				$('#newteammeeting').modal('hide');
-				
-				//window.open("/main","_self")
 				retrieveFromDatabase(selectedTeam);
-				
-				//alert(response);
 			},
 			error:function (xhr, ajaxOptions, thrownError){
 				$("#btnSaveNewTeam").show(); //show submit button
@@ -100,14 +96,38 @@ $("#btnSaveNewTeamTask").click(function (e) {
 				$("#btnSaveNewTeamTask").show(); //show submit button
 				$("#LoadingImage").hide(); //hide loading image
 				$('#newteamtask').modal('hide');
-				
-				
-				
-			//	window.open("/main","_self")
-				
 				retrieveFromDatabase(selectedTeam);
-				
-				//alert(response);
+			},
+			error:function (xhr, ajaxOptions, thrownError){
+				$("#btnSaveNewTeamTask").show(); //show submit button
+				$("#LoadingImage").hide(); //hide loading image
+				alert(thrownError);
+			}
+			});
+	});
+
+$("#btnSaveNewPersonalTask").click(function (e) {
+			e.preventDefault();
+			$("#btnSaveNewPersonalTask").hide(); //hide submit button
+			
+			jQuery.ajax({
+			type: "POST", // HTTP method POST or GET
+			url: "add_personal_task", //Where to make Ajax calls
+			dataType:"text", // Data type, HTML, json etc.
+			data:
+			{details:$("#pt_details").val(),
+			    name:$("#pt_name").val(),
+			    to:$("#pt_to").val()
+			},
+			
+			success:function(response){
+				$("#pt_details").val(''); 
+				$("#pt_name").val(''); 
+				$("#pt_to").val(''); 
+				$("#btnSaveNewPersonalTask").show(); //show submit button
+				$('#newpersonaltask').modal('hide');
+				retrieveFromDatabase(selectedTeam);
+				alert(response)
 			},
 			error:function (xhr, ajaxOptions, thrownError){
 				$("#btnSaveNewTeamTask").show(); //show submit button
@@ -146,16 +166,7 @@ $("#btnSaveNewMeeting").click(function (e) {
 				$("#btnSaveNewTeam").show(); //show submit button
 				$("#LoadingImage").hide(); //hide loading image
 				$('#newmeeting').modal('hide');
-				
-				
-				
-				//window.open("/main","_self")
-				
 				retrieveFromDatabase(selectedTeam);
-				
-				
-				
-				//alert(response);
 			},
 			error:function (xhr, ajaxOptions, thrownError){
 				$("#btnSaveNewTeam").show(); //show submit button
@@ -200,6 +211,12 @@ $("#btnSaveNewMeeting").click(function (e) {
 				$("#tt_to").val(moment(calEvent._start).format('DD/MM/YYYY')); 
 				$("#tt_details").val(calEvent._id); 
 		        $('#newteamtask').modal('show');
+		        break;
+		    case "Personal task":
+		        $("#pt_name").val(calEvent.title); 
+				$("#pt_to").val(moment(calEvent._start).format('DD/MM/YYYY')); 
+				$("#pt_details").val(); 
+		        $('#newpersonaltask').modal('show');
 		        break;
 		    default:
 		        $("#m_subject").val(calEvent.title); 
