@@ -314,7 +314,7 @@
                             <div class="frame" style="padding:7px">
                                 <div class="heading">Drag and drop Actions:</div>
                                 <br/>
-                                <div class="content" >
+                                <div class="content" id='user_drag_menu'>
                                     
                                     <span data-role="hint"
                                                         data-hint-background="bg-orange"
@@ -326,7 +326,7 @@
                                         
                                     </span>
                                     
-                                    <div id='user_drag_menu'>
+                                  
                                     
                                     <div class='fc-event' style='background-color:orange'> Personal meeting</div></span>
                                     <div class='fc-event' style='background-color:green'> Personal task</div>
@@ -334,7 +334,7 @@
                                     <!--<div class='fc-event'> Team meeting</div>-->
                                     <!--<div class='fc-event' style='background-color:purple'> Team task</div>-->
                                   
-                                    </div>
+                                
                                     
                                 </div>
                             </div>
