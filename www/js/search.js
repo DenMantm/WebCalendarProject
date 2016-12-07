@@ -3,16 +3,12 @@
 // Add Record
 function addRecord() {
     // get values
-    $.datepicker.setDefaults({  
-                dateFormat: 'yy-mm-dd'   
-           });  
-           $(function(){  
-                $("#start").datepicker();  
-                $("#end").datepicker();  
-           });  
+   
     var subject = $("#subject").val();
     subject = subject.trim();
     
+    var location = $("#location").val();
+    location = location.trim();
     
      var start = $("#start").val();
      
@@ -21,8 +17,8 @@ function addRecord() {
     description = description.trim();
  
    
-     if (subject == "") {
-        alert("subject field is required!");
+     if (location == "") {
+        alert("location field is required!");
     }
     else if (description == "") {
         alert("description field is required!");
@@ -30,8 +26,8 @@ function addRecord() {
     else {
         // Add record
         $.post("createarezki", {
-   
-            subject: subject,
+            subject:subject,
+            location: location,
             start:start,
             end:end,
             description: description
@@ -46,6 +42,7 @@ function addRecord() {
             // clear fields from the popup
            
             $("#subject").val("");
+             $("#locationt").val("");
             $("#start").val("");
             $("#end").val("");
             $("#description").val("");
@@ -73,6 +70,7 @@ function GetUserDetails(id) {
             // Assign existing values to the modal popup fields
           
             $("#update_subject").val(user.subject);
+             $("#update_location").val(user.location);
              $("#update_start").val(user.start);
               $("#update_end").val(user.end);
             $("#update_description").val(user.description);
@@ -89,13 +87,9 @@ function UpdateUserDetails() {
    
     var subject = $("#update_subject").val();
     subject = subject.trim();
-     $.datepicker.setDefaults({  
-                dateFormat: 'yy-mm-dd'   
-           });  
-           $(function(){  
-                $("#update_start").datepicker();  
-                $("#update_end").datepicker();  
-           });  
+     var location = $("#update_location").val();
+    location = location.trim();
+    
      var start = $("#update_start").val();
      var end = $("#update_end").val();
   
@@ -118,6 +112,7 @@ function UpdateUserDetails() {
                 id: id,
               
                 subject: subject,
+                location:location,
                  start: start,
                  end:end,
                 description: description

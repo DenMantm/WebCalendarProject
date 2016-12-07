@@ -10,6 +10,7 @@ $data = '<table class="table table-bordered table-striped">
                             <th>No.</th>
                          
                             <th>Subject</th>
+                            <th>Location</th>
                             <th>Start</th>
                             <th>End</th>
                             <th>Description</th>
@@ -27,6 +28,7 @@ if (count($users) > 0) {
                 <td>' . $number . '</td>
               
                  <td>' . $user['subject'] . '</td>
+                 <td>' . $user['location'] . '</td>
                  <td>' . $user['start'] . '</td>
                  <td>' . $user['end'] . '</td>
                  <td>' . $user['description'] . '</td>

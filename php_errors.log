@@ -240,3 +240,28 @@
 [06-Dec-2016 23:38:46 UTC] Fatal error: Call to a member function prepare() on a non-object
 [07-Dec-2016 00:02:14 UTC] SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'kamil-lasecki.ddns.net' (4)
 [07-Dec-2016 00:02:44 UTC] SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'kamil-lasecki.ddns.net' (4)
+[07-Dec-2016 11:48:28 UTC] HTTP 404 (GET /favicon.ico)
+[07-Dec-2016 11:48:31 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[07-Dec-2016 11:48:31 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[07-Dec-2016 11:48:31 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
+[07-Dec-2016 11:53:21 UTC] HTTP 404 (GET /ajax/search.js)
+[07-Dec-2016 12:06:40 UTC] HTTP 404 (GET /ajax/search.js)
+[07-Dec-2016 12:07:47 UTC] HTTP 404 (GET /ajax/search.js)
+[07-Dec-2016 12:07:48 UTC] HTTP 404 (GET /ajax/search.js)
+[07-Dec-2016 12:08:26 UTC] HTTP 404 (GET /ajax/search.js)
+[07-Dec-2016 12:08:28 UTC] HTTP 404 (GET /ajax/search.js)
+[07-Dec-2016 12:09:34 UTC] HTTP 404 (GET /ajax/search.js)
+[07-Dec-2016 12:09:35 UTC] HTTP 404 (GET /ajax/search.js)
+[07-Dec-2016 12:11:44 UTC] HTTP 404 (GET /ajax/search.js)
+[07-Dec-2016 12:15:14 UTC] HTTP 404 (GET /ajax/search.js)
+[07-Dec-2016 12:15:15 UTC] HTTP 404 (GET /ajax/search.js)
+[07-Dec-2016 13:27:56 UTC] Missing argument 6 for CRUD::Update(), called in /home/ubuntu/workspace/views/search/ajax/update.php on line 17 and defined
+[07-Dec-2016 13:28:01 UTC] Missing argument 6 for CRUD::Update(), called in /home/ubuntu/workspace/views/search/ajax/update.php on line 17 and defined
+[07-Dec-2016 13:29:20 UTC] Missing argument 6 for CRUD::Update(), called in /home/ubuntu/workspace/views/search/ajax/update.php on line 17 and defined
+[07-Dec-2016 13:31:13 UTC] Missing argument 6 for CRUD::Update(), called in /home/ubuntu/workspace/views/search/ajax/update.php on line 17 and defined
+[07-Dec-2016 13:31:21 UTC] Missing argument 6 for CRUD::Update(), called in /home/ubuntu/workspace/views/search/ajax/update.php on line 17 and defined
+[07-Dec-2016 13:31:38 UTC] HTTP 405 (GET /updatearezki)
+[07-Dec-2016 13:32:00 UTC] Missing argument 6 for CRUD::Update(), called in /home/ubuntu/workspace/views/search/ajax/update.php on line 17 and defined
+[07-Dec-2016 13:39:58 UTC] include(../../modules/getteams.php): failed to open stream: No such file or directory
+[07-Dec-2016 13:40:20 UTC] include(../../../modules/getteams.php): failed to open stream: No such file or directory
+[07-Dec-2016 14:00:16 UTC] include(../modules/getmails.php): failed to open stream: No such file or directory
