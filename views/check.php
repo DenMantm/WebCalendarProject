@@ -1,9 +1,9 @@
-      
-         <?php  
-include_once("../modules/db.php");  
+
+<?php
+ include_once("../modules/db.php") ;
   
-  $sth = $db->prepare(" SELECT * FROM Meetings ORDER BY meetingID desc");  
-  $result = $sth->fetch();
+  $sth = $db->prepare(" SELECT * FROM Meetings ORDER BY id desc");  
+  $result1 = $sth->fetch();
   
  ?>  
 
@@ -17,20 +17,20 @@ include_once("../modules/db.php");
 
 <?php include('partials/head.php') ?>
  
-            <script src="js/check.js"></script>           
+            
            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>  
            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
            <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>  
            <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">  
-            <link rel="stylesheet" href="css/check.css"> 
-           
+            <link rel="stylesheet" href="../css/check.css"> 
+  
 </head>
 
 <body>
   <?php
 include('partials/navbar.php');
-
 ?>
+
 
 
        
@@ -69,7 +69,7 @@ include('partials/navbar.php');
                           </tr>  
                           
                      <?php  
-                     while ($row = $result)
+                     while ($row = $result1)
                      
                       $sth->execute();
               

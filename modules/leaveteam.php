@@ -1,7 +1,7 @@
 <?php
 //include db configuration file
 include_once("../modules/db.php");
-
+$me = $_SESSION['user']['uID'];
 if(isset($_SESSION['currentTeam'])) 
     {	
         $teamid = filter_var($_SESSION["currentTeam"],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH); 
@@ -16,7 +16,7 @@ if(isset($_SESSION['currentTeam']))
         // CHECK IF THE USER IS EDITOR
         
         $check2 = $db->prepare("SELECT * FROM Teams WHERE  userUID = :var1 and teamID = :var2 and role = 'editor';");
-        $check2->bindParam(':var1', $_SESSION['user']['uID'], PDO::PARAM_STR );
+        $check2->bindParam(':var1', $me, PDO::PARAM_STR );
         $check2->bindParam(':var2', $teamid, PDO::PARAM_STR );
         $check2->execute();
         $isEditor = $check2->rowCount();
@@ -28,18 +28,28 @@ if(isset($_SESSION['currentTeam']))
     else 
     {
         $insert_row = $db->prepare("DELETE FROM Teams WHERE userUID = :var1 and teamID = :var2;");
+        $uid = uniqid();
+        $insert_row->bindParam(':var1', $me, PDO::PARAM_STR );
+        $insert_row->bindParam(':var2', $teamid, PDO::PARAM_STR );
+        $insert_row->execute();
+       
+       $query = "select t.id
+                from Task_completion t
+                left join Participants_t p
+                on p.taskID = t.task_uid
+                where participantID = '".$teamid."'
+                and t.user_uid = '".$me."';";
+        $getrows = $db->prepare($query);
+        $getrows->execute();
+        $getrows->bindColumn(1,$id);
         
-        try{
-            $uid = uniqid();
-            $insert_row->bindParam(':var1', $_SESSION['user']['uID'], PDO::PARAM_STR );
-            $insert_row->bindParam(':var2', $teamid, PDO::PARAM_STR );
-            $insert_row->execute();
+        while ($getrows ->fetch(PDO::FETCH_BOUND)) {
+            $query2 = "delete from Task_completion 
+                        where id = '" . $id . "';";
+            $remove = $db->prepare($query2);
+            $remove->execute();
+        
         }
-         
-        catch(PDOException $e)
-    	{
-    		echo "Error: " . $e->getMessage();
-    	}
     }
     
 }

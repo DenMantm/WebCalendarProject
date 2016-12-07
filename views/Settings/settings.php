@@ -27,76 +27,82 @@
 
 ?>
     
-    
+  
     
 
     
-    <!-- Content Section -->
+    
+</br></br></br></br>
 <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h1>Chnage your Username, Email or Password Here </h1>
-        </div>
+  <h2>Change your credentials:</h2></br></br>
+  <form class="form-horizontal">
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="Firstname">New Firstname:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="update_Firstname" placeholder="Enter Firstname" required>
+      </div>
     </div>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="pull-middle">
-                <button class="btn btn-success" data-toggle="modal" data-target="#update_user_modal">Click To Begin</button>
-            </div>
-        </div>
+    
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="Surname">New Surname:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="update_Surname" placeholder="Enter Surname" required>
+      </div>
+    </div>
+         
+         
+      
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="username">New Username:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="update_Username" placeholder="Enter username" required>
+      </div>
+    </div>
+         
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="update_Email">New Email:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control"id="update_Email" placeholder="Enter email" required>
+      </div>
     </div>
    
-</div>
-<!-- /Content Section -->
-
-
-
-<!-- Modal - Update User details -->
-<div class="modal fade" id="update_user_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            
-                
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-Email" id="myModalLabel">Update</h4>
-                </div>
-                
-                
-                <div class="modal-body">
-     
-     
-                    <div class="form-group">
-                        <label for="update_Username">New Username</label>
-                        <input type="text" id="update_Username" placeholder="Username" class="form-control"/>
-                    </div>
-     
-                    <div class="form-group">
-                        <label for="update_Email">New Email</label>
-                        <input type="text" id="update_Email" placeholder="Email" class="form-control"/>
-                    </div>
-                      <div class="form-group">
-                        <label for="update_Password">New Password</label>
-                        <input type="password" id="update_Password" placeholder="Password" class="form-control"/>
-                    </div>
-                     <div class="form-group">
-                        <label for="update_Password">Confirm New Password</label>
-                        <input type="password" id="update_Password1" placeholder="Password" class="form-control"/>
-                    </div>
-     
-                </div>
-                
-                
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary" onclick="UpdateUserDetails()" >Save Changes</button>
-                 
-                </div>
-            
-        </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="update_Password">New Password:</label>
+      <div class="col-sm-10">          
+        <input type="password" class="form-control" id="update_Password" placeholder="Enter password" required>
+      </div>
+      <div id="id1"></div>
     </div>
+  
+     
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="update_Password">Confirm New Password:</label>
+      <div class="col-sm-10">          
+        <input type="password" class="form-control" id="update_Password1" placeholder="Enter password" required>
+      </div>
+    </div>
+    
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+      </div>
+    </div>
+    
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+      
+        <button type="submit" class="btn btn-primary" onclick="UpdateUserDetails()" >Save Changes</button>
+      </div>
+    </div>
+  </form>
 </div>
-<!-- // Modal -->
+
+
+
+
 
 
 <script >
@@ -106,26 +112,23 @@ function UpdateUserDetails() {
     // get values
     var Password = $("#update_Password").val();
     Password = Password.trim();
+    
     var Password1 = $("#update_Password1").val();
     Password1 = Password1.trim();
-    var Username = $("#update_Username").val();
+    
+    var Firstname = $("#update_Firstname").val();
+    Firstname = Firstname.trim();
+    
+     var Username = $("#update_Username").val();
     Username = Username.trim();
+    
+     var Surname = $("#update_Surname").val();
+    Surname = Surname.trim();
+    
     var Email = $("#update_Email").val();
     Email = Email.trim();
  
-    if (Password == "") {
-        alert("Password field is required!");
-    }
-      if (Password1 == "") {
-        alert("Confirm Password field is required!");
-    }
-    else if (Username == "") {
-        alert("Username field is required!");
-    }
-    else if (Email == "") {
-        alert("Email field is required!");
-    }
-     else if (Password!=Password1) {
+    if (Password!=Password1) {
         alert("Oops! Password did not match! Try again. ");
     }
     else {
@@ -135,18 +138,16 @@ function UpdateUserDetails() {
                
                 Password: Password,
                 Username: Username,
+                 Surname: Surname,
+                  Firstname: Firstname,
                 Email: Email
-            },
-            function (data, status) {
-                // hide modal popup
-                $("#update_user_modal").modal("hide");
-                // reload Users by using readRecords();
-                alert(data);
-          alert("Successfully uodated your details");
+                
             }
-        );
-    }
-}
+            
+           
+        );alert("Saved your details !");
+    }  
+} 
 
 
 

@@ -54,7 +54,6 @@ $f3->route('POST /updatesettings',
 $f3->route('GET /check',
     function($f3) {
         isUserLogged();
-
         echo View::instance()->render('../views/check.php');
     }
 );
@@ -103,7 +102,7 @@ $f3->route('POST /addtask',
     }
 );
 
-//root to new serach
+//root to new s
 
 $f3->route('GET /search',
     function($f3) {
@@ -121,7 +120,19 @@ $f3->route('GET /showteam',
     }
 );
 
+$f3->route('GET /showtasks',
+    function($f3) {
+        isUserLogged();
+        echo View::instance()->render('../views/tasks.php');
+    }
+);
 
+$f3->route('GET /show_tbc',
+    function($f3) {
+        isUserLogged();
+        echo View::instance()->render('../modules/show_to_be_completed.php');
+    }
+);
 
 $f3->route('GET /showusers/@id',
     function($f3,$params) {
@@ -130,6 +141,23 @@ $f3->route('GET /showusers/@id',
         echo View::instance()->render('../modules/showusers.php');
     }
 );
+
+$f3->route('GET /taskdetails/@id',
+    function($f3,$params) {
+        isUserLogged();
+        $f3->set('SESSION.details',$params['id']); 
+        echo View::instance()->render('../modules/showTaskDetails.php');
+    }
+);
+
+$f3->route('GET /tbc_details/@id',
+    function($f3,$params) {
+        isUserLogged();
+        $f3->set('SESSION.details',$params['id']); 
+        echo View::instance()->render('../modules/showTbcDetails.php');
+    }
+);
+
 
 $f3->route('GET /removeuser/@team/@user',
     function($f3,$params) {
@@ -194,7 +222,7 @@ $f3->route('POST /invite/@id',
     function($f3,$params) {
         isUserLogged();
         $f3->set('SESSION.currentTeam',$params['id']); 
-        echo('');
+        echo View::instance()->render('../modules/getInvEmails.php');
     }
 );
 
@@ -327,9 +355,45 @@ $f3->route('POST /addteammeeting',
     }
 );
 
+$f3->route('POST /change_task_name',
+    function() {
+        require("change_task_name.php"); 
+    }
+);
+
+$f3->route('POST /change_task_details',
+    function() {
+        require("change_task_details.php"); 
+    }
+);
+
+$f3->route('POST /change_completion_by',
+    function() {
+        require("change_completion_by.php"); 
+    }
+);
+
+$f3->route('POST /complete_task',
+    function() {
+        require("complete_task.php"); 
+    }
+);
+
+$f3->route('POST /check_if_completed',
+    function() {
+        require("check_if_completed.php"); 
+    }
+);
+
 $f3->route('POST /inviteOK',
     function() {
         require("inviteOK.php"); 
+    }
+);
+
+$f3->route('POST /delete_task',
+    function() {
+        require("delete_task.php"); 
     }
 );
 

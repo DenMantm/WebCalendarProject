@@ -139,8 +139,8 @@ function invite(id) {
         type: "POST",
         url: link,             
         dataType: "HTML",   //expect html to be returned                
-        success: function(){   
-		
+        success: function(response){  
+        	$("#i_email").html(response);
         }
 	});
 }
@@ -176,7 +176,7 @@ function remove(user , team) {
         type: "GET",
         url: link,             
         dataType: "html",   //expect html to be returned                
-        success: function(response){   
+        success: function(response){  
         	$("#landing3").html(response); 
             showDialog("#dialog7");
         	edit(team);
@@ -212,3 +212,18 @@ function changerole(user , team, role) {
 	
 }
 
+function checkIfCompleted(id) {
+	jQuery.ajax({
+		type: "POST", // HTTP method POST or GET
+		url: "check_if_completed", //Where to make Ajax calls
+		dataType:"text", // Data type, HTML, json etc.
+		data:{task_id:id},
+		
+		success:function(response){
+		
+			},
+			error:function (xhr, ajaxOptions, thrownError){
+				alert(thrownError);
+			}
+	});
+}

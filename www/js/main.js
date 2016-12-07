@@ -1,4 +1,4 @@
-   /*global $*/
+/*global $*/
 
     $.fn.followTo = function (pos) {
     var $this = this,
@@ -86,7 +86,6 @@ $("#btnSaveNewTeamTask").click(function (e) {
 			{details:$("#tt_details").val(),
 			    team:$("#tt_team").val(),
 			    name:$("#tt_name").val(),
-			    from:$("#tt_from").val(),
 			    completed:selectedVal,
 			    to:$("#tt_to").val()
 			},
@@ -95,7 +94,6 @@ $("#btnSaveNewTeamTask").click(function (e) {
 				$("#tt_details").val(''); 
 				$("#tt_team").val(''); 
 				$("#tt_name").val(''); 
-				$("#tt_from").val(''); 
 				$("#tt_to").val(''); 
 				$("#btnSaveNewTeamTask").show(); //show submit button
 				$("#LoadingImage").hide(); //hide loading image
@@ -183,8 +181,7 @@ $("#btnSaveNewMeeting").click(function (e) {
 		        break;
 		    case "Team task":
 		        $("#tt_name").val(calEvent.title); 
-		        $("#tt_from").val(start); 
-				$("#tt_to").val(end); 
+				$("#tt_to").val(moment(calEvent._start).format('DD/MM/YYYY')); 
 				$("#tt_details").val(calEvent._id); 
 		        $('#newteamtask').modal('show');
 		        break;
@@ -366,6 +363,3 @@ function getTeamList(){
       
         
     }
-
-
-

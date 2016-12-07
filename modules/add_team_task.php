@@ -7,26 +7,22 @@ include_once("../modules/db.php");
  	$name = $_POST["name"];
  	$teams = $_POST["team"];
  	$details = nl2br(htmlentities($_POST["details"], ENT_QUOTES, 'UTF-8'));
- 	$from = $_POST["from"];
  	$to = $_POST["to"];
  	$completed_by = $_POST["completed"];
  	$meID = $_SESSION['user']['uID'];
  	
- 	$date_from = DateTime::createFromFormat('m/d/Y g:i A', $from);
-    $date_from_str = $date_from->format('Y-m-d H:i:s');
-    
- 	$date_to = DateTime::createFromFormat('m/d/Y g:i A', $to);
-    $date_to_str = $date_to->format('Y-m-d H:i:s');
- 	$result=$date_to->format('Y-m-d H:i:s');
- 	
+
+ 	$date_to = DateTime::createFromFormat('d/m/Y', $to);
+    $date_to_str = $date_to->format('Y-m-d');
+
  	//LOOP THROUGH EVERY TEAM ID ADDED TO TASK
  	foreach ($teams as $team)
  	{
  	    //GETTING EVERY USER ID OF CURRENT TEAM
- 	    $getUsers = $db->prepare("SELECT userUID FROM Teams WHERE teamID = '" . $team . "';");
+ 	    $getUsers = $db->prepare("SELECT userUID FROM Teams WHERE teamID = '" . $team . "' and confirm = 1;");
  	    $getUsers->execute();
  	    $getUsers->bindColumn(1,$userID);
- 	    
+ 	     
  	    //INSERTING EVERY USER CONNECTED WITH TASK TO TASK_COMPLETION TABLE 
  	    if( $getUsers->rowCount() > 0) {
  	        while ($row = $getUsers ->fetch(PDO::FETCH_BOUND)) {
@@ -49,15 +45,14 @@ include_once("../modules/db.php");
  	}
  	
  	//INSERTING TASK DETAILS TO TASK TABLE
- 	$insertTask = $db->prepare("INSERT INTO Tasks (task_uid, owner_id, name, details, type, completed, completed_by, start, end) 
- 	                                    VALUES (:task_uid, :owner_id, :name, :details, 'tt', 0, :completed_by, :start, :end);");
+ 	$insertTask = $db->prepare("INSERT INTO Tasks (task_uid, owner_id, name, details, type, completed, completed_by, end) 
+ 	                                    VALUES (:task_uid, :owner_id, :name, :details, 'tt', 0, :completed_by, :end);");
  	                                    
     $insertTask->bindParam(':task_uid',$task_uid, PDO::PARAM_STR );
     $insertTask->bindParam(':owner_id',$meID, PDO::PARAM_STR );
     $insertTask->bindParam(':name',$name, PDO::PARAM_STR );
     $insertTask->bindParam(':details',$details, PDO::PARAM_STR );
     $insertTask->bindParam(':completed_by',$completed_by, PDO::PARAM_STR );
-    $insertTask->bindParam(':start',$date_from_str, PDO::PARAM_STR );
     $insertTask->bindParam(':end',$date_to_str, PDO::PARAM_STR );
  	$insertTask->execute();
  	

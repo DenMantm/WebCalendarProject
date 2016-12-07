@@ -13,11 +13,13 @@
   
   
 <style>
+
 	body {
 		margin-top: 40px;
 		font-size: 14px;
 		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
 	}
+
 </style>
   
   
@@ -27,6 +29,7 @@
 <body>
   <?php
 include('partials/navbar.php');
+
 ?>
 
 
