@@ -39,6 +39,8 @@
               <li class="nav-item active"><a class="nav-link" href="#" id="homeDiv" onclick="scrollToTop.js">Home<span></span></a></li>
               <li type="nav-item"><a href="#" id="videoDiv">Demo</a></li>
               <li type="nav-item"><a href="#" id="featThree">Features</a></li>
+              <li type="nav-item"><a href="#" id="m-miniNav">More</a></li>
+
               <li type="nav-item" class="nav-item"><a  data-toggle="modal"  href="#signup_modal"><span></span>Sign Up</a></li>
               <li type="nav-item" class="nav-item"><a  data-toggle="modal" href="#login_modal"><span></span> Login</a></li>
             </ul>
@@ -51,11 +53,14 @@
       <div id="stage-caption">
         <h1 class="display-3 main-header" id="autoText">It's your Team Planner App</h1>
         <p class="m-fade">Make it work for YOU!</p>
-        <a href="#signup_modal" class="btn btn-lg btn-success m-fade" data-toggle="modal" id="regNow">
+        <a href="#signup_modal" class="btn btn-lg btn-success" data-toggle="modal" id="regNow">
           Register now!
         </a>
       </div>
     </div>
+    <br/>
+    <br/>
+    <br/>
     <div class="container">
       <hr class="thickOne" id="nasaVid"/>
     </div>
@@ -66,6 +71,7 @@
           <div class="feature-content">
             <div class="col-lg-6">
               <iframe width="100%" height="315" src="https://www.youtube.com/embed/UGPuEDyAsU8" frameborder="1" allowfullscreen id="vidMain"></iframe>
+              <img class="img-responsive p-fade" src="img/task.png"/>
             </div>
             <div class="col-lg-5">
               <h6>Check it out!</h6>
@@ -79,8 +85,12 @@
           </div>
         </div>
       </div>
-      
     </section>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
     <br id="scrollToMe"/>
     <section id="feature-two" class="feature-dark">
       <div class="container">
@@ -88,7 +98,7 @@
           <div class="feature-content">
             <div class="col-lg-4 feature-caption">
               <h6>Simple, functional features</h6>
-              <p>Team Planner is a functional, fresh and free to use application aimed at small teams and SME's
+              <p class="p-fade">Team Planner is a functional, fresh and free to use application aimed at small teams and SME's
               who need a solution to organise their tasks and communicate to their teammates. New users have the ability to create
               a new team and add/remove members, assign them tasks and send out communications to them.</p>
             </div>
@@ -105,25 +115,35 @@
     <br/>
     <br/>
     <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
     <section id="feature-three">
       <div class="container">
         <div class ="row">
           <div class="feature-content">
             <div class="col-lg-6">
-              <img src="img/calendar.png" class="img-responsive center-block p-fade">
+              <img src="img/calend2.png" class="img-responsive center-block p-fade" width="300"/>
             </div>
             <div class="col-lg-6">
-              <h6 class="p-fade">Plan your tasks and schedule a meeting</h6>
+              <h6 class=>Plan your tasks and schedule a meeting</h6>
               <p class = "p-fade lead">Never miss a meeting again, plan your next presidential assassination and be confident with the fact that your team will be prepared for the outcome</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-        
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
     <nav class="navbar navbar-default">
       <div class="container-fluid">
-                <ul class="navbar">
+                <ul class="navbar p-fade">
                   <li><a href="https://github.com/DenMantm/WebCalendarProject">Github Repository</a></li>
                   <li><a href="https://fatreeframework.com/3.6/home">FatFree</a></li>
                   <li><a href="#">Something else here</a></li>

@@ -141,3 +141,7 @@ h6{
 .p-fade{
 	opacity: 1;
 }
+
+#autoText{
+	text-shadow: 4px 4px 15px rgba(154, 150, 149, 1);
+}
