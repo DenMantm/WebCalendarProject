@@ -13,3 +13,11 @@
 [07-Dec-2016 23:14:24 UTC] HTTP 404 (GET /css/bootstrap.min.css.map)
 [07-Dec-2016 23:14:42 UTC] HTTP 404 (GET /css/bootstrap.min.css.map)
 [07-Dec-2016 23:21:33 UTC] HTTP 404 (GET /css/bootstrap.min.css.map)
+[08-Dec-2016 00:24:43 UTC] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'taskID' in 'field list'
+[08-Dec-2016 00:25:05 UTC] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'taskID' in 'field list'
+[08-Dec-2016 00:32:20 UTC] HTTP 404 (GET /ptaskdetails/pt_58489f6006427)
+[08-Dec-2016 00:33:38 UTC] HTTP 404 (GET /ptaskdetails/pt_58489f6006427)
+[08-Dec-2016 00:38:00 UTC] Fatal error: syntax error, unexpected ')'
+[08-Dec-2016 01:00:44 UTC] Fatal error: syntax error, unexpected 'if' (T_IF)
+[08-Dec-2016 01:00:56 UTC] Fatal error: syntax error, unexpected 'if' (T_IF)
+[08-Dec-2016 01:08:58 UTC] HTTP 404 (POST /complete_ptask)
