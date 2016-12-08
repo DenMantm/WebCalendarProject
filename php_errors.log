@@ -207,3 +207,7 @@
 [06-Dec-2016 20:30:52 UTC] HTTP 404 (POST /check_if_completed)
 [06-Dec-2016 20:32:12 UTC] Fatal error: syntax error, unexpected '}', expecting ',' or ';'
 [06-Dec-2016 20:32:15 UTC] Fatal error: syntax error, unexpected '}', expecting ',' or ';'
+[06-Dec-2016 22:48:07 UTC] HTTP 404 (GET /favicon.ico)
+[06-Dec-2016 22:48:09 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff2)
+[06-Dec-2016 22:48:09 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.woff)
+[06-Dec-2016 22:48:09 UTC] HTTP 404 (GET /fonts/glyphicons-halflings-regular.ttf)
