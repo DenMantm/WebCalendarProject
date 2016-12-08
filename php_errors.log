@@ -239,3 +239,7 @@
 [08-Dec-2016 01:00:56 UTC] Fatal error: syntax error, unexpected 'if' (T_IF)
 [08-Dec-2016 01:08:58 UTC] HTTP 404 (POST /complete_ptask)
 >>>>>>> 0d2534b8363c1b36c6a2803066408f47e291b1a3
+[08-Dec-2016 09:50:03 UTC] Fatal error: Call to a member function format() on a non-object
+[08-Dec-2016 19:42:30 UTC] HTTP 404 (GET /favicon.ico)
+[08-Dec-2016 19:42:30 UTC] HTTP 404 (GET /favicon.ico)
+[08-Dec-2016 20:31:56 UTC] Fatal error: Call to a member function format() on a non-object

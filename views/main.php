@@ -6,7 +6,7 @@
 <head>
   <title>Main</title>
 
-<?php include('partials/head.php') ?>
+<?php include 'partials/head.php'?>
 <script src='calendarLib/lib/moment.min.js'></script>
     <link rel="stylesheet" href="/css/calendar.css">
     <link href='css/main.css' rel='stylesheet' media='print' />
@@ -18,14 +18,15 @@
     <script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
     <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/target.js"></script>
+
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/select2.full.min.js"></script>
+    <script type="text/javascript" src="js/validator.js"></script>
   
 
 </head>
 <body>
-  <?php include('partials/navbar.php') ?>
+  <?php include 'partials/navbar.php'?>
 
 <h1 id = "m_calendar_name">Team Calendar - International Flinstones</h1>
 <hr/>
@@ -228,26 +229,22 @@
                        
                        <li>
                                <?php 
-                               $test =  require('../modules/databaseio/calendarDatabaseOutput.php');
-                               
-                               $teamList = $test -> getTeamListStatic();
-                               
+                               $test = require '../modules/databaseio/calendarDatabaseOutput.php';
+
+                               $teamList = $test->getTeamListStatic();
+
                                //personal calendar tab - >
                                        session_start();
                                 $uID = $_SESSION['user']['uID'];
-                               
+
                                echo '<li class=""><a href="#frame_static" id="teamClick" name = "personal">Personal Calendar</a></li>';
-                               
-                               
-                               foreach($teamList as $team){
-                               
-                               //echo '<li class="active"><a href="#frame_static">Team1</a></li>';
-                               
+
+                               foreach ($teamList as $team) {
+                                   //echo '<li class="active"><a href="#frame_static">Team1</a></li>';
+
                                echo '<li class=""><a href="#frame_static" id="teamClick" name = "'.$team->teamID.'">'.$team->teamName.'</a></li>';
-                               
                                }
-                               
-                               
+
                                ?>
                    </li>
                     
@@ -392,10 +389,10 @@
       </div>
     </div>
 
-<?php include('partials/personal_meeting_modal.php') ?>
-<?php include('partials/team_meeting_modal.php') ?>
-<?php include('partials/team_task_modal.php') ?>
-<?php include('partials/personal.task_modal.php') ?>
+<?php include 'partials/personal_meeting_modal.php'?>
+<?php include 'partials/team_meeting_modal.php'?>
+<?php include 'partials/team_task_modal.php'?>
+<?php include 'partials/personal.task_modal.php'?>
 
                   
         
