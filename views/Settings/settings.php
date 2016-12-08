@@ -141,12 +141,13 @@ function UpdateUserDetails() {
                  Surname: Surname,
                   Firstname: Firstname,
                 Email: Email
+                
             }
             
            
-        );
-    } 
-}
+        );alert("Saved your details !");
+    }  
+} 
 
 
 

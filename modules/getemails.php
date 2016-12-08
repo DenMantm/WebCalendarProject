@@ -3,10 +3,28 @@
     include_once("../modules/db.php");  
 
           $result =''; 
+          $currentTeam = $_SESSION["currentTeam"];
+          $me = $_SESSION['user']['uID'];
           $query = "SELECT 
-                        name, surname, username, uid
+                        name, 
+                        surname, 
+                        username, 
+                        uID
                     FROM 
-                        Users;";
+                        Users
+                    where uID in (  select 
+                                        userUID
+                                    from 
+                                        Teams 
+                                    where   teamID in (select 
+                                                        teamID 
+                                                    from 
+                                                        Teams 
+                                                    where 
+                                                        userUID = '" . $me . "'
+                                                    ) 
+                                            and confirm = 1
+                                    );";
                       
           $sth = $db->prepare($query);  
             

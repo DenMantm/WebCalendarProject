@@ -35,34 +35,48 @@
                 </li>
                 <li><a href="/settings">User Settings</a>
                 </li>
-                <li><a href="/check">Check Meetings</a>
+                <li><a href="/search">Manage Meetings</a>
                 </li>
                  <li><a href="/showtasks">Manage Tasks </a>
                 </li>
                 <li><a href="/team">Manage Teams</a>
                 </li>
-                <li><a href="/logout">Logout</a></li>
-        <li>
-            <a href="" class="dropdown-toggle">Products</a>
-            <ul class="d-menu" data-role="dropdown">
-                <li><a href="">Windows 10</a></li>
+        <!--<li>-->
+        <!--    <a href="" class="dropdown-toggle">Products</a>-->
+        <!--    <ul class="d-menu" data-role="dropdown">-->
+        <!--        <li><a href="">Windows 10</a></li>-->
 
-                <li class="divider"></li>
-                <li><a href="" class="dropdown-toggle">Other Products</a>
-                    <ul class="d-menu" data-role="dropdown">
-                        <li><a href="">Internet Explorer 10</a></li>
-                        <li><a href="">Skype</a></li>
-                        <li><a href="">Surface</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
+        <!--        <li class="divider"></li>-->
+        <!--        <li><a href="" class="dropdown-toggle">Other Products</a>-->
+        <!--            <ul class="d-menu" data-role="dropdown">-->
+        <!--                <li><a href="">Internet Explorer 10</a></li>-->
+        <!--                <li><a href="">Skype</a></li>-->
+        <!--                <li><a href="">Surface</a></li>-->
+        <!--            </ul>-->
+        <!--        </li>-->
+        <!--    </ul>-->
+        <!--</li>-->
         <li>
             <a href="#" onclick="notifications();"class="btn btn-default" aria-label="Left Align" data-toggle="modal" data-target="#invite">
                                 Notifications  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                         </a>'
         </li>
+                        
     </ul>
+    
+    
+    <a style='float:right' class="app-bar-element" href="/logout">Logout</a>
+    
+    <?php
+    
+           session_start();
+           
+        $nameSurname =   $_SESSION['user']['name'].' '.$_SESSION['user']['surname'];
+    
+    echo '<a style="float:right;padding:0px" class="app-bar-element" href="">Hi '.$nameSurname.', Welcome!</a>';
+    
+    ?>
+    
 </div>
 
     <div data-role="charm" id="notifications">

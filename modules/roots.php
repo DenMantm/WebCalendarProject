@@ -102,7 +102,7 @@ $f3->route('POST /addtask',
     }
 );
 
-//root to new serach
+//root to new s
 
 $f3->route('GET /search',
     function($f3) {
@@ -134,6 +134,20 @@ $f3->route('GET /show_tbc',
     }
 );
 
+$f3->route('GET /show_pt',
+    function($f3) {
+        isUserLogged();
+        echo View::instance()->render('../modules/show_personal.php');
+    }
+);
+
+$f3->route('GET /show_ibm',
+    function($f3) {
+        isUserLogged();
+        echo View::instance()->render('../modules/show_tasks.php');
+    }
+);
+
 $f3->route('GET /showusers/@id',
     function($f3,$params) {
         isUserLogged();
@@ -155,6 +169,14 @@ $f3->route('GET /tbc_details/@id',
         isUserLogged();
         $f3->set('SESSION.details',$params['id']); 
         echo View::instance()->render('../modules/showTbcDetails.php');
+    }
+);
+
+$f3->route('GET /p_details/@id',
+    function($f3,$params) {
+        isUserLogged();
+        $f3->set('SESSION.details',$params['id']); 
+        echo View::instance()->render('../modules/showPersonalTaskDetails.php');
     }
 );
 
@@ -355,6 +377,18 @@ $f3->route('POST /addteammeeting',
     }
 );
 
+$f3->route('POST /add_personal_task',
+    function() {
+        require("add_personal_task.php"); 
+    }
+);
+
+$f3->route('POST /addteammeeting',
+    function() {
+        require("addteammeeting.php"); 
+    }
+);
+
 $f3->route('POST /change_task_name',
     function() {
         require("change_task_name.php"); 
@@ -364,6 +398,12 @@ $f3->route('POST /change_task_name',
 $f3->route('POST /change_task_details',
     function() {
         require("change_task_details.php"); 
+    }
+);
+
+$f3->route('POST /check_team_tasks',
+    function() {
+        require("check_team_tasks.php"); 
     }
 );
 
@@ -378,6 +418,13 @@ $f3->route('POST /complete_task',
         require("complete_task.php"); 
     }
 );
+
+$f3->route('POST /complete_ptask',
+    function() {
+        require("complete_ptask.php"); 
+    }
+);
+
 
 $f3->route('POST /check_if_completed',
     function() {

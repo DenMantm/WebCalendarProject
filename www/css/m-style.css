@@ -121,7 +121,7 @@ h6{
 
 /* http://bootsnipp.com/snippets/featured/link-to-top-page */
 .back-to-top {
-    cursor: pointer;
+    cursor: wait;
     position: fixed;
     bottom: 15px;
     right: 15px;
@@ -136,4 +136,12 @@ h6{
 
 #off-one{
 	background: #000
+}
+
+.p-fade{
+	opacity: 1;
+}
+
+#autoText{
+	text-shadow: 4px 4px 15px rgba(154, 150, 149, 1);
 }

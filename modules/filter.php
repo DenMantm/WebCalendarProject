@@ -12,7 +12,7 @@
       
       $sth = $db->prepare("  
            SELECT * FROM Meetings  
-           WHERE date BETWEEN :var1 AND :var2  
+           WHERE start BETWEEN :var1 AND :var2  
       ");  
       
       
@@ -46,10 +46,10 @@
             ';  
            
             
-             $result = $sth->fetch();
+             $result1 = $sth->fetch();
             
-             //echo(array_values($result));
-          //print_r(array_values($result));
+             //echo(array_values($result1));
+          //print_r(array_values($result1));
         
             
             
@@ -58,7 +58,7 @@
             {  
                
                 
-                // while($row = $result->fetch(PDO::FETCH_ASSOC))  
+                // while($row = $result1->fetch(PDO::FETCH_ASSOC))  
                 while ($row = $sth->fetch())
                  {  
                   extract($row);

@@ -4,10 +4,15 @@ if (isset($_POST)) {
  
     $id = $_POST['id'];
    
-    $Completed = $_POST['Completed'];
+    $subject = $_POST['subject'];
+      $location = $_POST['location'];
+    
+    $start = $_POST['start'];
+    
+    $end = $_POST['end'];
     $description = $_POST['description'];
  
     $object = new CRUD();
  
-    $object->Update($Completed , $description, $id);
+    $object->Update($subject,$location,$start,$end, $description,$id);
 }

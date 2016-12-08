@@ -33,6 +33,7 @@ class CRUD
          
         
         $query->execute();
+        
     }
  
     

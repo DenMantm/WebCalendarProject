@@ -13,7 +13,7 @@
                         Tasks
                     WHERE 
                        owner_id = '" . $userUID . "'
-                       and type = 'tt'
+                       and type = 'pt'
                     ORDER BY
                         end;";
           
@@ -53,25 +53,25 @@
                     if($taksCompleted == 1) {
                     $text .= '
                         <div class="panel panel-default" >
-                            <div class="panel-heading" onclick="details(\'' . $taskID . '\'); return false;">
+                            <div class="panel-heading" onclick="p_details(\'' . $taskID . '\'); return false;">
                             <div class="row">
                                 <span class="col-sm-9">' . $taskName . '</span>
                                 <span class="col-sm-3 span-right">' . $due_status . '<div>Completed</div></span>
                             </div>
                             </div>
-                            <div class="details" id="details' . $taskID . '">
+                            <div class="pdetails" id="pdetails' . $taskID . '">
                             </div>
                         </div>';
                     } else {
                         $text .= '
                         <div class="panel panel-default" >
-                            <div class="panel-heading" onclick="details(\'' . $taskID . '\'); return false;">
+                            <div class="panel-heading" onclick="p_details(\'' . $taskID . '\'); return false;">
                             <div class="row">
                                 <span class="col-sm-9">' . $taskName . '</span>
                                 <span class="col-sm-3 span-right">' . $due_status . '<div>Not completed</div></span>
                             </div>
                             </div>
-                            <div class="details" id="details' . $taskID . '">
+                            <div class="pdetails" id="pdetails' . $taskID . '">
                             </div>
                         </div>';
                     }

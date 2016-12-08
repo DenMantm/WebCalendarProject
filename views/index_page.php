@@ -11,15 +11,12 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<!-- custom css -->
 	<link rel="stylesheet" type="text/css" href="css/m-style.css">
-      <!-- scroll to top script -->
-  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
-  
-  
+
    <link rel="stylesheet" href="css/login_signup_form.css"/>
 
 	<title></title>
 </head>
-<body>
+<body id="m-loadFade">
 
 	<!-- Static navbar -->
       <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -39,8 +36,11 @@
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li class="nav-item active"><a class="nav-link" href="index.html">Home<span></span></a></li>
-              <li type="nav-item"><a href="#feature-three">Features</a></li>
+              <li class="nav-item active"><a class="nav-link" href="#" id="homeDiv" onclick="scrollToTop.js">Home<span></span></a></li>
+              <li type="nav-item"><a href="#" id="videoDiv">Demo</a></li>
+              <li type="nav-item"><a href="#" id="featThree">Features</a></li>
+              <li type="nav-item"><a href="#" id="m-miniNav">More</a></li>
+
               <li type="nav-item" class="nav-item"><a  data-toggle="modal"  href="#signup_modal"><span></span>Sign Up</a></li>
               <li type="nav-item" class="nav-item"><a  data-toggle="modal" href="#login_modal"><span></span> Login</a></li>
             </ul>
@@ -51,15 +51,18 @@
       <br/>
     <div id="stage">
       <div id="stage-caption">
-        <h1 class="display-3 main-header">It's your Team Planner App</h1>
-        <p>Make it work for YOU!</p>
-        <a href="#signup_modal" class="btn btn-lg btn-success" data-toggle="modal" >
+        <h1 class="display-3 main-header" id="autoText">It's your Team Planner App</h1>
+        <p class="m-fade">Make it work for YOU!</p>
+        <a href="#signup_modal" class="btn btn-lg btn-success" data-toggle="modal" id="regNow">
           Register now!
         </a>
       </div>
     </div>
+    <br/>
+    <br/>
+    <br/>
     <div class="container">
-      <hr class="thickOne"
+      <hr class="thickOne" id="nasaVid"/>
     </div>
     <!-- Feature -->
     <section id="feature-one">
@@ -68,11 +71,12 @@
           <div class="feature-content">
             <div class="col-lg-6">
               <iframe width="100%" height="315" src="https://www.youtube.com/embed/UGPuEDyAsU8" frameborder="1" allowfullscreen id="vidMain"></iframe>
+              <img class="img-responsive p-fade" src="img/task.png"/>
             </div>
             <div class="col-lg-5">
               <h6>Check it out!</h6>
-              <h2>Watch this video...</h2>
-              <p>...and be amazed as Nasa's astronauts schedule their EVA with our Team Planner Application in SPACE!!!</p>
+              <h2 class="p-fade">Watch this video...</h2>
+              <p class="p-fade">...and be amazed as Nasa's astronauts schedule their EVA with our Team Planner Application in SPACE!!!</p>
             </div>
             <!-- one column of space between the left and right column of divs -->
             <div class="col-lg-offset-1">
@@ -81,26 +85,26 @@
           </div>
         </div>
       </div>
-      
     </section>
-
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br id="scrollToMe"/>
     <section id="feature-two" class="feature-dark">
       <div class="container">
         <div class="row">
           <div class="feature-content">
             <div class="col-lg-4 feature-caption">
               <h6>Simple, functional features</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p class="p-fade">Team Planner is a functional, fresh and free to use application aimed at small teams and SME's
+              who need a solution to organise their tasks and communicate to their teammates. New users have the ability to create
+              a new team and add/remove members, assign them tasks and send out communications to them.</p>
             </div>
             <!-- for responsive when scaled, "hidden-sm-down" div will hide on small screens and below -->
             <div class="col-lg-6 text-sm-center hidden-sm-down">
-            <!-- http://sweetclipart.com/multisite/sweetclipart/files/desktop_computer_line_art.png -->
-              <img src="img/desktop_Line.png" width="600" align="center">
+              <img class="img-responsive p-fade" src="img/cal1.png" width="300" align="right"/>
             </div>
             <div class="col-lg-offset-2" id="off-one">
             </div>
@@ -108,28 +112,40 @@
         </div>
       </div>
     </section>
-
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
     <section id="feature-three">
       <div class="container">
         <div class ="row">
           <div class="feature-content">
             <div class="col-lg-6">
-              <img src="img/calendar.png" class="img-responsive center-block">
+              <img src="img/calend2.png" class="img-responsive center-block p-fade" width="300"/>
             </div>
             <div class="col-lg-6">
-              <h6>Plan your tasks and schedule a meeting</h6>
-              <p class = "lead">Never miss a meeting again, plan your next presidential assassination and be confident with the fact that your team will be prepared for the outcome</p>
+              <h6 class=>Plan your tasks and schedule a meeting</h6>
+              <p class = "p-fade lead">Never miss a meeting again, plan your next presidential assassination and be confident with the fact that your team will be prepared for the outcome</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-        
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
     <nav class="navbar navbar-default">
       <div class="container-fluid">
-                <ul class="navbar">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
+                <ul class="navbar p-fade">
+                  <li><a href="https://github.com/DenMantm/WebCalendarProject">Github Repository</a></li>
+                  <li><a href="https://fatreeframework.com/3.6/home">FatFree</a></li>
                   <li><a href="#">Something else here</a></li>
                   <li role="separator" class="divider"></li>
                   <li class="dropdown-header">Nav header</li>
@@ -400,33 +416,23 @@
 	<script src="js/bootstrap.min.js"></script>
 	      <!--AJAX LOGIN SCRIPT-->
   <script src="js/registration_ajax.js"></script>
-       
-       
-       
-       
-        <script>
-  // back to top of page with smooth scroll
-    $(document).ready(function(){
-     $(window).scroll(function () {
-            if ($(this).scrollTop() > 50) {
-                $('#back-to-top').fadeIn();
-            } else {
-                $('#back-to-top').fadeOut();
-            }
-        });
-        // scroll body to 0px on click
-        $('#back-to-top').click(function () {
-            $('#back-to-top').tooltip('hide');
-            $('body,html').animate({
-                scrollTop: 0
-            }, 800);
-            return false;
-        });
-        
-        $('#back-to-top').tooltip('show');
-
-});
-  </script>
+  <!--scroll back to top of page-->
+  <script src="js/m-scrollToTop.js"></script>
+  <!--smooth scroll 1 page navigation-->
+  <script src="js/featureScroll.js"></script>
+  <!--fade in text in modal-->
+  <script src="js/show.js"></script>
+  <!--flashing registration button-->
+  <script src="js/bounceyReg.js"></script>
+  <!--fade in text when page scrolls-->
+  <script src="js/fadeOnScroll.js"></script>
+  <script src="js/autoWriterDenissStrods.js"></script>
+  
+  
+  
+  
+  
+  
 
 
 </body>
