@@ -6,7 +6,7 @@ $( document ).ready(function() {
 $.fn.typer = function (text, options) {
     options = $.extend({}, {
         delay: 500,
-        duration: 5000,
+        duration: 3000,
         easing: 'linear',
         endless: false
     }, options);
@@ -36,5 +36,4 @@ $.fn.typer = function (text, options) {
     })(0);
 };
 $('#autoText').typer(['<h1 style="color: white;">    Its Your Team Planner App!    </h1>']);
-setInterval(function(){ $('#autoText').typer(['<h1 style="color: white;>    Its Your Team Planner App!    </h1>']); }, 25000);
 });

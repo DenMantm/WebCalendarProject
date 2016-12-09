@@ -26,6 +26,11 @@ var events = [];
 
 $(document).ready(function() {
 
+	$('#tm_to').on('input', function() {
+		maxDate(moment($('#tm_to').val()).format('MM/DD/YYYY H:mm A'));
+
+	});
+
 	$("#btnSaveNewTeamMeeting").click(function(e) {
 		e.preventDefault();
 		if ($("#tm_details").val() == '' ||
@@ -238,27 +243,31 @@ $(document).ready(function() {
 					$("#tm_subject").val(calEvent.title);
 					$("#tm_from").val(start);
 					$("#tm_to").val('');
+					$("#tm_participants").val('');
 					$("#tm_location").val('');
 					$('#newteammeeting').modal('show');
 					break;
 				case "Team task":
 					$("#tt_name").val(calEvent.title);
-					$("#tt_to").val(start);
-					$("#tt_details").val('');
+					$("#tt_to").val(moment(calEvent._start).format('DD/MM/YYYY'));
+					$("#tt_details").val(calEvent._id);
 					$('#newteamtask').modal('show');
 					break;
 				case "Personal task":
 					$("#pt_name").val(calEvent.title);
-					$("#pt_to").val(start);
+					$("#pt_to").val(moment(calEvent._start).format('DD/MM/YYYY'));
 					$("#pt_details").val('');
 					$('#newpersonaltask').modal('show');
 					break;
-				default:
+				case "Personal meeting":
 					$("#m_subject").val(calEvent.title);
 					$("#m_from").val(start);
 					$("#m_to").val('');
+					$("#m_details").val('');
+					$("#m_participants").val('');
 					$("#m_location").val('');
 					$('#newmeeting').modal('show');
+					break;
 			}
 		},
 
