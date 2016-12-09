@@ -243,3 +243,4 @@
 [08-Dec-2016 19:42:30 UTC] HTTP 404 (GET /favicon.ico)
 [08-Dec-2016 19:42:30 UTC] HTTP 404 (GET /favicon.ico)
 [08-Dec-2016 20:31:56 UTC] Fatal error: Call to a member function format() on a non-object
+[08-Dec-2016 21:24:37 UTC] HTTP 404 (GET /favicon.ico)

@@ -39,14 +39,14 @@
      <div class="form-group">
       <label class="control-label col-sm-2" for="Firstname">New Firstname:</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="update_Firstname" placeholder="Enter Firstname" required>
+        <input type="text" class="form-control" id="update_Firstname" placeholder="Enter Firstname" >
       </div>
     </div>
     
      <div class="form-group">
       <label class="control-label col-sm-2" for="Surname">New Surname:</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="update_Surname" placeholder="Enter Surname" required>
+        <input type="text" class="form-control" id="update_Surname" placeholder="Enter Surname" >
       </div>
     </div>
          
@@ -55,7 +55,7 @@
      <div class="form-group">
       <label class="control-label col-sm-2" for="username">New Username:</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="update_Username" placeholder="Enter username" required>
+        <input type="text" class="form-control" id="update_Username" placeholder="Enter username" >
       </div>
     </div>
          
@@ -63,14 +63,14 @@
     <div class="form-group">
       <label class="control-label col-sm-2" for="update_Email">New Email:</label>
       <div class="col-sm-10">
-        <input type="email" class="form-control"id="update_Email" placeholder="Enter email" required>
+        <input type="email" class="form-control"id="update_Email" placeholder="Enter email" >
       </div>
     </div>
    
     <div class="form-group">
       <label class="control-label col-sm-2" for="update_Password">New Password:</label>
       <div class="col-sm-10">          
-        <input type="password" class="form-control" id="update_Password" placeholder="Enter password" required>
+        <input type="password" class="form-control" id="update_Password" placeholder="Enter password" >
       </div>
       <div id="id1"></div>
     </div>
@@ -79,7 +79,7 @@
      <div class="form-group">
       <label class="control-label col-sm-2" for="update_Password">Confirm New Password:</label>
       <div class="col-sm-10">          
-        <input type="password" class="form-control" id="update_Password1" placeholder="Enter password" required>
+        <input type="password" class="form-control" id="update_Password1" placeholder="Enter password" >
       </div>
     </div>
     

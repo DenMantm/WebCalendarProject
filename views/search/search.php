@@ -92,7 +92,7 @@
                  <div class="form-group">
                     <label htmlFor="inputDate" class="col-sm-2" control-label> Start</label>
                    
-                        <input type="text" id="start" name="date_text" class="form-control" placeholder="Choose date" required/>
+                        <input type="text" id="start" name="date_text" class="form-control" placeholder="Choose date" />
                         <script type="text/javascript">
                             $(function() {
                                 $('#start').datetimepicker();
@@ -106,7 +106,7 @@
                    <div class="form-group">
                     <label htmlFor="inputDate" class="col-sm-2" control-label> end date</label>
                    
-                        <input type="text" id="end" name="date_text" class="form-control" placeholder="Choose date" required/>
+                        <input type="text" id="end" name="date_text" class="form-control" placeholder="Choose date" />
                         <script type="text/javascript">
                             $(function() {
                                 $('#end').datetimepicker();
