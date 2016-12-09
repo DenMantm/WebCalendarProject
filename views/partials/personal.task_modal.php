@@ -37,7 +37,7 @@
                 <div class="help-block with-errors"></div>
                 <script type="text/javascript">
                   $(function() {
-                    $('#tt_to').datetimepicker({
+                    $('#pt_to').datetimepicker({
                     format: 'DD/MM/YYYY'
                     });
                   });
