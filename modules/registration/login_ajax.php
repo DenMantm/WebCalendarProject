@@ -8,10 +8,7 @@
      
     // check to determine whether the login form has been submitted 
     // If it has, then the login code is run, otherwise the form is displayed 
-    if(empty($_POST) 
-        die("You cannot submit an empty form!")
-    
-    )
+   
     if(!empty($_POST)) 
     { 
         // This query retreives the user's information from the database using 
