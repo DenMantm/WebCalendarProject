@@ -9,6 +9,10 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<!-- bootstrap -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!--metro-->
+	<link rel="stylesheet" type="text/css" href="css/metro.min.css">
+	<link rel="stylesheet" type="text/css" href="css/metro.responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/metro.schemes.css">
 	<!-- custom css -->
 	<link rel="stylesheet" type="text/css" href="css/m-style.css">
 
@@ -53,7 +57,8 @@
       <div id="stage-caption">
         <h1 class="display-3 main-header" id="autoText">It's your Team Planner App</h1>
         <p class="m-fade">Make it work for YOU!</p>
-        <a href="#signup_modal" class="btn btn-lg btn-success" data-toggle="modal" id="regNow">
+        <br/>
+        <a href="#signup_modal" class="btn btn-lg btn-success m-fade ani-hover ani-bounce" data-toggle="modal">
           Register now!
         </a>
       </div>
@@ -71,12 +76,13 @@
           <div class="feature-content">
             <div class="col-lg-6">
               <iframe width="100%" height="315" src="https://www.youtube.com/embed/UGPuEDyAsU8" frameborder="1" allowfullscreen id="vidMain"></iframe>
-              <img class="img-responsive p-fade" src="img/task.png"/>
             </div>
             <div class="col-lg-5">
               <h6>Check it out!</h6>
               <h2 class="p-fade">Watch this video...</h2>
-              <p class="p-fade">...and be amazed as Nasa's astronauts schedule their EVA with our Team Planner Application in SPACE!!!</p>
+              <p class="p-fade">...and be amazed as Nasa's astronauts schedule their EVA with our Team Planner Application in SPACE!!!
+              The versatility of the application has been demostrated and can be seen as the best way to co-ordinate YOUR team.</p>
+              <!--<img class="img-responsive p-fade" src="img/task.png"/>-->
             </div>
             <!-- one column of space between the left and right column of divs -->
             <div class="col-lg-offset-1">
@@ -120,8 +126,9 @@
     <br/>
     <br/>
     <br/>
-    <br/>
+    
     <section id="feature-three">
+      <br/>
       <div class="container">
         <div class ="row">
           <div class="feature-content">
@@ -129,8 +136,8 @@
               <img src="img/calend2.png" class="img-responsive center-block p-fade" width="300"/>
             </div>
             <div class="col-lg-6">
-              <h6 class=>Plan your tasks and schedule a meeting</h6>
-              <p class = "p-fade lead">Never miss a meeting again, plan your next presidential assassination and be confident with the fact that your team will be prepared for the outcome</p>
+              <h6 class="p-fade">Plan your tasks and schedule a meeting</h6>
+              <p class = "p-fade">Never miss a meeting again, plan your next presidential assassination and be confident with the fact that your team will be prepared for the outcome</p>
             </div>
           </div>
         </div>
@@ -146,11 +153,6 @@
                 <ul class="navbar p-fade">
                   <li><a href="https://github.com/DenMantm/WebCalendarProject">Github Repository</a></li>
                   <li><a href="https://fatreeframework.com/3.6/home">FatFree</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
                 </ul>
       </div>
     </nav>
@@ -257,14 +259,24 @@
                 </div>
                 <div class="modal-body">
 	<div id='login_content'>
-	<form action="/login" method="post">
+	<form action="/login" method="post" data-role="validator"
+    data-on-error-input="notifyOnErrorInput"
+    data-show-error-hint="false">
 		<div class="form-group">
 			<label style='float:left;'>Username</label>
 			<input id='l_user_name_ajax' type="text" class="form-control input-lg" name="text">
 		</div>
 		<div class="form-group">
 			<label style='float:left;' >Password</label>
-			<input id='l_password_ajax' type="password" class="form-control input-lg" name="password">
+			<input id='l_password_ajax' type="password" class="form-control input-lg" 
+			      data-validate-func="minlength"
+            data-validate-arg="6"
+            data-validate-hint="This field must contains min 6 symbols!"
+            data-validate-func="required"
+            data-validate-hine="This field can not be empty!"
+            type="text" name="password">
+            <span class="input-state-error mif-warning"></span>
+            <span class="input-state-success mif-checkmark"></span>
 		</div>
 			</form>
 <div style='display:none;' id='message' class="alert alert-danger"></div>
@@ -414,6 +426,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+
 	      <!--AJAX LOGIN SCRIPT-->
   <script src="js/registration_ajax.js"></script>
   <!--scroll back to top of page-->
@@ -426,7 +439,10 @@
   <script src="js/bounceyReg.js"></script>
   <!--fade in text when page scrolls-->
   <script src="js/fadeOnScroll.js"></script>
+  <!--text writer script - used by Deniss in Table Game Portal-->
   <script src="js/autoWriterDenissStrods.js"></script>
+  
+  <script src="js/metro.min.js"></script>
   
   
   

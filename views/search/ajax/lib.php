@@ -96,7 +96,17 @@ class CRUD
      * */
     public function Read()
     {
-        $query = $this->db->prepare("SELECT * FROM Meetings");
+        
+        session_start();
+        
+        $uid=$_SESSION['user']['uID'];
+        $query = $this->db->prepare("SELECT DISTINCT m.* FROM Meetings m, Participants p
+WHERE p.participantID = '$uid'
+AND m.meetingID = p.meetingID
+OR m.meetingID IN (
+SELECT meetingID FROM Participants WHERE participantID IN (
+SELECT teamID FROM Teams where userUID = '$uid')
+);");
         $query->execute();
         $data = array();
         while ($row = $query->fetch(PDO::FETCH_ASSOC)) {
