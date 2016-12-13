@@ -91,11 +91,9 @@ $(document).ready(function() {
 			$("#tt_team").val() == '' ||
 			$("#tt_name").val() == '' ||
 			$("#tt_to").val() == '' ||
-			$("#tm_from").val() == '' ||
 			selected.length <= 0) {}
 		else {
 			$("#btnSaveNewTeamTask").hide(); //hide submit button
-			$("#LoadingImage").show(); //show loading image
 
 			jQuery.ajax({
 				type: "POST", // HTTP method POST or GET

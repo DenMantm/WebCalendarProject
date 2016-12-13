@@ -6,70 +6,12 @@
 <head>
   <title>Main</title>
   
-<?php include('partials/head.php') ?>
-<?php include_once("../modules/db.php") ?>
+<?php include 'partials/head.php'?>
+<?php include_once '../modules/db.php'?>
 <script type="text/javascript" src="js/team.js"></script>
 <script type="text/javascript" src="js/select2.full.min.js"></script>
+<link rel="stylesheet" href="/css/tasks.css">
 
-  
-
-  
-  
-  
-<style>
-
-	body {
-		margin-top: 40px;
-		text-align: center;
-		font-size: 14px;
-		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-	}
-		
-	#wrap {
-		width: 100%;
-		margin: 0 auto;
-	}
-		
-	#external-events {
-		float: left;
-		width: 150px;
-		padding: 0 10px;
-		border: 1px solid #ccc;
-		background: #eee;
-		text-align: left;
-	}
-		
-	#external-events h4 {
-		font-size: 16px;
-		margin-top: 0;
-		padding-top: 1em;
-	}
-		
-	#external-events .fc-event {
-		margin: 10px 0;
-		cursor: pointer;
-	}
-		
-	#external-events p {
-		margin: 1.5em 0;
-		font-size: 11px;
-		color: #666;
-	}
-		
-	#external-events p input {
-		margin: 0;
-		vertical-align: middle;
-	}
-
-	#calendar {
-		float: right;
-	
-	}
-
-</style>
-  
-  
-  
 </head>
 
 <body>
@@ -88,7 +30,7 @@
             <div id="landing3"></div>
         <span class="dialog-close-button"></span></div>
   <?php
-include('partials/navbar.php');
+include 'partials/navbar.php';
 
 ?>
 
@@ -108,8 +50,18 @@ include('partials/navbar.php');
       <!--###   Teams   ####-->
       <!--##################-->
 
-      <div class="col-md-6 remove_padding">
-      <?php include('../modules/showteam.php') ?>
+      <div class="col-md-6">
+        <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#my_teams" aria-controls="my_teams" role="tab" data-toggle="tab">My Teams  <span class="badge"><?php include '../modules/get_tasks_issued.php'?></span></a></li>
+    <li role="presentation"><a href="#personal" onclick="populate_pt(); return false;" aria-controls="personal" role="tab" data-toggle="tab">My invitations  <span class="badge"><?php include '../modules/get_personal.php'?></span></a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="my_teams"><?php include '../modules/show_my_teams.php'?></div>
+    <div role="tabpanel" class="tab-pane" id="personal"></div>
+  </div>
+
   
       </div>
 
@@ -129,39 +81,7 @@ include('partials/navbar.php');
             Start new team</button>
             
             
-                    
-            
-        <div class="panel" style="width: 200px; z-index: auto; top: 100px; left: 250px;" data-role="draggable">
-          <div class="heading">
-            <span class="icon mif-file-text"></span>
-            <span class="title">Note1</span>
-          </div>
-          <div class="content">
-            <p>
-              remember
-            </p>
-            Kill Mr. president
-            </br>
-
-          </div>
-        </div>
-
-        <div class="panel" style="width: 200px; z-index: auto; top: 100px; left: 50px;" data-role="draggable">
-          <div class="heading">
-            <span class="icon mif-file-text"></span>
-            <span class="title">Note2</span>
-          </div>
-          <div class="content">
-            <p>Try not to go to the jail</p>
-            <p></p>
-            <p>Find out how to!</p>
-
-          </div>
-        </div>
-        
-        
-        
-        
+                  
       </div>
     </div>
     
@@ -196,46 +116,4 @@ include('partials/navbar.php');
 </div>
 </div>
 
-
-<div class="modal fade" id="invite" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Invite new user to the team</h4>
-            </div>
-            <div class="modal-body">
-              
-              <div class="row">
-                <label class="col-sm-3" control-label>Email address:</label>
-                <div class="col-sm-9">
-                  <select id="i_email" class="js-example-basic-single js-states form-control" multiple="multiple" style="width: 100%;">
-                    </select>
-                </div>
-              </div>
-              
-              <div class="row">
-                <label class="col-sm-3" control-label>Role:</label>
-                <div class="col-sm-9" >
-                  <div class="btn-group pull-left" data-toggle="buttons">
-                <label class="btn btn-primary active">
-                  <input type="radio" name="role" value="user" autocomplete="off" checked> User
-                </label>
-                <label class="btn btn-primary">
-                  <input type="radio" name="role" value="editor" autocomplete="off"> Editor
-                </label>
-              </div>
-                </div>
-              </div>
-              
- 
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button id="btnSendInvite" class="btn btn-primary">Create</button>
-</div>
-</div>
-</div>
-</div>
 </body>
