@@ -5,7 +5,7 @@
     $user = $_SESSION['user']['username'];
     $userUID = $_SESSION['user']['uID'];
           $query = "select 
-                        count(*)
+                        *
                     from Participants_t p
                         left join Task_completion tc
                             on p.taskID = tc.task_uid
