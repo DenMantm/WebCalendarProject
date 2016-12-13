@@ -38,7 +38,7 @@ $(document).ready(function() {
 
 function invite(id) {
 	var iddent = "#i_email" + id;
-	alert($(iddent).val())
+	//alert($(iddent).val())
 	if ($(id).val() === '') {
 		alert("Please provide an valid email address!");
 		return false;
@@ -123,7 +123,9 @@ function populateInvite(id) {
 		type: "POST",
 		url: link,
 		dataType: "HTML", //expect html to be returned                
-		success: function() {}
+		success: function(response) {
+			$(ident).html(response)
+		}
 	});
 }
 
@@ -200,10 +202,15 @@ function teamdetails(id) {
 			alert(thrownError);
 		}
 	});
+	populateInvite(id);
 }
 
 function close_details() {
 	$(".team_details").html('');
+}
+
+function close_inv() {
+	$(".inv_details").html('');
 }
 
 function editname(id) {
@@ -244,6 +251,42 @@ function changename(id) {
 				timeout: 7000
 			});
 			details(id);
+		},
+		error: function(xhr, ajaxOptions, thrownError) {
+			alert(thrownError);
+		}
+	});
+}
+
+function populate_inv(id) {
+	jQuery.ajax({
+		type: "GET", // HTTP method POST or GET
+		url: "show_my_team_invitations", //Where to make Ajax calls
+		dataType: "text", // Data type, HTML, json etc.
+
+		success: function(response) {
+			$("#invitations").html(response);
+
+		},
+		error: function(xhr, ajaxOptions, thrownError) {
+			alert(thrownError);
+		}
+	});
+}
+
+function invdetails(id) {
+	var link = "team_inv_details/" + id;
+
+	jQuery.ajax({
+		type: "GET", // HTTP method POST or GET
+		url: link, //Where to make Ajax calls
+		dataType: "text", // Data type, HTML, json etc.
+
+		success: function(response) {
+			$(".inv_details").html('');
+			$("#inv_details" + id).html(response);
+			//alert(response)
+
 		},
 		error: function(xhr, ajaxOptions, thrownError) {
 			alert(thrownError);

@@ -159,6 +159,14 @@ $f3->route('GET /taskdetails/@id',
     }
 );
 
+$f3->route('GET /team_inv_details/@id',
+    function ($f3, $params) {
+        isUserLogged();
+        $f3->set('SESSION.details', $params['id']);
+        echo View::instance()->render('../modules/inv_details.php');
+    }
+);
+
 $f3->route('GET /team_details/@id',
     function ($f3, $params) {
         isUserLogged();
@@ -387,6 +395,12 @@ $f3->route('POST /change_task_name',
 $f3->route('POST /change_team_name',
     function () {
         require 'change_team_name.php';
+    }
+);
+
+$f3->route('GET /show_my_team_invitations',
+    function () {
+        require 'show_my_team_invitations.php';
     }
 );
 

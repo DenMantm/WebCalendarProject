@@ -53,13 +53,13 @@ include 'partials/navbar.php';
       <div class="col-md-6">
         <ul class="nav nav-tabs" role="tablist">
     <li role="presentation" class="active"><a href="#my_teams" aria-controls="my_teams" role="tab" data-toggle="tab">My Teams  <span class="badge"><?php include '../modules/get_tasks_issued.php'?></span></a></li>
-    <li role="presentation"><a href="#personal" onclick="populate_pt(); return false;" aria-controls="personal" role="tab" data-toggle="tab">My invitations  <span class="badge"><?php include '../modules/get_personal.php'?></span></a></li>
+    <li role="presentation"><a href="#invitations" onclick="populate_inv(); return false;" aria-controls="invitations" role="tab" data-toggle="tab">My invitations  <span class="badge"><?php include '../modules/get_personal.php'?></span></a></li>
   </ul>
 
   <!-- Tab panes -->
   <div class="tab-content">
     <div role="tabpanel" class="tab-pane active" id="my_teams"><?php include '../modules/show_my_teams.php'?></div>
-    <div role="tabpanel" class="tab-pane" id="personal"></div>
+    <div role="tabpanel" class="tab-pane" id="invitations"></div>
   </div>
 
   
